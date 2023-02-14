@@ -3,6 +3,7 @@ import Switch from 'react-router-dom';
 
 // components
 import Header from './components/Header';
+import About from './components/About';
 // nume prea lung?
 // import Donaldson-and-GardnerDenver-pages from ''; 
 
@@ -17,7 +18,11 @@ function App() {
         <Router>
             <Header />
             <main>
-                
+                <Switch>
+                    <Route path='/about'>
+                        <About />
+                    </Route>
+                </Switch>
             </main>
         </Router>
     )
