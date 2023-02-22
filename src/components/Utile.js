@@ -6,8 +6,5 @@ export default function Utile () {
             <p>~ design page ~</p>
             <p>links</p>
         </main>
-        // <Router>
-
-        // </Router>
     )
 }
