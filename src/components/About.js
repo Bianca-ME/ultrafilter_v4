@@ -1,8 +1,9 @@
 import React from 'react';
+import '../assets/About.css'
 
 export default function About () {
     return (
-        <main>
+        <main className='text'>
             <p>Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.</p>
             <br/>
             <p>Actualmente ne consideram o firma inca mica, dar cu mare flexibililtate si dinamism cu un personal compus din 12 angajati, cu acoperire in zonele invecinate cu Satu Mare – Timisoara, Brasov, Sibiu, Ploiesti, Bucuresti si Constanta.</p>

@@ -7,6 +7,9 @@ import About from './components/About';
 import Utile from './components/Utile';
 import Contact from './components/Contact';
 
+// styling
+import './assets/App.css';
+
 // const App = () => (
 //     <div>
 //         <h1>it works!</h1>
@@ -15,6 +18,7 @@ import Contact from './components/Contact';
 
 function App() {
     return (
+        <div className='home-page'>
         <Router>
             <Header />
             <main>
@@ -31,6 +35,7 @@ function App() {
                 </Switch>
             </main>
         </Router>
+        </div>
     )
 }
 

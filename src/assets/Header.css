@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+/* font-family: 'Xanh Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+.logo-home-page {
+    height: 20vh;
+}
+
+.header {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.visited-link {
+    text-decoration: none;
+}
+
+.visited-link:visited {
+color: white;
+}
+

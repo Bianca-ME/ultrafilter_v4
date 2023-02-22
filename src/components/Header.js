@@ -1,7 +1,10 @@
 import React from 'react';
 import { NavLink, Link} from 'react-router-dom';
-import logo from '../assets/logo.png';
-import '../assets/style.css';
+import logo from '../assets/LOGO-white-PNG.png';
+
+// styling
+import '../assets/Header.css';
+
 
 
 export default function Header() {
@@ -11,10 +14,10 @@ export default function Header() {
             <Link to="/" rel="noreferrer">
                 <img className='logo-home-page' src={logo} alt="Nature"></img>
             </Link>
-            
-            <NavLink to='/about'>Despre Ultrafilter</NavLink>
-            <NavLink to='/utile'>linkuri utile</NavLink>
-            <NavLink to='/contact'>Contact</NavLink>
+
+            <NavLink className='visited-link' to='/about'>Despre Ultrafilter</NavLink>
+            <NavLink className='visited-link' to='/utile'>linkuri utile</NavLink>
+            <NavLink className='visited-link' to='/contact'>Contact</NavLink>
         </div>
     )
 }
