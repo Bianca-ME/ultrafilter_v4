@@ -21,11 +21,11 @@
 }
 
 .page1Donaldson {
-    width: 50vw;
+    width: 30vw;
 }
 
 .page2GardnerDenver {
-    width: 40vw;
+    width: 25vw;
 }
 
 /* .containsPage1 {
@@ -40,11 +40,16 @@
     border-right: 3px solid rgb(102, 240, 60);
 } */
 
+.page1Donaldson-container,
+.page2GardnerDenver-container {
+    width: 50vw;
+    align-items: center; /* aliniaza central pe verticala */
+    justify-content: center; /* aliniaza central pe orizontala */
+}
 
 .page1Donaldson-container {
     background-color: #0082ca;
     height: 100%;
-    align-items: center;
     display: flex;
     /* border-right: 2px solid red; */
     /* margin-top: 30px; */
@@ -54,10 +59,8 @@
 .page2GardnerDenver-container {
     background-color: rgb(255, 255, 255);
     height: 100%;
-    align-items: center; /* aliniaza central pe verticala */
     display: flex;
     width: 50vw;
-    justify-content: center; /* aliniaza central pe orizontala */
     
 }
 
