@@ -6,3 +6,9 @@ body {
     background-color: rgb(7, 22, 63);
     color: white;
 }
+
+.active-link {
+    text-decoration: underline;
+    text-underline-offset: 13px;
+    color: white;
+}

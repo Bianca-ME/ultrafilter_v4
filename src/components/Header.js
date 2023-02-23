@@ -25,9 +25,9 @@ export default function Header() {
             Home
           </NavLink> */}
 
-            <NavLink className='visited-link' to='/about' >Despre Ultrafilter</NavLink>
-            <NavLink className='visited-link' to='/utile' >linkuri utile</NavLink>
-            <NavLink className='visited-link' to='/contact'>Contact</NavLink>
+            <NavLink className='visited-link' to='/about' activeClassName="active-link">Despre Ultrafilter</NavLink>
+            <NavLink className='visited-link' to='/utile' activeClassName="active-link">linkuri utile</NavLink>
+            <NavLink className='visited-link' to='/contact' activeClassName="active-link">Contact</NavLink>
            </div>
     )
 }

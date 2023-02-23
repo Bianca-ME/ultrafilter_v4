@@ -49,7 +49,7 @@ function App() {
                         <Route exact path="/">
                             {showHomePage ? <HomePage /> : null}
                         </Route>
-                        <Route path='/about'>
+                        <Route path='/about' activeClassName="active-link">
                             <About />
                         </Route>
                         <Route path='/utile'>

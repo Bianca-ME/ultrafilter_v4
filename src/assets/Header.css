@@ -1,5 +1,6 @@
 /* .active-link {
     text-decoration: underline;
+    color: red;
   } */
 
 
@@ -23,8 +24,6 @@ body {
     font-family: 'Roboto Mono', monospace;
 
     /* da dar eu vreau sa subliniez doar linkul clickuit */
-    /* text-decoration: underline; */
-    /* text-underline-offset: 13px; */
 
     /* margin-right: 0px; */
     /* padding-right: 0px; */
