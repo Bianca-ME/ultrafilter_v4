@@ -1,12 +1,11 @@
 import React from 'react';
-import '../assets/Contact.css';
+import '../assets/GardnerDenver.css';
 
-export default function Contact () {
+export default function GardnerDenver () {
     return (
         <main className='text'>
-            {/* temporary content */}
             <p>design page --- WORK IN PROGRESS</p>
-            <p>content of CONTACT</p>
+            <p>content of Gardner Denver</p>
         </main>
     )
-};
+}

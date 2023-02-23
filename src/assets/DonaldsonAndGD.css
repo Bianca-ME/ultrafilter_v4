@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+.text {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.DonaldsonAndGD {
+    /* margin-top: 2vh; */
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    /* testing */
+    /* background-color: pink; */
+    /* border: 1px solid pink; */
+    width: 100vw;
+    height: 50vh;
+    /* align-items: center; nu mai are rost pentru ca nu se mai aplica dupa ce creez child div container of logo */
+    /* border-bottom: 1px solid white; */
+}
+
+.page1Donaldson {
+    width: 50vw;
+}
+
+.page2GardnerDenver {
+    width: 40vw;
+}
+
+/* .containsPage1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.containsPage2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-right: 3px solid rgb(102, 240, 60);
+} */
+
+
+.page1Donaldson-container {
+    background-color: #0082ca;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    /* border-right: 2px solid red; */
+    /* margin-top: 30px; */
+    /* padding-top: 50px; */
+}
+
+.page2GardnerDenver-container {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    align-items: center; /* aliniaza central pe verticala */
+    display: flex;
+    width: 50vw;
+    justify-content: center; /* aliniaza central pe orizontala */
+    
+}
+
+.visited-link {
+    /* temporary distance */
+    margin-right: 50px;
+
+    color: white;
+    text-decoration: none;
+}
+
