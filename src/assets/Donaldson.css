@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+/* font-family: 'Xanh Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+
 .card {
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -10,8 +16,51 @@
     color: black;
 }
 
-table, tr, td {
+/* table.tabel-donaldson-compresoare {
+    
+} */
+
+table {
     border: 1px solid black;
+    border-radius: 40px;
+    /* background-color: white; */
+    margin: 0;
+}
+
+tr, td {
+    /* border-left: 3px solid black; */
+    /* border-top: 1px solid black; */
     border-collapse: collapse;
-    text-align: center;
+    margin: 0;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+#th-compresoare  {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 3rem;
+    font-family: 'Xanh Mono', monospace;
+    padding: 0 0 30px 0;
+}
+
+.th-tr1 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    border-top: none;
+    padding: 20px 0 50px 30px;
+}
+
+.tds {
+    /* font-family: 'Cutive Mono', monospace; */
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 30px
+}
+
+.tds:hover {
+    background-color: beige;
 }
