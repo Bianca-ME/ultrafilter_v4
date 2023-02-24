@@ -5,3 +5,13 @@
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
+
+.tabel-donaldson-compresoare {
+    color: black;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
