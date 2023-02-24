@@ -1,8 +1,5 @@
-/* .active-link {
-    text-decoration: underline;
-    color: red;
-  } */
-
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+/* font-family: 'Sulphur Point', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 /* font-family: 'Xanh Mono', monospace; */
@@ -10,38 +7,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
-.logo-home-page {
-    height: 20vh;
-}
-
 body {
     margin: 0px;
-    /* padding: ; */
 }
 
 .header {
     text-align: center;
-    font-family: 'Roboto Mono', monospace;
-
-    /* da dar eu vreau sa subliniez doar linkul clickuit */
-
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vh;
+    font-kerning: 10px;
+    /* background-color: white; */
+    
+    padding-bottom: 2vh;
     /* margin-right: 0px; */
     /* padding-right: 0px; */
     /* margin-bottom: 7px; */
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     /* border-bottom: 0.5px solid white; */
 
+    display: flex;
+    justify-content: center;
 }
 
 .visited-link {
     /* temporary distance */
     margin-right: 50px;
-
-    /* astea nu merg */
-    /* color: rgb(255, 48, 48);
-    text-decoration: underline; */
+    color: white;
+    text-decoration: none;
 }
-/* 
-.active {
-    color: rgb(168, 0, 28);
+
+/* .contact-info-in-header{
+    text-decoration: none;
+    padding-left: 10vw;
 } */

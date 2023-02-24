@@ -1,10 +1,7 @@
-/* .home-page {
-    background-color: rgb(189, 9, 99);
-} */
-
 body {
     background-color: rgb(7, 22, 63);
-    color: white;
+    /* color: rgb(0, 0, 0); */
+    
 }
 
 .active-link {

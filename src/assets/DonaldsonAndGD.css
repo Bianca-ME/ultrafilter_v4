@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
-.text {
+/* .card {
     font-family: 'Roboto Mono', monospace;
     color: white;
-}
+} */
 
 .DonaldsonAndGD {
     /* margin-top: 2vh; */
@@ -57,18 +57,9 @@
 }
 
 .page2GardnerDenver-container {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 100%;
     display: flex;
     width: 50vw;
-    
-}
-
-.visited-link {
-    /* temporary distance */
-    margin-right: 50px;
-
-    color: white;
-    text-decoration: none;
 }
 

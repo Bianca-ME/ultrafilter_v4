@@ -8,48 +8,36 @@ import Utile from './components/Utile';
 import Contact from './components/Contact';
 import Donaldson from './components/Donaldson';
 import GardnerDenver from './components/GardnerDenver';
-// import DonaldsonAndGD from './components/HomePage';
 import HomePage from './components/HomePage';
 import Logo from './components/Logo';
 
 // styling
 import './assets/App.css';
 
-// const App = () => (
-//     <div>
-//         <h1>it works!</h1>
-//     </div>
-//     );
-
 function App() {
-    // TEST
     const [showHomePage, setShowHomePage] = useState(false);
 
     function handleLogoClick() {
       setShowHomePage(true);
     }
-    // TEST
 
     return (
         <div className='home-page'> 
         {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
+
             <Router>
-                <Header />
-                {/* <DonaldsonAndGD /> */}
                 <main>
-                    {/* TEST */}
                     <header className="App-header">
                         <Link to="/" onClick={handleLogoClick}>
                             <Logo />
                         </Link>
                     </header>
-                    {/* TEST */}
-
+                    <Header />
                     <Switch>
                         <Route exact path="/">
-                            {showHomePage ? <HomePage /> : null}
+                            {showHomePage ? <HomePage /> : <HomePage />}
                         </Route>
-                        <Route path='/about' activeClassName="active-link">
+                        <Route path='/about'>
                             <About />
                         </Route>
                         <Route path='/utile'>

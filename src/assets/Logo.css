@@ -1,0 +1,12 @@
+.logo-home-page {
+    height: 20vh;
+    /* background-color: pink; */
+}
+
+.logo-home-page-container {
+    /* background-color: rgb(211, 76, 99); */
+    background-color: rgb(7, 22, 63);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}

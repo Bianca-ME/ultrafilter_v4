@@ -15,3 +15,20 @@
 /* TEMPORARILY */
 /* TEMPORARILY */
 
+.card {
+    background-color: white;
+    border-radius: 45px;
+    padding: 5px 20%;
+    margin: 20px 70px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text-about p,
+.text-utile p,
+.text-contact p,
+.text-donaldson p,
+.text-gardnerdenver p {
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+}

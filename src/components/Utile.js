@@ -1,9 +1,10 @@
 import React from 'react';
 import '../assets/Utile.css';
+import '../assets/commonstyle.css';
 
 export default function Utile () {
     return (
-        <main  className='text'>
+        <main  className='card text-utile'>
             {/* temporary content */}
             <p>design page --- WORK IN PROGRESS</p>
             <p>links:</p>

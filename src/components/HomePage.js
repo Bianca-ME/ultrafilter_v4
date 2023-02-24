@@ -21,18 +21,13 @@ export default function Header() {
                 </Link>
             </div>
             </div>
-
             <div className='containsPage2'>
-
             <div className='page2GardnerDenver-container'>
                 <Link to="/GardnerDenver" rel="noreferrer" >
                     <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                 </Link>
             </div>
             </div>
-            
-            {/* <NavLink className='visited-link' to='/Donaldson'>Donaldson</NavLink>
-            <NavLink className='visited-link' to='/GardnerDenver'>Gardner Denver</NavLink> */}
         </div>
     )
 }

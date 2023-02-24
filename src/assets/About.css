@@ -1,7 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
-.text {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+/* font-family: 'Cutive', serif; imi place mai putin*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+body {
+    width: 100vw;;
 }
+
+.text-about {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 45px;
+    /* width: 90%; mai bine nu ii mai dau niciun width pt ca nu inteleg dupa ce viewport se ia ca scoate din pagina orice dimensiune as da*/
+    padding: 5px 20%;
+    margin: 20px 70px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+/* font-family: 'Sulphur Point', sans-serif; */
