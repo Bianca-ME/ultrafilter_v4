@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 // components
 import Header from './components/Header';
@@ -14,15 +15,25 @@ import Compresoare from './pages/Donaldson/Compresoare';
 import Presiuni4_13bari from './pages/Donaldson/Compresoare/Presiuni4_13bari';
 import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari';
 
+import Breadcrumbs from './components/Breadcrumbs';
+
 // styling
 import './assets/App.css';
 
 function App() {
+    // JAVASCRIPT
     const [showHomePage, setShowHomePage] = useState(false);
 
     function handleLogoClick() {
       setShowHomePage(true);
     }
+
+    // TEST >
+
+
+    // TEST <
+
+    // END OF JAVASCRIPT
 
     return (
         <div className='home-page'> 
@@ -36,6 +47,7 @@ function App() {
                         </Link>
                     </header>
                     <Header />
+                    <Breadcrumbs />
                     <Switch>
                         <Route exact path="/">
                             {showHomePage ? <HomePage /> : <HomePage />}

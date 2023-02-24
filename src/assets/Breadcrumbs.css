@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+
+
+.breadcrumbs {
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: 'Sulphur Point', sans-serif;
+  }
+  .breadcrumbs > *{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .breadcrumbs .crumb:after {
+    content: '>';
+    margin-left: 10px;
+    color: #ddd;
+  }
+  .breadcrumbs .crumb:last-child:after {
+    display: none;
+  }
+  .breadcrumbs .crumb a {
+    color: #ddd;
+  }
