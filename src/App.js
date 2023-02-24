@@ -10,6 +10,9 @@ import Donaldson from './components/Donaldson';
 import GardnerDenver from './components/GardnerDenver';
 import HomePage from './components/HomePage';
 import Logo from './components/Logo';
+import Compresoare from './pages/Donaldson/Compresoare';
+import Presiuni4_13bari from './pages/Donaldson/Compresoare/Presiuni4_13bari';
+import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari';
 
 // styling
 import './assets/App.css';
@@ -46,11 +49,20 @@ function App() {
                         <Route path='/contact'>
                             <Contact />
                         </Route>
-                        <Route path='/Donaldson'>
+                        <Route exact path='/Donaldson'>
                             <Donaldson />
                         </Route>
                         <Route path='/GardnerDenver'>
                             <GardnerDenver />
+                        </Route>
+                        <Route exact path='/Donaldson/compresoare'>
+                            <Compresoare />
+                        </Route>
+                        <Route path='/Donaldson/compresoare/Presiuni4_13bari'>
+                            <Presiuni4_13bari />
+                        </Route>
+                        <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
+                            <Presiuni20_400bari />
                         </Route>
                     </Switch>
                 </main>
