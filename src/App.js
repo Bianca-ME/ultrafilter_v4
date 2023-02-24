@@ -52,6 +52,9 @@ function App() {
                         <Route exact path="/">
                             {showHomePage ? <HomePage /> : <HomePage />}
                         </Route>
+                        <Route exact path='/'>
+                            <HomePage />
+                        </Route>
                         <Route path='/about'>
                             <About />
                         </Route>

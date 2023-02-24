@@ -5,13 +5,14 @@
     max-width: 1200px;
     margin: 20px auto;
     font-family: 'Sulphur Point', sans-serif;
-  }
-  .breadcrumbs > *{
+    font-size: 30px;
+}
+.breadcrumbs > *{
     display: inline-block;
     margin-right: 10px;
   }
   .breadcrumbs .crumb:after {
-    content: '>';
+    content: '/';
     margin-left: 10px;
     color: #ddd;
   }
@@ -19,5 +20,6 @@
     display: none;
   }
   .breadcrumbs .crumb a {
-    color: #ddd;
+    color: #ffffff;
+    text-decoration: none;
   }
