@@ -3,6 +3,7 @@ import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 // components
+import NotFound from './components/NotFound';
 import Header from './components/Header';
 import About from './components/About';
 import Utile from './components/Utile';
@@ -79,6 +80,8 @@ function App() {
                         <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
                             <Presiuni20_400bari />
                         </Route>
+                        <Route path='*' element={ <NotFound/>}/>
+                           
                     </Switch>
                 </main>
             </Router>
