@@ -16,7 +16,7 @@
 /* TEMPORARILY */
 
 .card {
-    background-color: white;
+    background-color: #F8FAF9;
     border-radius: 45px;
     padding: 5px 20%;
     margin: 20px 70px;
@@ -29,6 +29,6 @@
 .text-donaldson p,
 .text-gardnerdenver p {
     font-size: 1.5rem;
-    color: black;
+    color: #124838;
     font-family: 'Work Sans', sans-serif;
 }

@@ -1,17 +1,23 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import '../../assets/Donaldson.css';
 import '../../assets/commonstyle.css';
-// import '../../assets/';
+import { Document, Page } from 'react-pdf';
+import pdf from '../../assets/testPDF.pdf';
+
+
+
+
 
 export default function Compresoare () {
-    return (
-        <main className='card text-donaldson'>
-            <p>design page --- WORK IN PROGRESS</p>
-            <p>content of DONALDSON / compresoare</p>
-            <NavLink to='/Donaldson/compresoare/Presiuni4_13bari'>Presiuni 4 - 13 bari</NavLink>
-            <br/>
-            <NavLink to='/Donaldson/compresoare/Presiuni20_400bari'>Presiuni 20 - 400 bari</NavLink>
-        </main>
+    return(
+        <div>
+      <Document file="somefile.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <p>
+        Page {pageNumber} of {numPages}
+      </p>
+    </div>
     )
-}
+    }

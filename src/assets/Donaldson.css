@@ -13,7 +13,7 @@
 }
 
 .tabel-donaldson-compresoare {
-    color: black;
+    color: #124838;
 }
 
 /* table.tabel-donaldson-compresoare {
@@ -21,9 +21,9 @@
 } */
 
 table {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 40px;
-    /* background-color: white; */
+    background-color: white;
     margin: 0;
 }
 
@@ -38,17 +38,20 @@ td:first-child {
     border-left: none;
 }
 
-#th-compresoare  {
+#h  {
     font-family: 'Xanh Mono', monospace;
     font-size: 3rem;
     font-family: 'Xanh Mono', monospace;
     padding: 0 0 30px 0;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    
 }
 
 .th-tr1 {
     font-family: 'Xanh Mono', monospace;
     font-size: 1.5rem;
-    color: black;
+    color: #124838;
     font-weight: 500;
     border-top: none;
     padding: 20px 0 50px 30px;
@@ -62,5 +65,8 @@ td:first-child {
 }
 
 .tds:hover {
-    background-color: beige;
+    /* background-color: beige; */
+    background-color: #f0f7f3;
+    border: 0.5px solid #124838;
+    border-radius: 20px;
 }

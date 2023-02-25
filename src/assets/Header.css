@@ -33,7 +33,7 @@ body {
 .visited-link {
     /* temporary distance */
     margin-right: 50px;
-    color: white;
+    color: #F8FAF9;
     text-decoration: none;
 }
 
