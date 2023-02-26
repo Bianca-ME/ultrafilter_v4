@@ -1,26 +1,11 @@
-// import React, { useState } from 'react';
-// // import { NavLink } from 'react-router-dom';
-// import '../../assets/Donaldson.css';
-// import '../../assets/commonstyle.css';
-// import pdf from '../../assets/testPDF.pdf';
-// import { Document, Page } from 'react-pdf';
+import React from 'react';
 
-// function Compresoare() {
-//   const [numPages, setNumPages] = useState(null);
-//   const [pageNumber, setPageNumber] = useState(1);
-
-//   function onDocumentLoadSuccess({ numPages }) {
-//     setNumPages(numPages);
-//   }
-
-//   return (
-//     <div>
-//       <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-//         <Page pageNumber={pageNumber} />
-//       </Document>
-//       <p>
-//         Page {pageNumber} of {numPages}
-//       </p>
-//     </div>
-//   );
-// }
+export default function Compresoare() {
+  return (
+    <div>
+      <object data="../../../testPDF.pdf" type="application/pdf" width="100%" height="600px">
+        <p>Alternative text - include a link <a href="../../../testPDF.pdf">to the PDF!</a></p>
+      </object>
+    </div>
+  );
+}

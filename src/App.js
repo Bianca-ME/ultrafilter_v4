@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Redirect, Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 // components
@@ -80,8 +80,13 @@ function App() {
                         <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
                             <Presiuni20_400bari />
                         </Route>
-                        <Route path='*' element={ <NotFound/>}/>
-                           
+
+                        <Route path="/404">
+                            <NotFound/>
+                            </Route>
+                        <Redirect to="/404" />
+                        {/* niu merge not found */}
+                        {/* <Route path='*' component={NotFound}/> */}
                     </Switch>
                 </main>
             </Router>
