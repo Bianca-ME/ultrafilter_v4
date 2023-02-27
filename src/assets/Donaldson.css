@@ -12,24 +12,17 @@
     color: white;
 }
 
-.tabel-donaldson-compresoare {
+/* .tabel-donaldson-compresoare {
     color: #124838;
 }
 
-/* table.tabel-donaldson-compresoare {
-    
-} */
-
 table {
-    /* border: 1px solid black; */
     border-radius: 40px;
     background-color: white;
     margin: 0;
 }
 
 tr, td {
-    /* border-left: 3px solid black; */
-    /* border-top: 1px solid black; */
     border-collapse: collapse;
     margin: 0;
 }
@@ -58,15 +51,13 @@ td:first-child {
 }
 
 .tds {
-    /* font-family: 'Cutive Mono', monospace; */
     font-size: 1rem;
     margin: 0;
     padding: 5px 30px
 }
 
 .tds:hover {
-    /* background-color: beige; */
     background-color: #f0f7f3;
     border: 0.5px solid #124838;
     border-radius: 20px;
-}
+} */

@@ -48,7 +48,7 @@ function App() {
                         </Link>
                     </header>
                     <Header />
-                    <Breadcrumbs />
+                    {/* <Breadcrumbs /> */}
                     <Switch>
                         <Route exact path="/">
                             {showHomePage ? <HomePage /> : <HomePage />}

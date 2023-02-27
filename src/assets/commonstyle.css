@@ -8,6 +8,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 /* font-family: 'Work Sans', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+/* font-family: 'Xanh Mono', monospace; */
+
+/* for quote marks */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+/* font-family: 'Yatra One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* font-family: 'Lora', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* font-family: 'Gelasio', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+/* font-family: 'Klee One', cursive; ASTA NU */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+/* font-family: 'Mynerve', cursive; NU PREA*/
+
 /* TEMPORARILY */
 /* TEMPORARILY */
 /* TEMPORARILY */
@@ -18,17 +37,128 @@
 .card {
     background-color: #F8FAF9;
     border-radius: 45px;
-    padding: 5px 20%;
+    padding: 5px 3%;
     margin: 20px 70px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-GD {
+    background-color: #F8FAF9;
+    /* background-color: rgb(7, 22, 63); */
+    /* border-radius: 45px; */
+    padding: 5px 3%;
+    margin: 20px 0;
     font-family: 'Work Sans', sans-serif;
 }
 
 .text-about p,
 .text-utile p,
 .text-contact p,
-.text-donaldson p,
-.text-gardnerdenver p {
+.text-donaldson p {
     font-size: 1.5rem;
     color: #124838;
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
 }
+
+.text-gardnerdenver p {
+    font-size: 1.2rem;
+    color: #124838;
+}
+
+.text-gardnerdenver {
+    padding: 20vh 5vw 30vh 5vw;
+    /* transform: skew(1turn, -10deg); */
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e8f1ef;
+    border-radius: 45px;
+    margin-top: 3vh;
+}
+
+.quote-marks-opening {
+    /* float: left; */
+    font-family: 'Yatra One', cursive;
+    font-size: 20rem;
+    color: #124838;
+    /* offset-position: 25% 75%; */
+    position: absolute;
+
+}
+
+.regular-text {
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 5vh 10vw;
+    color: #124838;
+}
+
+.regular-text-important {
+    font-size: 3rem;
+    /* font-family: 'Xanh Mono', monospace; */
+}
+
+.regular-text-small {
+    font-family: 'Sulphur Point', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: 'Cutive Mono', monospace; */
+    font-size: 1.2rem;
+    padding: 2vh 10vw 15vh 10vw;
+    color: #124838;
+    text-align: right;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+.big-word {
+    font-size: 10rem;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.signature {
+    right: 5vw;
+    bottom: 2vh;
+    /* margin-left: 0; */
+    position: absolute;
+    width: 30%;
+    color: #124838;
+}
+
+.toberelative {
+    position: relative;
+}
+
+/* test */
+
+.containertest {
+    background-color:bisque;
+    width: 100%;
+    height: 700px;
+padding-bottom: 400px;
+/* overflow:scroll; */
+}
+
+.tobesticky {
+    position: sticky;
+    font-size: 2rem;
+    color: red;
+    right: 5vw;
+    bottom: 0.5vh;
+    top: 0.5vh;
+    z-index: 2;
+}
+
+.imgtest {
+    height: 100%;
+}
+
+.imgtest2 {
+    height: 20%;
+    position: sticky;
+    right: 5vw;
+    bottom: 2vh;
+    z-index: 2;
+}
+

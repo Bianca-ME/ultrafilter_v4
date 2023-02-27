@@ -2,10 +2,13 @@
 
 
 .breadcrumbs {
-    max-width: 1200px;
-    margin: 20px auto;
+    /* max-width: 1200px; */
+    /* margin: 20px auto; */
+    /* text-align: center; */
     font-family: 'Sulphur Point', sans-serif;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2rem;
+    background-color: #F8FAF9;
 }
 .breadcrumbs > *{
     display: inline-block;
@@ -20,6 +23,6 @@
     display: none;
   }
   .breadcrumbs .crumb a {
-    color: #ffffff;
+    color: #124838;
     text-decoration: none;
   }
