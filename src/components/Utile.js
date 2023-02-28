@@ -4,7 +4,7 @@ import '../assets/commonstyle.css';
 
 export default function Utile () {
     return (
-        <main  className='card text-utile'>
+        <main className='main-1 regular-text'>
             {/* temporary content */}
             <p>design page --- WORK IN PROGRESS</p>
             <p>links:</p>

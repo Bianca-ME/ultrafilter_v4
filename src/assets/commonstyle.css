@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
 /* font-family: 'Cutive Mono', monospace; */
-/* font-family: 'Cutive', serif; imi place mai putin*/
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 /* font-family: 'Work Sans', sans-serif; */
@@ -34,6 +33,19 @@
 /* TEMPORARILY */
 /* TEMPORARILY */
 
+/* GENERAL */
+
+.toberelative {
+    position: relative;
+}
+
+.main-1 {
+    background-color: #F8FAF9;
+    padding: 5px 3%;
+    margin: 20px 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
 .card {
     background-color: #F8FAF9;
     border-radius: 45px;
@@ -42,13 +54,16 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.main-GD {
-    background-color: #F8FAF9;
-    /* background-color: rgb(7, 22, 63); */
-    /* border-radius: 45px; */
-    padding: 5px 3%;
-    margin: 20px 0;
-    font-family: 'Work Sans', sans-serif;
+.big-word {
+    font-size: 10rem;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 0.1rem;
 }
 
 .text-about p,
@@ -57,8 +72,73 @@
 .text-donaldson p {
     font-size: 1.5rem;
     color: #124838;
-    /* font-family: 'Work Sans', sans-serif; */
 }
+
+/* Donaldson CSS page */
+
+/* era ID pt titlurile din Donaldson */
+#h {
+    font-size: 3rem;
+    font-family: 'Xanh Mono', monospace;
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.tabel-donaldson-compresoare {
+    color: #124838;
+}
+
+table.tabel-donaldson-compresoare {
+    border-radius: 40px;
+    background-color: white;
+    margin: 0;
+    /* border-collapse: collapse; */
+}
+
+
+.tabel-donaldson-compresoare td:first-child {
+    border-left: none;
+}
+
+.th-tr1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #124838;
+    /* font-weight: 500; */
+    border-top: none;
+    border-bottom: 1px solid #124838;
+    padding: 0 0 0 30px;
+}
+
+/* #tds-top {
+    padding-top: 30px;
+} */
+
+.tds {
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 30px
+}
+
+.tds:hover {
+    background-color: #f0f7f3;
+    /* border: 0.5px solid #124838; */
+    border-radius: 20px;
+}
+
+/* doar orientativ */
+/* .tds {
+    padding: 5px 15px 2px 50px;
+    border: 1px solid #124838;
+}
+
+.tds:hover {
+    border-radius: 30px;
+    background-color: rgb(228, 243, 255);
+} */
+
+/* GardnerDenver CSS page */
 
 .text-gardnerdenver p {
     font-size: 1.2rem;
@@ -76,45 +156,54 @@
 }
 
 .quote-marks-opening {
-    /* float: left; */
     font-family: 'Yatra One', cursive;
     font-size: 20rem;
     color: #124838;
-    /* offset-position: 25% 75%; */
     position: absolute;
-
 }
 
 .regular-text {
-    /* font-family: 'Sulphur Point', sans-serif; */
     font-family: 'Work Sans', sans-serif;
     font-size: 1.5rem;
     padding: 5vh 10vw;
     color: #124838;
 }
 
-.regular-text-important {
+p.regular-text-important {
     font-size: 3rem;
-    /* font-family: 'Xanh Mono', monospace; */
 }
 
 .regular-text-small {
     font-family: 'Sulphur Point', sans-serif;
-    /* font-family: 'Work Sans', sans-serif; */
-    /* font-family: 'Cutive Mono', monospace; */
     font-size: 1.2rem;
     padding: 2vh 10vw 15vh 10vw;
     color: #124838;
     text-align: right;
 }
 
-.quote-author {
-    text-align: right;
+table.table-GD-c {
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    border-collapse: collapse;
+    color: #124838;
+    margin: 0;
+    padding: 50px;
 }
 
-.big-word {
-    font-size: 10rem;
-    font-family: 'Sulphur Point', sans-serif;
+.td-gd-c {
+    padding: 5px 15px 2px 50px;
+    border: 1px solid #124838;
+}
+
+.td-gd-c:hover {
+    border-radius: 30px;
+    /* background-color: rgb(176, 221, 255); */
+    background-color: rgb(228, 243, 255);
+    /* background-color: azure; */
+}
+
+.quote-author {
+    text-align: right;
 }
 
 .signature {
@@ -126,18 +215,15 @@
     color: #124838;
 }
 
-.toberelative {
-    position: relative;
-}
 
 /* test */
 
 .containertest {
-    background-color:bisque;
+    background-color: bisque;
     width: 100%;
     height: 700px;
-padding-bottom: 400px;
-/* overflow:scroll; */
+    padding-bottom: 400px;
+    /* overflow:scroll; */
 }
 
 .tobesticky {
@@ -161,4 +247,3 @@ padding-bottom: 400px;
     bottom: 2vh;
     z-index: 2;
 }
-
