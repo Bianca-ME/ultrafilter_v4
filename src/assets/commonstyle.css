@@ -54,6 +54,25 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.regular-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 5vh 10vw;
+    color: #124838;
+}
+
+p.regular-text-important {
+    font-size: 3rem;
+}
+
+.regular-text-small {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.2rem;
+    padding: 2vh 10vw 15vh 10vw;
+    color: #124838;
+    text-align: right;
+}
+
 .big-word {
     font-size: 10rem;
     font-family: 'Sulphur Point', sans-serif;
@@ -162,24 +181,7 @@ table.tabel-donaldson-compresoare {
     position: absolute;
 }
 
-.regular-text {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    padding: 5vh 10vw;
-    color: #124838;
-}
 
-p.regular-text-important {
-    font-size: 3rem;
-}
-
-.regular-text-small {
-    font-family: 'Sulphur Point', sans-serif;
-    font-size: 1.2rem;
-    padding: 2vh 10vw 15vh 10vw;
-    color: #124838;
-    text-align: right;
-}
 
 table.table-GD-c {
     font-family: 'Roboto Mono', monospace;
@@ -214,6 +216,234 @@ table.table-GD-c {
     width: 30%;
     color: #124838;
 }
+
+/* Contact CSS */
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* let's try imitate default css */
+.main-1-custom1 {
+    background-color: #F8FAF9;
+    /* padding: 5px 3%; */
+    margin: 20px 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.regular-text-custom1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    /* padding: 5vh 10vw; */
+    color: #124838;
+}
+
+.regular-text-important-custom {
+    font-size: 3rem;
+    padding-left: 740px;
+    padding-top: 5vh;
+}
+
+
+
+.inline-flex-container {
+    display: inline-flex;
+    width: 100%;
+    /* padding: 0 50px; */
+    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
+    border-top: 1px solid #124838;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.inline-flex {
+    display: inline-flex;
+    width: 100%;
+    /* padding: 0 50px; */
+    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
+    border-top: 1px solid #124838;
+}
+.contact-info {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 100px;
+    margin-left: 300px;
+
+    
+}
+
+.contact-info div:last-child {
+    /* border: 1px solid black; */
+    margin-left: 50px;
+}
+
+.underline-simple {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+/* nu stiu cum sa selectez doar formul ca sa-l trimit in dreapta paginii */
+/* .inline-flex.form-container div:last-child {
+    justify-content: flex-end;
+    border: 1px solid red;
+} */
+
+.form-container {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* border-left: 1px solid #124838; */
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: center; */
+    border-right: 1px solid #124838;
+}
+
+.form-column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* after you deselect text box */
+input, select, textarea{
+    color: rgb(250, 238, 183);
+    text-align: left;
+
+}
+
+form input,
+form textarea {
+    width: 500px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    /* padding: 15px 5px 2px 5px; */
+    /* padding: 15px; */
+    border: none;
+    /* background-color: rgb(235, 235, 235); */
+    /* background: #f0f7f3; */
+    background: rgb(8, 53, 168);
+    /* background: #F8FAF9; */
+    margin: 7px;
+    /* border-bottom: 1px solid #124838; */
+    border-radius: 0px;
+}
+
+.input1 {
+    height: 3px;
+}
+
+.input2 {
+    height: 8px;
+}
+
+.input1 {
+    height: 10px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d0e2d9;
+    opacity: 1;
+    /* Firefox */
+
+    /* dar aliniaza doar textarea pe mijloc sau nu stiu, ma mai gandesc */
+    text-align: center;
+}
+
+/* background-color: lightgreen;
+border-color: rgb(42, 236, 42); */
+/* input:valid {
+    color: rgb(253, 84, 149);
+} */
+
+/* nu merge */
+::placeholder:hover {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-decoration: wavy;
+}
+
+/* when you select text box to write inside */
+textarea:focus, input:focus {
+    color: rgb(250, 209, 27);
+    background-color: rgb(80, 110, 187);
+    border: none;
+    text-align: left;
+}
+
+textarea {
+    /* text-align: center; */
+
+    /* nu merge pe verticala ca nu e intr-un box propriu-zis */
+    vertical-align: middle;
+}
+
+/* button v1 */
+/* button {
+    background-color: #f0f7f3;
+    height: 50px;
+    width: 120px;
+    border-radius: 45px;
+    border: 0.5px solid #124838;
+    color: #124838;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+button:hover {
+    background-color: #c2e3f0;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+} */
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* button v2 */
+button {
+    /* background-color: rgb(156, 235, 208); */
+    background-color: #e6f0eb;
+    height: 25px;
+    width: 100px;
+    /* border-radius: 45px; */
+    /* border: 0.5px solid #124838; */
+    border: none;
+    color: #124838;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1rem;
+    margin: 7px;
+}
+
+button:hover {
+    background-color: #cee4d9;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+
+.map-container {
+    padding-top: 100px;
+    border-top: 1px solid #124838;
+}
+
+/* nu merge */
+.form input:hover {
+    background-color: #3adb80;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 /* test */
