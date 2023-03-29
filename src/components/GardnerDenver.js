@@ -4,14 +4,14 @@ import signature from '../assets/semnaturaMHprovizoriu.svg';
 
 export default function GardnerDenver() {
     return (
-        <main className='main-1'>
-            <div className='regular-text'>
+        <main className='main-1 margin-from-header'>
+            <div className='regular-text wide-padding'>
                 <p><span className='underline'>Gardner Denver</span> face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.</p>
                 <p className='regular-text-important'>In site-ul nostru veti regasi modele de <span className='big-word'>compresoare</span>:</p>
 
             </div>
-            <div>
-                <table class='table-GD-c'>
+            <div className='narrow-padding'>
+                <table className='table-GD-c'>
                     <tr>
                         <td className='td-gd-c'>Pentru cabinet dentare, compresoare cu piston, fara ungere – oil free</td>
                     </tr>
@@ -83,7 +83,7 @@ export default function GardnerDenver() {
                 <div className='text-gardnerdenver'>
                     <p>Lucrez din 1993 in comertul industrial cu echipamente. Pot afirma ca in orice flux tehnologic este pus in miscare folosind energiea electrica si aer compirmat. Aerul comprimat desi este produs prin consum de energie electrica, este cel mai raspnadit ca forta de miscare a mecanismelor liniilor de fabricatie si robotilor industriali. Cu aer comprimat umflam rotile camionaelor – cea mai simpla aplicatie, impingem borhotul de la fabricile de bere, scuturam sacii filtranti de la colectoarele de praf, il folosim la vopsitorii, sablare, transport pneumatic, scule de mana actionate pneumatic, actioneaza robotii industriali, cilindrii pneumatici, distribuitoare, deseori in industria alimentara sau farmaceutica intra in contact cu produsul fabricat, este respirat la masca de catre pacientii din spitale, este folosit la formarea sticlelor de PET, este inbuteliat pentru uzul salvatorilor mineri, al pompierilor sau al scafandrilor, este folosit la producerea gazelor tehnice si cate alte nenumarate aplicatii are. Aerul comprimat este definit in primul rand prin presiune si debit, temperatura si continut de impuritati – condens, ulei rezidual, particole mecanice, bacterii, iar calitatea aerului comprimat este regasita in domeniul standardului DIN ISO 8573-1.</p>
                     <p className='quote-author'>- Mihai Hristescu</p>
-                    <img className='signature' src={signature} alt='signature missing' />
+                    {/* <img className='signature' src={signature} alt='signature missing' /> */}
                 </div>
             </div>
 

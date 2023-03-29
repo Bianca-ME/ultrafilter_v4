@@ -13,7 +13,7 @@ import '../assets/DonaldsonAndGD.css';
 
 export default function Header() {
     return (
-        <div className='DonaldsonAndGD'>
+        <div className='DonaldsonAndGD margin-from-header'>
             <div className='containsPage1'>
             <div className='page1Donaldson-container'>
                 <Link to="/Donaldson" rel="noreferrer" >

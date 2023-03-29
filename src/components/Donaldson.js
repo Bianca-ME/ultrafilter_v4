@@ -8,7 +8,7 @@ import '../assets/commonstyle.css';
 export default function Donaldson() {
     return (
         // <Router>
-        <main className='main-1'>
+        <main className='main-1 wide-padding margin-from-header'>
             <div className='regular-text'>
                 <br />
                 <p>&#91; text &#93; Producem aer comprimat</p>

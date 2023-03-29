@@ -18,8 +18,8 @@ export default function Contact() {
                             <p>Web:</p>
                         </div>
                         <div>
-                            <p>0371 152 977</p>
-                            <p>004 021 3260004</p>
+                            <p>+40371 152 977</p>
+                            <p>+40213260004</p>
                             <p>office@ultrafilter.ro</p>
                             <p className='underline-simple'>https://ultrafilter.ro</p>
                         </div>

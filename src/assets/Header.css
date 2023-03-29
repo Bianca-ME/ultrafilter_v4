@@ -15,9 +15,11 @@ body {
     text-align: center;
     font-family: 'Sulphur Point', sans-serif;
     font-weight: 700;
-    font-size: 3vh;
+    /* font-size: 3vh; */
+    font-size: 22px;
     font-kerning: 10px;
-    /* background-color: white; */
+    background-color: #07163f;
+    letter-spacing: 2px;
     
     padding-bottom: 2vh;
     /* margin-right: 0px; */
@@ -28,6 +30,10 @@ body {
 
     display: flex;
     justify-content: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .visited-link {

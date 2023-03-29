@@ -9,11 +9,13 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .quote1-in-banner,
 .quote2-in-banner {
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Sulphur Point', sans-serif;
     /* font-family: 'Work Sans', sans-serif; */
     /* font-family: 'Gelasio', serif; */
     /* font-family: 'Cutive Mono', monospace; */
@@ -23,7 +25,8 @@
     font-size: 0.8rem;
     position: absolute;
     /* color: #d1e0d9; */
-    color: #b4c7be;
+    /* color: #b4c7be; */
+    color: #f8faf9;
     text-decoration: none;
 }
 
