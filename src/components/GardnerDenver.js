@@ -13,7 +13,7 @@ export default function GardnerDenver() {
             <div className='narrow-padding'>
                 <table className='table-GD-c'>
                     <tr>
-                        <td className='td-gd-c'>Pentru cabinet dentare, compresoare cu piston, fara ungere – oil free</td>
+                        <td className='td-gd-c'>Pentru cabinete dentare, compresoare cu piston, fara ungere – oil free</td>
                     </tr>
                     <tr>
                         <td className='td-gd-c'>Compresoare scroll, fara ungere</td>
@@ -60,6 +60,21 @@ export default function GardnerDenver() {
                     <tr>
                         <td className='td-gd-c'>Uscatoare prin adsorptie cu -20⁰ ÷ -70⁰ C PDP, presiune pana la 400 bar</td>
                     </tr>
+                    <tr>
+                        <td className='td-gd-c'>Turn de carbune activ – pentru retinerea uleiului residual si a hidrocarburilor absorbate accidental in masina de comprimare, pana la un rest de ulei residual de 0.003 mg/m³</td>
+                    </tr>
+                    <tr>
+                        <td className='td-gd-c'>Piese de schimb si service de intretinere</td>
+                    </tr>
+                    <tr>
+                        <td className='td-gd-c'>Comanda sincronizata pentru pana la 12 compresoare GD connect</td>
+                    </tr>
+                    <tr>
+                        <td className='td-gd-c'>Vizualizare on-line a parametrilor de functionare, avertizari si alarme, prin tehnologie GSM – iConn Gardner Denver</td>
+                    </tr>
+                    <tr>
+                        <td className='td-gd-c'>Constructii retele de aer comprimat</td>
+                    </tr>
                 </table>
 
             </div>
@@ -78,7 +93,7 @@ export default function GardnerDenver() {
                 <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a>.</p>
 
             </div>
-            <div className='toberelative'>
+            <div className='toberelative narrow-padding'>
                 <div className="quote-marks-opening">"</div>
                 <div className='text-gardnerdenver'>
                     <p>Lucrez din 1993 in comertul industrial cu echipamente. Pot afirma ca in orice flux tehnologic este pus in miscare folosind energiea electrica si aer compirmat. Aerul comprimat desi este produs prin consum de energie electrica, este cel mai raspnadit ca forta de miscare a mecanismelor liniilor de fabricatie si robotilor industriali. Cu aer comprimat umflam rotile camionaelor – cea mai simpla aplicatie, impingem borhotul de la fabricile de bere, scuturam sacii filtranti de la colectoarele de praf, il folosim la vopsitorii, sablare, transport pneumatic, scule de mana actionate pneumatic, actioneaza robotii industriali, cilindrii pneumatici, distribuitoare, deseori in industria alimentara sau farmaceutica intra in contact cu produsul fabricat, este respirat la masca de catre pacientii din spitale, este folosit la formarea sticlelor de PET, este inbuteliat pentru uzul salvatorilor mineri, al pompierilor sau al scafandrilor, este folosit la producerea gazelor tehnice si cate alte nenumarate aplicatii are. Aerul comprimat este definit in primul rand prin presiune si debit, temperatura si continut de impuritati – condens, ulei rezidual, particole mecanice, bacterii, iar calitatea aerului comprimat este regasita in domeniul standardului DIN ISO 8573-1.</p>
