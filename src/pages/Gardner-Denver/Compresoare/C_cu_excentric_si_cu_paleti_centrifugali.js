@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../../../assets/commonstyle.css';
 import gdimg1 from '../../../assets/GD/30496_24_4_18_CMPV04_RM_m.jpg';
 
@@ -48,7 +49,7 @@ export default function C_cu_excentric_si_cu_paleti_centrifugali() {
                 {/* 3 */}
                 <tr>
                     <td rowspan='9'>Cele mai simple compresoare cu intretinere minima, durata mare de exploatare. Recomandate pentru vulcanizari, vopsitorii, ateliere mici de bricolaje.</td>
-                    <td>CMPV01 Tripod</td>
+                    <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>CMPV01 Tripod</NavLink></td>
                     <td>0,12</td>
                     <td>10</td>
                     <td>1,1</td>

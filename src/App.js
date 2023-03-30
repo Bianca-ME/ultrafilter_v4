@@ -18,6 +18,7 @@ import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari
 // components GD
 import GardnerDenver from './pages/Gardner-Denver/GardnerDenver';
 import C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/C_cu_excentric_si_cu_paleti_centrifugali';
+import PDF_page_C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/PDF_page_C_cu_excentric_si_cu_paleti_centrifugali';
 
 import Breadcrumbs from './components/Breadcrumbs';
 
@@ -85,6 +86,9 @@ function App() {
                         </Route>
                         <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali'>
                             <C_cu_excentric_si_cu_paleti_centrifugali />
+                        </Route>
+                        <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>
+                            <PDF_page_C_cu_excentric_si_cu_paleti_centrifugali />
                         </Route>
 
                         <Route path="/404">
