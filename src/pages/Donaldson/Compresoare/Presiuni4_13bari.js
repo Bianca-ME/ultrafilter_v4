@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../assets/Donaldson.css';
 import '../../../assets/commonstyle.css';
 
 export default function Presiuni4_13bari () {

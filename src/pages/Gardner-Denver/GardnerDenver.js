@@ -1,6 +1,11 @@
 import React from 'react';
-import '../assets/GardnerDenver.css';
-import signature from '../assets/semnaturaMHprovizoriu.svg';
+import { NavLink } from 'react-router-dom';
+
+// import style
+import '../../assets/commonstyle.css';
+
+// import other files
+// import signature from '../assets/semnaturaMHprovizoriu.svg';
 
 export default function GardnerDenver() {
     return (
@@ -34,7 +39,7 @@ export default function GardnerDenver() {
                         <td className='td-gd-c'>Compresoare cu ungere cu apa, in gama oil free</td>
                     </tr>
                     <tr>
-                        <td className='td-gd-c'>Compresoare cu excentric si cu paleti centrifugali – vane compressors</td>
+                        <td className='td-gd-c'><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali'>Compresoare cu excentric si cu paleti centrifugali – vane compressors</NavLink></td>
                     </tr>
                     <tr>
                         <td className='td-gd-c'>Recipient de stocare ai aerului comprimat de la 270 litrii la 10000 litrii, protejati prin vopsire, galvanizare sau cu interior protejat cu vitroflex – pentru aplicatii oil free din industria farmaceutica, electronica sau alimentara;</td>

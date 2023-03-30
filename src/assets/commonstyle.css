@@ -39,9 +39,12 @@
     border: 1px solid red;
 } */
 
+
 .toberelative {
     position: relative;
 }
+
+/* SPACING */
 
 /* .margin-from-header {
     margin: 20px 0;
@@ -510,4 +513,19 @@ button:hover {
     width: 200px;
     height: auto;
     z-index: 1;
+}
+
+.simpleimg {
+    width: 300px;
+    height: auto;
+}
+
+.temptable {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }

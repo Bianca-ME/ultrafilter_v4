@@ -9,12 +9,15 @@ import About from './components/About';
 import Utile from './components/Utile';
 import Contact from './components/Contact';
 import Donaldson from './components/Donaldson';
-import GardnerDenver from './components/GardnerDenver';
 import HomePage from './components/HomePage';
 import Logo from './components/Logo';
+// components Donaldson
 import Compresoare from './pages/Donaldson/Compresoare';
 import Presiuni4_13bari from './pages/Donaldson/Compresoare/Presiuni4_13bari';
 import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari';
+// components GD
+import GardnerDenver from './pages/Gardner-Denver/GardnerDenver';
+import C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/C_cu_excentric_si_cu_paleti_centrifugali';
 
 import Breadcrumbs from './components/Breadcrumbs';
 
@@ -68,7 +71,7 @@ function App() {
                         <Route exact path='/Donaldson'>
                             <Donaldson />
                         </Route>
-                        <Route path='/GardnerDenver'>
+                        <Route exact path='/GardnerDenver'>
                             <GardnerDenver />
                         </Route>
                         <Route exact path='/Donaldson/compresoare'>
@@ -79,6 +82,9 @@ function App() {
                         </Route>
                         <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
                             <Presiuni20_400bari />
+                        </Route>
+                        <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali'>
+                            <C_cu_excentric_si_cu_paleti_centrifugali />
                         </Route>
 
                         <Route path="/404">
