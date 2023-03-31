@@ -21,6 +21,7 @@ import C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Com
 import PDF_page_C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/PDF_page_C_cu_excentric_si_cu_paleti_centrifugali';
 import Cabinete_dentare_compresoare_fara_ungere from './pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import C_pt_scafandrii_aer_respirabil from './pages/Gardner-Denver/Compresoare/C_pt_scafandrii_aer_respirabil';
+import C_cu_piston_debite_mici from './pages/Gardner-Denver/Compresoare/C_cu_piston_debite_mici';
 
 import Breadcrumbs from './components/Breadcrumbs';
 
@@ -98,8 +99,11 @@ function App() {
                         <Route exact path='/GardnerDenver/C_pt_scafandrii_aer_respirabil'>
                             <C_pt_scafandrii_aer_respirabil />
                         </Route>
+                        <Route exact path='/GardnerDenver/C_cu_piston_debite_mici'>
+                            <C_cu_piston_debite_mici />
+                        </Route>
 
-                        {/* C_pt_scafandrii_aer_respirabil */}
+                        {/*  */}
 
                         <Route path="/404">
                             <NotFound/>

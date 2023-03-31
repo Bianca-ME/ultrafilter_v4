@@ -44,12 +44,14 @@ export default function GardnerDenver() {
                                     </NavLink>
                                 </span>
                                 <br/>
-                                <span class="details1">
+                                {/* <span class="details1">
                                 &#10095;  Compresoare cu excentric si paleti_Champion vane compressors
                                 </span>
-                                <br/>
+                                <br/> */}
                                 <span class="details1">
-                                &#10095;  Compresoare cu piston_debite mici
+                                    <NavLink to='/GardnerDenver/C_cu_piston_debite_mici'>
+                                        &#10095;  Compresoare cu piston_debite mici
+                                    </NavLink>
                                 </span>
                             </details></td>
                         

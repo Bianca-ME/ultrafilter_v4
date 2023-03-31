@@ -1,26 +1,29 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../../../assets/commonstyle.css';
-import gdimg1 from '../../../assets/GD/30496_24_4_18_CMPV04_RM_m.jpg';
+import gdimg1 from '../../../assets/GD/32420_23_10_18_CBA22_OPEN_m_1.jpg';
+import gdimg2 from '../../../assets/GD/32481_25_10_18_CBA36_OPEN_m_2.jpg';
 
-export default function C_pt_scafandrii_aer_respirabil () {
+export default function C_pt_scafandrii_aer_respirabil() {
     return (
         <main className='main-1 margin-from-header wide-padding'>
-            <p className='regular-text-important'>Champion Rotary Vane Compressors - Compresoare Champion cu excentric si paleti</p>
+            <p className='regular-text-important'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
-            <p className='regular-text'>Anduranta mare in exploatare
-                Intretinere minima;
-                Doi ani garantie standard;
-                Design foarte simplist;
-                Actionate prin cuplaj elastic de motoare electrice;
-                Nivel scazut de zgomot;
-                Fara reductor pentru transmisie;
-                Calitate rificata a aerului reulat;
-                Ungere cu ulei;
-                Fara rulmenti care sa preia fortele axiale – fara forte axiale in camera de compresie, avantaj fata de compresoarele cu suruburi elicoidale.
+            <img className='simpleimg' src={gdimg2} alt='image missing' />
+            <p className='regular-text'>
+                Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.
+                Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:
+                Timpi scurti de umplere a buteliilor;
+                Functionare automata;
+                Diverse modele de motoare de actionare;
+                Usor de utilizat;
+                Montate pe sasiu sau in carcasa isonorizata;
+                Actionate cu motor electric sau
+                cu motor termic Honda;
+                Inlcud o varietate larga de accesorii.
             </p>
 
-            
+
 
             <table className='temptable'>
                 {/* 1 */}
@@ -82,87 +85,81 @@ export default function C_pt_scafandrii_aer_respirabil () {
                 {/* 6 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>CBA 16 ET SMART DIN300B</td>
-                    315	300	5,5	77	400	6min20s			
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>CBA 16 ET SMART DIN300B</td>			
+                    <td>315</td>
+                    <td>300</td>
+                    <td>5,5</td>
+                    <td>77</td>
+                    <td>400</td>
+                    <td>6min20s</td>
                 </tr>
                 {/* 7 */}
                 <tr>
                     {/* <td></td> */}
                     <td>CBA 22 OPEN DIN300B</td>
-                    400	300	7,5	76	400	5	
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>400</td>
+                    <td>300</td>
+                    <td>7,5</td>
+                    <td>76</td>
+                    <td>400</td>
+                    <td>5</td>
                 </tr>
                 {/* 8 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>CMPR 05 PR 07 SDS</td>		
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>CBA 30 OPEN DIN300B</td>	
+                    <td>500</td>
+                    <td>300</td>
+                    <td>9,2</td>
+                    <td>76</td>
+                    <td>400</td>
+                    <td>4</td>
                 </tr>
+
                 {/* 9 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>CBA 30 OPEN DIN300B</td>
-                    500	300	9,2	76	400	4	
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>CBA 36 OPEN DIN300B</td>
+	                <td>600</td>
+                    <td>300</td>
+                    <td>11</td>
+                    <td>76</td>
+                    <td>400</td>
+                    <td>3</td>
                 </tr>
                 {/* 10 */}
                 <tr>
                     <td rowspan='3'>Compresoare HP, actionate cu motor termic, racite cu aer, presiuni de refulare de 232 si 300 bar.</td>
-                    <td>CBA 36 OPEN DIN300B</td>
-                    600	300	11	76	400	3		
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+		            <td>CBA 6 SH DIN300B Honda</td>
+                    <td>100</td>
+                    <td>300</td>
+                    <td>4</td>
+                    <td>101</td>
+                    <td>Benzina</td>
+                    <td>20</td>
                 </tr>
                 {/* 11 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>CBA 6 SH DIN300B Honda</td>	
-                    100	300	4	101	Benzina	20	
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>CBA ERGO 16 SH DIB300B Honda</td>
+                    <td>315</td>
+                    <td>300</td>
+                    <td>6,3</td>
+                    <td>96</td>
+                    <td>Benzina</td>
+                    <td>8min30s</td>
                 </tr>
+                {/* 12 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>CBA ERGO 16 SH DIB300B Honda</td>	
-                    315	300	6,3	96	Benzina	8min30s	
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                {/* lipseste unul CBA ERGO16 Lombardini DIN300B */}
-                {/* 315	300	6,6	96	Benzina	6min30s */}
+                    <td>CBA ERGO16 Lombardini DIN300B</td>	
+                    <td>315</td>
+                    <td>300</td>
+                    <td>6,6</td>
+                    <td>96</td>
+                    <td>Benzina</td>
+                    <td>6min30s</td>
+                </tr>				
             </table>
 
         </main>
