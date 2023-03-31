@@ -529,3 +529,24 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
+/* si mai mult test */
+
+summary {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.details summary {
+  background-color: crimson;
+}
+
+.details,
+.details1 {
+  font-weight: normal;
+  /* background-color: rgba(230, 245, 22, 0.904); */
+}
+
+.details1 {
+  padding-left: 30px;
+}

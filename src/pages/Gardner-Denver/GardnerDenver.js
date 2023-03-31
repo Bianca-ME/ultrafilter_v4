@@ -24,7 +24,35 @@ export default function GardnerDenver() {
                         <td className='td-gd-c'>Compresoare scroll, fara ungere</td>
                     </tr>
                     <tr>
-                        <td className='td-gd-c'>Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele</td>
+                        {/* <td className='td-gd-c'>Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele</td> */}
+                        {/* test */}
+                        <td className='td-gd-c'>
+                            <details class="clickToOpen">
+                                <summary>
+                                    Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele
+                                </summary>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/Cabinete_dentare_compresoare_fara_ungere'>
+                                        &#10095;  Cabinete dentare_compresoare fara ungere
+                                    </NavLink>
+                                {/*  */}
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/C_pt_scafandrii_aer_respirabil'>
+                                        &#10095;  Compresaore pentru scafandrii_aer respirabil
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                &#10095;  Compresoare cu excentric si paleti_Champion vane compressors
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                &#10095;  Compresoare cu piston_debite mici
+                                </span>
+                            </details></td>
+                        
                     </tr>
                     <tr>
                         <td className='td-gd-c'>Compresoare cu suruburi elicoidale si injectie de ulei, cu puteri de la 2.2 Kw la 400 kw si presiuni de refulare de la 7.5 bar pana la 13 bar cu debit/turatie fixa sau turatie vadiabila</td>

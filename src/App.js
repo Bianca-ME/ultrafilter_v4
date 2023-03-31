@@ -19,6 +19,8 @@ import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari
 import GardnerDenver from './pages/Gardner-Denver/GardnerDenver';
 import C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/C_cu_excentric_si_cu_paleti_centrifugali';
 import PDF_page_C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/PDF_page_C_cu_excentric_si_cu_paleti_centrifugali';
+import Cabinete_dentare_compresoare_fara_ungere from './pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
+import C_pt_scafandrii_aer_respirabil from './pages/Gardner-Denver/Compresoare/C_pt_scafandrii_aer_respirabil';
 
 import Breadcrumbs from './components/Breadcrumbs';
 
@@ -90,6 +92,14 @@ function App() {
                         <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>
                             <PDF_page_C_cu_excentric_si_cu_paleti_centrifugali />
                         </Route>
+                        <Route exact path='/GardnerDenver/Cabinete_dentare_compresoare_fara_ungere'>
+                            <Cabinete_dentare_compresoare_fara_ungere />
+                        </Route>
+                        <Route exact path='/GardnerDenver/C_pt_scafandrii_aer_respirabil'>
+                            <C_pt_scafandrii_aer_respirabil />
+                        </Route>
+
+                        {/* C_pt_scafandrii_aer_respirabil */}
 
                         <Route path="/404">
                             <NotFound/>
