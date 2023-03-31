@@ -54,13 +54,60 @@ export default function GardnerDenver() {
                                     </NavLink>
                                 </span>
                             </details></td>
-                        
                     </tr>
                     <tr>
-                        <td className='td-gd-c'>Compresoare cu suruburi elicoidale si injectie de ulei, cu puteri de la 2.2 Kw la 400 kw si presiuni de refulare de la 7.5 bar pana la 13 bar cu debit/turatie fixa sau turatie vadiabila</td>
+                        <td className='td-gd-c'>
+                            <details class="clickToOpen">
+                                <summary>
+                                    {/* PREZENTAREA GENERALA INCA NU STIU UNDE SA O BAG */}
+                                    Compresoare cu suruburi elicoidale si injectie de ulei, cu puteri de la 2.2 Kw la 400 kw si presiuni de refulare de la 7.5 bar pana la 13 bar cu debit/turatie fixa sau turatie vadiabila
+                                </summary>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/ESM_23_29'>
+                                        &#10095;  ESM 23-29
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/ESM_30_45'>
+                                        &#10095;  ESM 30-45
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/ESM_55_75'>
+                                        &#10095;  ESM 55-75
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/ESM_90_132'>
+                                        &#10095;  ESM 90-132
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/ESM_160_290'>
+                                        &#10095;  ESM 160-290
+                                    </NavLink>
+                                </span>
+                                <br/>
+                                <span class="details1">
+                                    <NavLink to='/GardnerDenver/FM_7_22'>
+                                        &#10095;  FM 7-22
+                                    </NavLink>
+                                </span>
+                                <br/>
+                            </details>
+                            
+                            </td>
                     </tr>
                     <tr>
-                        <td className='td-gd-c'>Compresoare portabile 6.3 kw ÷ 15.5 Kw cu suruburi elicoidale si injectie de ulei</td>
+                        <td className='td-gd-c'>
+                            <NavLink to='/GardnerDenver/C_portabile'>
+                                Compresoare portabile 6.3 kw ÷ 15.5 Kw cu suruburi elicoidale si injectie de ulei
+                            </NavLink>
+                        </td>
                     </tr>
                     <tr>
                         <td className='td-gd-c'>Compresoare cu suruburi elicoidale, in doua trepte de compresie, fara ungere – oil free, inclusiv cea mai avansata gama de compresie oil free – Ultima Gardner Denver</td>

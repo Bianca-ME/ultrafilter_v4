@@ -22,6 +22,11 @@ import PDF_page_C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-D
 import Cabinete_dentare_compresoare_fara_ungere from './pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import C_pt_scafandrii_aer_respirabil from './pages/Gardner-Denver/Compresoare/C_pt_scafandrii_aer_respirabil';
 import C_cu_piston_debite_mici from './pages/Gardner-Denver/Compresoare/C_cu_piston_debite_mici';
+import C_portabile from './pages/Gardner-Denver/Compresoare/C_portabile';
+import ESM_23_29 from './pages/Gardner-Denver/Compresoare/ESM_23_29';
+import ESM_30_45 from './pages/Gardner-Denver/Compresoare/ESM_30_45';
+import ESM_55_75 from './pages/Gardner-Denver/Compresoare/ESM_55_75';
+
 
 import Breadcrumbs from './components/Breadcrumbs';
 
@@ -102,8 +107,20 @@ function App() {
                         <Route exact path='/GardnerDenver/C_cu_piston_debite_mici'>
                             <C_cu_piston_debite_mici />
                         </Route>
+                        <Route exact path='/GardnerDenver/C_portabile'>
+                            <C_portabile />
+                        </Route>
+                        <Route exact path='/GardnerDenver/ESM_23_29'>
+                            <ESM_23_29 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/ESM_30_45'>
+                            <ESM_30_45 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/ESM_55_75'>
+                            <ESM_55_75 />
+                        </Route>
 
-                        {/*  */}
+                        {/* /GardnerDenver/C_portabile */}
 
                         <Route path="/404">
                             <NotFound/>
