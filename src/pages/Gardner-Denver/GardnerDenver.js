@@ -21,7 +21,11 @@ export default function GardnerDenver() {
                         <td className='td-gd-c'>Pentru cabinete dentare, compresoare cu piston, fara ungere – oil free</td>
                     </tr>
                     <tr>
-                        <td className='td-gd-c'>Compresoare scroll, fara ungere</td>
+                        <td className='td-gd-c'>
+                            <NavLink to='/GardnerDenver/C_oil_free_tip_scroll'>
+                                Compresoare scroll, fara ungere
+                            </NavLink>
+                        </td>
                     </tr>
                     <tr>
                         {/* <td className='td-gd-c'>Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele</td> */}

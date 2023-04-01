@@ -29,6 +29,7 @@ import ESM_55_75 from './pages/Gardner-Denver/Compresoare/ESM_55_75';
 import ESM_90_132 from './pages/Gardner-Denver/Compresoare/ESM_90_132';
 import ESM_VS_160_290 from './pages/Gardner-Denver/Compresoare/ESM_VS_160_290';
 import FM_7_22 from './pages/Gardner-Denver/Compresoare/FM_7_22';
+import C_oil_free_tip_scroll from './pages/Gardner-Denver/Compresoare/C_oil_free_tip_scroll';
 
 
 import Breadcrumbs from './components/Breadcrumbs';
@@ -130,6 +131,9 @@ function App() {
                         </Route>
                         <Route exact path='/GardnerDenver/FM_7_22'>
                             <FM_7_22 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/C_oil_free_tip_scroll'>
+                            <C_oil_free_tip_scroll />
                         </Route>
 
                         {/* /GardnerDenver/C_portabile */}
