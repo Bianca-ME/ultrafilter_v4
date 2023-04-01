@@ -26,6 +26,9 @@ import C_portabile from './pages/Gardner-Denver/Compresoare/C_portabile';
 import ESM_23_29 from './pages/Gardner-Denver/Compresoare/ESM_23_29';
 import ESM_30_45 from './pages/Gardner-Denver/Compresoare/ESM_30_45';
 import ESM_55_75 from './pages/Gardner-Denver/Compresoare/ESM_55_75';
+import ESM_90_132 from './pages/Gardner-Denver/Compresoare/ESM_90_132';
+import ESM_VS_160_290 from './pages/Gardner-Denver/Compresoare/ESM_VS_160_290';
+import FM_7_22 from './pages/Gardner-Denver/Compresoare/FM_7_22';
 
 
 import Breadcrumbs from './components/Breadcrumbs';
@@ -118,6 +121,15 @@ function App() {
                         </Route>
                         <Route exact path='/GardnerDenver/ESM_55_75'>
                             <ESM_55_75 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/ESM_90_132'>
+                            <ESM_90_132 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/ESM_VS_160_290'>
+                            <ESM_VS_160_290 />
+                        </Route>
+                        <Route exact path='/GardnerDenver/FM_7_22'>
+                            <FM_7_22 />
                         </Route>
 
                         {/* /GardnerDenver/C_portabile */}

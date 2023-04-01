@@ -87,7 +87,7 @@ export default function GardnerDenver() {
                                 </span>
                                 <br/>
                                 <span class="details1">
-                                    <NavLink to='/GardnerDenver/ESM_160_290'>
+                                    <NavLink to='/GardnerDenver/ESM_VS_160_290'>
                                         &#10095;  ESM 160-290
                                     </NavLink>
                                 </span>
