@@ -9,7 +9,8 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    z-index: 2;
+    /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
+    /* z-index: 2; */
 }
 
 .quote1-in-banner,

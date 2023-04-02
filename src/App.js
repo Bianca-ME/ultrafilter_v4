@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Redirect, Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
+
+
 
 // components
 import NotFound from './components/NotFound';
@@ -42,19 +44,23 @@ function App() {
     const [showHomePage, setShowHomePage] = useState(false);
 
     function handleLogoClick() {
-      setShowHomePage(true);
+        setShowHomePage(true);
     }
 
-    // TEST >
 
-
-    // TEST <
 
     // END OF JAVASCRIPT
 
     return (
-        <div className='home-page'> 
-        {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
+
+
+        <div className='home-page'>
+
+
+            
+
+
+            {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
 
             <Router>
                 <main>
@@ -139,8 +145,8 @@ function App() {
                         {/* /GardnerDenver/C_portabile */}
 
                         <Route path="/404">
-                            <NotFound/>
-                            </Route>
+                            <NotFound />
+                        </Route>
                         <Redirect to="/404" />
                         {/* niu merge not found */}
                         {/* <Route path='*' component={NotFound}/> */}

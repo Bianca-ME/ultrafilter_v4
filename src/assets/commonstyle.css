@@ -484,7 +484,7 @@ button:hover {
     /* overflow:scroll; */
 }
 
-.tobesticky {
+/* .tobesticky {
     position: sticky;
     font-size: 2rem;
     color: red;
@@ -492,7 +492,7 @@ button:hover {
     bottom: 0.5vh;
     top: 0.5vh;
     z-index: 2;
-}
+} */
 
 .imgtest {
     height: 100%;
@@ -549,4 +549,10 @@ summary {
 
 .details1 {
   padding-left: 30px;
+}
+
+.bring-slide-to-front {
+    position: absolute;
+    z-index: 100;
+    font-family: 'Work Sans', sans-serif;
 }

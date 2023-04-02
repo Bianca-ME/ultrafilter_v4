@@ -33,7 +33,8 @@ body {
 
     position: sticky;
     top: 0;
-    z-index: 5;
+    /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
+    /* z-index: 5; */
 }
 
 .visited-link {
