@@ -9,7 +9,6 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
 }
 /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
 /* z-index: 2; */

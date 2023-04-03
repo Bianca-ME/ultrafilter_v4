@@ -8,6 +8,7 @@ import '../../assets/commonstyle.css';
 // import signature from '../assets/semnaturaMHprovizoriu.svg';
 import gdimg1 from '../../assets/GD/30496_24_4_18_CMPV04_RM_m.jpg';
 // import testfile from '';
+import arrow from '../../assets/north-east-arrow.svg';
 import Cabinete_dentare_compresoare_fara_ungere from './Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import C_oil_free_tip_scroll from './Compresoare/C_oil_free_tip_scroll';
 // import Cabinete_dentare_compresoare_fara_ungere from './Compresoare/Cabinete_dentare_compresoare_fara_ungere';
@@ -108,14 +109,14 @@ export default function GardnerDenver() {
             </div>
 
             {/* COMPRESSORS [list of buttons] */}
-            <div className='wide-padding'>
+            <div className='regular-text wide-padding'>
                 <p>oil free:</p>
-                <button onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
-                    pentru cabinete dentare, compresoare cu piston, fara ungere – oil free
+                <button className='compressors-buttons' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                    pentru cabinete dentare, compresoare cu piston, fara ungere – oil free  <img className='arrow' src={arrow} alt='svg missing' />
                 </button>
                 <br/>
-                <button onClick={() => setState({ pane_C_oil_free_tip_scroll: true })}>
-                    compresoare scroll, fara ungere
+                <button  className='compressors-buttons' onClick={() => setState({ pane_C_oil_free_tip_scroll: true })}>
+                    compresoare scroll, fara ungere  <img className='arrow' src={arrow} alt='svg missing' />
                 </button>
                 <br/>
                 {/* <p>Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele:</p>
