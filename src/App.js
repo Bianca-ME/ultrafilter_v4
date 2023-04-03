@@ -55,11 +55,6 @@ function App() {
 
 
         <div className='home-page'>
-
-
-            
-
-
             {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
 
             <Router>

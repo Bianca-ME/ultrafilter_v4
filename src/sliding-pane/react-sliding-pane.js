@@ -134,11 +134,12 @@ ReactSlidingPane.propTypes = {
 function IconClose() {
   return /*#__PURE__*/React__default["default"].createElement("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 13 22"
+    viewBox: "0 0 24 24"
   }, /*#__PURE__*/React__default["default"].createElement("path", {
     fill: "currentColor",
     fillRule: "evenodd",
-    d: "M4 11l8 8c.6.5.6 1.5 0 2-.5.6-1.5.6-2 0l-9-9c-.6-.5-.6-1.5 0-2l9-9c.5-.6 1.5-.6 2 0 .6.5.6 1.5 0 2l-8 8z"
+    clipRule: "evenodd",
+    d: "M12 11.293l10.293-10.293.707.707-10.293 10.293 10.293 10.293-.707.707-10.293-10.293-10.293 10.293-.707-.707 10.293-10.293-10.293-10.293.707-.707 10.293 10.293z"
   }));
 }
 

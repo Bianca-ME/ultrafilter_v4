@@ -14,8 +14,8 @@ return (
                 <img className='logo-home-page' src={logo} alt="Ultrafilter logo can.t be seen"></img>
             </Link>
         </div>
-        <div className='quote1-in-banner'><p>distribuitor de compresoare si filtre industriale</p></div>
-        <div className='quote2-in-banner'><p>tehnologie pentru un mediu mai curat</p></div>
+        {/* <div className='quote1-in-banner'><p>distribuitor de compresoare si filtre industriale</p></div>
+        <div className='quote2-in-banner'><p>tehnologie pentru un mediu mai curat</p></div> */}
     </div>
 )
 }

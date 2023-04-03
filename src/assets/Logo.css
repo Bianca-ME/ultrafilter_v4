@@ -10,26 +10,29 @@
     display: flex;
     justify-content: center;
     /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
-    /* z-index: 2; */
 }
+/* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
+/* z-index: 2; */
 
 .quote1-in-banner,
 .quote2-in-banner {
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Sulphur Point', sans-serif;
-    /* font-family: 'Work Sans', sans-serif; */
-    /* font-family: 'Gelasio', serif; */
-    /* font-family: 'Cutive Mono', monospace; */
-/* font-family: 'Xanh Mono', monospace; */
-    /* font-weight: 600; */
     font-style: italic;
     font-size: 0.8rem;
     position: absolute;
-    /* color: #d1e0d9; */
-    /* color: #b4c7be; */
     color: #f8faf9;
     text-decoration: none;
 }
+/* deleted */
+/* font-family: 'Roboto Mono', monospace; */
+/* font-family: 'Work Sans', sans-serif; */
+/* font-family: 'Gelasio', serif; */
+/* font-family: 'Cutive Mono', monospace; */
+/* font-family: 'Xanh Mono', monospace; */
+/* font-weight: 600; */
+/* color: #d1e0d9; */
+/* color: #b4c7be; */
+
 
 .quote1-in-banner {
     width: 25%;
