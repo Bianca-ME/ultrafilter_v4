@@ -9,6 +9,8 @@ import '../../assets/commonstyle.css';
 import gdimg1 from '../../assets/GD/30496_24_4_18_CMPV04_RM_m.jpg';
 // import testfile from '';
 import Cabinete_dentare_compresoare_fara_ungere from './Compresoare/Cabinete_dentare_compresoare_fara_ungere';
+import C_oil_free_tip_scroll from './Compresoare/C_oil_free_tip_scroll';
+// import Cabinete_dentare_compresoare_fara_ungere from './Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 
 
 // test sliding pane
@@ -25,10 +27,8 @@ export default function GardnerDenver() {
 
 
     // TEST sliding pane >
-
     const [state, setState] = useState({
-        isPaneOpen: false,
-        isPaneOpenLeft: false,
+        pane_Cabinete_dentare_compresoare_fara_ungere: false,
     });
     // TEST <
 
@@ -37,46 +37,69 @@ export default function GardnerDenver() {
         <main className='main-1 margin-from-header'>
 
 
-            {/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */}
-            {/* TEST sliding pane > */}
+            {/* /////////////////////////////////////////////////////////////////////// */}
+            {/* sliding pane > */}
 
-            {/* <div style={{ marginTop: "32px" }}>
-                <button onClick={() => setState({ isPaneOpenLeft: true })}>
-                    Click me to open left pane with 20% width!
-                </button>
-            </div> */}
+            {/* sliding pane: Cabinete_dentare_compresoare_fara_ungere */}
             <SlidingPane
                 className="some-custom-class"
                 overlayClassName="some-custom-overlay-class"
-                isOpen={state.isPaneOpen}
+                isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
                 // title="Champion Rotary Vane Compressors - Compresoare Champion cu excentric si paleti"
                 // subtitle="Optional subtitle."
                 onRequestClose={() => {
                     // triggered on "<" on left top click or on outside click
-                    setState({ isPaneOpen: false });
+                    setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
                 }}
             >
                 <div className='bring-slide-to-front'>
                     <Cabinete_dentare_compresoare_fara_ungere />
-
                 </div>
                 {/* <br />
                 <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
             </SlidingPane>
 
-            {/* <SlidingPane
-                closeIcon={<div>Some div containing custom close icon.</div>}
-                isOpen={state.isPaneOpenLeft}
-                title="Hey, it is optional pane title.  I can be React component too."
-                from="left"
-                width="200px"
-                onRequestClose={() => setState({ isPaneOpenLeft: false })}
+            {/* sliding pane: C_oil_free_tip_scroll */}
+            <SlidingPane
+                className="some-custom-class"
+                overlayClassName="some-custom-overlay-class"
+                isOpen={state.pane_C_oil_free_tip_scroll}
+                // title="Champion Rotary Vane Compressors - Compresoare Champion cu excentric si paleti"
+                // subtitle="Optional subtitle."
+                onRequestClose={() => {
+                    // triggered on "<" on left top click or on outside click
+                    setState({ pane_C_oil_free_tip_scroll: false });
+                }}
             >
-                <div>And I am pane content on left.</div>
-            </SlidingPane> */}
+                <div className='bring-slide-to-front'>
+                    <C_oil_free_tip_scroll />
+                </div>
+                {/* <br />
+                <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
+            </SlidingPane>
 
-            {/* TEST sliding pane < */}
-            {/* //////////////////////////////////////////////////////////////////////////////////////////////// */}
+            {/* sliding pane: Cabinete_dentare_compresoare_fara_ungere */}
+            <SlidingPane
+                className="some-custom-class"
+                overlayClassName="some-custom-overlay-class"
+                isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
+                // title="Champion Rotary Vane Compressors - Compresoare Champion cu excentric si paleti"
+                // subtitle="Optional subtitle."
+                onRequestClose={() => {
+                    // triggered on "<" on left top click or on outside click
+                    setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
+                }}
+            >
+                <div className='bring-slide-to-front'>
+                    <Cabinete_dentare_compresoare_fara_ungere />
+                </div>
+                {/* <br />
+                <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
+            </SlidingPane>
+
+            
+            {/* /////////////////////////////////////////////////////////////////////// */}
+            {/* sliding pane < */}
 
             {/* presentation text GD */}
             <div className='regular-text wide-padding'>
@@ -84,11 +107,21 @@ export default function GardnerDenver() {
                 <p className='regular-text-important'>In site-ul nostru veti regasi modele de <span className='big-word'>compresoare</span>:</p>
             </div>
 
-            {/* compressors [list of buttons] */}
-            <div>
-                <button onClick={() => setState({ isPaneOpen: true })}>
-                    Pentru cabinete dentare, compresoare cu piston, fara ungere – oil free
+            {/* COMPRESSORS [list of buttons] */}
+            <div className='wide-padding'>
+                <p>oil free:</p>
+                <button onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                    pentru cabinete dentare, compresoare cu piston, fara ungere – oil free
                 </button>
+                <br/>
+                <button onClick={() => setState({ pane_C_oil_free_tip_scroll: true })}>
+                    compresoare scroll, fara ungere
+                </button>
+                <br/>
+                {/* <p>Compresoare cu piston, cu presiuni de refulare de 8 ÷ 15 bar si puteri instalate intre 1.1 si 15 Kw, cu transmisie directa sau prin curele:</p>
+                <button onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                Cabinete dentare_compresoare fara ungere
+                </button> */}
             </div>
 
 

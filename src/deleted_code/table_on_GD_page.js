@@ -4,7 +4,7 @@
                     <tr>
                         {/* <td className='td-gd-c'>Pentru cabinete dentare, compresoare cu piston, fara ungere – oil free</td> */}
                         {/* <td>
-                            <button onClick={() => setState({ isPaneOpen: true })}>
+                            <button onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
                             <NavLink to='/GardnerDenver/Cabinete_dentare_compresoare_fara_ungere'>
                                 Pentru cabinete dentare, compresoare cu piston, fara ungere – oil free
                             </NavLink>
@@ -19,7 +19,7 @@
                             </NavLink>
                         </td> */}
                         <td>
-                            <button onClick={() => setState({ isPaneOpen: true })}>
+                            <button onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
                                 Compresoare scroll, fara ungere
                             </button>
                         </td>
