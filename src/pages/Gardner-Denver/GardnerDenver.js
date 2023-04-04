@@ -72,7 +72,7 @@ export default function GardnerDenver() {
                     setState({ pane_C_oil_free_tip_scroll: false });
                 }}
             >
-                <div className='bring-slide-to-front'>
+                <div className='bring-slide-to-front  stop-background-scroll'>
                     <C_oil_free_tip_scroll />
                 </div>
                 {/* <br />
