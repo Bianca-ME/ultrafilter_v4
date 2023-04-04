@@ -4,7 +4,7 @@ import '../assets/About.css'
 
 export default function About () {
     return (
-        <main className='main-1 regular-text margin-from-header wide-padding'>
+        <main className='white-background regular-text margin-from-header wide-padding'>
             <p>Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in <span className='underline'>domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide</span>.</p>
             <br/>
             <p>Actualmente ne consideram o firma inca mica, dar cu mare flexibililtate si dinamism cu un personal compus din 12 angajati, cu acoperire in zonele invecinate cu Satu Mare – Timisoara, Brasov, Sibiu, Ploiesti, Bucuresti si Constanta.</p>

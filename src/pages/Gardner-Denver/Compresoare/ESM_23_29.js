@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/22581_23_6_16_ESM23_CLOSED_SIDE_VIEW2_INT
 
 export default function ESM_23_29 () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 23, ESM 26, ESM 29 si cu turatie variabila VS 23, VS 26, VS 29 optional cu uscator de aer prin refrigerare – integrat</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>

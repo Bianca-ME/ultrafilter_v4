@@ -6,7 +6,7 @@ import gdimg2 from '../../../assets/GD/41728_22_1_21_CHAMPION_DUPLEX_INTERNALS_m
 
 export default function C_oil_free_tip_scroll () {
     return (
-        <main className='main-1 margin-from-header narrow-padding'>
+        <main className='white-background margin-from-header narrow-padding'>
             <p className='regular-text-important'>Compresoare Champion, 100% oil free, bloc de compresie scroll</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <img className='simpleimg' src={gdimg2} alt='image missing' />

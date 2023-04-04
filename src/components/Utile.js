@@ -4,7 +4,7 @@ import '../assets/commonstyle.css';
 
 export default function Utile () {
     return (
-        <main className='main-1 regular-text margin-from-header wide-padding'>
+        <main className='white-background regular-text margin-from-header wide-padding'>
             {/* temporary content */}
             <p>design page --- WORK IN PROGRESS</p>
             <p>links:</p>

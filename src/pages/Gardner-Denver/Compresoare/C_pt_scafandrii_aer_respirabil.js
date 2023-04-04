@@ -6,7 +6,7 @@ import gdimg2 from '../../../assets/GD/32481_25_10_18_CBA36_OPEN_m_2.jpg';
 
 export default function C_pt_scafandrii_aer_respirabil() {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <img className='simpleimg' src={gdimg2} alt='image missing' />

@@ -6,7 +6,7 @@ import gdimg2 from '../../../assets/GD/41543_15_1_21_ESM_FINAL_INTERNALS_m.jpg';
 
 export default function ESM_30_45 () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 30, ESM 37, ESM 45, ESM 30e, ESM 37e, ESM 45e si cu turatie variabila VS 30, VS 37, VS 45, VS 37e, VS 45e</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <img className='simpleimg' src={gdimg2} alt='image missing' />

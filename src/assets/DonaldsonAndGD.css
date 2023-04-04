@@ -7,18 +7,17 @@
 } */
 
 .DonaldsonAndGD {
-    /* margin-top: 2vh; */
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     display: flex;
-    /* testing */
-    /* background-color: pink; */
-    /* border: 1px solid pink; */
     width: 100vw;
     height: 50vh;
-    /* align-items: center; nu mai are rost pentru ca nu se mai aplica dupa ce creez child div container of logo */
-    /* border-bottom: 1px solid white; */
 }
+/* testing */
+/* background-color: pink; */
+/* border: 1px solid pink; */
+/* align-items: center; nu mai are rost pentru ca nu se mai aplica dupa ce creez child div container of logo */
+/* border-bottom: 1px solid white; */
 
 .page1Donaldson {
     width: 30vw;
@@ -32,13 +31,14 @@
     padding-top: 100px;
     padding-bottom: 100px;
     border-right: 1px solid rgb(255, 255, 255);
-}
+}*/
 
-.containsPage2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-right: 3px solid rgb(102, 240, 60);
-} */
+/* .containsPage2 {
+    border-bottom: 1px solid black;
+}  */
+/* padding-top: 100px;
+padding-bottom: 100px;
+border-right: 3px solid rgb(102, 240, 60); */
 
 .page1Donaldson-container,
 .page2GardnerDenver-container {

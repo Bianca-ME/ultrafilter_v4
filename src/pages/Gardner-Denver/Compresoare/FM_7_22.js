@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/51313_7_2_23_FM7_ELITE_RENDER_FRAME_1_FRO
 
 export default function FM_7_22 () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare Champion cu suruburi elicoidale si ungere cu ulei</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>

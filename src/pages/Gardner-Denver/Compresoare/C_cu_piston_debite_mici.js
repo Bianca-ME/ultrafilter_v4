@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/34002_28_3_19_CA5_BP_FT55_m.jpg';
 
 export default function C_cu_piston_debite_mici () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>

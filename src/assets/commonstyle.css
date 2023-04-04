@@ -58,12 +58,23 @@
     padding: 5px 3%;
 }
 
-.main-1 {
+/* get font out from white-backgr */
+.white-background {
     /* background-color: #F8FAF9; */
     background-color: #ffffff;
-    /* padding: 5px 3%; */
-    /* margin: 20px 0; */
     font-family: 'Work Sans', sans-serif;
+}
+
+.soft-green-background {
+    background-color: #f8faf9;
+}
+
+.dark-blue-background {
+    background-color: #07163f;
+}
+
+.white-font {
+    color: white;
 }
 
 .card {
@@ -98,19 +109,25 @@ p.regular-text-important {
     font-family: 'Sulphur Point', sans-serif;
 }
 
-.underline {
-    /* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
-    /* text-decoration: underline;
-    text-decoration-thickness: 20px;
-    text-decoration-color: aquamarine;
-    text-underline-offset: -0.1rem;
-    text-decoration-line: underline; */
+.home-titles {
+    font-size: 1.5rem;
+}
 
-    /* background-color: rgb(208, 245, 233); */
-
+.underline { 
     border-bottom: 10px solid rgb(208, 245, 233);
-    /* display: inline-block;
-    line-height: 0.1; */
+}
+/* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
+/* text-decoration: underline;
+text-decoration-thickness: 20px;
+text-decoration-color: aquamarine;
+text-underline-offset: -0.1rem;
+text-decoration-line: underline; */
+/* background-color: rgb(208, 245, 233); */
+/* display: inline-block;
+line-height: 0.1; */
+
+.underline-on-hover:hover {
+    border-bottom: 10px solid rgb(208, 245, 233);
 }
 
 .text-about p,
@@ -474,6 +491,10 @@ button:hover {
     height: 1.4rem;
 }
 
+.arrow-smaller {
+    height: 0.8rem;
+}
+
 
 
 
@@ -561,4 +582,8 @@ summary {
     position: absolute;
     z-index: 100;
     font-family: 'Work Sans', sans-serif;
+}
+
+.stop-background-scroll {
+    overscroll-behavior: contain;
 }

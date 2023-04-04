@@ -35,7 +35,7 @@ export default function GardnerDenver() {
 
 
     return (
-        <main className='main-1 margin-from-header'>
+        <main className='white-background margin-from-header'>
 
 
             {/* /////////////////////////////////////////////////////////////////////// */}
@@ -53,7 +53,7 @@ export default function GardnerDenver() {
                     setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
                 }}
             >
-                <div className='bring-slide-to-front'>
+                <div className='bring-slide-to-front stop-background-scroll'>
                     <Cabinete_dentare_compresoare_fara_ungere />
                 </div>
                 {/* <br />
@@ -127,7 +127,7 @@ export default function GardnerDenver() {
 
 
             <div className='regular-text-small'>
-                <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a>.</p>
+                <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a> <img className='arrow-smaller' src={arrow} alt='svg missing' />.</p>
 
             </div>
             <div className='toberelative narrow-padding'>

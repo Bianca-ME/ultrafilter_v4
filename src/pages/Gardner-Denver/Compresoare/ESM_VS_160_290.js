@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/19867_4_12_15_ESM160_m.jpg';
 
 export default function ESM_VS_160_290 () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 160, ESM 200, ESM 260 si cu turatie variabila VS 160, VS 200, VS 250, VS 290</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>

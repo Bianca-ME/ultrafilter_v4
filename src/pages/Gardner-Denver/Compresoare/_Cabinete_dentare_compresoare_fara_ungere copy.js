@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
 
 export default function Cabinete_dentare_compresoare_fara_ungere () {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>

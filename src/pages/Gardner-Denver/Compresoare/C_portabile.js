@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/c_portabil.jpg';
 
 export default function C_cu_excentric_si_cu_paleti_centrifugali() {
     return (
-        <main className='main-1 margin-from-header wide-padding'>
+        <main className='white-background margin-from-header wide-padding'>
             <p className='regular-text-important'>Compresoare Champion mobile, acolo unde ai nevoie de aer comprimat</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>
