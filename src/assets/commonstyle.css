@@ -586,4 +586,5 @@ summary {
 
 .stop-background-scroll {
     overscroll-behavior: contain;
+    overflow-y: scroll !important;
 }
