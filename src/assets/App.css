@@ -9,3 +9,10 @@ body {
     text-underline-offset: 13px;
     color: #F8FAF9;
 }
+.active-link-D-GD {
+    text-decoration: underline;
+    text-underline-offset: 13px;
+    color: #F8FAF9;
+    font-size: 2rem;
+    font-family: 'Sulphur Point', sans-serif;
+}
