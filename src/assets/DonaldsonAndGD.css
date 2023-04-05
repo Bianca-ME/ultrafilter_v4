@@ -10,7 +10,8 @@
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     display: flex;
-    width: 100vw;
+    width: 100%;
+    /* width: 100vw; era */
     height: 50vh;
 }
 /* testing */

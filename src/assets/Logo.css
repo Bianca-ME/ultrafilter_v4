@@ -6,7 +6,8 @@
 .logo-home-page-container {
     /* background-color: rgb(211, 76, 99); */
     background-color: rgb(7, 22, 63);
-    width: 100vw;
+    /* width: 100vw; era */
+    width: 100%;
     display: flex;
     justify-content: center;
 }
