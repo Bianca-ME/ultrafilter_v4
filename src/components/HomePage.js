@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // images
 import Dlogo from '../assets/donaldson-logo.jpg';
 import GDlogo from '../assets/gardner-denver-logo.jpg';
+import backgrr from '../assets/frame_8.png';
 
 // styling
 import '../assets/DonaldsonAndGD.css';
@@ -15,7 +16,7 @@ export default function Header() {
 
     return (
         <main className='white-font'>
-            <div className='DonaldsonAndGD margin-from-header home-page'>
+            <div className='DonaldsonAndGD margin-from-header'>
                 <div className='containsPage1 slide slide-top'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
@@ -37,8 +38,16 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div>
-                <p className='title-on-homepage'>Tehnologie pentru un mediu mai curat</p>
+            <div className='hundredpercent'>
+                {/* <div className='c'>c</div> */}
+                {/* if using image as background */}
+                {/* <div className='mountains-img' style={{backgroundImage: `url(${backgrr})`, backgroundSize:'100%', backgroundRepeat: 'no-repeat', height: '200px', width: '90%'}}></div> */}
+                <img className='mountains' src={backgrr} alt="image not loaded"></img>
+            </div>
+            <p className='title-on-homepage narrow-padding'>Tehnologie pentru <br/>un mediu mai curat</p>
+            <div className='ab'>
+                <div className='a'>aaaaaaaa</div>
+                <div className='b'>bbbbbbbb</div>
             </div>
         </main>
     )
