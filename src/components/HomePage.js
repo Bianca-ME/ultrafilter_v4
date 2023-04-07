@@ -2,6 +2,8 @@ import React from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 
+// import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
+
 // images
 import Dlogo from '../assets/donaldson-logo.jpg';
 import GDlogo from '../assets/gardner-denver-logo.jpg';
@@ -51,10 +53,10 @@ export default function Header() {
                 {/* <div className='a'>aaaaaaaa</div> */}
                 {/* <div className='b'>bbbbbbbb</div> */}
             {/* </div> */}
-            <img src={Picture49} alt="image not loaded"></img>
-            <p className='regular-text-important sulphur-font dark-green'>filtrare aer comprimat pana la nivel de sterilizare</p>
-            <img src={Picture26} alt="image not loaded"></img>
-            <p className='regular-text-important sulphur-font dark-green'>colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie</p>
+            <img className='test-css-locomotive' src={Picture49} alt="image not loaded"></img>
+            <p className='regular-text-important sulphur-font dark-green test-css-locomotive'>filtrare aer comprimat pana la nivel de sterilizare</p>
+            <img className='test-css-locomotive' src={Picture26} alt="image not loaded"></img>
+            <p className='regular-text-important sulphur-font dark-green test-css-locomotive'>colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie</p>
         </main>
     )
 }

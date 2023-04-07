@@ -757,3 +757,8 @@ summary {
 .dark-green {
     color: #124838;
 }
+
+.test-css-locomotive {
+    height: 100vh;
+    padding: 10em;
+}
