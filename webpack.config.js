@@ -20,6 +20,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: require.resolve("babel-loader"),
@@ -28,6 +36,47 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      // nu merge
+      // {
+      //   test: /\.(sa|sc|c)ss$/,
+      //   use: ["style-loader", "css-loader", "sass-loader"]
+      // },
+      // {
+      //   test: /\.(scss|sass)$/i,
+      //   include: [
+      //     path.resolve(__dirname, 'node_modules'),
+      //     path.resolve(__dirname, 'path/to/imported/file/dir'),
+      //   ],
+      //   loaders: ["css", "sass"]
+      // },
+      // {
+      //   test: /\.scss$/,
+      //   use: [
+      //     {
+      //       loader: 'style-loader'
+      //     },
+      //     {
+      //       loader: 'css-loader'
+      //     },
+      //     {
+      //       loader: 'sass-loader'
+      //     }
+      //   ]
+      // },
+			// {
+			// 	test: /\.scss$/,
+			// 	use: [
+			// 		{
+			// 			loader: 'style-loader'
+			// 		},
+			// 		{
+			// 			loader: 'css-loader'
+			// 		},
+			// 		{
+			// 			loader: 'sass-loader'
+			// 		}
+			// 	]
+			// },
       {
         test: /\.(pdf)$/,
         use: [
@@ -57,5 +106,5 @@ module.exports = {
     hints: false,
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
-}
+  }
 };
