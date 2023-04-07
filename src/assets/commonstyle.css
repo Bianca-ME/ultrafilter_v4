@@ -672,10 +672,18 @@ summary {
     transform: translate(0, -100%);
 }
 
+/* ::selection {
+    text-shadow: none;
+    color: #236b59;
+    background: #d0f5e9;
+} */
+
 ::selection {
     text-shadow: none;
     color: #236b59;
     background: #d0f5e9;
+    /* color: #9ff1d7;
+    background: #124838; */
 }
 
 .ab {
@@ -745,4 +753,7 @@ summary {
     /* height: 200px; */
     padding-top: 20px; 
     padding-bottom: 20px; 
+}
+.dark-green {
+    color: #124838;
 }

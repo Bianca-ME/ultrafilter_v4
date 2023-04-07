@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Dlogo from '../assets/donaldson-logo.jpg';
 import GDlogo from '../assets/gardner-denver-logo.jpg';
 import backgrr from '../assets/frame_8.png';
+import Picture49 from '../assets/Picture49.png';
+import Picture26 from '../assets/Picture26.jpg';
 
 // styling
 import '../assets/DonaldsonAndGD.css';
@@ -38,17 +40,21 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className='hundredpercent'>
+            {/* <div className='hundredpercent'> */}
                 {/* <div className='c'>c</div> */}
                 {/* if using image as background */}
                 {/* <div className='mountains-img' style={{backgroundImage: `url(${backgrr})`, backgroundSize:'100%', backgroundRepeat: 'no-repeat', height: '200px', width: '90%'}}></div> */}
-                <img className='mountains' src={backgrr} alt="image not loaded"></img>
-            </div>
+                {/* <img className='mountains' src={backgrr} alt="image not loaded"></img> */}
+            {/* </div> */}
             <p className='title-on-homepage narrow-padding'>Tehnologie pentru <br/>un mediu mai curat</p>
-            <div className='ab'>
-                <div className='a'>aaaaaaaa</div>
-                <div className='b'>bbbbbbbb</div>
-            </div>
+            {/* <div className='ab'> */}
+                {/* <div className='a'>aaaaaaaa</div> */}
+                {/* <div className='b'>bbbbbbbb</div> */}
+            {/* </div> */}
+            <img src={Picture49} alt="image not loaded"></img>
+            <p className='regular-text-important sulphur-font dark-green'>filtrare aer comprimat pana la nivel de sterilizare</p>
+            <img src={Picture26} alt="image not loaded"></img>
+            <p className='regular-text-important sulphur-font dark-green'>colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie</p>
         </main>
     )
 }
