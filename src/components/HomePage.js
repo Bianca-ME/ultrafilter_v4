@@ -19,6 +19,8 @@ import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
 import hpimg3 from '../assets/HomePage/3_Elemente filtrante_cartuse_filtranate.jpg';
 import hpimg4 from '../assets/HomePage/4_Ventilatoare.jpg';
 import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
+// import gif from '../assets/test.gif';
+
 
 // styling
 import '../assets/DonaldsonAndGD.css';
@@ -93,16 +95,17 @@ export default function HomePage() {
                 {/* PROBLEMS: */}
                 {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
                 {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
-                <section>
+                <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
                     {/* data-scroll-section */}
                     <div className='wrapper--img'>
                         <img className='home-page-img' src={hpimg1} alt="img can.t be seen"></img>
                     </div>
                     <div className='wrapper--text'>
                         <h2>Desprafuire industriala Donaldson, colectoare de praf</h2>
+                        <p data-scroll data-scroll-speed='2'>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
                     </div>
                 </section>
-                <section>
+                <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
                     <div className='wrapper--img'>
                         <img className='home-page-img' src={hpimg2} alt="img can.t be seen"></img>
                     </div>
