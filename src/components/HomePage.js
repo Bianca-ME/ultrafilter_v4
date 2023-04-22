@@ -15,7 +15,7 @@ import GDlogo from '../assets/gardner-denver-logo.jpg';
 // styling
 import '../assets/DonaldsonAndGD.css';
 
-export default function Header() {
+export default function HomePage() {
     // const ref = useRef(null);
 
     // useEffect(() => {
