@@ -7,10 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
-body {
-    margin: 0px;
-}
-
 .header {
     text-align: center;
     font-family: 'Sulphur Point', sans-serif;

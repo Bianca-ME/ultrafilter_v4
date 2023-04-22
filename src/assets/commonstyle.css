@@ -10,6 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 /* font-family: 'Work Sans', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Cousine', monospace; */
+
 @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
 /* font-family: 'Xanh Mono', monospace; */
 
@@ -41,6 +44,14 @@
 /* * {
     border: 1px solid red;
 } */
+/* * {
+    border: 1px solid black;
+} */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
 
 .toberelative {
     position: relative;
@@ -60,6 +71,7 @@
     padding: 5px 3%;
 }
 
+/* COLORS */
 /* get font out from white-backgr */
 .white-background {
     /* background-color: #F8FAF9; */
@@ -77,6 +89,14 @@
 
 .white-font {
     color: white;
+}
+
+.dark-blue-font {
+    background-color: #07163f;
+}
+
+.dark-green {
+    color: #124838;
 }
 
 .card {
@@ -118,6 +138,8 @@ p.regular-text-important {
 .underline { 
     border-bottom: 10px solid rgb(208, 245, 233);
 }
+
+
 /* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
 /* text-decoration: underline;
 text-decoration-thickness: 20px;
@@ -717,48 +739,56 @@ summary {
     height: 30px;
 }
 
+/* tutorial */
 
-.title-on-homepage {
-    /* background-image: url('./frame_5.png');
-    background-size: cover; */
-    /* height: 500px; */
-    font-size: 6.5rem;
-    font-family: 'Sulphur Point', sans-serif;
-    font-weight: 500;
-    /* color: #124838; */
-    color: #124838;
-    /* border-top: 1px solid white; */
-    /* border-bottom: 1px solid #124838; */
-    /* background-color: #f8faf9; */
-    /* line-height: 0px; */
-    line-height: 0.9;
-    margin-top: 0;
-    margin-left: 120px;
-    margin-right: 220px;
-    margin-bottom: 0;
-    padding-top: 70px;
-    border-left: 1px solid #124838;
-    border-right: 1px solid #124838;
-}
-
-.hundredpercent {
-    width: 100%;
-    border-top: 30px solid #e6f0eb;
-    border-bottom: 1px solid #124838;
-    margin-top: 0px;
-}
-
-.mountains {
-    width: 100%;
-    /* height: 200px; */
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-}
-.dark-green {
-    color: #124838;
-}
-
-.test-css-locomotive {
+section {
     height: 100vh;
-    padding: 10em;
+    width: 100%;
+    display: flex;
+    background-color: #f8faf9;
 }
+
+.wrapper--img, .wrapper--text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper--img img {
+    width:60%;
+    height: auto;
+    /* border: 1px solid #07163f; */
+    /* padding: 15px 7px 50px 7px; */
+}
+
+/* daca ai paragraf sub text, ti le aliniaza */
+.wrapper--text {
+    align-items: start;
+    /* font-family: 'Sulphur Point', sans-serif; */
+    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: monospace; */
+    /* font-family: 'Xanh Mono', monospace; */
+    font-family: 'Cousine', monospace;
+    /* color: #07163f; */
+    /* color: #0082ca; */
+    color: #2807e0;
+    /* font-style: italic; */
+}
+
+h2 {
+    font-size: 50px;
+    border-bottom: 8px solid red;
+    font-weight: 700;
+
+}
+
+/* .underline { 
+} */
+
+/* nu merge */
+/* .go-behind {
+    z-index: -5;
+} */

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import { NavLink } from 'react-router-dom';
 
 // import style
@@ -22,6 +22,8 @@ import C_oil_free_tip_scroll from './Compresoare/C_oil_free_tip_scroll';
 import SlidingPane from "../../sliding-pane/react-sliding-pane.js";
 import '../../assets/react-sliding-pane.css';
 // import 'react-sliding-pane/dist/react-sliding-pane.css';
+import LocomotiveScroll from 'locomotive-scroll';
+// import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 export default function GardnerDenver() {
 
@@ -36,10 +38,25 @@ export default function GardnerDenver() {
 // not found a solution yet
 
     // TEST SCROLL ISSUE <
+//     const containerRef = useRef(null);
+//   const scrollRef = useRef(null);
+
+
+//   useEffect(() => {
+//     scrollRef.current = new LocomotiveScroll({
+//       el: containerRef.current,
+
+//     });
+
+ 
+//     return () => {
+//       scrollRef.current.destroy();
+//     };
+//   }, []);
 
 
     return (
-        <main className='white-background margin-from-header'>
+        <main className='white-background margin-from-header' >
 
             {/* TEST SCROLL ISSUE > */}
             {/* not found a solution yet */}
@@ -49,7 +66,7 @@ export default function GardnerDenver() {
             {/* sliding pane > */}
 
             {/* sliding pane: Cabinete_dentare_compresoare_fara_ungere */}
-            <SlidingPane
+            <SlidingPane 
                 className="some-custom-class stop-background-scroll"
                 overlayClassName="some-custom-overlay-class"
                 isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
