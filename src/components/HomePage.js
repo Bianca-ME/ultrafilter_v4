@@ -26,18 +26,6 @@ import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 import '../assets/DonaldsonAndGD.css';
 
 export default function HomePage() {
-    // myFunction();
-    // const ref = useRef(null);
-
-    // useEffect(() => {
-    //     if (ref) {
-    //         new LocomotiveScroll({
-    //             el: ref.current,
-    //             smooth: true
-    //             // direction: 'horizontal'
-    //         })
-    //     }
-    // })
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({
@@ -58,13 +46,6 @@ export default function HomePage() {
             window.removeEventListener('touchmove', disableScroll);
         };
     }, []);
-
-
-
-    // const scroll = new LocomotiveScroll({
-    //     el: document.querySelector('[data-scroll-container]'),
-    //     smooth: true
-    // });
 
     return (
         <main data-scroll-container>
@@ -91,7 +72,7 @@ export default function HomePage() {
                 </div>
             </div>
             {/* START -- TRY TUTORIAL */}
-            <div data-scroll-container>
+            <div >
                 {/* PROBLEMS: */}
                 {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
                 {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
@@ -105,12 +86,14 @@ export default function HomePage() {
                         <p data-scroll data-scroll-speed='2'>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
                     </div>
                 </section>
+
+                {/* ZOOM OUT EFFECT on img, FADE IN EFFECT on h2 */}
                 <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
-                    <div className='wrapper--img'>
-                        <img className='home-page-img' src={hpimg2} alt="img can.t be seen"></img>
+                    <div className='wrapper--img-fixed-size'>
+                        <img className='home-page-img-to-be-zoomed-out' data-scroll data-scroll-class="zoom-out" src={hpimg2} alt="img can.t be seen"></img>
                     </div>
                     <div className='wrapper--text'>
-                        <h2>Saci filtranti pentru colectoarele de praf</h2>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Saci filtranti pentru colectoarele de praf</h2>
                     </div>
                 </section>
                 <section>

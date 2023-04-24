@@ -48,7 +48,8 @@
     border: 1px solid black;
 } */
 
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
 }
@@ -119,7 +120,8 @@ p.regular-text-important {
 }
 
 .sulphur-font {
-    font-family: 'Sulphur Point', sans-serif; ;
+    font-family: 'Sulphur Point', sans-serif;
+    ;
 }
 
 .regular-text-small {
@@ -135,9 +137,48 @@ p.regular-text-important {
     font-family: 'Sulphur Point', sans-serif;
 }
 
-.underline { 
+.underline {
     border-bottom: 10px solid rgb(208, 245, 233);
 }
+
+/* IMAGES EFFECTS */
+
+/* FADE IN EFFECT */
+.op-class {
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+
+/* ZOOM OUT EFFECT IN FIXED SIZE PARENT CONTAINER */
+.wrapper--img-fixed-size {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.home-page-img-to-be-zoomed-out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.zoom-out {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1; 
+    /* opacity in the last stage after zooming out */
+}
+/* IMAGES EFFECT ABOVE */
 
 
 /* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
@@ -334,13 +375,14 @@ table.table-GD-c {
     /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
     border-top: 1px solid #124838;
 }
+
 .contact-info {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     margin-bottom: 100px;
     margin-left: 300px;
 
-    
+
 }
 
 .contact-info div:last-child {
@@ -376,7 +418,9 @@ table.table-GD-c {
 }
 
 /* after you deselect text box */
-input, select, textarea{
+input,
+select,
+textarea {
     color: rgb(250, 238, 183);
     text-align: left;
 
@@ -434,7 +478,8 @@ border-color: rgb(42, 236, 42); */
 }
 
 /* when you select text box to write inside */
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     color: rgb(250, 209, 27);
     background-color: rgb(80, 110, 187);
     border: none;
@@ -585,27 +630,29 @@ td {
     border-collapse: collapse;
 }
 
-.temptable tr:nth-child(even){background-color: #533cd6;}
+.temptable tr:nth-child(even) {
+    background-color: #533cd6;
+}
 
 /* si mai mult test */
 
 summary {
-  display: inline-block;
-  cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .details summary {
-  background-color: crimson;
+    background-color: crimson;
 }
 
 .details,
 .details1 {
-  font-weight: normal;
-  /* background-color: rgba(230, 245, 22, 0.904); */
+    font-weight: normal;
+    /* background-color: rgba(230, 245, 22, 0.904); */
 }
 
 .details1 {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
 .bring-slide-to-front {
@@ -657,6 +704,7 @@ summary {
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
+
 .slide-content-GD {
     position: absolute;
     top: 0;
@@ -676,10 +724,11 @@ summary {
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
+
 /* background-color: rgba(197, 0, 30, 0.925); */
 
 .slide:hover .slide-content-D {
-    transform: translate(0,0);
+    transform: translate(0, 0);
 }
 
 .slide-top .slide-content-D {
@@ -687,18 +736,12 @@ summary {
 }
 
 .slide:hover .slide-content-GD {
-    transform: translate(0,0);
+    transform: translate(0, 0);
 }
 
 .slide-top .slide-content-GD {
     transform: translate(0, -100%);
 }
-
-/* ::selection {
-    text-shadow: none;
-    color: #236b59;
-    background: #d0f5e9;
-} */
 
 ::selection {
     text-shadow: none;
@@ -707,29 +750,6 @@ summary {
     /* color: #9ff1d7;
     background: #124838; */
 }
-
-.ab {
-    display: flex;
-    /* border: 1px solid rgb(252, 0, 0); */
-    background-color: #f8faf9;
-    padding: 0 5% 0 5%;
-}
-
-.ab, .a, .b, .c {
-    /* border: 1px solid rgb(252, 0, 0); */
-    /* border: 1px solid black; */
-    font-family: 'Work Sans', sans-serif;
-    color: #124838;
-}
-
-.a, .b {
-    height: 300px;
-    width: 50%;
-
-}
-/* .a {
-    
-} */
 
 .c {
     width: 100%;
@@ -748,7 +768,8 @@ section {
     background-color: #f8faf9;
 }
 
-.wrapper--img, .wrapper--text {
+.wrapper--img,
+.wrapper--text {
     width: 50%;
     height: 100%;
     display: flex;
@@ -758,7 +779,7 @@ section {
 }
 
 .wrapper--img img {
-    width:60%;
+    width: 60%;
     height: auto;
     /* border: 1px solid #07163f; */
     /* padding: 15px 7px 50px 7px; */
@@ -769,8 +790,6 @@ section {
     align-items: start;
     /* font-family: 'Sulphur Point', sans-serif; */
     /* font-family: 'Work Sans', sans-serif; */
-    /* font-family: monospace; */
-    /* font-family: 'Xanh Mono', monospace; */
     font-family: 'Cousine', monospace;
     /* color: #07163f; */
     /* color: #0082ca; */
@@ -791,4 +810,19 @@ h2 {
 /* nu merge */
 /* .go-behind {
     z-index: -5;
+} */
+
+/* simple zoom in, not useful right now */
+/* .zoom-in {
+    opacity: 1;
+    transform: scale(2);
+    transition: transform 0.5s;
+} */
+/* transition-delay: .3s; */
+
+/* .flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 } */
