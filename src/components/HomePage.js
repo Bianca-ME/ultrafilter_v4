@@ -16,7 +16,7 @@ import GDlogo from '../assets/gardner-denver-logo.jpg';
 // import Picture26 from '../assets/Picture26.jpg';
 import hpimg1 from '../assets/HomePage/1_Colector_de_praf_Donaldson.jpg';
 import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
-import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtranate.jpg';
+import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
 import hpimg4 from '../assets/HomePage/4_Ventilatoare.jpg';
 import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 // import gif from '../assets/test.gif';
