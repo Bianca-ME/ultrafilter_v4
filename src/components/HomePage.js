@@ -2,6 +2,9 @@ import React, { useRef, useEffect } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 
+import p5 from 'p5';
+import sketch from '../TESTS/grid';
+
 import LocomotiveScroll from 'locomotive-scroll';
 // import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 import '../assets/locomotive-scroll.css';
@@ -17,6 +20,26 @@ import GDlogo from '../assets/gardner-denver-logo.jpg';
 import hpimg1 from '../assets/HomePage/1_Colector_de_praf_Donaldson.jpg';
 import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
 import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
+
+
+
+// import hpimg3_1 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_1.jpg';
+// import hpimg3_2 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_2.jpg';
+// import hpimg3_3 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_3.jpg';
+// import hpimg3_4 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_4.jpg';
+// import hpimg3_6 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_6.jpg';
+// import hpimg3_7 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_7.jpg';
+// import hpimg3_8 from '../assets/HomePage/3_cartuse_filtrante/3_Elemente_filtrante_cartuse_filtrante_8.jpg';
+// <img className='home-page-img' src={hpimg3_1} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_2} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_3} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_4} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_6} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_7} alt="img can.t be seen"></img>
+// <img className='home-page-img' src={hpimg3_8} alt="img can.t be seen"></img>
+
+
+
 import hpimg4 from '../assets/HomePage/4_Ventilatoare.png';
 import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 // import gif from '../assets/test.gif';
@@ -25,12 +48,16 @@ import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 // styling
 import '../assets/DonaldsonAndGD.css';
 
+const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
+console.log(randomNumber);
+
 export default function HomePage() {
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
-            smooth: true
+            smooth: true,
+            offset: ["30%", 0]
         });
 
         // Disable the default browser scrolling behavior
@@ -46,6 +73,13 @@ export default function HomePage() {
             window.removeEventListener('touchmove', disableScroll);
         };
     }, []);
+
+    // TRY IMPORT SKETCH
+    const sketchRef = useRef(null);
+
+  useEffect(() => {
+    new p5(sketch, sketchRef.current);
+  }, []);
 
     return (
         <main data-scroll-container>
@@ -96,14 +130,19 @@ export default function HomePage() {
                         <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Saci filtranti pentru colectoarele de praf</h2>
                     </div>
                 </section>
+
+
+
                 <section>
+                    <div ref={sketchRef} className='overlap-grid' data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div>
                     <div className='wrapper--img'>
-                        <img className='home-page-img' src={hpimg3} alt="img can.t be seen"></img>
+                        <img className='home-page-img to-be-overlapped' src={hpimg3} alt="img can.t be seen"></img>
                     </div>
                     <div className='wrapper--text'>
                         <h2>Elemente filtrante/cartuse filtrante pentru colectoare de praf</h2>
                     </div>
                 </section>
+                
                 <section>
                     <div className='wrapper--img'>
                         <img className='home-page-img' src={hpimg4} alt="img can.t be seen"></img>

@@ -44,9 +44,9 @@
 /* * {
     border: 1px solid red;
 } */
-/* * {
+* {
     border: 1px solid black;
-} */
+}
 
 html,
 body {
@@ -175,9 +175,10 @@ p.regular-text-important {
 
 .zoom-out {
     transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1; 
+    opacity: 1;
     /* opacity in the last stage after zooming out */
 }
+
 /* IMAGES EFFECT ABOVE */
 
 
@@ -768,6 +769,17 @@ section {
     background-color: #f8faf9;
 }
 
+.to-be-overlapped {
+    position: relative;
+    z-index: 1;
+}
+
+.overlap-grid {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 100px;
+}
+
 .wrapper--img,
 .wrapper--text {
     width: 50%;
@@ -826,3 +838,14 @@ h2 {
     align-items: center;
     justify-content: center;
 } */
+
+.wrapper--img-group {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.wrapper--img-group img {
+    width: auto;
+    height: 200px;
+    padding: 50px;
+}
