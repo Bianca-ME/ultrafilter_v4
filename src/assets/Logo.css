@@ -1,15 +1,23 @@
 .logo-home-page {
-    height: 20vh;
+    height: 60px;
+
     /* background-color: pink; */
 }
 
 .logo-home-page-container {
     /* background-color: rgb(211, 76, 99); */
-    background-color: rgb(7, 22, 63);
+    /* background-color: rgb(7, 22, 63); */
+    background-color: rgba(23, 0, 156);
+    /* background-color: #0366b0; original blue */
     /* width: 100vw; era */
     width: 100%;
     display: flex;
-    justify-content: center;
+    padding: 7px 30px;
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    top: 0;
+    /* justify-content: center; */
 }
 /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
 /* z-index: 2; */

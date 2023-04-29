@@ -42,7 +42,7 @@ import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jp
 
 import hpimg4 from '../assets/HomePage/4_Ventilatoare.png';
 import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
-// import gif from '../assets/test.gif';
+import gif from '../assets/test.gif';
 
 
 // styling
@@ -77,9 +77,9 @@ export default function HomePage() {
     // TRY IMPORT SKETCH
     const sketchRef = useRef(null);
 
-  useEffect(() => {
-    new p5(sketch, sketchRef.current);
-  }, []);
+    useEffect(() => {
+        new p5(sketch, sketchRef.current);
+    }, []);
 
     return (
         <main data-scroll-container>
@@ -110,6 +110,18 @@ export default function HomePage() {
                 {/* PROBLEMS: */}
                 {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
                 {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
+                {/* <section> */}
+                <div className='background-bluee' data-scroll data-scroll-container>
+                    {/* <br />
+                    <br />
+                    <br />
+                    <br /> */}
+                    {/* style={{ backgroundImage: `url(${gif})` }} */}
+                    <p className='home-page-title' data-scroll  data-scroll-direction='horizontal' data-scroll-speed='4'>distribuitorul tau</p>
+                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de compresoare </p>
+                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='-2'>si filtre industriale</p>
+                </div>
+                {/* </section> */}
                 <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
                     {/* data-scroll-section */}
                     <div className='wrapper--img'>
@@ -142,7 +154,7 @@ export default function HomePage() {
                         <h2>Elemente filtrante/cartuse filtrante pentru colectoare de praf</h2>
                     </div>
                 </section>
-                
+
                 <section>
                     <div className='wrapper--img'>
                         <img className='home-page-img' src={hpimg4} alt="img can.t be seen"></img>

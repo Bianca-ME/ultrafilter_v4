@@ -44,9 +44,9 @@
 /* * {
     border: 1px solid red;
 } */
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 
 html,
 body {
@@ -60,9 +60,11 @@ body {
 
 /* SPACING */
 
-/* .margin-from-header {
-    margin: 20px 0;
-} */
+.margin-from-header {
+    padding-top: 70px;
+    background-color: red;
+    border-top: 3px solid red;
+}
 
 .wide-padding {
     padding: 7vh 17vw;
@@ -700,6 +702,7 @@ summary {
     justify-content: center;
     text-align: center;
     background-color: rgba(23, 0, 156, 0.925);
+    /* background-color: black; */
     padding: 20px;
     color: white;
     box-sizing: border-box;
@@ -848,4 +851,51 @@ h2 {
     width: auto;
     height: 200px;
     padding: 50px;
+}
+
+.background-bluee {
+    background-color: #140666;
+}
+
+.home-page-title {
+    font-size: 10rem;
+    /* font-family: 'Cousine', monospace; */
+    font-family: 'Sulphur Point', sans-serif;
+    /* background-color: #140666; */
+    /* background-color: #124838; */
+    /* background-color: #f8faf9; */
+    color: #d0eedf;
+    /* color: #17009c; */
+    font-weight: 700;
+    margin: 0;
+    /* padding: 50px 30px 150px 30px; */
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0.8;
+    /* background-image: url('../assets/test.gif'); */
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.quote-under-nav {
+    font-family: 'Sulphur Point', sans-serif;
+        /* font-family: 'Cousine', monospace; */
+    font-size: 15px;
+    margin: 0;
+    position: absolute;
+    top: 200px;
+    color: white;
+    display: flex;
+    justify-content: end;
+    left: 10px;
+    writing-mode: vertical-rl;
+    background-color: #124838;
+    z-index: 5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
 }

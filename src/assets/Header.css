@@ -14,10 +14,12 @@
     /* font-size: 3vh; */
     font-size: 22px;
     font-kerning: 10px;
-    background-color: #07163f;
+    /* background-color: #07163f; */
     letter-spacing: 2px;
     
-    padding-bottom: 2vh;
+    /* padding-bottom: 2vh; */
+    padding-right: 100px;
+
     /* margin-right: 0px; */
     /* padding-right: 0px; */
     /* margin-bottom: 7px; */
@@ -25,12 +27,15 @@
     /* border-bottom: 0.5px solid white; */
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
 
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: 10px;
+    right: 0;
     /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
-    /* z-index: 5; */
+    z-index: 5;
+    background-color: #17009c;
 }
 
 .visited-link {
