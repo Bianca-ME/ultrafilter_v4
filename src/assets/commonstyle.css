@@ -142,6 +142,9 @@ p.regular-text-important {
 .underline {
     border-bottom: 10px solid rgb(208, 245, 233);
 }
+.underline-red {
+    border-bottom: 50px solid #00a571;
+}
 
 /* IMAGES EFFECTS */
 
@@ -340,7 +343,7 @@ table.table-GD-c {
 .main-1-custom1 {
     background-color: #F8FAF9;
     /* padding: 5px 3%; */
-    margin: 20px 0;
+    margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -355,6 +358,8 @@ table.table-GD-c {
     font-size: 3rem;
     padding-left: 740px;
     padding-top: 5vh;
+    margin: 0; 
+    /* ca sa anulez marginea inherited de unde nu stiu */
 }
 
 
@@ -804,7 +809,8 @@ section {
 .wrapper--text {
     align-items: start;
     /* font-family: 'Sulphur Point', sans-serif; */
-    /* font-family: 'Work Sans', sans-serif; */
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Xanh Mono', monospace; */
     font-family: 'Cousine', monospace;
     /* color: #07163f; */
     /* color: #0082ca; */
@@ -857,10 +863,18 @@ h2 {
     background-color: #140666;
 }
 
+.border-test {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    overflow: hidden;
+}
+
 .home-page-title {
     font-size: 10rem;
     /* font-family: 'Cousine', monospace; */
-    font-family: 'Sulphur Point', sans-serif;
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Lora', serif;
+
     /* background-color: #140666; */
     /* background-color: #124838; */
     /* background-color: #f8faf9; */
@@ -869,11 +883,40 @@ h2 {
     font-weight: 700;
     margin: 0;
     /* padding: 50px 30px 150px 30px; */
+    padding-top: 50px;
     letter-spacing: 2px;
     text-align: center;
     line-height: 0.8;
     /* background-image: url('../assets/test.gif'); */
     animation: fadeIn 1s;
+}
+.home-page-title-smallerr {
+    font-size: 9rem;
+    /* font-family: 'Cousine', monospace; */
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Lora', serif;
+
+    /* background-color: #140666; */
+    /* background-color: #124838; */
+    /* background-color: #f8faf9; */
+    color: #d0eedf;
+    /* color: #17009c; */
+    font-weight: 700;
+    margin: 0;
+    /* padding: 50px 30px 150px 30px; */
+    padding-top: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0.8;
+    /* background-image: url('../assets/test.gif'); */
+    animation: fadeIn 1s;
+}
+
+/* mnu... nu merge background mg */
+.hover-over-word:hover {
+    background: url('../assets/textxx.png');
+    color:#2000d8;
+    transition: color ease-in 0.3s;
 }
 
 @keyframes fadeIn {

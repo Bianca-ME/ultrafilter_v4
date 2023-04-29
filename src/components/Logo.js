@@ -13,7 +13,7 @@ return (
         <div>
             <Link to="/" rel="noreferrer" className='logo-home-page-container'>
                 <img className='logo-home-page' src={logo} alt="Ultrafilter logo can.t be seen"></img>
-                <img className='logo-home-page' src={logotext} alt="Ultrafilter logo can.t be seen"></img>
+                <img className='logo-home-page logo-home-page-margin-left' src={logotext} alt="Ultrafilter logo can.t be seen"></img>
             </Link>
         </div>
         {/* <div className='quote1-in-banner'><p>distribuitor de compresoare si filtre industriale</p></div>

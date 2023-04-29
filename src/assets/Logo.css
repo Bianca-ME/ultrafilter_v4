@@ -1,7 +1,10 @@
 .logo-home-page {
     height: 60px;
-
     /* background-color: pink; */
+}
+
+.logo-home-page-margin-left {
+    margin-left: 10px;
 }
 
 .logo-home-page-container {

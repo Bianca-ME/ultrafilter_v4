@@ -3,8 +3,8 @@ import '../assets/commonstyle.css';
 
 export default function Contact() {
     return (
-        <main className='main-1-custom1 regular-text-custom1 borders'>
-            <p className='regular-text-important-custom'>work in progress</p>
+        <main className='main-1-custom1 regular-text-custom1 borders margin-from-header'>
+            <p className='regular-text-important-custom'>pentru orice intrebare, contacteaza-ne</p>
             <div className='inline-flex-container'>
                 <div className='display-as-column padding-top'>
 

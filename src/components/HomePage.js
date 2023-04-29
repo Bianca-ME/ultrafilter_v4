@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 
@@ -43,6 +43,8 @@ import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jp
 import hpimg4 from '../assets/HomePage/4_Ventilatoare.png';
 import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 import gif from '../assets/test.gif';
+import testx from '../assets/testx.jpg';
+import textxx from '../assets/textxx.png';
 
 
 // styling
@@ -52,6 +54,8 @@ const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
 console.log(randomNumber);
 
 export default function HomePage() {
+
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({
@@ -111,15 +115,18 @@ export default function HomePage() {
                 {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
                 {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
                 {/* <section> */}
-                <div className='background-bluee' data-scroll data-scroll-container>
+                <div className='background-bluee border-test' data-scroll data-scroll-container>
                     {/* <br />
                     <br />
                     <br />
                     <br /> */}
                     {/* style={{ backgroundImage: `url(${gif})` }} */}
-                    <p className='home-page-title' data-scroll  data-scroll-direction='horizontal' data-scroll-speed='4'>distribuitorul tau</p>
-                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de compresoare </p>
-                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='-2'>si filtre industriale</p>
+                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='4'>distribuitorul tau</p>
+                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de <span className='underline-red'>compresoare</span> </p>
+                    {/* <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de 
+                        <span className="hover-over-word" style={{ backgroundImage: `url(${testx})`, backgroundSize: '100% auto' }}>compresoare</span>
+                    </p> */}
+                    <p className='home-page-title-smallerr' data-scroll data-scroll-direction='horizontal' data-scroll-speed='-2'>si <span className='underline-red'>filtre</span> industriale</p>
                 </div>
                 {/* </section> */}
                 <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
