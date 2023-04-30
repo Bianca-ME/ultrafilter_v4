@@ -30,9 +30,9 @@ export default function sketch(p) {
         p.line(i * step, 0, i * step, p.height);
       }
       
-      for (var j = 0; j <= p.height / step; j++) { // add a loop to draw the horizontal lines
-        p.line(0, j * step, p.width, j * step);
-      }
+      // for (var j = 0; j <= p.height / step; j++) { // add a loop to draw the horizontal lines
+      //   p.line(0, j * step, p.width, j * step);
+      // }
     };
 }
 

@@ -36,6 +36,18 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'videos/',
+            },
+          },
+        ],
+      },
       // nu merge
       // {
       //   test: /\.(sa|sc|c)ss$/,

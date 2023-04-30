@@ -45,13 +45,19 @@ import hpimg5 from '../assets/HomePage/5_Filtre_pentru_ventilatii.jpg';
 import gif from '../assets/test.gif';
 import testx from '../assets/testx.jpg';
 import textxx from '../assets/textxx.png';
+import gdvid from '../assets/gdvid.gif';
+import filter from '../assets/HomePage/filtrrr.png';
+import fan from '../assets/fan.gif';
 
 
 // styling
 import '../assets/DonaldsonAndGD.css';
 
+//
+
 const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
 console.log(randomNumber);
+
 
 export default function HomePage() {
 
@@ -77,14 +83,14 @@ export default function HomePage() {
         //     window.removeEventListener('touchmove', disableScroll);
         // };
     }, []);
-
+    
     // TRY IMPORT SKETCH
-    const sketchRef = useRef(null);
-
-    useEffect(() => {
-        new p5(sketch, sketchRef.current);
-    }, []);
-
+    // const sketchRef = useRef(null);
+    
+    // useEffect(() => {
+    //     new p5(sketch, sketchRef.current);
+    // }, []);
+    
     return (
         <main data-scroll-container>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
@@ -106,12 +112,13 @@ export default function HomePage() {
                             </Link>
                         </div>
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
+                        {/* <img src={gdvid}/> SHOW MIHAI WITH GIF gdvid in src and disable size */}
                     </div>
                 </div>
             </div>
        
             {/* START -- TRY TUTORIAL */}
-            <div >
+            <div className='home-page-content'>
                 {/* PROBLEMS: */}
                 {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
                 {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
@@ -136,8 +143,13 @@ export default function HomePage() {
                         <img className='home-page-img' src={hpimg1} alt="img can.t be seen"></img>
                     </div>
                     <div className='wrapper--text'>
-                        <h2>Desprafuire industriala Donaldson, colectoare de praf</h2>
-                        <p data-scroll data-scroll-speed='2'>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Desprafuire industriala Donaldson, colectoare de praf</h2>
+                        {/* <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Desprafuire </h2>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn2" data-scroll-repeat="true" data-scroll-speed="2">industriala </h2>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn3" data-scroll-repeat="true" data-scroll-speed="2">Donaldson, </h2>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn4" data-scroll-repeat="true" data-scroll-speed="2">colectoare </h2>
+                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn5" data-scroll-repeat="true" data-scroll-speed="2">de praf</h2> */}
+                        {/* <p data-scroll data-scroll-speed='2'>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p> */}
                     </div>
                 </section>
 
@@ -146,7 +158,7 @@ export default function HomePage() {
                     <div className='wrapper--img-fixed-size'>
                         <img className='home-page-img-to-be-zoomed-out' data-scroll data-scroll-class="zoom-out" src={hpimg2} alt="img can.t be seen"></img>
                     </div>
-                    <div className='wrapper--text'>
+                    <div className='wrapper--text--higher'>
                         <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Saci filtranti pentru colectoarele de praf</h2>
                     </div>
                 </section>
@@ -154,9 +166,9 @@ export default function HomePage() {
 
 
                 <section>
-                    <div ref={sketchRef} className='overlap-grid' data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div>
+                    {/* <div ref={sketchRef} className='overlap-grid' data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div> */}
                     <div className='wrapper--img'>
-                        <img className='home-page-img to-be-overlapped' src={hpimg3} alt="img can.t be seen"></img>
+                        <img className='home-page-img to-be-overlapped' src={filter} alt="img can.t be seen"></img>
                     </div>
                     <div className='wrapper--text'>
                         <h2>Elemente filtrante/cartuse filtrante pentru colectoare de praf</h2>
@@ -186,3 +198,5 @@ export default function HomePage() {
         </main>
     )
 }
+
+// style={{ backgroundImage: `url(${fan})`,backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize:'cover'}}
