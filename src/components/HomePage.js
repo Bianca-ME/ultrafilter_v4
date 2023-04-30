@@ -61,21 +61,21 @@ export default function HomePage() {
         const scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
-            offset: ["30%", 0]
+            offset: ["10%", 0]
         });
 
-        // Disable the default browser scrolling behavior
-        const disableScroll = (event) => {
-            event.preventDefault();
-        };
-        window.addEventListener('mousewheel', disableScroll, { passive: false });
-        window.addEventListener('touchmove', disableScroll, { passive: false });
+        // // Disable the default browser scrolling behavior
+        // const disableScroll = (event) => {
+        //     event.preventDefault();
+        // };
+        // window.addEventListener('mousewheel', disableScroll, { passive: false });
+        // window.addEventListener('touchmove', disableScroll, { passive: false });
 
-        return () => {
-            // Remove event listeners when component unmounts
-            window.removeEventListener('mousewheel', disableScroll);
-            window.removeEventListener('touchmove', disableScroll);
-        };
+        // return () => {
+        //     // Remove event listeners when component unmounts
+        //     window.removeEventListener('mousewheel', disableScroll);
+        //     window.removeEventListener('touchmove', disableScroll);
+        // };
     }, []);
 
     // TRY IMPORT SKETCH
@@ -87,7 +87,7 @@ export default function HomePage() {
 
     return (
         <main data-scroll-container>
-            <div className='DonaldsonAndGD margin-from-header'>
+            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                 <div className='containsPage1 slide slide-top'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
@@ -109,6 +109,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+       
             {/* START -- TRY TUTORIAL */}
             <div >
                 {/* PROBLEMS: */}

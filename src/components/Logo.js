@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/LOGO-lines-svg-white.svg';
-import logotext from '../assets/LOGO-ufr-svg-white.svg';
+import logo from '../assets/LOGO-lines-svg-white_copy.svg';
+import logotext from '../assets/LOGO-ufr-svg-white_copy.svg';
 import { Link } from 'react-router-dom';
 
 // styling

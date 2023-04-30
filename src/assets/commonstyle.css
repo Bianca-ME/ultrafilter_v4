@@ -62,8 +62,8 @@ body {
 
 .margin-from-header {
     padding-top: 70px;
-    background-color: red;
-    border-top: 3px solid red;
+    background-color: rgb(87, 0, 0);
+    /* border-top: 3px solid red; */
 }
 
 .wide-padding {
