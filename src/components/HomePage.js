@@ -3,7 +3,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import p5 from 'p5';
-import sketch from '../TESTS/grid';
+// import sketch from '../TESTS/grid';
+// import sketch2 from '../TESTS/color-trans';
 
 import LocomotiveScroll from 'locomotive-scroll';
 // import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
@@ -88,7 +89,7 @@ export default function HomePage() {
     // const sketchRef = useRef(null);
     
     // useEffect(() => {
-    //     new p5(sketch, sketchRef.current);
+    //     new p5(sketch2, sketchRef.current);
     // }, []);
     
     return (
@@ -191,6 +192,7 @@ export default function HomePage() {
                         <h2>Filtre pentru ventilatii</h2>
                     </div>
                 </section>
+                {/* <div ref={sketchRef} data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div> */}
             </div>
 
             {/* END -- TRY TUTORIAL */}

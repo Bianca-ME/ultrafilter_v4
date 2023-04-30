@@ -885,7 +885,8 @@ section {
     font-family: 'News Cycle', sans-serif;
     /* background-color: #17009c;
     background-color: #07163f;
-    background-color: #f0eff5; */
+    background-color: #f0eff5;
+    background-color: #65756D; */
     color: #0082ca;
     color: #2807e0;
     color: #8aa195;
@@ -893,7 +894,9 @@ section {
     color: #00a571;
     color: #f0eff5;
     color: #65756D;
-    /* font-style: italic; */
+
+    /* border: 0.5px solid #2a302d;
+    border-radius: 45px;  */
 }
 
 /* .wrapper--text--custom h2 {
@@ -1014,24 +1017,50 @@ font-family: 'News Cycle', sans-serif;
     }
 }
 
-.quote-under-nav {
+.ribbon-right {
     font-family: 'Sulphur Point', sans-serif;
-    /* font-family: 'Cousine', monospace; */
     font-size: 15px;
     margin: 0;
     position: absolute;
-    top: 200px;
+    top: 10px;
     color: white;
     display: flex;
-    justify-content: end;
-    left: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    right: 0;
     writing-mode: vertical-rl;
-    background-color: #124838;
+    background-color: #17009c;
     z-index: 5;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 30px;
     letter-spacing: 5px;
+    height: 90vw;
+    width: 20px;
 }
+/* .ribbon-bottom {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17009c;
+    background-color: #00a571;
+    z-index: 5;
+    padding-left: 80px;
+    
+    letter-spacing: 5px;
+    height: 10px;
+    width: 100vw;
+    text-overflow: clip;
+    white-space: nowrap; 
+    overflow: hidden;
+} */
+
+
 /* 
 .home-page-content > *:not(.background-bluee) {
     border: 1px solid black;
@@ -1045,3 +1074,11 @@ font-family: 'News Cycle', sans-serif;
     background-color: #65756D;
     background-clip: border-box;
 } */
+
+/* merge da nu prea */
+/* .change-background-color-on-scroll {
+    background-color: #65756D;
+    color: #F0EFF5;
+    transition: background-color 0.2s ease-in;
+} */
+/* transition: color 0.3s ease-out; */
