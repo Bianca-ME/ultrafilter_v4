@@ -6,7 +6,7 @@ import p5 from 'p5';
 // import sketch from '../TESTS/grid';
 // import sketch2 from '../TESTS/color-trans';
 
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 // import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
 import '../assets/locomotive-scroll.css';
 // import '../assets/locomotive-scroll.min.js';
@@ -64,14 +64,16 @@ export default function HomePage() {
 
     const [isHovered, setIsHovered] = useState(false);
 
-    useEffect(() => {
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            offset: ["10%", 0]
-        });
+    // useEffect(() => {
+    //     const scroll = new LocomotiveScroll({
+    //         el: document.querySelector('[data-scroll-container]'),
+    //         smooth: true,
+    //         offset: ["10%", 0]
+    //     });
 
-        // // Disable the default browser scrolling behavior
+       
+    // }, []);
+     // // Disable the default browser scrolling behavior
         // const disableScroll = (event) => {
         //     event.preventDefault();
         // };
@@ -83,8 +85,7 @@ export default function HomePage() {
         //     window.removeEventListener('mousewheel', disableScroll);
         //     window.removeEventListener('touchmove', disableScroll);
         // };
-    }, []);
-    
+
     // TRY IMPORT SKETCH
     // const sketchRef = useRef(null);
     
@@ -93,7 +94,7 @@ export default function HomePage() {
     // }, []);
     
     return (
-        <main data-scroll-container>
+        <div data-scroll>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                 <div className='containsPage1 slide slide-top'>
                     <div className='page1Donaldson-container'>
@@ -197,7 +198,7 @@ export default function HomePage() {
 
             {/* END -- TRY TUTORIAL */}
 
-        </main>
+        </div>
     )
 }
 

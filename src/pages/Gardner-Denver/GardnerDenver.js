@@ -151,12 +151,6 @@ export default function GardnerDenver() {
                     {/* <img className='signature' src={signature} alt='signature missing' /> */}
                 </div>
             </div>
-
-            {/* <img src={immg} className='imgtest2' /> */}
-            {/* <div className="containertest toberelative">
-                <img src={immg} className='imgtest' />
-                <p className='tobesticky'>Lucrez din 1993 in comertul industrial cu echipamente. Pot afirma ca in orice flux tehnologic este pus in miscare folosind energiea electrica si aer compirmat. Aerul comprimat desi este produs prin consum de energie electrica, este cel mai raspnadit ca forta de miscare a mecanismelor liniilor de fabricatie si robotilor industriali.</p>
-            </div> */}
         </main>
     )
 }

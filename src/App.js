@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Redirect, Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
 
-
+import LocomotiveScroll from 'locomotive-scroll';
 
 // components
 import NotFound from './components/NotFound';
@@ -48,17 +48,38 @@ function App() {
     }
 
 
+    useEffect(() => {
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            offset: ["10%", 0]
+        });
 
+        // // Disable the default browser scrolling behavior
+        // const disableScroll = (event) => {
+        //     event.preventDefault();
+        // };
+        // window.addEventListener('mousewheel', disableScroll, { passive: false });
+        // window.addEventListener('touchmove', disableScroll, { passive: false });
+
+        // return () => {
+        //     // Remove event listeners when component unmounts
+        //     window.removeEventListener('mousewheel', disableScroll);
+        //     window.removeEventListener('touchmove', disableScroll);
+        // };
+    }, []);
     // END OF JAVASCRIPT
 
     return (
 
 
-        <div className='home-page'>
+        <div className='astacaredaeroarea try-repair'>
+            {/* IN MOM IN CARE TREC AICI data-scroll-container SCROLLUL VA MERGE IN TOATE PAGINILE, DAR NAV-UL NU MAI RAMANE FIXAT SUS. NU STIU CE SA FAC
+            PARE CA LA HOME PAGE NU II PASA CA LOCOMOTIVE SCROLL A FOST DECLARAT IN APP */}
             {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
 
             <Router>
-                <main>
+                <main data-scroll-container>
                     <header className="App-header">
                         <Link to="/" onClick={handleLogoClick}>
                             <Logo />
