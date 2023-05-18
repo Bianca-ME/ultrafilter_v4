@@ -68,18 +68,23 @@ export default function HomePage() {
     const [isHovered, setIsHovered] = useState(false);
 
     // test toggle hide unhide content
-    const [div1Visible, setDiv1Visible] = useState(false);
-    const [div2Visible, setDiv2Visible] = useState(false);
+    const [divVisibility, setDivVisibility] = useState([false, false, false]);
 
-    const toggleDiv1 = () => {
-        setDiv1Visible(!div1Visible);
-        setDiv2Visible(false);
-      };
-    
-      const toggleDiv2 = () => {
-        setDiv2Visible(!div2Visible);
-        setDiv1Visible(false);
-      };
+    const toggleDiv = (index) => {
+      const updatedVisibility = [...divVisibility];
+      updatedVisibility[index] = !updatedVisibility[index];
+  
+      if (updatedVisibility[index]) {
+        // Hide the other divs
+        for (let i = 0; i < updatedVisibility.length; i++) {
+          if (i !== index) {
+            updatedVisibility[i] = false;
+          }
+        }
+      }
+  
+      setDivVisibility(updatedVisibility);
+    };
     return (
         <div data-scroll>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
@@ -144,13 +149,13 @@ export default function HomePage() {
                                 <img src={GD9}></img>
                                 <p>Compresoare cu piston Champion</p>
                                 <div className='see-details'>
-                                    <button onClick={toggleDiv1}>vezi descriere si tabel</button>
+                                    <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
                                     <img className='arrow' src={arrow} alt='svg missing' />
                                 </div>
                             </div>
                             {/* hide / unhide */}
                             <div>
-                                {div1Visible && (
+                                {divVisibility[0] && (
                                 <div id="div1" className="details-product">
                                     <p>ALT TEXT Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
 
@@ -206,13 +211,13 @@ export default function HomePage() {
                                 <img src={GD10}></img>
                                 <p>Compresoare pentru cabinete dentare</p>
                                 <div className='see-details'>
-                                    <button onClick={toggleDiv2}>vezi descriere si tabel</button>
+                                    <button onClick={() => toggleDiv(1)}>vezi descriere si tabel</button>
                                     <img className='arrow' src={arrow} alt='svg missing' />
                                 </div>
                             </div>
                             {/* hide / unhide */}
                             <div>
-                                {div2Visible && (
+                                {divVisibility[1] && (
                                 <div id="div2" className="details-product">
                                     Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
                                 </div>
@@ -220,6 +225,35 @@ export default function HomePage() {
                             </div>
                            
                         </div>
+
+                        <div className='two-columns'>
+                            <div className='left-column-with-titles'>
+                                <img src={GD10}></img>
+                                <p>Compresoare pentru cabinete dentare</p>
+                                <div className='see-details'>
+                                    <button onClick={() => toggleDiv(2)}>vezi descriere si tabel</button>
+                                    <img className='arrow' src={arrow} alt='svg missing' />
+                                </div>
+                            </div>
+                            {/* hide / unhide */}
+                            <div>
+                                {divVisibility[2] && (
+                                <div id="div3" className="details-product">
+                                    Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
+                                </div>
+                            )} 
+                            </div>
+                           
+                        </div>
+
+
+
+
+
+
+
+
+
                     </div>
 
                 </details>
