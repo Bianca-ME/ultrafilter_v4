@@ -47,13 +47,21 @@ function App() {
         setShowHomePage(true);
     }
 
-
-    useEffect(() => {
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            offset: ["10%", 0]
-        });
+// TEMPORARILY DISABLE LOCOMOTIVE SCROLL
+    // useEffect(() => {
+    //     const scroll = new LocomotiveScroll({
+    //         el: document.querySelector('[data-scroll-container]'),
+    //         smooth: true,
+    //         offset: ["10%", 0],
+    //         smartphone: {
+    //             smooth: true,
+    //             multiplier: 1 //nu stiu ce face multiplier
+    //         },
+    //         tablet: {
+    //             smooth: true,
+    //             multiplier: 1
+    //         }
+    //     });
 
         // // Disable the default browser scrolling behavior
         // const disableScroll = (event) => {
@@ -67,19 +75,20 @@ function App() {
         //     window.removeEventListener('mousewheel', disableScroll);
         //     window.removeEventListener('touchmove', disableScroll);
         // };
-    }, []);
+
+    // }, []);
     // END OF JAVASCRIPT
 
     return (
 
 
-        <div className='astacaredaeroarea try-repair'>
+        <div className='astacaredaeroarea try-repair toberelative'>
             {/* IN MOM IN CARE TREC AICI data-scroll-container SCROLLUL VA MERGE IN TOATE PAGINILE, DAR NAV-UL NU MAI RAMANE FIXAT SUS. NU STIU CE SA FAC
             PARE CA LA HOME PAGE NU II PASA CA LOCOMOTIVE SCROLL A FOST DECLARAT IN APP */}
             {/*tre sa schimb className ca homepage este un component separat. App.js nu este HomePage ! */}
 
             <Router>
-                <main data-scroll-container>
+                <main >
                     <header className="App-header">
                         <Link to="/" onClick={handleLogoClick}>
                             <Logo />
@@ -87,86 +96,88 @@ function App() {
                     </header>
                     <Header />
                     {/* <Breadcrumbs /> */}
-                    <Switch>
-                        <Route exact path="/">
-                            {showHomePage ? <HomePage /> : <HomePage />}
-                        </Route>
-                        <Route exact path='/'>
-                            <HomePage />
-                        </Route>
-                        <Route path='/about'>
-                            <About />
-                        </Route>
-                        <Route path='/utile'>
-                            <Utile />
-                        </Route>
-                        <Route path='/contact'>
-                            <Contact />
-                        </Route>
-                        <Route exact path='/Donaldson'>
-                            <Donaldson />
-                        </Route>
-                        <Route exact path='/GardnerDenver'>
-                            <GardnerDenver />
-                        </Route>
-                        <Route exact path='/Donaldson/compresoare'>
-                            <Compresoare />
-                        </Route>
-                        <Route path='/Donaldson/compresoare/Presiuni4_13bari'>
-                            <Presiuni4_13bari />
-                        </Route>
-                        <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
-                            <Presiuni20_400bari />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali'>
-                            <C_cu_excentric_si_cu_paleti_centrifugali />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>
-                            <PDF_page_C_cu_excentric_si_cu_paleti_centrifugali />
-                        </Route>
-                        <Route exact path='/GardnerDenver/Cabinete_dentare_compresoare_fara_ungere'>
-                            <Cabinete_dentare_compresoare_fara_ungere />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_pt_scafandrii_aer_respirabil'>
-                            <C_pt_scafandrii_aer_respirabil />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_cu_piston_debite_mici'>
-                            <C_cu_piston_debite_mici />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_portabile'>
-                            <C_portabile />
-                        </Route>
-                        <Route exact path='/GardnerDenver/ESM_23_29'>
-                            <ESM_23_29 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/ESM_30_45'>
-                            <ESM_30_45 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/ESM_55_75'>
-                            <ESM_55_75 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/ESM_90_132'>
-                            <ESM_90_132 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/ESM_VS_160_290'>
-                            <ESM_VS_160_290 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/FM_7_22'>
-                            <FM_7_22 />
-                        </Route>
-                        <Route exact path='/GardnerDenver/C_oil_free_tip_scroll'>
-                            <C_oil_free_tip_scroll />
-                        </Route>
+                    <div data-scroll-container>
+                        <Switch>
+                            <Route exact path="/">
+                                {showHomePage ? <HomePage /> : <HomePage />}
+                            </Route>
+                            <Route exact path='/'>
+                                <HomePage />
+                            </Route>
+                            <Route path='/about'>
+                                <About />
+                            </Route>
+                            <Route path='/utile'>
+                                <Utile />
+                            </Route>
+                            <Route path='/contact'>
+                                <Contact />
+                            </Route>
+                            <Route exact path='/Donaldson'>
+                                <Donaldson />
+                            </Route>
+                            <Route exact path='/GardnerDenver'>
+                                <GardnerDenver />
+                            </Route>
+                            <Route exact path='/Donaldson/compresoare'>
+                                <Compresoare />
+                            </Route>
+                            <Route path='/Donaldson/compresoare/Presiuni4_13bari'>
+                                <Presiuni4_13bari />
+                            </Route>
+                            <Route path='/Donaldson/compresoare/Presiuni20_400bari'>
+                                <Presiuni20_400bari />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali'>
+                                <C_cu_excentric_si_cu_paleti_centrifugali />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>
+                                <PDF_page_C_cu_excentric_si_cu_paleti_centrifugali />
+                            </Route>
+                            <Route exact path='/GardnerDenver/Cabinete_dentare_compresoare_fara_ungere'>
+                                <Cabinete_dentare_compresoare_fara_ungere />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_pt_scafandrii_aer_respirabil'>
+                                <C_pt_scafandrii_aer_respirabil />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_cu_piston_debite_mici'>
+                                <C_cu_piston_debite_mici />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_portabile'>
+                                <C_portabile />
+                            </Route>
+                            <Route exact path='/GardnerDenver/ESM_23_29'>
+                                <ESM_23_29 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/ESM_30_45'>
+                                <ESM_30_45 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/ESM_55_75'>
+                                <ESM_55_75 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/ESM_90_132'>
+                                <ESM_90_132 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/ESM_VS_160_290'>
+                                <ESM_VS_160_290 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/FM_7_22'>
+                                <FM_7_22 />
+                            </Route>
+                            <Route exact path='/GardnerDenver/C_oil_free_tip_scroll'>
+                                <C_oil_free_tip_scroll />
+                            </Route>
 
-                        {/* /GardnerDenver/C_portabile */}
+                            {/* /GardnerDenver/C_portabile */}
 
-                        <Route path="/404">
-                            <NotFound />
-                        </Route>
-                        <Redirect to="/404" />
-                        {/* niu merge not found */}
-                        {/* <Route path='*' component={NotFound}/> */}
-                    </Switch>
+                            <Route path="/404">
+                                <NotFound />
+                            </Route>
+                            <Redirect to="/404" />
+                            {/* niu merge not found */}
+                            {/* <Route path='*' component={NotFound}/> */}
+                        </Switch>
+                    </div>
                 </main>
             </Router>
         </div>

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 // import style
 import '../../assets/commonstyle.css';
+import '../../assets/react-sliding-pane_mobile.css';
 
 // import other files
 // import signature from '../assets/semnaturaMHprovizoriu.svg';
@@ -70,7 +71,7 @@ export default function GardnerDenver() {
                 className="some-custom-class stop-background-scroll"
                 overlayClassName="some-custom-overlay-class"
                 isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
-                // title="Champion Rotary Vane Compressors - Compresoare Champion cu excentric si paleti"
+                // title="Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii"
                 // subtitle="Optional subtitle."
                 onRequestClose={() => {
                     // triggered on "<" on left top click or on outside click
@@ -116,7 +117,7 @@ export default function GardnerDenver() {
             </div>
 
             {/* COMPRESSORS [list of buttons] */}
-            <div className='regular-text wide-padding'>
+            <div className='regular-text wide-padding narrow-padding-mobile2'>
                 <p>oil free:</p>
                 {/* TESTING > */}
                 <button className='compressors-buttons' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
@@ -143,7 +144,7 @@ export default function GardnerDenver() {
                 <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a> <img className='arrow-smaller' src={arrow} alt='svg missing' />.</p>
 
             </div>
-            <div className='toberelative narrow-padding'>
+            <div className='toberelative narrow-padding narrow-padding-mobile'>
                 <div className="quote-marks-opening">"</div>
                 <div className='text-gardnerdenver'>
                     <p>Lucrez din 1993 in comertul industrial cu echipamente. Pot afirma ca in orice flux tehnologic este pus in miscare folosind energiea electrica si aer compirmat. Aerul comprimat desi este produs prin consum de energie electrica, este cel mai raspnadit ca forta de miscare a mecanismelor liniilor de fabricatie si robotilor industriali. Cu aer comprimat umflam rotile camionaelor – cea mai simpla aplicatie, impingem borhotul de la fabricile de bere, scuturam sacii filtranti de la colectoarele de praf, il folosim la vopsitorii, sablare, transport pneumatic, scule de mana actionate pneumatic, actioneaza robotii industriali, cilindrii pneumatici, distribuitoare, deseori in industria alimentara sau farmaceutica intra in contact cu produsul fabricat, este respirat la masca de catre pacientii din spitale, este folosit la formarea sticlelor de PET, este inbuteliat pentru uzul salvatorilor mineri, al pompierilor sau al scafandrilor, este folosit la producerea gazelor tehnice si cate alte nenumarate aplicatii are. Aerul comprimat este definit in primul rand prin presiune si debit, temperatura si continut de impuritati – condens, ulei rezidual, particole mecanice, bacterii, iar calitatea aerului comprimat este regasita in domeniul standardului DIN ISO 8573-1.</p>

@@ -1,23 +1,24 @@
 .logo-home-page {
-    height: 60px;
+    /* height: 60px; */
     /* background-color: pink; */
 }
 
-.logo-home-page-margin-left {
+.logo-home-page-text-margin-left {
     margin-left: 10px;
 }
 
 .logo-home-page-container {
     /* background-color: rgb(211, 76, 99); */
     /* background-color: rgb(7, 22, 63); */
-    background-color: rgba(23, 0, 156);
+    /* background-color: rgba(23, 0, 156); */
     /* background-color: #0366b0; original blue */
     /* width: 100vw; era */
-    width: 100%;
+    width: 100vw;
+    height: 60px;
     display: flex;
     padding: 7px 30px;
-    position: absolute;
-    z-index: 5;
+    /* position: absolute; */
+    z-index: 200;
     margin: 0;
     top: 0;
     /* justify-content: center; */
@@ -25,36 +26,3 @@
 /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
 /* z-index: 2; */
 
-.quote1-in-banner,
-.quote2-in-banner {
-    font-family: 'Sulphur Point', sans-serif;
-    font-style: italic;
-    font-size: 0.8rem;
-    position: absolute;
-    color: #f8faf9;
-    text-decoration: none;
-}
-/* deleted */
-/* font-family: 'Roboto Mono', monospace; */
-/* font-family: 'Work Sans', sans-serif; */
-/* font-family: 'Gelasio', serif; */
-/* font-family: 'Cutive Mono', monospace; */
-/* font-family: 'Xanh Mono', monospace; */
-/* font-weight: 600; */
-/* color: #d1e0d9; */
-/* color: #b4c7be; */
-
-
-.quote1-in-banner {
-    width: 25%;
-    right: 6vw;
-    /* top: 70px; */
-    top: 9vh;
-}
-
-.quote2-in-banner {
-    width: 25%;
-    left: 6vw;
-    /* top: 80x; */
-    top: 10vh;
-}

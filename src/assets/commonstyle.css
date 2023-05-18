@@ -50,6 +50,7 @@
 /* * {
     border: 1px solid red;
 } */
+
 /* * {
     border: 1px solid black;
 } */
@@ -81,16 +82,18 @@ body {
 }
 
 /* COLORS */
-/* get font out from white-backgr */
 .white-background {
     /* background-color: #F8FAF9; */
-    /* background-color: #ffffff; */
-    background-color: #9cceb1;
-    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    /* background-color: #9cceb1; */
 }
 
 .soft-green-background {
     background-color: #f8faf9;
+}
+
+.strong-blue-background {
+    background-color: #17009c;
 }
 
 .dark-blue-background {
@@ -124,10 +127,12 @@ body {
     font-size: 1.5rem;
     /* padding: 5vh 10vw; */
     color: #124838;
+    padding-bottom: 0;
 }
 
 p.regular-text-important {
     font-size: 3rem;
+    padding-bottom: 0;
 }
 
 .sulphur-font {
@@ -145,6 +150,7 @@ p.regular-text-important {
 .big-word {
     font-size: 10rem;
     font-family: 'Sulphur Point', sans-serif;
+    padding-bottom: 0;
 }
 
 .underline {
@@ -194,8 +200,8 @@ p.regular-text-important {
     width: 500px;
     height: 500px;
     overflow: hidden;
-padding-left: 200px;
-/* background-color: #65756D;
+    padding-left: 200px;
+    /* background-color: #65756D;
 background-clip: border-box; */
 
     display: flex;
@@ -397,7 +403,7 @@ table.table-GD-c {
     font-size: 3rem;
     padding-left: 740px;
     padding-top: 5vh;
-    margin: 0; 
+    margin: 0;
     /* ca sa anulez marginea inherited de unde nu stiu */
 }
 
@@ -656,22 +662,36 @@ button:hover {
 }
 
 .temptable {
-    border-collapse: collapse;
-    background-color: #17009c;
-    color: white;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    /* background-color: #17009c; */
+    /* background-color: #a3a2a7; */
+    background-color: #140666;
+    color:white;
     text-align: center;
+border-bottom: 1px solid #124838;
+
     /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Sulphur Point', sans-serif;
 }
+
+
 
 td {
     /* border: 1px solid white; */
-    border-color: white;
+    /* border-color:#124838; */
     border-collapse: collapse;
+
+    /* border: 0.5px solid #124838; */
 }
 
+
 .temptable tr:nth-child(even) {
-    background-color: #533cd6;
+    background-color: #F0EFF5;
+    background-color: #17009C;
 }
+/* background-color: #533cd6; */
 
 /* si mai mult test */
 
@@ -695,9 +715,11 @@ summary {
 }
 
 .bring-slide-to-front {
-    position: absolute;
-    z-index: 100;
     font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    /* nu merge z peste logo */
+    z-index: 201; 
+    /* font-family: 'Cutive Mono', monospace; */
 }
 
 /* .stop-background-scroll {
@@ -718,10 +740,47 @@ summary {
 
 /* HOME PAGE - WORK IN PROGRESS */
 
+/* DONALDSON & GD LOGOS AND LINKS */
+/* DonaldsonAndGD > containsPage1, slide, slide-top > page1Donaldson-container > slide-content-D (text filtre...), img page1Donaldson */
+
+.DonaldsonAndGD {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    width: 100%;
+    /* width: 100vw; era */
+    height: 50vh;
+    /* z-index: 10; */
+}
+
 .slide {
     position: relative;
-    display: inline-block;
+    display: inline;
     overflow: hidden;
+    width: 100vw;
+    height: calc((100vh-60px)/2);
+}
+
+.page1Donaldson-container,
+.page2GardnerDenver-container {
+    width: 50vw;
+    align-items: center;
+    /* aliniaza central pe verticala */
+    justify-content: center;
+    /* aliniaza central pe orizontala */
+}
+
+.page1Donaldson-container {
+    background-color: #0082ca;
+    height: 100%;
+    display: flex;
+}
+
+.page2GardnerDenver-container {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    width: 50vw;
 }
 
 .slide-content-D {
@@ -737,8 +796,8 @@ summary {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(23, 0, 156, 0.925);
-    /* background-color: black; */
+    background-color: rgba(23, 0, 156, 0.5);
+    /* 0.925 */
     padding: 20px;
     color: white;
     box-sizing: border-box;
@@ -758,14 +817,24 @@ summary {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(23, 0, 156, 0.966);
+    background-color: rgba(23, 0, 156, 0.5);
+    /* 0.966 */
     padding: 20px;
     color: white;
     box-sizing: border-box;
     transition: transform 0.3s ease;
 }
 
-/* background-color: rgba(197, 0, 30, 0.925); */
+/* logo D */
+.page1Donaldson {
+    width: 30vw;
+}
+
+/* logo GD */
+/* temp disable */
+.page2GardnerDenver {
+    width: 25vw;
+}
 
 .slide:hover .slide-content-D {
     transform: translate(0, 0);
@@ -775,6 +844,7 @@ summary {
     transform: translate(0, -100%);
 }
 
+
 .slide:hover .slide-content-GD {
     transform: translate(0, 0);
 }
@@ -782,6 +852,18 @@ summary {
 .slide-top .slide-content-GD {
     transform: translate(0, -100%);
 }
+
+/* SMARTPHONE */
+@media only screen and (max-width: 500px) {
+    /* .slide {
+        height: calc(50vh-60px);
+        height: calc((100vh-60px)/2);
+        height: 100%;
+    } */
+
+
+}
+
 
 ::selection {
     text-shadow: none;
@@ -791,23 +873,14 @@ summary {
     background: #124838; */
 }
 
-.c {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #07163f;
-    height: 30px;
-}
 
-/* tutorial */
+
+/* (TUTORIAL) */
 
 section {
     height: 100vh;
     width: 100%;
     display: flex;
-    background-color: #f8faf9;
-    /* background-color: #628171; */
-    /* scroll-snap-align: start; */
 }
 
 .to-be-overlapped {
@@ -830,7 +903,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
 
 .wrapper--text--higher {
     width: 50%;
@@ -904,14 +976,13 @@ section {
 h2 {
     letter-spacing: 2px;
     font-size: 100px;
-    /* border-bottom: 8px solid red; */
     font-weight: 400;
     line-height: 0.75;
 }
 
 .custom h2 {
     font-size: 200px;
-font-family: 'News Cycle', sans-serif;
+    font-family: 'News Cycle', sans-serif;
     font-weight: 500;
 }
 
@@ -1013,22 +1084,24 @@ font-family: 'News Cycle', sans-serif;
     font-family: 'Sulphur Point', sans-serif;
     font-size: 15px;
     margin: 0;
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
     color: white;
     display: flex;
     align-items: center;
     right: 0;
     writing-mode: vertical-rl;
     background-color: #17009c;
-    z-index: 5;
+    /* z-index: 5; */
     padding-top: 80px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     letter-spacing: 5px;
     /* height: 90vw; */
-    height: 900px;
+    height: 100vh;
     width: 20px;
 }
+
 /* .ribbon-bottom {
     font-family: 'Sulphur Point', sans-serif;
     font-size: 10px;
@@ -1082,10 +1155,12 @@ section.p-hw {
     align-items: center;
 }
 
-/* .try-repair {
-    min-height: calc(100vh - 80px);
-    overflow-x: hidden;
-} */
+.try-repair {
+    /* min-height: calc(100vh - 80px);
+    overflow-x: hidden; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 /* html,
 body {
@@ -1102,5 +1177,421 @@ body {
 }
 
 /* * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 } */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
+
+.fixed-position {
+    position: fixed;
+    z-index: 100;
+}
+
+/*-----------------------------------------------------*/
+/* SMARTPHONE */
+
+@media only screen and (max-width: 500px) {
+
+    /* NAV BAR (left) */
+    .header {
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        color: white;
+        display: flex;
+        align-items: center;
+        left: 0;
+        writing-mode: vertical-rl;
+        background-color: #17009c;
+        letter-spacing: 5px;
+        height: 100vh;
+        width: 20px;
+        opacity: 1;
+        z-index: 10;
+
+        /* pt a anula padding original */
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .visited-link {
+        /* temporary distance */
+        margin-right: 0px;
+        margin-top: 10px;
+        color: #F8FAF9;
+        text-decoration: none;
+    }
+
+    /* tre modificat */
+    /* .active-link {
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        color: #F8FAF9;
+    } */
+
+    .margin-from-header {
+        padding-top: 60px;
+        /* background-color: rgb(185, 238, 164); */
+        /* border-top: 3px solid red; */
+    }
+
+    .visited-link {
+        margin-left: 0px;
+    }
+
+    .logo-home-page-container {
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 44px;
+        margin: 0;
+    }
+
+    .logo-home-page-text-margin-left {
+        margin-left: 2px;
+    }
+
+    .logo-home-page {
+        height: 40px;
+        /* width: 100vw; */
+    }
+
+    /* .header {
+        opacity: 0;
+    } */
+
+    /* --------------------------- */
+    /* SECTION Donaldson and GD */
+
+    /* nu merge */
+    .slide-top {
+        width: 100vw;
+    }
+
+    /* nu merge */
+    .active-link-D-GD {
+        font-size: 1rem;
+    }
+
+    .DonaldsonAndGD {
+        display: flex;
+        flex-wrap: wrap;
+        height: calc(100vh - 60px);
+        width: 100%;
+        /* height: 40vh; */
+
+        /* opacity: 0; */
+        /* height: calc(100vh-60px); */
+
+    }
+
+    .page1Donaldson-container,
+    .page2GardnerDenver-container {
+        width: 100%;
+    }
+
+    /* unhidded the blue slides */
+    .slide-top .slide-content-D {
+        transform: translate(0, 0);
+    }
+
+    .slide-top .slide-content-GD {
+        transform: translate(0, 0);
+    }
+
+    .slide-content-D,
+    .slide-content-GD {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+    }
+
+    .slide-content-D {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.925 */
+        padding: 20px;
+    }
+
+    .slide-content-GD {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.966 */
+        padding: 20px;
+    }
+
+    .op-class {
+        opacity: 1;
+    }
+
+    /* logo D */
+    .page1Donaldson {
+        width: 100%;
+    }
+
+    /* logo GD */
+    .page2GardnerDenver {
+        width: 100%;
+    }
+
+
+    /* .containsPage1-mobile,
+    .containsPage2-mobile {
+
+    } */
+
+    /* --------------------------- */
+    /* SECTION WITH "distribuitorul tau de..." */
+    .background-bluee {
+        padding: 0 20px 0 20px;
+    }
+
+    .home-page-title {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 1.2;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .home-page-title-smallerr {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 0.8;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .underline-red {
+        border-bottom: 10px solid #00a571;
+    }
+
+
+    .home-page-content h2 {
+        /* color: rgb(0, 47, 255); */
+        font-size: 50px;
+    }
+
+    .wrapper--text h2 {
+        padding-left: 5px;
+        margin: 0;
+        padding: 0;
+        /* color: red; */
+    }
+
+    .wrapper--img,
+    .wrapper--text {
+        width: 100%;
+    }
+
+    .wrapper--img {
+        align-items: flex-end;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper--img img {
+        width: 100%;
+        height: auto;
+        /* opacity: 0.5; */
+    }
+
+    .wrapper--text {
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 60px;
+        border-bottom: 1px solid black;
+        /* scroll-snap-align: end; */
+        height: calc(100vh - 60px);
+        /* border-left: 1px solid black;
+        border-right: 1px solid black; */
+        /* margin: 0 80px 0 10px; */
+    }
+
+    /* body,
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-snap-type: mandatory;
+    } */
+
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    /* --------------------------- */
+    /* PAGE GD */
+    .big-word {
+        font-size: 50px;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    p.regular-text-important {
+        font-size: 3rem;
+        line-height: 0.9;
+        padding-bottom: 0;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    button {
+        /* background-color: rgb(156, 235, 208); */
+        background-color: #e6f0eb00;
+        height: auto;
+        /* width: 100px; */
+        /* border-radius: 45px; */
+        /* border: 0.5px solid #124838; */
+        border: none;
+        color: #124838;
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 1rem;
+        margin: 7px;
+    }
+
+    .compressors-buttons {
+        height: auto;
+        /* font-weight: 700; */
+        text-align: left;
+        border: 1px solid #124838;
+        border-radius: 35px;
+        /* border-left: 10px solid #d0f5e9; */
+    }
+
+    .compressors-buttons:hover {
+        background-color: #e6f0eb00;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .narrow-padding-mobile {
+        padding: 5px 28px;
+    }
+
+    .quote-marks-opening {
+        font-family: 'Yatra One', cursive;
+        font-size: 300px;
+        color: #124838;
+        position: absolute;
+    }
+
+    .text-gardnerdenver {
+        text-align: left;
+    }
+
+    .narrow-padding-mobile2 {
+        padding: 5px 40px
+    }
+
+    .overflow-scroll {
+        overflow-x: scroll;
+        /* de rezolvat width */
+        width: 80hw;
+        max-width: 400px;
+    }
+    
+    /* test stick */
+    .stick-in-table {
+    position: sticky;
+    left: 0;
+    /* color: black; */
+    /* background-color: #c0b9e6; */
+    background-color: #cfcddd;
+    background-color: #00A571;
+    background-color: #D0EEDF;
+    background-color: #2807E0;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    }
+
+    .vertical-text-lr {
+        writing-mode: vertical-rl;
+        font-size: 10px;
+        word-wrap: break-word;
+        height: 200px;
+        text-align: start;
+    }
+
+    /* .same-font-size-inside-table {
+        font-size: 10px;
+    } */
+
+    .text-align-start {
+        text-align: start;
+        /* nu merge width */
+        /* width: 50px; */
+    }
+
+/* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
+    /* .test-stop-scroll {
+        overscroll-behavior: contain;
+    } */
+}
+
+/*-----------------------------------------------------*/
+
+@media screen and (min-width: 501px) and (max-width: 1366px) {
+    .home-page-content h2 {
+        /* color: red; */
+        font-size: 90px;
+    }
+
+    .logo-home-page {
+        height: 60px;
+    }
+}

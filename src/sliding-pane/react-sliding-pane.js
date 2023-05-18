@@ -87,7 +87,7 @@ function ReactSlidingPane(_ref) {
     },
     style: {
       content: {
-        width: width || "80%"
+        width: width || "100%"
       }
     },
     closeTimeoutMS: CLOSE_TIMEOUT,
@@ -97,7 +97,9 @@ function ReactSlidingPane(_ref) {
     onAfterClose: handleAfterClose,
     onRequestClose: onRequestClose,
     contentLabel: "Modal \"".concat(title || "", "\"")
-  }, !hideHeader && /*#__PURE__*/React__default["default"].createElement("div", {
+  }, !hideHeader && /*#__PURE__*/React__default["default"].createElement(
+    //--- slide-pane__header
+    "div", {
     className: "slide-pane__header"
   }, /*#__PURE__*/React__default["default"].createElement("div", {
     className: "slide-pane__close",
@@ -110,9 +112,14 @@ function ReactSlidingPane(_ref) {
     className: "slide-pane__title"
   }, title), /*#__PURE__*/React__default["default"].createElement("div", {
     className: "slide-pane__subtitle"
-  }, subtitle))), /*#__PURE__*/React__default["default"].createElement("div", {
+  }, subtitle))
+  ),
+  //---slide-pane__content
+   /*#__PURE__*/React__default["default"].createElement(
+    "div", {
     className: "slide-pane__content"
-  }, children));
+  }, children
+  ));
 }
 ReactSlidingPane.propTypes = {
   isOpen: _pt__default["default"].bool,

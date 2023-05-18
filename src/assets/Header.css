@@ -11,31 +11,19 @@
     text-align: center;
     font-family: 'Sulphur Point', sans-serif;
     font-weight: 700;
-    /* font-size: 3vh; */
     font-size: 22px;
     font-kerning: 10px;
-    /* background-color: #07163f; */
     letter-spacing: 2px;
-    
-    /* padding-bottom: 2vh; */
     padding-right: 100px;
-
-    /* margin-right: 0px; */
-    /* padding-right: 0px; */
-    /* margin-bottom: 7px; */
-    /* padding-bottom: 40px; */
-    /* border-bottom: 0.5px solid white; */
-
     display: flex;
     justify-content: end;
     align-items: center;
 
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 0;
     /* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
     z-index: 5;
-    background-color: #17009c;
 }
 
 .visited-link {
@@ -44,8 +32,3 @@
     color: #F8FAF9;
     text-decoration: none;
 }
-
-/* .contact-info-in-header{
-    text-decoration: none;
-    padding-left: 10vw;
-} */

@@ -6,7 +6,7 @@ import '../assets/Header.css';
 
 export default function Header() {
     return (
-        <div>
+        <div className="fixed-position">
             <div className='header'>
                 <NavLink className='visited-link' to='/about' activeClassName="active-link">Despre Ultrafilter</NavLink>
                 <NavLink className='visited-link' to='/utile' activeClassName="active-link">linkuri utile</NavLink>

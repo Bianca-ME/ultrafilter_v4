@@ -5,7 +5,7 @@ import gdimg1 from '../../../assets/GD/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
 
 export default function Cabinete_dentare_compresoare_fara_ungere () {
     return (
-        <main className='white-background margin-from-header narrow-padding'>
+        <main className='white-background narrow-padding test-stop-scroll'>
             <p className='regular-text-important'>Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii</p>
             <img className='simpleimg' src={gdimg1} alt='image missing' />
             <p className='regular-text'>
@@ -13,12 +13,12 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
             </p>
 
             
-
-            <table className='temptable'>
+<div className='overflow-scroll'>
+<table className='temptable'>
                 {/* 1 */}
                 <tr>
                     <td rowspan='2'></td>
-                    <td rowspan='2'>Compresoare dentare fara ungere , Champion, cu sau fara carcasa, model:</td>
+                    <td rowspan='2' className='same-font-size-inside-table text-align-start'>Compresoare dentare fara ungere, Champion, cu sau fara carcasa, model:</td>
                     <td>Numar de scaune</td>
                     <td>Presiune</td>
                     <td>debit FAD la 5 bar</td>
@@ -42,8 +42,8 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 3 */}
                 <tr>
                     {/* de schimbat pdf ul */}
-                    <td rowspan='7'>Compresoare cu actionare directa prin cuplaj "C prime" cu uscator cu membrana cu -20⁰C PDP si filtrare la  0.01 mic, (optinal in carcasa isonorizanta 53 ÷ 56 dB).</td>
-                    <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>C Prime 30-7 SM</NavLink></td>					
+                    <td rowspan='7' className='vertical-text-lr'>Compresoare cu actionare directa prin cuplaj "C prime" cu uscator cu membrana cu -20⁰C PDP si filtrare la  0.01 mic, (optinal in carcasa isonorizanta 53 ÷ 56 dB).</td>
+                    <td className='stick-in-table'><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>C Prime 30-7 SM</NavLink></td>					
                     <td>1</td>
                     <td>5</td>
                     <td>78</td>
@@ -55,7 +55,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 4 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 50-15 SM</td>			
+                    <td className='stick-in-table'>C Prime 50-15 SM</td>			
                     <td>3</td>
                     <td>5</td>
                     <td>152</td>
@@ -67,7 +67,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 5 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 50-25 SM</td>						
+                    <td className='stick-in-table'>C Prime 50-25 SM</td>						
                     <td>4</td>
                     <td>5</td>
                     <td>225</td>
@@ -79,7 +79,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 6 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 100-30 Tandem SM</td>		
+                    <td className='stick-in-table'>C Prime 100-30 Tandem SM</td>		
                     <td>5</td>
                     <td>5</td>
                     <td>305</td>
@@ -91,7 +91,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 7 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 100-50 Tandem SM</td>
+                    <td className='stick-in-table'>C Prime 100-50 Tandem SM</td>
                     <td>7</td>
                     <td>5</td>
                     <td>450</td>
@@ -103,7 +103,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 8 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 200-75 Tandem SM</td>
+                    <td className='stick-in-table'>C Prime 200-75 Tandem SM</td>
                     <td>9</td>
                     <td>5</td>
                     <td>660</td>
@@ -115,7 +115,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                 {/* 9 */}
                 <tr>
                     {/* <td></td> */}
-                    <td>C Prime 270-100 Tandem SM</td>
+                    <td className='stick-in-table'>C Prime 270-100 Tandem SM</td>
                     <td>14</td>
                     <td>5</td>
                     <td>780</td>
@@ -125,6 +125,8 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
                     <td>270</td>
                 </tr>
             </table>
+</div>
+            
             <p className='regular-text'>
                 Compresarele pot fi construite pentru presiuni de pana la 10 bar. Pentru presiuni de refulare de 8 bar debitul FAD se reduce cu 33%
             </p>
