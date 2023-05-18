@@ -73,11 +73,13 @@ export default function HomePage() {
 
     const toggleDiv1 = () => {
         setDiv1Visible(!div1Visible);
-    };
-
-    const toggleDiv2 = () => {
+        setDiv2Visible(false);
+      };
+    
+      const toggleDiv2 = () => {
         setDiv2Visible(!div2Visible);
-    };
+        setDiv1Visible(false);
+      };
     return (
         <div data-scroll>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
