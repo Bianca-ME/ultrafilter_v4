@@ -15,12 +15,14 @@ import '../assets/locomotive-scroll.css';
 // images
 import Dlogo from '../assets/donaldson-logo.jpg';
 import GDlogo from '../assets/gardner-denver-logo.jpg';
-// import backgrr from '../assets/frame_8.png';
-// import Picture49 from '../assets/Picture49.png';
-// import Picture26 from '../assets/Picture26.jpg';
-import hpimg1 from '../assets/HomePage/1_Colector_de_praf_Donaldson.jpg';
-import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
-import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
+
+import arrow from '../assets/north-east-arrow.svg';
+
+// import hpimg1 from '../assets/HomePage/1_Colector_de_praf_Donaldson.jpg';
+// import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
+// import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
+import GD9 from '../assets/HomePage/9_compresoare_cu_piston_Champion.jpg';
+import GD10 from '../assets/HomePage/10_Compresoare_pentru_cabinete_dentare.jpg';
 
 
 
@@ -65,40 +67,17 @@ export default function HomePage() {
 
     const [isHovered, setIsHovered] = useState(false);
 
-    // useEffect(() => {
-    //     const scroll = new LocomotiveScroll({
-    //         el: document.querySelector('[data-scroll-container]'),
-    //         smooth: true,
-    //         offset: ["10%", 0]
-    //     });
+    // test toggle hide unhide content
+    const [div1Visible, setDiv1Visible] = useState(false);
+    const [div2Visible, setDiv2Visible] = useState(false);
 
+    const toggleDiv1 = () => {
+        setDiv1Visible(!div1Visible);
+    };
 
-    // }, []);
-    // // Disable the default browser scrolling behavior
-    // const disableScroll = (event) => {
-    //     event.preventDefault();
-    // };
-    // window.addEventListener('mousewheel', disableScroll, { passive: false });
-    // window.addEventListener('touchmove', disableScroll, { passive: false });
-
-    // return () => {
-    //     // Remove event listeners when component unmounts
-    //     window.removeEventListener('mousewheel', disableScroll);
-    //     window.removeEventListener('touchmove', disableScroll);
-    // };
-
-    // TRY IMPORT SKETCH
-    // const sketchRef = useRef(null);
-
-    // useEffect(() => {
-    //     new p5(sketch2, sketchRef.current);
-    // }, []);
-
-    // nu mi-a mers
-    // useEffect(() => {
-    //     return addClassOnInView("my-element", "fade-in");
-    // }, []);
-
+    const toggleDiv2 = () => {
+        setDiv2Visible(!div2Visible);
+    };
     return (
         <div data-scroll>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
@@ -106,120 +85,179 @@ export default function HomePage() {
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
                             <Link to="/Donaldson" rel="noreferrer" className='active-link-D-GD'>
-                                filtre, desprafuire industriala
+                                despre Donaldson
                             </Link>
                         </div>
                         <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
                     </div>
-                    {/* <img className='Donaldson-logo-mobile op-class' src={Dlogo} alt="Donaldson logo can.t be seen"></img> */}
                 </div>
                 <div className='containsPage2 slide slide-top containsPage2-mobile'>
                     <div className='page2GardnerDenver-container'>
                         <div className='slide-content-GD'>
                             <Link to="/GardnerDenver" rel="noreferrer" className='active-link-D-GD'>
-                                compresoare si retele de aer comprimat
+                                despre Gardner Denver
                             </Link>
                         </div>
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                     </div>
-                    {/* <img className='GD-logo-mobile op-class' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img> */}
                 </div>
             </div>
-            {/* <img src={gdvid}/> SHOW MIHAI WITH GIF gdvid in src and disable size */}
 
-            {/* START -- TRY TUTORIAL */}
-            <div className='home-page-content soft-green-background'>
-                {/* PROBLEMS: */}
-                {/* scroll-ul normal al paginilor nu mai merge. ca si cum functia asta de scroll locomotive suprapune scrollul normal */}
-                {/* tot div-ul acesta urca peste banner. meniul nu se mai vede. z-index nu functioneaza */}
-                {/* <section> */}
-                <div className='background-bluee border-test' data-scroll data-scroll-container>
-                    {/* <br />
-                    <br />
-                    <br />
-                    <br /> */}
-                    {/* style={{ backgroundImage: `url(${gif})` }} */}
-                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='4'>distribuitorul tau de <span className='underline-red'>compresoare</span> si <span className='underline-red'>filtre</span> industriale</p>
-
-                    {/* cand reusesc cu Locomotive Scroll */}
-                    {/* <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='4'>distribuitorul tau</p>
-                    <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de <span className='underline-red'>compresoare</span> </p>
-                    <p className='home-page-title-smallerr' data-scroll data-scroll-direction='horizontal' data-scroll-speed='-2'>si <span className='underline-red'>filtre</span> industriale</p> */}
-
-                    {/* nu mai stiu ce-i cu asta */}
-                    {/* <p className='home-page-title' data-scroll data-scroll-direction='horizontal' data-scroll-speed='1'>de 
-                        <span className="hover-over-word" style={{ backgroundImage: `url(${testx})`, backgroundSize: '100% auto' }}>compresoare</span>
-                    </p> */}
+            {/* "TITLURILE MARI" */}
+            <section className='section1-buttons-under-D-and-GD two-columns'>
+                <div className='display-block'>
+                    {/* Donaldson */}
+                    <p className='regular-text-important'>filtre, desprafuire industriala</p>
+                    <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a></p>
+                    <p><a className='buttonV1'>Ventilatoare</a></p>
+                    <p><a className='buttonV1'>Filtre pentru ventilatii</a></p>
+                    <p><a className='buttonV1'>Aspiratoare industriale</a></p>
+                    <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a></p>
                 </div>
-                {/* </section> */}
-                <div className='give-scroll-snap'>
-
-                    <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
-                        {/* data-scroll-section */}
-                        <div className='wrapper--img'>
-                            <img className='home-page-img' src={hpimg1} alt="img can.t be seen"></img>
-                        </div>
-                        <div className='wrapper--text'>
-                            <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Desprafuire industriala Donaldson, colectoare de praf</h2>
-                            {/* <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Desprafuire </h2>
-                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn2" data-scroll-repeat="true" data-scroll-speed="2">industriala </h2>
-                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn3" data-scroll-repeat="true" data-scroll-speed="2">Donaldson, </h2>
-                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn4" data-scroll-repeat="true" data-scroll-speed="2">colectoare </h2>
-                        <h2 className="op-class" data-scroll data-scroll-class="fadeIn5" data-scroll-repeat="true" data-scroll-speed="2">de praf</h2> */}
-                            {/* <p data-scroll data-scroll-speed='2'>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p> */}
-                        </div>
-                    </section>
-
-                    {/* ZOOM OUT EFFECT on img, FADE IN EFFECT on h2 */}
-                    <section data-scroll data-scroll-direction="horizontal" data-scroll-speed='1'>
-                        <div className='wrapper--img-fixed-size'>
-                            <img className='home-page-img-to-be-zoomed-out' data-scroll data-scroll-class="zoom-out" src={hpimg2} alt="img can.t be seen"></img>
-                        </div>
-                        <div className='wrapper--text--higher'>
-                            <h2 className="op-class" data-scroll data-scroll-class="fadeIn" data-scroll-repeat="true" data-scroll-speed="2">Saci filtranti pentru colectoarele de praf</h2>
-                        </div>
-                    </section>
-
-
-
-                    <section>
-                        {/* <div ref={sketchRef} className='overlap-grid' data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div> */}
-                        <div className='wrapper--img'>
-                            <img className='home-page-img to-be-overlapped' src={filter} alt="img can.t be seen"></img>
-                        </div>
-                        <div id='sticktest' className='wrapper--text'>
-                            <h2 data-scroll data-scroll-sticky data-scroll-target="#sticktest">Elemente filtrante/cartuse filtrante pentru colectoare de praf</h2>
-                            {/* <p>
-                            Suspendisse dapibus id nisl et maximus. Sed sed dolor rhoncus, ullamcorper leo ut, dictum quam. Donec efficitur tortor id orci consequat molestie. Aenean odio justo, ultrices sed consequat a, pulvinar sed nulla. In elementum leo at ex mattis porttitor. Nulla dictum velit consequat, molestie neque a, sollicitudin urna. Nulla nec consequat ante.Donec vitae massa rutrum, luctus massa at, euismod orci. Morbi ut quam sit amet tortor sodales commodo vitae sed lacus. Curabitur id venenatis neque. Aliquam ullamcorper eros et sem faucibus ultrices. Phasellus urna mauris, tempor eu consectetur vitae, suscipit sed turpis. Integer ultrices vehicula pellentesque. Sed convallis nunc vel maximus dignissim. Maecenas rhoncus, dolor vitae lobortis semper, lectus mauris suscipit lorem, eu convallis est risus ut diam. Donec fermentum, neque a venenatis ultricies, eros purus maximus ante, eu interdum elit magna sed lacus. Quisque volutpat nulla volutpat, tempor neque ut, vehicula massa. Sed ut odio dolor. Praesent nec nunc ante. Mauris congue dui sollicitudin aliquet tempor. Donec iaculis est non ex cursus, eu suscipit lacus pharetra.
-                        </p> */}
-                        </div>
-
-                    </section>
-
-                    <section>
-                        <div className='wrapper--img'>
-                            <img className='home-page-img' src={hpimg4} alt="img can.t be seen"></img>
-                        </div>
-                        <div className='wrapper--text'>
-                            <h2>Ventilatoare Euroventilatori </h2>
-                        </div>
-                    </section>
-                    <section>
-                        <div className='wrapper--img'>
-                            <img className='home-page-img' src={hpimg5} alt="img can.t be seen"></img>
-                        </div>
-                        <div className='wrapper--text'>
-                            <h2>Filtre pentru ventilatii</h2>
-                        </div>
-                    </section>
+                <div className='display-block'>
+                    {/* GD */}
+                    <p className='regular-text-important'>compresoare si retele de aer comprimat</p>
+                    <p><a className='buttonV1' href='#despre-GD'>Despre GD</a></p>
+                    <p><a className='buttonV1' href='#compresoare-cu-piston'>Compresoare cu piston</a></p>
+                    <p><a className='buttonV1'>Compresare rotative (fara ungere/ cu ungere)</a></p>
+                    <p><a className='buttonV1'>Filtrare si uscare aer comprimat</a></p>
+                    <p><a className='buttonV1'>Recipienti de stocare aer comprimat</a></p>
                 </div>
-                {/* <div ref={sketchRef} data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"></div> */}
-            </div>
+            </section>
 
-            {/* END -- TRY TUTORIAL */}
+            {/* section GD intro */}
+            <section className='sectionX-despre-GD'>
+                <h1 id='despre-GD'>Despre Gardner Denver</h1>
+                <p>Gardner Denver face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.</p>
+            </section>
+
+            {/* section Compresoare cu piston */}
+            <section className='sectionX-compresoare-cu-piston'>
+                <details >
+                    {/* titlu */}
+                    <summary><h1 id='compresoare-cu-piston' className='title2'>Compresoare cu piston</h1></summary>
+                    <div className='content-under-title'>
+                        <div className='two-columns'>
+                            <div className='left-column-with-titles'>
+                                <img src={GD9}></img>
+                                <p>Compresoare cu piston Champion</p>
+                                <div className='see-details'>
+                                    <button onClick={toggleDiv1}>vezi descriere si tabel</button>
+                                    <img className='arrow' src={arrow} alt='svg missing' />
+                                </div>
+                            </div>
+                            {/* hide / unhide */}
+                            <div>
+                                {div1Visible && (
+                                <div id="div1" className="details-product">
+                                    <p>ALT TEXT Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
+
+                                    <p className='regular-text'>
+                                        Compresarele pot fi construite pentru presiuni de pana la 10 bar. Pentru presiuni de refulare de 8 bar debitul FAD se reduce cu 33%
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Contact</th>
+                                            <th>Country</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Alfreds Futterkiste</td>
+                                            <td>Maria Anders</td>
+                                            <td>Germany</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Centro comercial Moctezuma</td>
+                                            <td>Francisco Chang</td>
+                                            <td>Mexico</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ernst Handel</td>
+                                            <td>Roland Mendel</td>
+                                            <td>Austria</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Island Trading</td>
+                                            <td>Helen Bennett</td>
+                                            <td>UK</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Laughing Bacchus Winecellars</td>
+                                            <td>Yoshi Tannamuri</td>
+                                            <td>Canada</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Magazzini Alimentari Riuniti</td>
+                                            <td>Giovanni Rovelli</td>
+                                            <td>Italy</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            )}
+                            </div>
+                            
+                        </div>
+
+
+                        <div className='two-columns'>
+                            <div className='left-column-with-titles'>
+                                <img src={GD10}></img>
+                                <p>Compresoare pentru cabinete dentare</p>
+                                <div className='see-details'>
+                                    <button onClick={toggleDiv2}>vezi descriere si tabel</button>
+                                    <img className='arrow' src={arrow} alt='svg missing' />
+                                </div>
+                            </div>
+                            {/* hide / unhide */}
+                            <div>
+                                {div2Visible && (
+                                <div id="div2" className="details-product">
+                                    Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
+                                </div>
+                            )} 
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </details>
+
+                {/* hidden content description and table */}
+                {/* <div>
+                    <p>Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
+                    <p>(tabel)</p>
+                </div> */}
+
+            </section>
+
+
+
 
         </div>
     )
 }
 
 // style={{ backgroundImage: `url(${fan})`,backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize:'cover'}}
+
+// <section className='sectionX-compresoare-cu-piston'>
+//     <details>
+//         <summary> <h1 id='compresoare-cu-piston'>Compresoare cu piston</h1>
+    //         </summary>
+    //         <details>
+    //             <img src={GD9}></img>
+    //             <summary>Compresoare cu piston Champion</summary>
+    //             <p>vezi descriere si tabel</p>
+    //         </details>
+    //         <div>
+    //             <p>Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
+
+    //         </div>
+
+    //         <details>
+    //             <img src={GD10}></img>
+    //             <summary>Compresoare pentru cabinete dentare</summary>
+    //             <p>vezi descriere si tabel</p>
+    //         </details>
+    //     </details>
+
+    // </section> 

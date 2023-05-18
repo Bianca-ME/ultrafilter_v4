@@ -120,16 +120,16 @@ export default function GardnerDenver() {
             <div className='regular-text wide-padding narrow-padding-mobile2'>
                 <p>oil free:</p>
                 {/* TESTING > */}
-                <button className='compressors-buttons' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                <button className='buttonV1' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
                     test scroll inside sliding pane  <img className='arrow' src={arrow} alt='svg missing' />
                 </button>
                 {/* TESTING < */}
                 <br />
-                <button className='compressors-buttons' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                <button className='buttonV1' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
                     pentru cabinete dentare, compresoare cu piston, fara ungere – oil free  <img className='arrow' src={arrow} alt='svg missing' />
                 </button>
                 <br />
-                <button className='compressors-buttons' onClick={() => setState({ pane_C_oil_free_tip_scroll: true })}>
+                <button className='buttonV1' onClick={() => setState({ pane_C_oil_free_tip_scroll: true })}>
                     compresoare scroll, fara ungere  <img className='arrow' src={arrow} alt='svg missing' />
                 </button>
                 <br />

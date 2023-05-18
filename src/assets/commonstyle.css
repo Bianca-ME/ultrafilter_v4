@@ -61,6 +61,127 @@ body {
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* TEMP ------------------------ */
+/* temp font */
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+}
+
+/* temp img size */
+
+
+/* ------------------------ TEMP */
+
+/* MARGINS AND PADDINGS ------------------------*/
+.left-column-with-titles {
+    margin-left: 50px;
+}
+
+.details-product {
+    padding-left: 100px;
+    opacity: 1;
+    transition: opacity 1.5s;
+    background-color: white;
+}
+
+/* ------------------------MARGINS AND PADDINGS */
+
+/* SECTION1 titlurile dedesubt de logo-urile D si GD ------------------------*/
+.two-columns {
+    display: flex;
+}
+
+.display-block {
+    display: block;
+    width: 50%;
+}
+
+/* ------------------------ SECTION1 titlurile dedesubt de logo-urile D si GD */
+
+/* SECTIONX template for title + images + description + table ------------------------*/
+.title2 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 40px;
+}
+
+/* select all first divs inside class */
+.two-columns>div {
+    border: 1px solid black;
+}
+
+.left-column-with-titles {
+    width: 240px;
+}
+
+/* select all img under class x except class y */
+.content-under-title img:not(.arrow) {
+    width: 200px;
+    height: auto;
+}
+
+.see-details {
+    display: flex;
+    font-size: 15px;
+}
+
+.see-details p {
+    margin: 0;
+}
+
+.details-product {
+    width: 1000px;
+height: auto;
+position: absolute;
+    /* display: block; */
+}
+
+
+
+/* ------------------------ SECTIONX template for title + images + description + table */
+
+
+/* aplica style of button si la screen >> */
+button {
+    /* background-color: rgb(156, 235, 208); */
+    background-color: #e6f0eb00;
+    height: auto;
+    /* width: 100px; */
+    /* border-radius: 45px; */
+    /* border: 0.5px solid #124838; */
+    border: none;
+    color: #124838;
+    font-size: 1rem;
+    margin: 7px;
+}
+
+/* buttonV1 ------------------------ */
+.buttonV1 {
+    font-family: 'Sulphur Point', sans-serif;
+    height: auto;
+    text-align: left;
+    border: 1px solid #124838;
+    border-radius: 35px;
+    padding: 1px 6px;
+}
+
+.buttonV1:hover {
+    background-color: #e6f0eb00;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+/* ------------------------ buttonV1 */
+
+
+
+
+/* DE FACUT CURAT DEDESUBT--------------------------------------------------------------------------- */
+
 .toberelative {
     position: relative;
 }
@@ -83,9 +204,7 @@ body {
 
 /* COLORS */
 .white-background {
-    /* background-color: #F8FAF9; */
     background-color: #ffffff;
-    /* background-color: #9cceb1; */
 }
 
 .soft-green-background {
@@ -112,27 +231,22 @@ body {
     color: #124838;
 }
 
-.card {
-    background-color: #F8FAF9;
-    border-radius: 45px;
-    padding: 5px 3%;
-    margin: 20px 70px;
-    font-family: 'Work Sans', sans-serif;
-}
-
 .regular-text {
     font-family: 'Work Sans', sans-serif;
     font-family: 'Cousine', monospace;
     font-family: 'News Cycle', sans-serif;
     font-size: 1.5rem;
-    /* padding: 5vh 10vw; */
     color: #124838;
-    padding-bottom: 0;
+
+    /* temp */
+    padding: 0;
 }
 
 p.regular-text-important {
-    font-size: 3rem;
+    font-size: 50px;
+    line-height: 0.9;
     padding-bottom: 0;
+    font-family: 'Sulphur Point', sans-serif;
 }
 
 .sulphur-font {
@@ -164,106 +278,23 @@ p.regular-text-important {
 /* IMAGES EFFECTS */
 
 /* FADE IN EFFECT */
-.op-class {
-    opacity: 0;
-}
-
-.fadeIn {
-    opacity: 1;
-    transition: opacity 1.5s;
-}
-
-.fadeIn2 {
-    opacity: 1;
-    transition: opacity 1.7s;
-}
-
-.fadeIn3 {
-    opacity: 1;
-    transition: opacity 1.9s;
-}
-
-.fadeIn4 {
-    opacity: 1;
-    transition: opacity 2.1s;
-}
-
-.fadeIn5 {
-    opacity: 1;
-    transition: opacity 2.3s;
-}
+/* ... */
 
 
 /* ZOOM OUT EFFECT IN FIXED SIZE PARENT CONTAINER */
-.wrapper--img-fixed-size {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-    padding-left: 200px;
-    /* background-color: #65756D;
-background-clip: border-box; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* width: 60%;
-    height: auto; */
-}
-
-.home-page-img-to-be-zoomed-out {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: auto;
-    opacity: 1;
-    transition: all 2s ease;
-}
-
-.zoom-out {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 1;
-    /* opacity in the last stage after zooming out */
-}
-
+/* ... */
 /* IMAGES EFFECT ABOVE */
-
-
-/* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
-/* text-decoration: underline;
-text-decoration-thickness: 20px;
-text-decoration-color: aquamarine;
-text-underline-offset: -0.1rem;
-text-decoration-line: underline; */
-/* background-color: rgb(208, 245, 233); */
-/* display: inline-block;
-line-height: 0.1; */
-
-.underline-on-hover:hover {
-    border-bottom: 10px solid rgb(208, 245, 233);
-}
-
-.text-about p,
-.text-utile p,
-.text-contact p,
-.text-donaldson p {
-    font-size: 1.5rem;
-    color: #124838;
-}
 
 /* Donaldson CSS page */
 
 /* era ID pt titlurile din Donaldson */
-#h {
+/* #h {
     font-size: 3rem;
     font-family: 'Xanh Mono', monospace;
     padding: 0 0 30px 0;
     text-decoration: underline;
     text-underline-offset: 20px;
-}
+} */
 
 .tabel-donaldson-compresoare {
     color: #124838;
@@ -291,10 +322,6 @@ table.tabel-donaldson-compresoare {
     padding: 0 0 0 30px;
 }
 
-/* #tds-top {
-    padding-top: 30px;
-} */
-
 .tds {
     font-size: 1rem;
     margin: 0;
@@ -306,17 +333,6 @@ table.tabel-donaldson-compresoare {
     /* border: 0.5px solid #124838; */
     border-radius: 20px;
 }
-
-/* doar orientativ */
-/* .tds {
-    padding: 5px 15px 2px 50px;
-    border: 1px solid #124838;
-}
-
-.tds:hover {
-    border-radius: 30px;
-    background-color: rgb(228, 243, 255);
-} */
 
 /* GardnerDenver CSS page */
 
@@ -335,12 +351,12 @@ table.tabel-donaldson-compresoare {
     margin-top: 3vh;
 }
 
-.quote-marks-opening {
+/* .quote-marks-opening {
     font-family: 'Yatra One', cursive;
     font-size: 20rem;
     color: #124838;
     position: absolute;
-}
+} */
 
 
 
@@ -369,73 +385,15 @@ table.table-GD-c {
     text-align: right;
 }
 
-.signature {
-    right: 5vw;
-    bottom: 2vh;
-    /* margin-left: 0; */
-    position: absolute;
-    width: 30%;
-    color: #124838;
-}
-
 /* Contact CSS */
 
-/* * {
-    border: 1px solid red;
-} */
-
 /* let's try imitate default css */
-.main-1-custom1 {
-    background-color: #F8FAF9;
-    /* padding: 5px 3%; */
-    margin: 0;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.regular-text-custom1 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5rem;
-    /* padding: 5vh 10vw; */
-    color: #124838;
-}
-
-.regular-text-important-custom {
-    font-size: 3rem;
-    padding-left: 740px;
-    padding-top: 5vh;
-    margin: 0;
-    /* ca sa anulez marginea inherited de unde nu stiu */
-}
-
-
-
-.inline-flex-container {
-    display: inline-flex;
-    width: 100%;
-    /* padding: 0 50px; */
-    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
-    border-top: 1px solid #124838;
-}
-
-.padding-top {
-    padding-top: 50px;
-}
-
-.inline-flex {
-    display: inline-flex;
-    width: 100%;
-    /* padding: 0 50px; */
-    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
-    border-top: 1px solid #124838;
-}
 
 .contact-info {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     margin-bottom: 100px;
     margin-left: 300px;
-
-
 }
 
 .contact-info div:last-child {
@@ -447,12 +405,6 @@ table.table-GD-c {
     text-decoration: underline;
     text-underline-offset: 7px;
 }
-
-/* nu stiu cum sa selectez doar formul ca sa-l trimit in dreapta paginii */
-/* .inline-flex.form-container div:last-child {
-    justify-content: flex-end;
-    border: 1px solid red;
-} */
 
 .form-container {
     width: 100%;
@@ -518,17 +470,6 @@ form textarea {
     text-align: center;
 }
 
-/* background-color: lightgreen;
-border-color: rgb(42, 236, 42); */
-/* input:valid {
-    color: rgb(253, 84, 149);
-} */
-
-/* nu merge */
-::placeholder:hover {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    text-decoration: wavy;
-}
 
 /* when you select text box to write inside */
 textarea:focus,
@@ -546,39 +487,15 @@ textarea {
     vertical-align: middle;
 }
 
-/* button v1 */
-/* button {
-    background-color: #f0f7f3;
-    height: 50px;
-    width: 120px;
-    border-radius: 45px;
-    border: 0.5px solid #124838;
-    color: #124838;
-    font-family: 'Sulphur Point', sans-serif;
-    font-size: 1.2rem;
-}
-
-
-
-button:hover {
-    background-color: #c2e3f0;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-} */
-
 .button {
     display: flex;
     justify-content: center;
 }
 
 /* button v2 */
-button {
-    /* background-color: rgb(156, 235, 208); */
+/* button {
     background-color: #e6f0eb;
     height: 25px;
-    /* width: 100px; */
-    /* border-radius: 45px; */
-    /* border: 0.5px solid #124838; */
     border: none;
     color: #124838;
     font-family: 'Sulphur Point', sans-serif;
@@ -590,7 +507,7 @@ button:hover {
     background-color: #cee4d9;
     text-decoration: underline;
     text-underline-offset: 7px;
-}
+} */
 
 
 .map-container {
@@ -598,14 +515,7 @@ button:hover {
     border-top: 1px solid #124838;
 }
 
-/* nu merge */
-.form input:hover {
-    background-color: #3adb80;
-    border-radius: 20px;
-}
-
-
-.compressors-buttons {
+.buttonV1 {
     font-size: 1.5rem;
 }
 
@@ -617,50 +527,9 @@ button:hover {
     height: 0.8rem;
 }
 
-
-
-
-
-
-
 /* test */
 
-/* .tobesticky {
-    position: sticky;
-    font-size: 2rem;
-    color: red;
-    right: 5vw;
-    bottom: 0.5vh;
-    top: 0.5vh;
-    z-index: 2;
-} */
-
-.imgtest {
-    height: 100%;
-}
-
-.imgtest2 {
-    height: 20%;
-    position: sticky;
-    right: 5vw;
-    bottom: 2vh;
-    z-index: 2;
-}
-
-.imm {
-    position: absolute;
-    left: 0;
-    top: 150px;
-    width: 200px;
-    height: auto;
-    z-index: 1;
-}
-
-.simpleimg {
-    width: 300px;
-    height: auto;
-}
-
+/* tabele cu parametrii */
 .temptable {
     /* border-collapse: collapse; */
     border-collapse: separate;
@@ -668,15 +537,13 @@ button:hover {
     /* background-color: #17009c; */
     /* background-color: #a3a2a7; */
     background-color: #140666;
-    color:white;
+    color: white;
     text-align: center;
-border-bottom: 1px solid #124838;
+    border-bottom: 1px solid #124838;
 
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Sulphur Point', sans-serif;
 }
-
-
 
 td {
     /* border: 1px solid white; */
@@ -691,6 +558,7 @@ td {
     background-color: #F0EFF5;
     background-color: #17009C;
 }
+
 /* background-color: #533cd6; */
 
 /* si mai mult test */
@@ -718,25 +586,9 @@ summary {
     font-family: 'Work Sans', sans-serif;
     position: absolute;
     /* nu merge z peste logo */
-    z-index: 201; 
+    z-index: 201;
     /* font-family: 'Cutive Mono', monospace; */
 }
-
-/* .stop-background-scroll {
-    overscroll-behavior: contain;
-    overflow-y: scroll !important;
-    scrollbar-color: #0ad44d;
-}
-
-.stop-background-scroll::-webkit-scrollbar-thumb {
-    background: rgb(240, 79, 5);
-    border-radius: 100vw;
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(233, 240, 235);
-    border-radius: 10px;
-} */
 
 /* HOME PAGE - WORK IN PROGRESS */
 
@@ -796,7 +648,7 @@ summary {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(23, 0, 156, 0.5);
+    background-color: rgba(23, 0, 156, 0.925);
     /* 0.925 */
     padding: 20px;
     color: white;
@@ -817,7 +669,7 @@ summary {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(23, 0, 156, 0.5);
+    background-color: rgba(23, 0, 156, 0.966);
     /* 0.966 */
     padding: 20px;
     color: white;
@@ -853,18 +705,6 @@ summary {
     transform: translate(0, -100%);
 }
 
-/* SMARTPHONE */
-@media only screen and (max-width: 500px) {
-    /* .slide {
-        height: calc(50vh-60px);
-        height: calc((100vh-60px)/2);
-        height: 100%;
-    } */
-
-
-}
-
-
 ::selection {
     text-shadow: none;
     color: #236b59;
@@ -877,7 +717,7 @@ summary {
 
 /* (TUTORIAL) */
 
-section {
+/* section {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -892,9 +732,9 @@ section {
     position: absolute;
     z-index: 2;
     padding: 50px 100px;
-}
+} */
 
-.wrapper--img,
+/* .wrapper--img,
 .wrapper--text {
     width: 50%;
     height: 100%;
@@ -909,11 +749,8 @@ section {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     align-items: start;
     padding-left: 5px;
-    /* color: red; */
     font-family: 'News Cycle', sans-serif;
     color: #65756D;
 }
@@ -931,10 +768,7 @@ section {
 .wrapper--img img {
     width: 60%;
     height: auto;
-
-    /* border: 1px solid #07163f; */
-    /* padding: 15px 7px 50px 7px; */
-}
+} */
 
 /* daca ai paragraf sub text, ti le aliniaza */
 .wrapper--text {
@@ -958,27 +792,14 @@ section {
     color: #00a571;
     color: #f0eff5;
     color: #65756D;
-
-    /* border: 0.5px solid #2a302d;
-    border-radius: 45px;  */
 }
 
-/* .wrapper--text--custom h2 {
-    color: #65756D;
-    letter-spacing: 2px;
-    font-size: 70px;
-
-    font-weight: 400;
-    line-height: 0;
-    margin-top: 0;
-} */
-
-h2 {
+/* h2 {
     letter-spacing: 2px;
     font-size: 100px;
     font-weight: 400;
     line-height: 0.75;
-}
+} */
 
 .custom h2 {
     font-size: 200px;
@@ -986,38 +807,12 @@ h2 {
     font-weight: 500;
 }
 
-/* .underline { 
-} */
 
-/* nu merge */
-/* .go-behind {
-    z-index: -5;
-} */
-
-/* simple zoom in, not useful right now */
-/* .zoom-in {
-    opacity: 1;
-    transform: scale(2);
-    transition: transform 0.5s;
-} */
-/* transition-delay: .3s; */
-
-/* .flex-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
-.background-bluee {
-    background-color: #140666;
-}
-
-.border-test {
+/* .border-test {
     border-left: 10px solid black;
     border-right: 10px solid black;
     overflow: hidden;
-}
+} */
 
 .home-page-title {
     font-size: 10rem;
@@ -1063,14 +858,7 @@ h2 {
     animation: fadeIn 1s;
 }
 
-/* mnu... nu merge background mg */
-.hover-over-word:hover {
-    background: url('../assets/textxx.png');
-    color: #2000d8;
-    transition: color ease-in 0.3s;
-}
-
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     0% {
         opacity: 0;
     }
@@ -1078,7 +866,7 @@ h2 {
     100% {
         opacity: 1;
     }
-}
+} */
 
 .ribbon-right {
     font-family: 'Sulphur Point', sans-serif;
@@ -1101,29 +889,6 @@ h2 {
     height: 100vh;
     width: 20px;
 }
-
-/* .ribbon-bottom {
-    font-family: 'Sulphur Point', sans-serif;
-    font-size: 10px;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #17009c;
-    background-color: #00a571;
-    z-index: 5;
-    padding-left: 80px;
-    
-    letter-spacing: 5px;
-    height: 10px;
-    width: 100vw;
-    text-overflow: clip;
-    white-space: nowrap; 
-    overflow: hidden;
-} */
 
 
 /* 
@@ -1148,47 +913,15 @@ h2 {
 } */
 /* transition: color 0.3s ease-out; */
 
-section.p-hw {
-    height: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.try-repair {
-    /* min-height: calc(100vh - 80px);
-    overflow-x: hidden; */
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-/* html,
-body {
-    height: 100%;
-    width: 100%;
-} */
-html,
-body {
-    /* height: 100vh;
-    width: 100vw; */
-    /* overflow-y: hidden;
-    overflow-x: hidden; */
-    /* overflow: auto; */
-}
-
-/* * {
-    margin: 0;
-    padding: 0;
-} */
-
-.fade-in {
+/* .fade-in {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .fade-in.is-visible {
     opacity: 1;
-}
+} */
 
 .fixed-position {
     position: fixed;
@@ -1484,7 +1217,7 @@ body {
     }
 
     p.regular-text-important {
-        font-size: 3rem;
+        font-size: 50px;
         line-height: 0.9;
         padding-bottom: 0;
         font-family: 'Sulphur Point', sans-serif;
@@ -1504,7 +1237,7 @@ body {
         margin: 7px;
     }
 
-    .compressors-buttons {
+    .buttonV1 {
         height: auto;
         /* font-weight: 700; */
         text-align: left;
@@ -1513,7 +1246,7 @@ body {
         /* border-left: 10px solid #d0f5e9; */
     }
 
-    .compressors-buttons:hover {
+    .buttonV1:hover {
         background-color: #e6f0eb00;
         text-decoration: underline;
         text-underline-offset: 7px;
@@ -1544,19 +1277,19 @@ body {
         width: 80hw;
         max-width: 400px;
     }
-    
+
     /* test stick */
     .stick-in-table {
-    position: sticky;
-    left: 0;
-    /* color: black; */
-    /* background-color: #c0b9e6; */
-    background-color: #cfcddd;
-    background-color: #00A571;
-    background-color: #D0EEDF;
-    background-color: #2807E0;
-    border-radius: 15px;
-    /* border: 1px solid black; */
+        position: sticky;
+        left: 0;
+        /* color: black; */
+        /* background-color: #c0b9e6; */
+        background-color: #cfcddd;
+        background-color: #00A571;
+        background-color: #D0EEDF;
+        background-color: #2807E0;
+        border-radius: 15px;
+        /* border: 1px solid black; */
     }
 
     .vertical-text-lr {
@@ -1577,7 +1310,7 @@ body {
         /* width: 50px; */
     }
 
-/* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
+    /* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
     /* .test-stop-scroll {
         overscroll-behavior: contain;
     } */
