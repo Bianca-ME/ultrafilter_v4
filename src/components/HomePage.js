@@ -5,6 +5,10 @@ import { NavLink } from 'react-router-dom';
 
 import ParagraphWithBlueLine from './ParagraphWithBlueLine';
 
+// react carousel
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 // import {
 //     dragStart,
 //     dragging,
@@ -89,229 +93,6 @@ console.log(randomNumber);
 
 export default function HomePage() {
 
-    // const dragging = (e) => {
-    //     console.log(e.pageX);
-    // }
-    // STEP 2 did not work
-    // ---
-    // componentDidMount() {
-    //     const carousel = document.querySelector(".carousel");
-
-    //     const dragging = (e) => {
-    //         carousel.scrollLeft = (e.pageX);
-    //     }
-
-    //     carousel.addEventListener("mousemove", dragging);
-    // }
-
-    // componentWillUnmount() {
-    //     const carousel = document.querySelector(".carousel");
-    //     carousel.removeEventListener("mousemove", this.dragging);
-    // }
-    // STEP 1, 5
-    // const carousel = document.querySelector(".carousel");
-    // firstImg = document.querySelectorAll(".carousel img")[0];
-    // arrowIcons = document.querySelectorAll(".wrapper .fa-solid");
-
-
-    // let isDragStart = false, prevPageX, prevScrollLeft;
-    // let firstImgWidth = firstImg.clientWidth + 14; 
-
-    // arrowIcons.forEach(icon => {
-    //     icon.addEventListener("click", () => {
-    //         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : -firstImgWidth
-    //     })
-    // })
-
-    // const dragStart = (e) => {
-    // isDragStart = true;
-    // prevPageX = e.pageX;
-    // prevScrollLeft = carousel.scrollLeft;
-    // }
-
-    // const dragging = (e) => {
-    //     if(!isDragStart) return;
-    //     e.preventDefault();
-    //     carousel.classList.add("dragging");
-    //     let positionDiff = e.pageX - prevPageX;
-    //     carousel.scrollLeft = prevScrollLeft - positionDiff;
-    // }
-
-    // const dragStop = () => {
-    //     isDragStart = false;
-    //     carousel.classList.remove("dragging");
-    // }
-
-    // carousel.addEventListener("mousedown", dragStart);
-    // carousel.addEventListener("mousemove", dragging);
-    // carousel.addEventListener("mouseup", dragStop);
-
-    // STEP 4 dragging works with mouse (but not on ipad)
-    // -----------------------------------------------------------------
-    // const carouselRef = useRef(null);
-    // let isDragStart = useRef(false);
-    // let prevPageX = useRef(0);
-    // let prevScrollLeft = useRef(0);
-
-    // const handleDragStart = (e) => {
-    //     isDragStart.current = true;
-    //     prevPageX.current = e.pageX;
-    //     prevScrollLeft.current = carouselRef.current.scrollLeft;
-    // };
-
-    // const handleDragging = (e) => {
-    //     if (!isDragStart.current) return;
-    //     e.preventDefault();
-    //     const positionDiff = e.pageX - prevPageX.current;
-    //     carouselRef.current.scrollLeft = prevScrollLeft.current - positionDiff;
-    // };
-
-    // const handleDragStop = () => {
-    //     isDragStart.current = false;
-    // };
-
-    // STEP 3 works !!! but not perfect
-    // ------------
-    // const carouselRef = useRef(null);
-
-    // const handleDragging = (e) => {
-    //     carouselRef.current.scrollLeft = e.pageX;
-    // };
-
-    // STEP 6 -doesn't work. error Cannot read properties of null (reading 'clientWidth')
-    // const carouselRef = useRef(null);
-    // const firstImgRef = useRef(null);
-    // const arrowIconsRef = useRef([]);
-
-    // let isDragStart = useRef(false);
-    // let prevPageX = useRef(0);
-    // let prevScrollLeft = useRef(0);
-    // let firstImgWidth = useRef(0);
-
-    // const handleArrowClick = (icon) => {
-    //   carouselRef.current.scrollLeft += icon === 'left' ? -firstImgWidth.current : firstImgWidth.current;
-    // };
-
-    // const handleDragStart = (e) => {
-    //   isDragStart.current = true;
-    //   prevPageX.current = e.pageX;
-    //   prevScrollLeft.current = carouselRef.current.scrollLeft;
-    // };
-
-    // const handleDragging = (e) => {
-    //   if (!isDragStart.current) return;
-    //   e.preventDefault();
-    //   carouselRef.current.classList.add('dragging');
-    //   const positionDiff = e.pageX - prevPageX.current;
-    //   carouselRef.current.scrollLeft = prevScrollLeft.current - positionDiff;
-    // };
-
-    // const handleDragStop = () => {
-    //   isDragStart.current = false;
-    //   carouselRef.current.classList.remove('dragging');
-    // };
-
-    // useEffect(() => {
-    //   firstImgWidth.current = firstImgRef.current.clientWidth + 14;
-
-    //   arrowIconsRef.current.forEach((icon) => {
-    //     icon.addEventListener('click', () => handleArrowClick(icon.id));
-    //   });
-
-    //   return () => {
-    //     arrowIconsRef.current.forEach((icon) => {
-    //       icon.removeEventListener('click', () => handleArrowClick(icon.id));
-    //     });
-    //   };
-    // }, []);
-    // --------------
-
-    // STEP 7 - still not working. and must change the refs back
-    // const carouselRef = useRef(null);
-
-    // STEP 8 -trying again - no error but doesn't work
-    //     const [isDragStart, setIsDragStart] = useState(false);
-    // const [prevPageX, setPrevPageX] = useState(0);
-    // const [prevScrollLeft, setPrevScrollLeft] = useState(0);
-    // const [firstImgWidth, setFirstImgWidth] = useState(0);
-
-    // useEffect(() => {
-    //   const firstImgElement = document.querySelector(".carousel img");
-    //   if (firstImgElement) {
-    //     setFirstImgWidth(firstImgElement.clientWidth + 14);
-    //   }
-    // }, []);
-
-    // const dragStart = (e) => {
-    //     setIsDragStart(true);
-    //     setPrevPageX(e.pageX);
-    //     setPrevScrollLeft(carouselRef.current.scrollLeft);
-    //   };
-
-    //   const dragging = (e) => {
-    //     if (!isDragStart) return;
-    //     e.preventDefault();
-    //     carouselRef.current.classList.add("dragging");
-    //     const positionDiff = e.pageX - prevPageX;
-    //     carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
-    //   };
-
-    //   const dragStop = () => {
-    //     setIsDragStart(false);
-    //     carouselRef.current.classList.remove("dragging");
-    //   };
-
-    //   const carouselRef = useRef(null);
-
-    //   useEffect(() => {
-    //     if (carouselRef.current) {
-    //       carouselRef.current.addEventListener("mousedown", dragStart);
-    //       carouselRef.current.addEventListener("mousemove", dragging);
-    //       carouselRef.current.addEventListener("mouseup", dragStop);
-    //     }
-
-    //     return () => {
-    //       if (carouselRef.current) {
-    //         carouselRef.current.removeEventListener("mousedown", dragStart);
-    //         carouselRef.current.removeEventListener("mousemove", dragging);
-    //         carouselRef.current.removeEventListener("mouseup", dragStop);
-    //       }
-    //     };
-    //   }, []);
-    // -----------------------------------------------------------
-
-    // STEP 9 - arrows work, except: dragging and not smooth
-    // const carouselRef = useRef(null);
-    // const [isDragStart, setIsDragStart] = useState(false);
-    // const [prevPageX, setPrevPageX] = useState(0);
-    // const [prevScrollLeft, setPrevScrollLeft] = useState(0);
-    // const firstImgRef = useRef(null);
-
-    // const handleArrowClick = (icon) => {
-    //   const firstImgWidth = firstImgRef.current.clientWidth + 14;
-    //   carouselRef.current.scrollLeft += icon === 'left' ? -firstImgWidth : firstImgWidth;
-    // };
-
-    // const handleDragStart = (e) => {
-    //   setIsDragStart(true);
-    //   setPrevPageX(e.pageX);
-    //   setPrevScrollLeft(carouselRef.current.scrollLeft);
-    // };
-
-    // const handleDragging = (e) => {
-    //   if (!isDragStart) return;
-    //   e.preventDefault();
-    //   carouselRef.current.classList.add('dragging');
-    //   const positionDiff = e.pageX - prevPageX;
-    //   carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
-    // };
-
-    // const handleDragStop = () => {
-    //   setIsDragStart(false);
-    //   carouselRef.current.classList.remove('dragging');
-    // };
-
-    // STEP 10
     const carouselRef = useRef(null);
     const firstImgRef = useRef(null);
 
@@ -339,6 +120,28 @@ export default function HomePage() {
         window.addEventListener('mousemove', handleDragging);
         window.addEventListener('mouseup', handleDragStop);
     };
+
+    // -------------------------------------------------------------------------
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
 
     // ------------------------------------------------------------------------------
 
@@ -486,7 +289,7 @@ export default function HomePage() {
                                 <img src={GD9} className='overlay'></img >
                                 <p>Compresoare cu piston Champion</p>
                                 <div className='see-details'>
-                                    <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
+                                    {/* <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button> */}
                                     <img className='arrow' src={arrow} alt='svg missing' />
                                 </div>
                             </div>
@@ -803,19 +606,8 @@ export default function HomePage() {
                                     </div>
                                 )}
                             </div>
-
                         </div>
-
-
-
-
-
-
-
-
-
                     </div>
-
                 </details>
 
                 {/* hidden content description and table */}
@@ -823,105 +615,136 @@ export default function HomePage() {
                     <p>Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
                     <p>(tabel)</p>
                 </div> */}
+            </section >
+            {/* --------------------------------------- */}
+            {/* <div className='towrapeverything'>
+                <div className="wrapper">
+                    <img
+                        id="left"
+                        className="fa-solid fa-angle-left"
+                        src={arrowLeft}
+                        alt="img missing"
+                        onClick={() => handleArrowClick('left')}
+                    />
+                    <div
+                        className="carousel"
+                        ref={carouselRef}
+                        onMouseDown={handleDragStart}
+                    >
+                        <img src={GD9} alt="img missing" ref={firstImgRef} />
+                        <img src={GD10} alt="img missing" />
+                        <img src={GD11} alt="img missing" />
+                        <img src={GD12} alt="img missing" />
+                        <img src={GD13} alt="img missing" />
+                        <img src={GD14} alt="img missing" />
+                        <img src={GD15} alt="img missing" />
+                    </div>
+                    <img
+                        id="right"
+                        className="fa-solid fa-angle-right"
+                        src={arrowRight}
+                        alt="img missing"
+                        onClick={() => handleArrowClick('right')}
+                    />
+                </div>
+            </div> */}
+            {/* ------------------------------------------------------------------ */}
 
-                <div className='towrapeverything'>
-                    {/* GOES WITH STEP 9 */}
-                    {/* <div className="wrapper">
-                        <img
-                            id="left"
-                            className="fa-solid fa-angle-left"
-                            src={arrowLeft}
-                            alt="img missing"
-                            onClick={() => handleArrowClick('left')}
-                        />
-                        <div
-                            className="carousel"
-                            ref={carouselRef}
-                            onMouseDown={handleDragStart}
-                            onMouseMove={handleDragging}
-                            onMouseUp={handleDragStop}
-                        >
-                            <img src={GD9} alt="img missing" ref={firstImgRef} />
-                            <img src={GD10} alt="img missing" />
-                            <img src={GD11} alt="img missing" />
-                            <img src={GD12} alt="img missing" />
-                            <img src={GD13} alt="img missing" />
-                            <img src={GD14} alt="img missing" />
-                            <img src={GD15} alt="img missing" />
-                        </div>
-                        <img
-                            id="right"
-                            className="fa-solid fa-angle-right"
-                            src={arrowRight}
-                            alt="img missing"
-                            onClick={() => handleArrowClick('right')}
-                        />
-                    </div> */}
-                    {/* END OF STEP 9 */}
+            {/* <section className='section-slider'>
+                
+            </section> */}
+            {/* <div></div> */}
+            <Carousel responsive={responsive} className='carousel-container'
+                swipeable={true}
+                draggable={true}
+            >
+                <div className='product-card'>
+                    <img src={GD9} alt="img missing" className='img-inside-slider' />
+                    {/* <p>vezi detalii</p> */}
+                    <p>Compresoare cu piston Champion</p>
+                    <div className='see-details'>
+                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
+                        <img className='arrow' src={arrow} alt='svg missing' />
+                    </div>
+                    {/* ---- */}
+                    <div className='details-under-card'>
+                        {divVisibility[0] && (
+                            <div id="div1" className="details-product-slider">
+                                <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
 
-                    {/* WORKS WITH STEP 10 */}
-                    <div className="wrapper">
-                        <img
-                            id="left"
-                            className="fa-solid fa-angle-left"
-                            src={arrowLeft}
-                            alt="img missing"
-                            onClick={() => handleArrowClick('left')}
-                        />
-                        <div
-                            className="carousel"
-                            ref={carouselRef}
-                            onMouseDown={handleDragStart}
-                        >
-                            <img src={GD9} alt="img missing" ref={firstImgRef} />
-                            <img src={GD10} alt="img missing" />
-                            <img src={GD11} alt="img missing" />
-                            <img src={GD12} alt="img missing" />
-                            <img src={GD13} alt="img missing" />
-                            <img src={GD14} alt="img missing" />
-                            <img src={GD15} alt="img missing" />
-                        </div>
-                        <img
-                            id="right"
-                            className="fa-solid fa-angle-right"
-                            src={arrowRight}
-                            alt="img missing"
-                            onClick={() => handleArrowClick('right')}
-                        />
+
+
+                                <br />
+                                <br />
+                                <br />
+
+                            </div>
+                        )}
+                    </div>
+                    {/* ---- */}
+                </div>
+
+                {/* --------------------------------- */}
+                <div className='product-card'>
+                    <img src={GD10} alt="img missing" className='img-inside-slider' />
+                    {/* <p>vezi detalii</p> */}
+                    <p>Compresoare cu piston Champion</p>
+                    <div className='see-details'>
+                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
+                        <img className='arrow' src={arrow} alt='svg missing' />
                     </div>
                 </div>
-                {/* STEP 11 - replacing the images with cards */}
+                <div className='right-column'>
+                    {divVisibility[0] && (
+                        <div id="div1" className="details-product-slider">
+                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
+                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
+                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
+                            <br />
+                            <br />
+                            <br />
 
-
-
-
-
-                {/* try to imitate tutorial */}
-                {/* <div className='towrapeverything'>
-                    <div className="wrapper">
-                        <i id='left' class='fa-solid fa-angle-left'></i>
-                        <div className="carousel">
-                            <img src='/img1' alt='img missing' />
-                            <img src='/img2' alt='img missing' />
-                            <img src='/img3' alt='img missing' />
-                            <img src='/img4' alt='img missing' />
-                            <img src='/img5' alt='img missing' />
-                            <img src='/img6' alt='img missing' />
-                            <img src='/img7' alt='img missing' />
                         </div>
-                        <i id='right' class='fa-solid fa-angle-right'></i>
+                    )}
+                </div>
+                {/* --------------------------------------------- */}
+                <div className='product-card'>
+                    <img src={GD11} alt="img missing" className='img-inside-slider' />
+                    {/* <p>vezi detalii</p> */}
+                    <p>Compresoare cu piston Champion</p>
+                    <div className='see-details'>
+                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
+                        <img className='arrow' src={arrow} alt='svg missing' />
                     </div>
-                </div> */}
+                </div>
+                <div className='right-column'>
+                    {divVisibility[0] && (
+                        <div id="div1" className="details-product-slider">
+                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.
+                                Compresoare cu piston actionate cu motor temic Honda.</p>
+                            <br />
+                            <br />
+                            <br />
+
+                        </div>
+                    )}
+                </div>
 
 
-
-
-            </section >
-
-
-
+                {/* <img src={GD10} alt="img missing" />
+                            <img src={GD11} alt="img missing" />
+                            <img src={GD12} alt="img missing" />
+                            <img src={GD13} alt="img missing" />
+                            <img src={GD14} alt="img missing" />
+                            <img src={GD15} alt="img missing" /> */}
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+            </Carousel>
 
         </div >
+
     )
 }
 

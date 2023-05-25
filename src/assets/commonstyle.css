@@ -980,12 +980,12 @@ td {
     /* font-weight: 500; */
 }
 
-.tabletemplate1 {
+/* .tabletemplate1 {
     position: absolute;
     top: 300px;
     background-color: #fcfcf5;
     left: -240px;
-}
+} */
 
 /* table>tr>td:nth-child(2){
     font-weight: bolder;
@@ -2082,19 +2082,82 @@ summary {
     right: -60px;
 }
 
+/* ----------------------------------- */
 
 .product-card {
-    height: 340px;
-    width: calc(97% / 3);
-    background-color: #00A571;
+    height: 100%;
+    /* width: calc(97% / 3); */
+    background-color: #fcfcf5;
+    margin-left: 15px;
+    border-right: 1px solid black;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+
+/* border-radius: 35px; */
+
+width: 300px;
+    /* display: flex;
+    justify-content: center; */
+ 
 }
 
-/* .carousel {
-    display: flex;
+.img-inside-slider {
+  width: 300px;
+  height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    /* border: 5px solid #0000ff; */
+}
+
+/* nu merg */
+.carousel-container {
+    height: 400px;
+
+    border: 1px solid black;
+
+    background-color: #fcfcf5;
+    border-radius: 35px;
+    padding-left: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
+    /* temp */
+    margin-bottom: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.details-under-card {
+    position: absolute;
+    left: 0;
+    z-index: 50;
+}
+
+/* .details-product-slider {
+overflow-y: scroll;
+overflow: scroll;
 } */
+
+.right-column {
+    max-height: 1000px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden; /* Optional: If you only want vertical scrolling */
+}
+
 
 @media only screen and (max-width: 500px) {
     .carousel img {
         width: 100%;
     }
 }
+
+/* .section-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
