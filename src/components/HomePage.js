@@ -1,6 +1,14 @@
 import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+import ParagraphWithBlueLine from './ParagraphWithBlueLine';
+
+// import {
+//     dragStart,
+//     dragging,
+//     dragStop } from './carousel';
 
 import p5 from 'p5';
 // import sketch from '../TESTS/grid';
@@ -21,8 +29,15 @@ import arrow from '../assets/north-east-arrow.svg';
 // import hpimg1 from '../assets/HomePage/1_Colector_de_praf_Donaldson.jpg';
 // import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
 // import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
-import GD9 from '../assets/HomePage/9_compresoare_cu_piston_Champion.jpg';
+// import GD9 from '../assets/HomePage/9_compresoare_cu_piston_Champion.jpg';
+import GD9 from '../assets/test/c9.png';
+import GD9_ from '../assets/test/c9_.png';
 import GD10 from '../assets/HomePage/10_Compresoare_pentru_cabinete_dentare.jpg';
+import GD11 from '../assets/HomePage/11_Compresoare_portabile.jpg';
+import GD12 from '../assets/HomePage/12_Comprresoare_cu_excentric_si_paleti.jpg';
+import GD13 from '../assets/HomePage/13_Compresoare_Scroll_fara_ungere.jpg';
+import GD14 from '../assets/HomePage/14_compresoare_pentru_suflat_PET-uri_BELLISS_MORCOM.jpg';
+import GD15 from '../assets/HomePage/15_Compresoare_pentru_umplut_butelii.jpg';
 
 
 
@@ -51,6 +66,15 @@ import textxx from '../assets/textxx.png';
 import gdvid from '../assets/gdvid.gif';
 import filter from '../assets/HomePage/filtrrr.png';
 import fan from '../assets/fan.gif';
+import grain2 from '../assets/test/grain3.png';
+import cc1 from '../assets/test/cc1.png';
+import arrowDown from '../assets/arrow-down-339.svg';
+import arrowRightDown from '../assets/arrow-right-down355.svg';
+import arrowLeft from '../assets/arrow-left-334-svgrepo-com.svg';
+import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
+
+
+
 
 import addClassOnInView from '../testingPurposes/inViewTrigger';
 
@@ -65,25 +89,278 @@ console.log(randomNumber);
 
 export default function HomePage() {
 
+    // const dragging = (e) => {
+    //     console.log(e.pageX);
+    // }
+    // STEP 2 did not work
+    // ---
+    // componentDidMount() {
+    //     const carousel = document.querySelector(".carousel");
+
+    //     const dragging = (e) => {
+    //         carousel.scrollLeft = (e.pageX);
+    //     }
+
+    //     carousel.addEventListener("mousemove", dragging);
+    // }
+
+    // componentWillUnmount() {
+    //     const carousel = document.querySelector(".carousel");
+    //     carousel.removeEventListener("mousemove", this.dragging);
+    // }
+    // STEP 1, 5
+    // const carousel = document.querySelector(".carousel");
+    // firstImg = document.querySelectorAll(".carousel img")[0];
+    // arrowIcons = document.querySelectorAll(".wrapper .fa-solid");
+
+
+    // let isDragStart = false, prevPageX, prevScrollLeft;
+    // let firstImgWidth = firstImg.clientWidth + 14; 
+
+    // arrowIcons.forEach(icon => {
+    //     icon.addEventListener("click", () => {
+    //         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : -firstImgWidth
+    //     })
+    // })
+
+    // const dragStart = (e) => {
+    // isDragStart = true;
+    // prevPageX = e.pageX;
+    // prevScrollLeft = carousel.scrollLeft;
+    // }
+
+    // const dragging = (e) => {
+    //     if(!isDragStart) return;
+    //     e.preventDefault();
+    //     carousel.classList.add("dragging");
+    //     let positionDiff = e.pageX - prevPageX;
+    //     carousel.scrollLeft = prevScrollLeft - positionDiff;
+    // }
+
+    // const dragStop = () => {
+    //     isDragStart = false;
+    //     carousel.classList.remove("dragging");
+    // }
+
+    // carousel.addEventListener("mousedown", dragStart);
+    // carousel.addEventListener("mousemove", dragging);
+    // carousel.addEventListener("mouseup", dragStop);
+
+    // STEP 4 dragging works with mouse (but not on ipad)
+    // -----------------------------------------------------------------
+    // const carouselRef = useRef(null);
+    // let isDragStart = useRef(false);
+    // let prevPageX = useRef(0);
+    // let prevScrollLeft = useRef(0);
+
+    // const handleDragStart = (e) => {
+    //     isDragStart.current = true;
+    //     prevPageX.current = e.pageX;
+    //     prevScrollLeft.current = carouselRef.current.scrollLeft;
+    // };
+
+    // const handleDragging = (e) => {
+    //     if (!isDragStart.current) return;
+    //     e.preventDefault();
+    //     const positionDiff = e.pageX - prevPageX.current;
+    //     carouselRef.current.scrollLeft = prevScrollLeft.current - positionDiff;
+    // };
+
+    // const handleDragStop = () => {
+    //     isDragStart.current = false;
+    // };
+
+    // STEP 3 works !!! but not perfect
+    // ------------
+    // const carouselRef = useRef(null);
+
+    // const handleDragging = (e) => {
+    //     carouselRef.current.scrollLeft = e.pageX;
+    // };
+
+    // STEP 6 -doesn't work. error Cannot read properties of null (reading 'clientWidth')
+    // const carouselRef = useRef(null);
+    // const firstImgRef = useRef(null);
+    // const arrowIconsRef = useRef([]);
+
+    // let isDragStart = useRef(false);
+    // let prevPageX = useRef(0);
+    // let prevScrollLeft = useRef(0);
+    // let firstImgWidth = useRef(0);
+
+    // const handleArrowClick = (icon) => {
+    //   carouselRef.current.scrollLeft += icon === 'left' ? -firstImgWidth.current : firstImgWidth.current;
+    // };
+
+    // const handleDragStart = (e) => {
+    //   isDragStart.current = true;
+    //   prevPageX.current = e.pageX;
+    //   prevScrollLeft.current = carouselRef.current.scrollLeft;
+    // };
+
+    // const handleDragging = (e) => {
+    //   if (!isDragStart.current) return;
+    //   e.preventDefault();
+    //   carouselRef.current.classList.add('dragging');
+    //   const positionDiff = e.pageX - prevPageX.current;
+    //   carouselRef.current.scrollLeft = prevScrollLeft.current - positionDiff;
+    // };
+
+    // const handleDragStop = () => {
+    //   isDragStart.current = false;
+    //   carouselRef.current.classList.remove('dragging');
+    // };
+
+    // useEffect(() => {
+    //   firstImgWidth.current = firstImgRef.current.clientWidth + 14;
+
+    //   arrowIconsRef.current.forEach((icon) => {
+    //     icon.addEventListener('click', () => handleArrowClick(icon.id));
+    //   });
+
+    //   return () => {
+    //     arrowIconsRef.current.forEach((icon) => {
+    //       icon.removeEventListener('click', () => handleArrowClick(icon.id));
+    //     });
+    //   };
+    // }, []);
+    // --------------
+
+    // STEP 7 - still not working. and must change the refs back
+    // const carouselRef = useRef(null);
+
+    // STEP 8 -trying again - no error but doesn't work
+    //     const [isDragStart, setIsDragStart] = useState(false);
+    // const [prevPageX, setPrevPageX] = useState(0);
+    // const [prevScrollLeft, setPrevScrollLeft] = useState(0);
+    // const [firstImgWidth, setFirstImgWidth] = useState(0);
+
+    // useEffect(() => {
+    //   const firstImgElement = document.querySelector(".carousel img");
+    //   if (firstImgElement) {
+    //     setFirstImgWidth(firstImgElement.clientWidth + 14);
+    //   }
+    // }, []);
+
+    // const dragStart = (e) => {
+    //     setIsDragStart(true);
+    //     setPrevPageX(e.pageX);
+    //     setPrevScrollLeft(carouselRef.current.scrollLeft);
+    //   };
+
+    //   const dragging = (e) => {
+    //     if (!isDragStart) return;
+    //     e.preventDefault();
+    //     carouselRef.current.classList.add("dragging");
+    //     const positionDiff = e.pageX - prevPageX;
+    //     carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
+    //   };
+
+    //   const dragStop = () => {
+    //     setIsDragStart(false);
+    //     carouselRef.current.classList.remove("dragging");
+    //   };
+
+    //   const carouselRef = useRef(null);
+
+    //   useEffect(() => {
+    //     if (carouselRef.current) {
+    //       carouselRef.current.addEventListener("mousedown", dragStart);
+    //       carouselRef.current.addEventListener("mousemove", dragging);
+    //       carouselRef.current.addEventListener("mouseup", dragStop);
+    //     }
+
+    //     return () => {
+    //       if (carouselRef.current) {
+    //         carouselRef.current.removeEventListener("mousedown", dragStart);
+    //         carouselRef.current.removeEventListener("mousemove", dragging);
+    //         carouselRef.current.removeEventListener("mouseup", dragStop);
+    //       }
+    //     };
+    //   }, []);
+    // -----------------------------------------------------------
+
+    // STEP 9 - arrows work, except: dragging and not smooth
+    // const carouselRef = useRef(null);
+    // const [isDragStart, setIsDragStart] = useState(false);
+    // const [prevPageX, setPrevPageX] = useState(0);
+    // const [prevScrollLeft, setPrevScrollLeft] = useState(0);
+    // const firstImgRef = useRef(null);
+
+    // const handleArrowClick = (icon) => {
+    //   const firstImgWidth = firstImgRef.current.clientWidth + 14;
+    //   carouselRef.current.scrollLeft += icon === 'left' ? -firstImgWidth : firstImgWidth;
+    // };
+
+    // const handleDragStart = (e) => {
+    //   setIsDragStart(true);
+    //   setPrevPageX(e.pageX);
+    //   setPrevScrollLeft(carouselRef.current.scrollLeft);
+    // };
+
+    // const handleDragging = (e) => {
+    //   if (!isDragStart) return;
+    //   e.preventDefault();
+    //   carouselRef.current.classList.add('dragging');
+    //   const positionDiff = e.pageX - prevPageX;
+    //   carouselRef.current.scrollLeft = prevScrollLeft - positionDiff;
+    // };
+
+    // const handleDragStop = () => {
+    //   setIsDragStart(false);
+    //   carouselRef.current.classList.remove('dragging');
+    // };
+
+    // STEP 10
+    const carouselRef = useRef(null);
+    const firstImgRef = useRef(null);
+
+    const handleArrowClick = (direction) => {
+        const firstImgWidth = firstImgRef.current.clientWidth + 15;
+        const scrollAmount = direction === 'left' ? -firstImgWidth : firstImgWidth;
+        carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    };
+
+    const handleDragStart = (e) => {
+        e.preventDefault();
+        const initialScrollLeft = carouselRef.current.scrollLeft;
+        const initialPageX = e.pageX;
+
+        const handleDragging = (event) => {
+            const positionDiff = event.pageX - initialPageX;
+            carouselRef.current.scrollLeft = initialScrollLeft - positionDiff;
+        };
+
+        const handleDragStop = () => {
+            window.removeEventListener('mousemove', handleDragging);
+            window.removeEventListener('mouseup', handleDragStop);
+        };
+
+        window.addEventListener('mousemove', handleDragging);
+        window.addEventListener('mouseup', handleDragStop);
+    };
+
+    // ------------------------------------------------------------------------------
+
     const [isHovered, setIsHovered] = useState(false);
 
     // test toggle hide unhide content
     const [divVisibility, setDivVisibility] = useState([false, false, false]);
 
     const toggleDiv = (index) => {
-      const updatedVisibility = [...divVisibility];
-      updatedVisibility[index] = !updatedVisibility[index];
-  
-      if (updatedVisibility[index]) {
-        // Hide the other divs
-        for (let i = 0; i < updatedVisibility.length; i++) {
-          if (i !== index) {
-            updatedVisibility[i] = false;
-          }
+        const updatedVisibility = [...divVisibility];
+        updatedVisibility[index] = !updatedVisibility[index];
+
+        if (updatedVisibility[index]) {
+            // Hide the other divs
+            for (let i = 0; i < updatedVisibility.length; i++) {
+                if (i !== index) {
+                    updatedVisibility[i] = false;
+                }
+            }
         }
-      }
-  
-      setDivVisibility(updatedVisibility);
+
+        setDivVisibility(updatedVisibility);
     };
     return (
         <div data-scroll>
@@ -114,39 +391,99 @@ export default function HomePage() {
             <section className='section1-buttons-under-D-and-GD two-columns'>
                 <div className='display-block'>
                     {/* Donaldson */}
-                    <p className='regular-text-important'>filtre, desprafuire industriala</p>
-                    <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a></p>
-                    <p><a className='buttonV1'>Ventilatoare</a></p>
-                    <p><a className='buttonV1'>Filtre pentru ventilatii</a></p>
-                    <p><a className='buttonV1'>Aspiratoare industriale</a></p>
-                    <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a></p>
+                    <p className='title3-1'>filtre, desprafuire industriala<br /><img className='arrow-for-title' src={arrowDown} alt='svg missing' /></p>
+                    <hr></hr>
+                    <div className='padding-buttons-in-display-block'>
+                        <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        {/* <p><a className='buttonV1'></a></p> */}
+                        <p><a className='buttonV1'>Ventilatoare</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Filtre pentru ventilatii</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Aspiratoare industriale</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    </div>
+
                 </div>
                 <div className='display-block'>
+                    {/* <h1>
+                        <span></span>
+                        <div class="message">
+                            <div class="word1">compresoare</div>
+                            <div class="word2">si</div>
+                            <div class="word3">retele de aer comprimat</div>
+                        </div>
+                    </h1> */}
                     {/* GD */}
-                    <p className='regular-text-important'>compresoare si retele de aer comprimat</p>
-                    <p><a className='buttonV1' href='#despre-GD'>Despre GD</a></p>
-                    <p><a className='buttonV1' href='#compresoare-cu-piston'>Compresoare cu piston</a></p>
-                    <p><a className='buttonV1'>Compresare rotative (fara ungere/ cu ungere)</a></p>
-                    <p><a className='buttonV1'>Filtrare si uscare aer comprimat</a></p>
-                    <p><a className='buttonV1'>Recipienti de stocare aer comprimat</a></p>
+                    {/* <p className='title3-2'>compresoare si retele de aer comprimat</p> */}
+                    <p className='title3-2'>
+                        compresoare si retele de aer comprimat<br />
+                        <img className='arrow-for-title' src={arrowDown} alt='svg missing' />
+                    </p>
+                    <hr></hr>
+                    <div className='padding-buttons-in-display-block'>
+                        <p><a href='#despre-GD' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    </div>
+
                 </div>
+            </section>
+
+
+
+            {/* section despre Ultrafilter */}
+            <section className='sectionX-despre-UFR'>
+                <h1 id='despre-UFR' className='title4'>Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
+                <p className='card1 line-height'>
+                    Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
+                    <div className='blue-fill-gap1'></div>
+                    <div className='blue-fill-gap2'></div>
+                    {/* <br /> */}
+                    Actualmente ne consideram o firma inca mica, dar cu mare flexibililtate si dinamism cu un personal compus din 12 angajati, cu acoperire in zonele invecinate cu Satu Mare – Timisoara, Brasov, Sibiu, Ploiesti, Bucuresti si Constanta.
+                    <div className='blue-fill-gap3'></div>
+                    {/* <br /> */}
+                    Cheia succesului nostru o reprezinta munca sustinuta, know how-ul acumulat “din teren” si imbinat cu sustinerea tehnica si experienta fabricantilor reprezentati de noi in Romania.
+                    <div className='blue-fill-gap4'></div>
+                    {/* <br /> */}
+                    Specialitatea noastra a ramas expertiza in domeniul filtrarilor cu specializare in retele de aer comprimat; compresoare, filtre si uscatoare pentru aerul comprimat, putem realiza filtrarea aerului comprimat pana la nivelul de sterilizare; filtrare solutii lichide si racitoare frigorifice – water chillers pentru controlul temperaturii apei de racire; desprafuire industriala si colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie; filtre rama pentru ventilatie si filtre Hepa; ventilatoare centrifugale si axiale; puneri in functiune, service, piese de schimb pentru compresoare si cartuse filtrante hidraulice, masuratori de debite, masutarori calitate aer comprimat, inchiriei compresoare, proiectare si solutii la cheie.
+                </p>
             </section>
 
             {/* section GD intro */}
             <section className='sectionX-despre-GD'>
-                <h1 id='despre-GD'>Despre Gardner Denver</h1>
-                <p>Gardner Denver face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.</p>
+                <h1 id='despre-GD' className='title4'>Despre Gardner Denver</h1>
+                <p className='card1'>
+                    <span className='line-height'>
+                        Gardner Denver face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
+                    </span>
+
+                    <br />
+                    <br />
+                    Gardner Denver cuprinde:
+                    <br />
+                    <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link button-color1' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    <br />
+                    <br />
+                    <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a> <img className='arrow-smaller' src={arrow} alt='svg missing' />.</p>
+                    <p>Pentru mai multe detalii vedeti sectiunea <span style={{ color: '#1b2bff' }}>linkuri utile</span>.</p>
+                </p>
             </section>
 
             {/* section Compresoare cu piston */}
             <section className='sectionX-compresoare-cu-piston'>
                 <details >
                     {/* titlu */}
-                    <summary><h1 id='compresoare-cu-piston' className='title2'>Compresoare cu piston</h1></summary>
-                    <div className='content-under-title'>
+                    <summary><h1 id='compresoare-cu-piston' className='title2'>Compresoare cu piston  <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup></h1></summary>
+                    <div className='content-under-title to-be-relative'>
+                        <p className='choose-item'>_  alege un compresor  //de rezolvat pozitia acestui text _</p>
                         <div className='two-columns'>
-                            <div className='left-column-with-titles'>
-                                <img src={GD9}></img>
+                            <div className='left-column-with-titles containerr'>
+                                {/* <img src={GD9_} className='overlap-this'></img> */}
+                                <img src={GD9} className='overlay'></img >
                                 <p>Compresoare cu piston Champion</p>
                                 <div className='see-details'>
                                     <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
@@ -154,55 +491,278 @@ export default function HomePage() {
                                 </div>
                             </div>
                             {/* hide / unhide */}
-                            <div>
+                            <div className='right-column'>
                                 {divVisibility[0] && (
-                                <div id="div1" className="details-product">
-                                    <p>ALT TEXT Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
+                                    <div id="div1" className="details-product">
+                                        <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.
+                                            Compresoare cu piston actionate cu motor temic Honda.</p>
 
-                                    <p className='regular-text'>
-                                        Compresarele pot fi construite pentru presiuni de pana la 10 bar. Pentru presiuni de refulare de 8 bar debitul FAD se reduce cu 33%
-                                    </p>
-                                    <table>
-                                        <tr>
-                                            <th>Company</th>
-                                            <th>Contact</th>
-                                            <th>Country</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfreds Futterkiste</td>
-                                            <td>Maria Anders</td>
-                                            <td>Germany</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Centro comercial Moctezuma</td>
-                                            <td>Francisco Chang</td>
-                                            <td>Mexico</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ernst Handel</td>
-                                            <td>Roland Mendel</td>
-                                            <td>Austria</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Island Trading</td>
-                                            <td>Helen Bennett</td>
-                                            <td>UK</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Laughing Bacchus Winecellars</td>
-                                            <td>Yoshi Tannamuri</td>
-                                            <td>Canada</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Magazzini Alimentari Riuniti</td>
-                                            <td>Giovanni Rovelli</td>
-                                            <td>Italy</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            )}
+                                        <table className='tabletemplate1'>
+                                            {/* <colgroup>
+    <col style={{backgroundColor:'red'}}>
+    <col style={{backgroundColor:'yellow'}}>
+  </colgroup> */}
+                                            {/* 1 */}
+                                            <tr>
+                                                <td rowspan='2'></td>
+                                                <td rowspan='2'>Compresoare cu piston si ungere cu ulei Champion, model</td>
+                                                <td>Debit</td>
+                                                <td>Presiune maxima</td>
+                                                <td>Putere motor</td>
+                                                <td>Nivel zgomot</td>
+                                                <td>Alimentare</td>
+                                                <td>Cu recipient</td>
+                                            </tr>
+                                            {/* 2 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                {/* deci tre sa sterg fiecare td 1 din fiecare urmatoarele row-uri */}
+                                                {/* <td></td> */}
+                                                <td>m³/min</td>
+                                                <td>Bar</td>
+                                                <td>Kw</td>
+                                                <td>d(B)</td>
+                                                <td>Volt/50Hz</td>
+                                                <td>Volum litrii</td>
+                                            </tr>
+
+                                            {/* 3 */}
+                                            <tr>
+                                                <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
+                                                <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>CB-OF-6-CF15 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></NavLink></td>
+                                                <td>0,12</td>
+                                                <td>8</td>
+                                                <td>1,1</td>
+                                                <td>82</td>
+                                                <td>230</td>
+                                                <td>6</td>
+                                            </tr>
+
+                                            {/* 4 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CB-3-CF2 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></td>
+                                                <td>0,19</td>
+                                                <td>8</td>
+                                                <td>1,5</td>
+                                                <td>76</td>
+                                                <td>230</td>
+                                                <td>3 ÷ 100</td>
+                                            </tr>
+
+                                            {/* 5 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CB-24-CM25</td>
+                                                <td>0,24</td>
+                                                <td>9</td>
+                                                <td>1,8</td>
+                                                <td>79</td>
+                                                <td>230</td>
+                                                <td>24 ÷ 100</td>
+                                            </tr>
+
+                                            {/* 6 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CB-24-WB3</td>
+                                                <td>0,34</td>
+                                                <td>9</td>
+                                                <td>2,2</td>
+                                                <td>82</td>
+                                                <td>230</td>
+                                                <td>24 ÷ 100</td>
+                                            </tr>
+
+                                            {/* 6 * SPATIU */}
+                                            <tr className='empty-row'></tr>
+
+                                            {/* 7 */}
+                                            <tr>
+                                                <td rowspan='2'>Compresoare cu transmisie prin curele, o singura treapta de compresie, o singura faza.</td>
+                                                <td>CL28B-25-CM2</td>
+                                                <td>0,25</td>
+                                                <td>10</td>
+                                                <td>1,5</td>
+                                                <td>77</td>
+                                                <td>230</td>
+                                                <td>25 ÷ 150</td>
+                                            </tr>
+
+
+                                            {/* 8 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CP28B-50-CM3</td>
+                                                <td>0.29 ÷ 0.42</td>
+                                                <td>10</td>
+                                                <td>2,2</td>
+                                                <td>76 ÷ 78</td>
+                                                <td>230 ÷ 400</td>
+                                                <td>50 ÷ 270</td>
+                                            </tr>
+
+                                            {/* 8 * SPATIU */}
+                                            <tr className='empty-row'></tr>
+
+                                            {/* 9 */}
+                                            <tr>
+                                                <td rowspan='5'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu  motor electric trifazat.</td>
+                                                <td>CL4-200-FT4</td>
+                                                <td>0,54</td>
+                                                <td>10</td>
+                                                <td>3</td>
+                                                <td>75</td>
+                                                <td>400</td>
+                                                <td>200 ÷ 270</td>
+                                            </tr>
+
+                                            {/* 10 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CL5-200-FT55</td>
+                                                <td>0,61</td>
+                                                <td>11</td>
+                                                <td>4</td>
+                                                <td>82</td>
+                                                <td>400</td>
+                                                <td>200 ÷ 500</td>
+                                            </tr>
+
+                                            {/* 11 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CL6-200-FT75</td>
+                                                <td>0,8</td>
+                                                <td>11</td>
+                                                <td>5,5</td>
+                                                <td>82</td>
+                                                <td>400</td>
+                                                <td>200 ÷ 500</td>
+                                            </tr>
+
+                                            {/* 12 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CL10-270-FT10</td>
+                                                <td>1,25</td>
+                                                <td>11</td>
+                                                <td>7,5</td>
+                                                <td>82</td>
+                                                <td>400</td>
+                                                <td>200 ÷ 900</td>
+                                            </tr>
+
+                                            {/* 13 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA15-500-FT155</td>
+                                                <td>1,51</td>
+                                                <td>11</td>
+                                                <td>11</td>
+                                                <td>82</td>
+                                                <td>400</td>
+                                                <td>200 ÷ 900</td>
+                                            </tr>
+
+                                            {/* 13 * SPATIU */}
+                                            <tr className='empty-row'></tr>
+
+                                            {/* 14 */}
+                                            <tr>
+                                                <td rowspan='4'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu motor electric trifazat.</td>
+                                                <td>CA5-270-15-FT55</td>
+                                                <td>0,43</td>
+                                                <td>15</td>
+                                                <td>4</td>
+                                                <td>81</td>
+                                                <td>400</td>
+                                                <td>270</td>
+                                            </tr>
+
+                                            {/* 15 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA6-270-15-FT75</td>
+                                                <td>0,57</td>
+                                                <td>15</td>
+                                                <td>5,5</td>
+                                                <td>81</td>
+                                                <td>400</td>
+                                                <td>270</td>
+                                            </tr>
+
+                                            {/* 16 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA10-500-15-FT10</td>
+                                                <td>0,94</td>
+                                                <td>15</td>
+                                                <td>7,5</td>
+                                                <td>81</td>
+                                                <td>400</td>
+                                                <td>500</td>
+                                            </tr>
+
+                                            {/* 17 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA15-500-15-FT155 SDS</td>
+                                                <td>1,14</td>
+                                                <td>15</td>
+                                                <td>11</td>
+                                                <td>81</td>
+                                                <td>400</td>
+                                                <td>500</td>
+                                            </tr>
+
+                                            {/* 17 * SPATIU */}
+                                            <tr className='empty-row'></tr>
+
+                                            {/* 18 */}
+                                            <tr>
+                                                <td rowspan='3'>Compresoare cu motor termic, tip Honda, cu benzina</td>
+                                                <td>CA3-11+11-C4</td>
+                                                <td>0,3</td>
+                                                <td>10</td>
+                                                <td>3</td>
+                                                <td>74</td>
+                                                <td>Honda</td>
+                                                <td>22</td>
+                                            </tr>
+
+                                            {/* 19 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA4-100-C55	</td>
+                                                <td>0,42</td>
+                                                <td>10</td>
+                                                <td>4</td>
+                                                <td>75</td>
+                                                <td>Honda</td>
+                                                <td>100 ÷ 200</td>
+                                            </tr>
+
+                                            {/* 20 */}
+                                            <tr>
+                                                {/* <td></td> */}
+                                                <td>CA5-270-C9</td>
+                                                <td>0,56</td>
+                                                <td>10</td>
+                                                <td>7,1</td>
+                                                <td>81</td>
+                                                <td>Honda</td>
+                                                <td>270</td>
+                                            </tr>
+                                        </table>
+                                        <br />
+                                        <br />
+                                        <br />
+
+                                    </div>
+                                )}
                             </div>
-                            
+
                         </div>
 
 
@@ -218,12 +778,12 @@ export default function HomePage() {
                             {/* hide / unhide */}
                             <div>
                                 {divVisibility[1] && (
-                                <div id="div2" className="details-product">
-                                    Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
-                                </div>
-                            )} 
+                                    <div id="div2" className="details-product">
+                                        Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
+                                    </div>
+                                )}
                             </div>
-                           
+
                         </div>
 
                         <div className='two-columns'>
@@ -238,12 +798,12 @@ export default function HomePage() {
                             {/* hide / unhide */}
                             <div>
                                 {divVisibility[2] && (
-                                <div id="div3" className="details-product">
-                                    Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
-                                </div>
-                            )} 
+                                    <div id="div3" className="details-product">
+                                        Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.
+                                    </div>
+                                )}
                             </div>
-                           
+
                         </div>
 
 
@@ -264,12 +824,104 @@ export default function HomePage() {
                     <p>(tabel)</p>
                 </div> */}
 
-            </section>
+                <div className='towrapeverything'>
+                    {/* GOES WITH STEP 9 */}
+                    {/* <div className="wrapper">
+                        <img
+                            id="left"
+                            className="fa-solid fa-angle-left"
+                            src={arrowLeft}
+                            alt="img missing"
+                            onClick={() => handleArrowClick('left')}
+                        />
+                        <div
+                            className="carousel"
+                            ref={carouselRef}
+                            onMouseDown={handleDragStart}
+                            onMouseMove={handleDragging}
+                            onMouseUp={handleDragStop}
+                        >
+                            <img src={GD9} alt="img missing" ref={firstImgRef} />
+                            <img src={GD10} alt="img missing" />
+                            <img src={GD11} alt="img missing" />
+                            <img src={GD12} alt="img missing" />
+                            <img src={GD13} alt="img missing" />
+                            <img src={GD14} alt="img missing" />
+                            <img src={GD15} alt="img missing" />
+                        </div>
+                        <img
+                            id="right"
+                            className="fa-solid fa-angle-right"
+                            src={arrowRight}
+                            alt="img missing"
+                            onClick={() => handleArrowClick('right')}
+                        />
+                    </div> */}
+                    {/* END OF STEP 9 */}
+
+                    {/* WORKS WITH STEP 10 */}
+                    <div className="wrapper">
+                        <img
+                            id="left"
+                            className="fa-solid fa-angle-left"
+                            src={arrowLeft}
+                            alt="img missing"
+                            onClick={() => handleArrowClick('left')}
+                        />
+                        <div
+                            className="carousel"
+                            ref={carouselRef}
+                            onMouseDown={handleDragStart}
+                        >
+                            <img src={GD9} alt="img missing" ref={firstImgRef} />
+                            <img src={GD10} alt="img missing" />
+                            <img src={GD11} alt="img missing" />
+                            <img src={GD12} alt="img missing" />
+                            <img src={GD13} alt="img missing" />
+                            <img src={GD14} alt="img missing" />
+                            <img src={GD15} alt="img missing" />
+                        </div>
+                        <img
+                            id="right"
+                            className="fa-solid fa-angle-right"
+                            src={arrowRight}
+                            alt="img missing"
+                            onClick={() => handleArrowClick('right')}
+                        />
+                    </div>
+                </div>
+                {/* STEP 11 - replacing the images with cards */}
 
 
 
 
-        </div>
+
+                {/* try to imitate tutorial */}
+                {/* <div className='towrapeverything'>
+                    <div className="wrapper">
+                        <i id='left' class='fa-solid fa-angle-left'></i>
+                        <div className="carousel">
+                            <img src='/img1' alt='img missing' />
+                            <img src='/img2' alt='img missing' />
+                            <img src='/img3' alt='img missing' />
+                            <img src='/img4' alt='img missing' />
+                            <img src='/img5' alt='img missing' />
+                            <img src='/img6' alt='img missing' />
+                            <img src='/img7' alt='img missing' />
+                        </div>
+                        <i id='right' class='fa-solid fa-angle-right'></i>
+                    </div>
+                </div> */}
+
+
+
+
+            </section >
+
+
+
+
+        </div >
     )
 }
 

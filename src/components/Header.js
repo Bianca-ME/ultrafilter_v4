@@ -8,9 +8,10 @@ export default function Header() {
     return (
         <div className="fixed-position">
             <div className='header'>
-                <NavLink className='visited-link' to='/about' activeClassName="active-link">Despre Ultrafilter</NavLink>
-                <NavLink className='visited-link' to='/utile' activeClassName="active-link">linkuri utile</NavLink>
-                <NavLink className='visited-link' to='/contact' activeClassName="active-link">Contact</NavLink>
+                {/* <NavLink className='visited-link' to='/about' activeClassName="active-link"><a href='#despre-UFR'>Despre Ultrafilter</a></NavLink> */}
+                <a href='#despre-UFR' className='visited-link visited-link-header' activeClassName="active-link">Despre Ultrafilter</a>
+                <NavLink className='visited-link visited-link-header' to='/utile' activeClassName="active-link">linkuri utile</NavLink>
+                <NavLink className='visited-link visited-link-header' to='/contact' activeClassName="active-link">Contact</NavLink>
             </div>
             <div className='ribbon-right'>
                 <p>tel: +40 371 152 977</p>

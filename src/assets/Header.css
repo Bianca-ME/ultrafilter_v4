@@ -28,7 +28,7 @@
 
 .visited-link {
     /* temporary distance */
-    margin-right: 50px;
-    color: #F8FAF9;
+
+    /* color: #F8FAF9; */
     text-decoration: none;
 }
