@@ -1,3 +1,7 @@
+/* retro computer font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
 /* bold fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Oswald:wght@700&family=Ultra&display=swap');
 /* font-family: 'IBM Plex Sans', sans-serif;
@@ -473,6 +477,17 @@ hr {
     /* see padding */
 }
 
+.title2-custom {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Syne', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: #65756d;
+
+    margin-left: 165px;
+    margin-bottom: 20px;
+}
+
 /* select all first divs inside class */
 .two-columns>div {
     border: 1px solid black;
@@ -597,7 +612,7 @@ button {
 
 .margin-from-header {
     padding-top: 70px;
-    background-color: rgb(87, 0, 0);
+    background-color: #8f8f8f;
     /* border-top: 3px solid red; */
 }
 
@@ -977,7 +992,10 @@ td {
     /* font-family: 'Homemade Apple', cursive; */
     height: 500px;
     font-size: 16px;
+    width: 90%;
     /* font-weight: 500; */
+
+    /* transform:rotate(270deg); */
 }
 
 /* .tabletemplate1 {
@@ -1529,6 +1547,173 @@ summary {
     width: 20px;
 }
 
+.back-to-top {
+    font-family: 'Sulphur Point', sans-serif;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+    margin: 0 0 -1px 0;
+    position: fixed;
+    bottom: 0px;
+    color: #65756d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20vw;
+    background-color: #fcfcf5;
+    /* z-index: 5; */
+    /* padding-top: 80px; */
+    /* padding-bottom: 30px; */
+    letter-spacing: 2px;
+    /* height: 90vw; */
+    height: 20px;
+    width: 130px;
+
+    /* nu stiu cum sa fac sa suprapuna carouselul */
+    z-index: 50000;
+}
+
+#quick-menu {
+    /* font-family: 'Sulphur Point', sans-serif;
+    font-family: 'Hind', sans-serif; */
+    
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid black;
+    margin: 0 0 -580px 0;
+    /* padding-left: 30px; */
+    position: fixed;
+    bottom: 0px;
+    color: black;
+    
+    /* justify-content: center; */
+    left: 5vw;
+    background-color: #fcfcf5;
+    /* z-index: 5; */
+    /* padding-top: 80px; */
+    /* padding-bottom: 30px; */
+    letter-spacing: 5px;
+    /* height: 90vw; */
+    height: 600px;
+    width: 200px;
+
+    /* nu stiu cum sa fac sa suprapuna carouselul */
+    /* z-index: 50000; */
+    transition: transform 0.3s ease;
+
+
+}
+
+#quick-menu.active {
+    transform: translateY(-580px);
+    width: 1100px;
+    /* background-color: #f5f5ed; */
+}
+
+#quick-menu p {
+    padding: 0 0 0 50px;
+    margin: 0;
+    font-family: 'Syne', sans-serif;
+}
+
+#quick-menu p:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.circle {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 29px;
+}
+
+.circle1 {
+    left:5px;
+}
+
+.circle2 {
+    right:5px;
+}
+
+.screen-border {
+    position: absolute;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+
+    border-radius: 10px;
+    width: 100%;
+    height: 20px;
+    top: 24px;
+    left: 0;
+    right: 0;
+    z-index: 19;
+}
+
+.links-inside-menu {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 13px;
+    margin-right: 13px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    z-index: 30;
+    overflow-x: scroll;
+    height: 490px;
+}
+.links-inside-menu a {
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+    /* before */
+    /* color: #0000ff; */
+    /* cul pt ecranul verde crud */
+    /* color: #7AFC38; */
+    color: black;
+     font-size: 20px;
+    /* color: #1B2B2B; */
+    text-decoration: none;
+    border: 1px solid #65756d00;
+    padding: 3px 0 3px 5px;
+}
+
+.text-indent-1-1 {
+    padding-left: 50px;
+}
+
+.visited-link-ribbon-left {
+    color: black;
+    text-decoration: none;
+}
+
+.visited-link-ribbon-left a:hover {
+/* background-color: #f5f5ed; */
+border-radius: 25px;
+/* border: 1px solid #65756d; */
+/* cul pt ecranul verde crud */
+/* background-color: #416e2a; */
+background-color: #849978;
+background-color: #ceeebc;
+
+
+background-color: #e8ecea;
+color: #0000ff;
+}
+
+.visited-link-ribbon-left a:link {
+    color: black;
+}
+
 
 /* 
 .home-page-content > *:not(.background-bluee) {
@@ -1621,6 +1806,7 @@ summary {
     .visited-link {
         margin-left: 0px;
     }
+
 
     .logo-home-page-container {
         box-sizing: border-box;
@@ -2084,43 +2270,21 @@ summary {
 
 /* ----------------------------------- */
 
-.product-card {
-    height: 100%;
-    /* width: calc(97% / 3); */
-    background-color: #fcfcf5;
-    margin-left: 15px;
-    border-right: 1px solid black;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
 
-/* border-radius: 35px; */
 
-width: 300px;
-    /* display: flex;
-    justify-content: center; */
- 
-}
 
-.img-inside-slider {
-  width: 300px;
-  height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-    /* border: 5px solid #0000ff; */
-}
 
 /* nu merg */
 .carousel-container {
-    height: 400px;
+    height: 64vh;
+    /* width: 1000px; */
 
     border: 1px solid black;
 
     background-color: #fcfcf5;
     border-radius: 35px;
     padding-left: 50px;
+    padding-right: 50px;
     margin-left: 10px;
     margin-right: 30px;
     /* temp */
@@ -2129,22 +2293,90 @@ width: 300px;
     padding-bottom: 0;
 }
 
-.details-under-card {
-    position: absolute;
-    left: 0;
-    z-index: 50;
+.product-card {
+    font-family: 'Hind', sans-serif;
+    color: #000000;
+    text-align: justify;
+    text-justify: inter-word;
+    /* height: 100%; */
+    /* width: calc(97% / 3); */
+    background-color: #fcfcf5;
+    /* margin-left: 15px; */
+    /* border-right: 1px solid black; */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* position: relative; */
+
+    /* border-radius: 35px; */
+
+    border: 1px solid black;
+    width: calc(100%-100px);
+    /* display: flex;
+    justify-content: center; */
+
+    height: 64vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+    padding: 5px 20px;
 }
 
-/* .details-product-slider {
-overflow-y: scroll;
-overflow: scroll;
-} */
+.product-type {
+    font-family: 'Inconsolata', monospace;
+}
 
-.right-column {
-    max-height: 1000px;
-    height: 400px;
-    overflow-y: scroll;
-    overflow-x: hidden; /* Optional: If you only want vertical scrolling */
+.product-title {
+    font-family: 'News Cycle', sans-serif;
+    font-family: 'Xanh Mono', monospace;
+    font-family: 'Syne', sans-serif;   
+    font-family: 'Sulphur Point', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    color: #65756d;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.line-separation {
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.flex img {
+    width: auto;
+    height: 300px;
+}
+
+.img-inside-slider  {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* object-fit: cover; */
+    /* border: solid #17009c;
+    border-width: 0px 50px; */
+    /* border: 1px solid #17009c; */
+}
+
+.product-text {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Inconsolata', monospace;
+
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.margin-bottom-p p {
+    margin: 5px;
+    line-height: 1.1;
 }
 
 
@@ -2154,10 +2386,38 @@ overflow: scroll;
     }
 }
 
+
+
 /* .section-slider {
     display: flex;
     justify-content: center;
     align-items: center;
 } */
 
+/* settings for overflow scroll inside a container with a certain fixed height. example the carousel */
+/* max-height: 1000px;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;  */
+/* Optional: If you only want vertical scrolling */
 
+/* TEMP SCROLLBAR CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f5f5ed;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d4d4ce;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0000ff;
+}

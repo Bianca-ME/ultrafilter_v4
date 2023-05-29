@@ -93,6 +93,11 @@ console.log(randomNumber);
 
 export default function HomePage() {
 
+
+
+
+    // -------------------------------------
+
     const carouselRef = useRef(null);
     const firstImgRef = useRef(null);
 
@@ -126,15 +131,15 @@ export default function HomePage() {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 5
+            items: 3
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3
+            items: 1
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -142,6 +147,27 @@ export default function HomePage() {
         }
     };
 
+    const childresponsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
+    // ------------------------------------------------------------------
 
     // ------------------------------------------------------------------------------
 
@@ -166,14 +192,15 @@ export default function HomePage() {
         setDivVisibility(updatedVisibility);
     };
     return (
-        <div data-scroll>
+        <div data-scroll toberelative>
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                 <div className='containsPage1 slide slide-top containsPage1-mobile'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
-                            <Link to="/Donaldson" rel="noreferrer" className='active-link-D-GD'>
+                        <a href='#despre-Donaldson' className='active-link-D-GD'>despre Donaldson</a>
+                            {/* <Link to="/Donaldson" rel="noreferrer" className='active-link-D-GD'>
                                 despre Donaldson
-                            </Link>
+                            </Link> */}
                         </div>
                         <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
                     </div>
@@ -181,9 +208,10 @@ export default function HomePage() {
                 <div className='containsPage2 slide slide-top containsPage2-mobile'>
                     <div className='page2GardnerDenver-container'>
                         <div className='slide-content-GD'>
-                            <Link to="/GardnerDenver" rel="noreferrer" className='active-link-D-GD'>
+                            <a href='#despre-GD' className='active-link-D-GD'>despre Gardner Denver</a>
+                            {/* <Link to="/GardnerDenver" rel="noreferrer" className='active-link-D-GD'>
                                 despre Gardner Denver
-                            </Link>
+                            </Link> */}
                         </div>
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                     </div>
@@ -237,7 +265,10 @@ export default function HomePage() {
 
             {/* section despre Ultrafilter */}
             <section className='sectionX-despre-UFR'>
-                <h1 id='despre-UFR' className='title4'>Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
+                <h1 id='despre-UFR' className='
+                // title4
+                title2-custom
+                '>Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
                 <p className='card1 line-height'>
                     Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
                     <div className='blue-fill-gap1'></div>
@@ -255,7 +286,10 @@ export default function HomePage() {
 
             {/* section GD intro */}
             <section className='sectionX-despre-GD'>
-                <h1 id='despre-GD' className='title4'>Despre Gardner Denver</h1>
+                <h1 id='despre-GD' className='
+                // title4
+                title2-custom
+                '>Despre Gardner Denver</h1>
                 <p className='card1'>
                     <span className='line-height'>
                         Gardner Denver face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
@@ -280,7 +314,7 @@ export default function HomePage() {
             <section className='sectionX-compresoare-cu-piston'>
                 <details >
                     {/* titlu */}
-                    <summary><h1 id='compresoare-cu-piston' className='title2'>Compresoare cu piston  <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup></h1></summary>
+                    <summary><h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston  <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup></h1></summary>
                     <div className='content-under-title to-be-relative'>
                         <p className='choose-item'>_  alege un compresor  //de rezolvat pozitia acestui text _</p>
                         <div className='two-columns'>
@@ -653,95 +687,330 @@ export default function HomePage() {
             {/* <section className='section-slider'>
                 
             </section> */}
-            {/* <div></div> */}
-            <Carousel responsive={responsive} className='carousel-container'
-                swipeable={true}
-                draggable={true}
-            >
-                <div className='product-card'>
-                    <img src={GD9} alt="img missing" className='img-inside-slider' />
-                    {/* <p>vezi detalii</p> */}
-                    <p>Compresoare cu piston Champion</p>
-                    <div className='see-details'>
-                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
-                        <img className='arrow' src={arrow} alt='svg missing' />
+            <div className='motherofthemall'>
+                <Carousel responsive={responsive} className='carousel-container'
+                    swipeable={true}
+                    draggable={true}
+                    keyBoardControl={true}
+                >
+                    <div className='product-card'>
+                        <p id="compresoare-cu-piston-Champion">Compresoare cu piston Champion</p>
+                        <p>(poza9)</p>
                     </div>
-                    {/* ---- */}
-                    <div className='details-under-card'>
-                        {divVisibility[0] && (
-                            <div id="div1" className="details-product-slider">
-                                <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
-
-
-
-                                <br />
-                                <br />
-                                <br />
+                    {/* --------------------------------- */}
+                    <div id="compresoare-pentru-cabinete-dentare" className='product-card'>
+                        <p>Compresoare pentru cabinete dentare</p>
+                        <p>(poza 10)</p>
+                    </div>
+                    {/* --------------------------------------------- */}
+                    <div className='product-card'>
+                        <p>Compresaore pentru suflat PET-uri</p>
+                        <p>(poza 14)</p>
+                    </div>
+                    {/* --------------------------------------------- */}
+                    <div id="compresoare-pentru-umplut-butelii" className='product-card'>
+                        <p className='product-type'>Compresoare pentru umplut butelii</p>
+                        {/* <p>(poza 15)</p> */}
+                        <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
+                        <div className='line-separation'></div>
+                        <div className='flex'>
+                            <img src={GD15} alt="img missing" className='img-inside-slider' />
+                            <div className='product-text'>
+                                <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
+                                <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
+                                <div className='margin-bottom-p'>
+                                    <p>- timpi scurti de umplere a buteliilor;</p>
+                                    <p>- functionare automata;</p>
+                                    <p>- diverse modele de motoare de actionare;</p>
+                                    <p>- usor de utilizat;</p>
+                                    <p>- montate pe sasiu sau in carcasa isonorizata;</p>
+                                    <p>- actionate cu motor electric sau cu motor termic Honda;</p>
+                                    <p>- inlcud o varietate larga de accesorii.</p>
+                                </div>
 
                             </div>
-                        )}
-                    </div>
-                    {/* ---- */}
-                </div>
-
-                {/* --------------------------------- */}
-                <div className='product-card'>
-                    <img src={GD10} alt="img missing" className='img-inside-slider' />
-                    {/* <p>vezi detalii</p> */}
-                    <p>Compresoare cu piston Champion</p>
-                    <div className='see-details'>
-                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
-                        <img className='arrow' src={arrow} alt='svg missing' />
-                    </div>
-                </div>
-                <div className='right-column'>
-                    {divVisibility[0] && (
-                        <div id="div1" className="details-product-slider">
-                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
-                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
-                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.Compresoare cu piston actionate cu motor temic Honda.</p>
-                            <br />
-                            <br />
-                            <br />
-
                         </div>
-                    )}
-                </div>
-                {/* --------------------------------------------- */}
-                <div className='product-card'>
-                    <img src={GD11} alt="img missing" className='img-inside-slider' />
-                    {/* <p>vezi detalii</p> */}
-                    <p>Compresoare cu piston Champion</p>
-                    <div className='see-details'>
-                        <button onClick={() => toggleDiv(0)}>vezi descriere si tabel</button>
-                        <img className='arrow' src={arrow} alt='svg missing' />
+
+
+                        <table className='tabletemplate1'>
+                            {/* <colgroup>
+    <col style={{backgroundColor:'red'}}>
+    <col style={{backgroundColor:'yellow'}}>
+  </colgroup> */}
+                            {/* 1 */}
+                            <tr>
+                                <td rowspan='2'></td>
+                                <td rowspan='2'>Compresoare cu piston si ungere cu ulei Champion, model</td>
+                                <td>Debit</td>
+                                <td>Presiune maxima</td>
+                                <td>Putere motor</td>
+                                <td>Nivel zgomot</td>
+                                <td>Alimentare</td>
+                                <td>Cu recipient</td>
+                            </tr>
+                            {/* 2 */}
+                            <tr>
+                                {/* <td></td> */}
+                                {/* deci tre sa sterg fiecare td 1 din fiecare urmatoarele row-uri */}
+                                {/* <td></td> */}
+                                <td>m³/min</td>
+                                <td>Bar</td>
+                                <td>Kw</td>
+                                <td>d(B)</td>
+                                <td>Volt/50Hz</td>
+                                <td>Volum litrii</td>
+                            </tr>
+
+                            {/* 3 */}
+                            <tr>
+                                <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
+                                <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>CB-OF-6-CF15 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></NavLink></td>
+                                <td>0,12</td>
+                                <td>8</td>
+                                <td>1,1</td>
+                                <td>82</td>
+                                <td>230</td>
+                                <td>6</td>
+                            </tr>
+
+                            {/* 4 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CB-3-CF2 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></td>
+                                <td>0,19</td>
+                                <td>8</td>
+                                <td>1,5</td>
+                                <td>76</td>
+                                <td>230</td>
+                                <td>3 ÷ 100</td>
+                            </tr>
+
+                            {/* 5 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CB-24-CM25</td>
+                                <td>0,24</td>
+                                <td>9</td>
+                                <td>1,8</td>
+                                <td>79</td>
+                                <td>230</td>
+                                <td>24 ÷ 100</td>
+                            </tr>
+
+                            {/* 6 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CB-24-WB3</td>
+                                <td>0,34</td>
+                                <td>9</td>
+                                <td>2,2</td>
+                                <td>82</td>
+                                <td>230</td>
+                                <td>24 ÷ 100</td>
+                            </tr>
+
+                            {/* 6 * SPATIU */}
+                            <tr className='empty-row'></tr>
+
+                            {/* 7 */}
+                            <tr>
+                                <td rowspan='2'>Compresoare cu transmisie prin curele, o singura treapta de compresie, o singura faza.</td>
+                                <td>CL28B-25-CM2</td>
+                                <td>0,25</td>
+                                <td>10</td>
+                                <td>1,5</td>
+                                <td>77</td>
+                                <td>230</td>
+                                <td>25 ÷ 150</td>
+                            </tr>
+
+
+                            {/* 8 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CP28B-50-CM3</td>
+                                <td>0.29 ÷ 0.42</td>
+                                <td>10</td>
+                                <td>2,2</td>
+                                <td>76 ÷ 78</td>
+                                <td>230 ÷ 400</td>
+                                <td>50 ÷ 270</td>
+                            </tr>
+
+                            {/* 8 * SPATIU */}
+                            <tr className='empty-row'></tr>
+
+                            {/* 9 */}
+                            <tr>
+                                <td rowspan='5'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu  motor electric trifazat.</td>
+                                <td>CL4-200-FT4</td>
+                                <td>0,54</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>75</td>
+                                <td>400</td>
+                                <td>200 ÷ 270</td>
+                            </tr>
+
+                            {/* 10 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CL5-200-FT55</td>
+                                <td>0,61</td>
+                                <td>11</td>
+                                <td>4</td>
+                                <td>82</td>
+                                <td>400</td>
+                                <td>200 ÷ 500</td>
+                            </tr>
+
+                            {/* 11 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CL6-200-FT75</td>
+                                <td>0,8</td>
+                                <td>11</td>
+                                <td>5,5</td>
+                                <td>82</td>
+                                <td>400</td>
+                                <td>200 ÷ 500</td>
+                            </tr>
+
+                            {/* 12 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CL10-270-FT10</td>
+                                <td>1,25</td>
+                                <td>11</td>
+                                <td>7,5</td>
+                                <td>82</td>
+                                <td>400</td>
+                                <td>200 ÷ 900</td>
+                            </tr>
+
+                            {/* 13 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA15-500-FT155</td>
+                                <td>1,51</td>
+                                <td>11</td>
+                                <td>11</td>
+                                <td>82</td>
+                                <td>400</td>
+                                <td>200 ÷ 900</td>
+                            </tr>
+
+                            {/* 13 * SPATIU */}
+                            <tr className='empty-row'></tr>
+
+                            {/* 14 */}
+                            <tr>
+                                <td rowspan='4'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu motor electric trifazat.</td>
+                                <td>CA5-270-15-FT55</td>
+                                <td>0,43</td>
+                                <td>15</td>
+                                <td>4</td>
+                                <td>81</td>
+                                <td>400</td>
+                                <td>270</td>
+                            </tr>
+
+                            {/* 15 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA6-270-15-FT75</td>
+                                <td>0,57</td>
+                                <td>15</td>
+                                <td>5,5</td>
+                                <td>81</td>
+                                <td>400</td>
+                                <td>270</td>
+                            </tr>
+
+                            {/* 16 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA10-500-15-FT10</td>
+                                <td>0,94</td>
+                                <td>15</td>
+                                <td>7,5</td>
+                                <td>81</td>
+                                <td>400</td>
+                                <td>500</td>
+                            </tr>
+
+                            {/* 17 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA15-500-15-FT155 SDS</td>
+                                <td>1,14</td>
+                                <td>15</td>
+                                <td>11</td>
+                                <td>81</td>
+                                <td>400</td>
+                                <td>500</td>
+                            </tr>
+
+                            {/* 17 * SPATIU */}
+                            <tr className='empty-row'></tr>
+
+                            {/* 18 */}
+                            <tr>
+                                <td rowspan='3'>Compresoare cu motor termic, tip Honda, cu benzina</td>
+                                <td>CA3-11+11-C4</td>
+                                <td>0,3</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>74</td>
+                                <td>Honda</td>
+                                <td>22</td>
+                            </tr>
+
+                            {/* 19 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA4-100-C55	</td>
+                                <td>0,42</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>75</td>
+                                <td>Honda</td>
+                                <td>100 ÷ 200</td>
+                            </tr>
+
+                            {/* 20 */}
+                            <tr>
+                                {/* <td></td> */}
+                                <td>CA5-270-C9</td>
+                                <td>0,56</td>
+                                <td>10</td>
+                                <td>7,1</td>
+                                <td>81</td>
+                                <td>Honda</td>
+                                <td>270</td>
+                            </tr>
+                        </table>
+
                     </div>
-                </div>
-                <div className='right-column'>
-                    {divVisibility[0] && (
-                        <div id="div1" className="details-product-slider">
-                            <p style={{ fontSize: '18px' }}>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.
-                                Compresoare cu piston actionate cu motor temic Honda.</p>
-                            <br />
-                            <br />
-                            <br />
-
-                        </div>
-                    )}
-                </div>
+                    {/* --------------------------------------------- */}
 
 
-                {/* <img src={GD10} alt="img missing" />
+
+                    {/* <img src={GD10} alt="img missing" />
                             <img src={GD11} alt="img missing" />
                             <img src={GD12} alt="img missing" />
                             <img src={GD13} alt="img missing" />
                             <img src={GD14} alt="img missing" />
-                            <img src={GD15} alt="img missing" /> */}
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
-            </Carousel>
+                             */}
+                    <div>Item 1</div>
+                    <div>Item 2</div>
+                    <div>Item 3</div>
+                    <div>Item 4</div>
+                </Carousel>
+            </div>
+
+
+
 
         </div >
 
