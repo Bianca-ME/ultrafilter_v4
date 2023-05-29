@@ -25,9 +25,9 @@ export default function Header() {
         <div className="fixed-position">
             <div className='header'>
                 {/* <NavLink className='visited-link' to='/about' activeClassName="active-link"><a href='#despre-UFR'>Despre Ultrafilter</a></NavLink> */}
-                <a href='#despre-UFR' className='visited-link visited-link-header' activeClassName="active-link">Despre Ultrafilter</a>
+                {/* <a href='#despre-UFR' className='visited-link visited-link-header' activeClassName="active-link">Despre Ultrafilter</a>
                 <NavLink className='visited-link visited-link-header' to='/utile' activeClassName="active-link">linkuri utile</NavLink>
-                <NavLink className='visited-link visited-link-header' to='/contact' activeClassName="active-link">Contact</NavLink>
+                <NavLink className='visited-link visited-link-header' to='/contact' activeClassName="active-link">Contact</NavLink> */}
             </div>
             <div className='ribbon-right'>
                 <p>tel: +40 371 152 977</p>
@@ -76,9 +76,31 @@ export default function Header() {
                 </div>
                 {/* <a href=""  id='quick-menu' className=' visited-link-ribbon-left' activeClassName="clicked-menu">quick menu</a> */}
             </div>
-            {/* <div className='ribbon-bottom'>
-                <p>ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   ultrafilter   </p>
-            </div> */}
+            {/* ------------------- */}
+            <div className="nav-menu">
+                <nav>
+                    <ul className='menu'>
+                        <li className='menu1'><a href="#despre-Ultrafilter">Despre Ultrafilter</a></li>
+                        <li className='menu1'><a href="#Donaldson">Donaldson</a></li>
+                        <li className='menu1'><a href="#Gardner-Denver">Gardner Denver</a>
+                            <ul className='submenu'>
+                                <li><a href='#despre-Gardner-Denver'>Despre Gardner Denver</a></li>
+                                <li><a href='#compresoare-cu-piston'>Compresoare cu piston</a>
+                                    <ul className='submenu2'>
+                                        <li><a href="#compresoare-cu-piston-Champion">Compresoare cu piston Champion</a></li>
+                                        <li><a href="#compresoare-pentru-cabinete-dentare">Compresoare pentru cabinete dentare</a></li>
+                                        <li><a href="#compresoare-pentru-suflat-PET-uri">Compresaore pentru suflat PET-uri</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#compresoare-rotative'>Compresoare rotative</a></li>
+                            </ul>
+                        </li>
+                        <li className='menu1'><a href="#linkuri-utile">linkuri utile</a></li>
+                        <li className='menu1'><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
     )
 }

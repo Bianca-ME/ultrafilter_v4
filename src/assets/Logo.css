@@ -1,28 +1,28 @@
-.logo-home-page {
-    /* height: 60px; */
-    /* background-color: pink; */
-}
-
 .logo-home-page-text-margin-left {
     margin-left: 10px;
 }
 
 .logo-home-page-container {
-    /* background-color: rgb(211, 76, 99); */
-    /* background-color: rgb(7, 22, 63); */
-    /* background-color: rgba(23, 0, 156); */
-    /* background-color: #0366b0; original blue */
-    /* width: 100vw; era */
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    padding: 7px 30px;
-    /* position: absolute; */
+    box-sizing: border-box;
+    /* width: 100vw; */
+    height: 30px;
+    /* display: flex; */
+    /* padding: 7px 30px; */
+    padding: 1px 5px;
     z-index: 200;
     margin: 0;
-    top: 0;
-    /* justify-content: center; */
+  position: fixed;
+    /* top: 0; */
+     top: 0;
+    left: 0;
+    background-color: #fcfcf5;
 }
-/* temporary disable z-index to solve sliding pane which I need it to come in front of everything */
-/* z-index: 2; */
 
+.logo-home-page {
+    height: 28px;
+}
+
+.right-corner {
+   position: fixed;
+   
+}

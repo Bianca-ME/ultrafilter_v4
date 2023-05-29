@@ -208,7 +208,7 @@ export default function HomePage() {
                 <div className='containsPage2 slide slide-top containsPage2-mobile'>
                     <div className='page2GardnerDenver-container'>
                         <div className='slide-content-GD'>
-                            <a href='#despre-GD' className='active-link-D-GD'>despre Gardner Denver</a>
+                            <a href='#despre-Gardner-Denver' className='active-link-D-GD'>despre Gardner Denver</a>
                             {/* <Link to="/GardnerDenver" rel="noreferrer" className='active-link-D-GD'>
                                 despre Gardner Denver
                             </Link> */}
@@ -265,7 +265,7 @@ export default function HomePage() {
 
             {/* section despre Ultrafilter */}
             <section className='sectionX-despre-UFR'>
-                <h1 id='despre-UFR' className='
+                <h1 id='despre-Ultrafilter' className='
                 // title4
                 title2-custom
                 '>Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
@@ -286,8 +286,8 @@ export default function HomePage() {
 
             {/* section GD intro */}
             <section className='sectionX-despre-GD'>
-                <h1 id='despre-GD' className='
-                // title4
+                <h1 id='despre-Gardner-Denver' className='
+                title4
                 title2-custom
                 '>Despre Gardner Denver</h1>
                 <p className='card1'>
@@ -687,7 +687,7 @@ export default function HomePage() {
             {/* <section className='section-slider'>
                 
             </section> */}
-            <div className='motherofthemall'>
+            {/* <div className='motherofthemall'>
                 <Carousel responsive={responsive} className='carousel-container'
                     swipeable={true}
                     draggable={true}
@@ -697,20 +697,19 @@ export default function HomePage() {
                         <p id="compresoare-cu-piston-Champion">Compresoare cu piston Champion</p>
                         <p>(poza9)</p>
                     </div>
-                    {/* --------------------------------- */}
+
                     <div id="compresoare-pentru-cabinete-dentare" className='product-card'>
                         <p>Compresoare pentru cabinete dentare</p>
                         <p>(poza 10)</p>
                     </div>
-                    {/* --------------------------------------------- */}
+
                     <div className='product-card'>
                         <p>Compresaore pentru suflat PET-uri</p>
                         <p>(poza 14)</p>
                     </div>
-                    {/* --------------------------------------------- */}
+
                     <div id="compresoare-pentru-umplut-butelii" className='product-card'>
                         <p className='product-type'>Compresoare pentru umplut butelii</p>
-                        {/* <p>(poza 15)</p> */}
                         <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
                         <div className='line-separation'></div>
                         <div className='flex'>
@@ -733,11 +732,7 @@ export default function HomePage() {
 
 
                         <table className='tabletemplate1'>
-                            {/* <colgroup>
-    <col style={{backgroundColor:'red'}}>
-    <col style={{backgroundColor:'yellow'}}>
-  </colgroup> */}
-                            {/* 1 */}
+                    
                             <tr>
                                 <td rowspan='2'></td>
                                 <td rowspan='2'>Compresoare cu piston si ungere cu ulei Champion, model</td>
@@ -748,11 +743,7 @@ export default function HomePage() {
                                 <td>Alimentare</td>
                                 <td>Cu recipient</td>
                             </tr>
-                            {/* 2 */}
                             <tr>
-                                {/* <td></td> */}
-                                {/* deci tre sa sterg fiecare td 1 din fiecare urmatoarele row-uri */}
-                                {/* <td></td> */}
                                 <td>m³/min</td>
                                 <td>Bar</td>
                                 <td>Kw</td>
@@ -761,7 +752,6 @@ export default function HomePage() {
                                 <td>Volum litrii</td>
                             </tr>
 
-                            {/* 3 */}
                             <tr>
                                 <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
                                 <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>CB-OF-6-CF15 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></NavLink></td>
@@ -773,9 +763,7 @@ export default function HomePage() {
                                 <td>6</td>
                             </tr>
 
-                            {/* 4 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CB-3-CF2 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></td>
                                 <td>0,19</td>
                                 <td>8</td>
@@ -785,9 +773,7 @@ export default function HomePage() {
                                 <td>3 ÷ 100</td>
                             </tr>
 
-                            {/* 5 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CB-24-CM25</td>
                                 <td>0,24</td>
                                 <td>9</td>
@@ -797,9 +783,7 @@ export default function HomePage() {
                                 <td>24 ÷ 100</td>
                             </tr>
 
-                            {/* 6 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CB-24-WB3</td>
                                 <td>0,34</td>
                                 <td>9</td>
@@ -809,10 +793,8 @@ export default function HomePage() {
                                 <td>24 ÷ 100</td>
                             </tr>
 
-                            {/* 6 * SPATIU */}
                             <tr className='empty-row'></tr>
 
-                            {/* 7 */}
                             <tr>
                                 <td rowspan='2'>Compresoare cu transmisie prin curele, o singura treapta de compresie, o singura faza.</td>
                                 <td>CL28B-25-CM2</td>
@@ -825,9 +807,7 @@ export default function HomePage() {
                             </tr>
 
 
-                            {/* 8 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CP28B-50-CM3</td>
                                 <td>0.29 ÷ 0.42</td>
                                 <td>10</td>
@@ -837,10 +817,8 @@ export default function HomePage() {
                                 <td>50 ÷ 270</td>
                             </tr>
 
-                            {/* 8 * SPATIU */}
                             <tr className='empty-row'></tr>
 
-                            {/* 9 */}
                             <tr>
                                 <td rowspan='5'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu  motor electric trifazat.</td>
                                 <td>CL4-200-FT4</td>
@@ -852,9 +830,7 @@ export default function HomePage() {
                                 <td>200 ÷ 270</td>
                             </tr>
 
-                            {/* 10 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CL5-200-FT55</td>
                                 <td>0,61</td>
                                 <td>11</td>
@@ -864,9 +840,7 @@ export default function HomePage() {
                                 <td>200 ÷ 500</td>
                             </tr>
 
-                            {/* 11 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CL6-200-FT75</td>
                                 <td>0,8</td>
                                 <td>11</td>
@@ -876,9 +850,7 @@ export default function HomePage() {
                                 <td>200 ÷ 500</td>
                             </tr>
 
-                            {/* 12 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CL10-270-FT10</td>
                                 <td>1,25</td>
                                 <td>11</td>
@@ -888,9 +860,7 @@ export default function HomePage() {
                                 <td>200 ÷ 900</td>
                             </tr>
 
-                            {/* 13 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA15-500-FT155</td>
                                 <td>1,51</td>
                                 <td>11</td>
@@ -900,10 +870,8 @@ export default function HomePage() {
                                 <td>200 ÷ 900</td>
                             </tr>
 
-                            {/* 13 * SPATIU */}
                             <tr className='empty-row'></tr>
 
-                            {/* 14 */}
                             <tr>
                                 <td rowspan='4'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu motor electric trifazat.</td>
                                 <td>CA5-270-15-FT55</td>
@@ -915,9 +883,7 @@ export default function HomePage() {
                                 <td>270</td>
                             </tr>
 
-                            {/* 15 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA6-270-15-FT75</td>
                                 <td>0,57</td>
                                 <td>15</td>
@@ -927,9 +893,7 @@ export default function HomePage() {
                                 <td>270</td>
                             </tr>
 
-                            {/* 16 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA10-500-15-FT10</td>
                                 <td>0,94</td>
                                 <td>15</td>
@@ -939,9 +903,7 @@ export default function HomePage() {
                                 <td>500</td>
                             </tr>
 
-                            {/* 17 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA15-500-15-FT155 SDS</td>
                                 <td>1,14</td>
                                 <td>15</td>
@@ -951,10 +913,8 @@ export default function HomePage() {
                                 <td>500</td>
                             </tr>
 
-                            {/* 17 * SPATIU */}
                             <tr className='empty-row'></tr>
 
-                            {/* 18 */}
                             <tr>
                                 <td rowspan='3'>Compresoare cu motor termic, tip Honda, cu benzina</td>
                                 <td>CA3-11+11-C4</td>
@@ -966,9 +926,7 @@ export default function HomePage() {
                                 <td>22</td>
                             </tr>
 
-                            {/* 19 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA4-100-C55	</td>
                                 <td>0,42</td>
                                 <td>10</td>
@@ -978,9 +936,7 @@ export default function HomePage() {
                                 <td>100 ÷ 200</td>
                             </tr>
 
-                            {/* 20 */}
                             <tr>
-                                {/* <td></td> */}
                                 <td>CA5-270-C9</td>
                                 <td>0,56</td>
                                 <td>10</td>
@@ -992,22 +948,17 @@ export default function HomePage() {
                         </table>
 
                     </div>
-                    {/* --------------------------------------------- */}
 
 
 
-                    {/* <img src={GD10} alt="img missing" />
-                            <img src={GD11} alt="img missing" />
-                            <img src={GD12} alt="img missing" />
-                            <img src={GD13} alt="img missing" />
-                            <img src={GD14} alt="img missing" />
-                             */}
+                  
+                            
                     <div>Item 1</div>
                     <div>Item 2</div>
                     <div>Item 3</div>
                     <div>Item 4</div>
                 </Carousel>
-            </div>
+            </div> */}
 
 
 
