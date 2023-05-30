@@ -2445,7 +2445,7 @@ nav {
 
     font-weight: 400;
     font-size: 20px;
-background-color: #8f8f8f;
+    background-color: #8f8f8f;
     /* margin: 0 auto; */
     height: 30px;
 
@@ -2552,16 +2552,17 @@ submnu2 a {
 .menu1>a {
     color: #fcfcf5;
     font-family: 'Syne', sans-serif;
-    
+
     /* background-color: #d4d4cd; */
-    
+
     /* border-radius: 35px; */
 }
 
 .menu1>a:visited {
-    color:#fcfcf5;
+    color: #fcfcf5;
 }
-.menu1 > a:hover {
+
+.menu1>a:hover {
     background-color: #d2202e;
 
 }
@@ -2569,4 +2570,152 @@ submnu2 a {
 /* .menu a:active {
 text-decoration: underline;
 text-underline-offset: 13px;
+} */
+
+/* ---------------------- */
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+}
+
+.box {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 1000px;
+    height: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 24px;
+    cursor: pointer;
+    transition: z-index 0.3s ease;
+    border-radius: 10px;
+
+}
+
+/* .box:hover {
+    background-color: #ddd;
+} */
+
+.box:active {
+    background-color: #aaa;
+}
+
+.label1:active,
+.label2:active,
+.label3:active,
+.label4:active,
+.label5:active {
+    /* background-color: #00A571; */
+}
+
+.label1 {
+    height: 30px;
+    width: 100px;
+    top: -30px;
+    left:5px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+.label2 {
+    height: 30px;
+    width: 100px;
+    top: -30px;
+    left:225px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+.label3 {
+    height: 30px;
+    width: 100px;
+    top: -30px;
+    left:345px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+.label4 {
+    height: 30px;
+    width: 100px;
+    top: -30px;
+    left:465px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+.label5 {
+    height: 30px;
+    width: 100px;
+    top: -30px;
+    left:585px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+
+/* -------------------------------------------- */
+
+.to-be-absolute {
+    position: absolute;
+}
+
+/* .manila-folder-content {
+    width: 400px;
+    height: 300px;
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: white;
+    border-left: 1px solid black;
+}
+
+.manila-folder-label {
+    height: 30px;
+    width: 100px;
+
+    border-radius: 10px 10px 0 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 0px solid black;
+    background-color: white;
+}
+
+.manila-folder2 {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+}
+
+.manila-folder3 {
+    position: absolute;
+    left: 240px;
+    top: 20px;
 } */
