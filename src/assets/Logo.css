@@ -5,24 +5,31 @@
 .logo-home-page-container {
     box-sizing: border-box;
     /* width: 100vw; */
-    height: 30px;
-    /* display: flex; */
+    height: 31px;
+    /* height: 100px; */
+    /* display: inline-block; */
     /* padding: 7px 30px; */
-    padding: 1px 5px;
+    padding: 1px 50px;
     z-index: 200;
     margin: 0;
-  position: fixed;
+    position: fixed;
     /* top: 0; */
-     top: 30px;
-    left: 40vw;
-    /* background-color: #fcfcf5; */
+    left: 0;
+    top: 0;
+    background-color: #fcfcf5;
+    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
+    /* width: 400px; */
+    /* transform: rotate(-90deg); */
+    /* border-bottom: 1px solid #8f8f8f; */
+    border-bottom: 1px solid #d1d1d1;
+    
 }
 
 .logo-home-page {
-    height: 28px;
+    height: 26px;
 }
 
 .right-corner {
-   position: fixed;
-   
+    position: fixed;
+
 }

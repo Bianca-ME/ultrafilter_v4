@@ -236,7 +236,7 @@ export default function HomePage() {
                     </p>
                     <hr></hr>
                     <div className='padding-buttons-in-display-block'>
-                        <p><a href='#despre-GD' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
@@ -297,7 +297,9 @@ export default function HomePage() {
 
             {/* section Compresoare cu piston */}
             <section className='sectionX-compresoare-cu-piston'>
-                <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston  <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup></h1>
+                <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston  
+                {/* <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup> */}
+                </h1>
                 {/* <div className='card1'> */}
 
 
@@ -347,12 +349,15 @@ export default function HomePage() {
                     </div>
                 </div>
             </div> */}
-            <input
-                type="text"
-                placeholder="Search"
-                ref={searchRef}
-                onChange={handleSearch}
-            />
+            <div className='search-compresoare-cu-piston'>
+                <input
+                    type="text"
+                    placeholder="cauta :-)"
+                    ref={searchRef}
+                    onChange={handleSearch}
+                />
+            </div>
+
             {/* <div className="container">
                 
                 <div
@@ -403,21 +408,23 @@ export default function HomePage() {
             </div> */}
 
 
-            <div className="container" style={{ marginTop:'50px' }}>
+            <div className="container" style={{ marginTop: '100px' }}>
 
                 <div
                     ref={(el) => (divRefs.current[0] = el)}
                     className="box"
                     onMouseOver={() => handleHover(0)}
                     onClick={() => handleClick(0)}
-                style={{ left: "0px", top:'0' }}
+                    style={{ left: "0px", top: '0' }}
                 >
                     <div className='toberelative'>
-                        <div className='to-be-absolute label1'>
-                            label1
+                        <div className='to-be-absolute label1 label'>
+                            Compresoare cu piston Champion
+
                         </div>
-                        <div className='manila-folder-content'>
-                            1 compresor
+                        <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
+                            <p>(poza9)</p>
+
                         </div>
                     </div>
 
@@ -427,12 +434,12 @@ export default function HomePage() {
                     className="box"
                     onMouseOver={() => handleHover(1)}
                     onClick={() => handleClick(1)}
-                style={{ left: "10px", top: '2px' }}
+                    style={{ left: "10px", top: '2px' }}
                 >
 
                     <div className='toberelative'>
-                        <div className='to-be-absolute label2'>
-                            label2
+                        <div className='to-be-absolute label2 label'>
+                            Compresoare pentru cabinete dentare
                         </div>
                         <div className='manila-folder-content'>
                             2
@@ -445,11 +452,11 @@ export default function HomePage() {
                     className="box"
                     onMouseOver={() => handleHover(2)}
                     onClick={() => handleClick(2)}
-                style={{ left: "20px", top: '4px' }}
+                    style={{ left: "20px", top: '4px' }}
                 >
                     <div className='toberelative'>
-                        <div className='to-be-absolute label3'>
-                            label3
+                        <div className='to-be-absolute label3 label'>
+                            Compresaore pentru suflat PET-uri
                         </div>
                         <div className='manila-folder-content'>
                             3 compress
@@ -461,14 +468,36 @@ export default function HomePage() {
                     className="box"
                     onMouseOver={() => handleHover(3)}
                     onClick={() => handleClick(3)}
-                style={{ left: "40px", top: '6px' }}
+                    style={{ left: "40px", top: '6px' }}
                 >
                     <div className='toberelative'>
-                        <div className='to-be-absolute label4'>
-                            label4
+                        <div className='to-be-absolute label4 label'>
+                            Compresoare pentru umplut butelii
                         </div>
                         <div className='manila-folder-content'>
-                            4
+                            <div className='manila-folder-content-T'>
+                                4
+                                <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
+                                <div className='line-separation'></div>
+                                <div className='flex'>
+                                    <img src={GD15} alt="img missing" className='img-inside-slider' />
+                                    <div className='product-text'>
+                                        <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
+                                        <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
+                                        <div className='margin-bottom-p'>
+                                            <p>- timpi scurti de umplere a buteliilor;</p>
+                                            <p>- functionare automata;</p>
+                                            <p>- diverse modele de motoare de actionare;</p>
+                                            <p>- usor de utilizat;</p>
+                                            <p>- montate pe sasiu sau in carcasa isonorizata;</p>
+                                            <p>- actionate cu motor electric sau cu motor termic Honda;</p>
+                                            <p>- inlcud o varietate larga de accesorii.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -477,14 +506,17 @@ export default function HomePage() {
                     className="box"
                     onMouseOver={() => handleHover(4)}
                     onClick={() => handleClick(4)}
-                style={{ left: "50px", top: '8px' }}
+                    style={{ left: "50px", top: '8px' }}
                 >
                     <div className='toberelative'>
-                        <div className='to-be-absolute label5'>
+                        <div className='to-be-absolute label5 label'>
                             label5
                         </div>
                         <div className='manila-folder-content'>
-                            5
+                            <div>
+                                5
+                            </div>
+
                         </div>
                     </div>
                 </div>
