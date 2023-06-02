@@ -8,18 +8,19 @@ import '../assets/Header.css';
 
 export default function Header() {
 
-    useEffect(() => {
-        const handleClick = () => {
-            stickyElement.classList.toggle('active');
-        };
+    // js function to click on something and open / close it
+    // useEffect(() => {
+    //     const handleClick = () => {
+    //         stickyElement.classList.toggle('active');
+    //     };
 
-        const stickyElement = document.getElementById('quick-menu');
-        stickyElement.addEventListener('click', handleClick);
+    //     const stickyElement = document.getElementById('quick-menu');
+    //     stickyElement.addEventListener('click', handleClick);
 
-        return () => {
-            stickyElement.removeEventListener('click', handleClick);
-        };
-    }, []);
+    //     return () => {
+    //         stickyElement.removeEventListener('click', handleClick);
+    //     };
+    // }, []);
 
     return (
         <div className="fixed-position">
@@ -32,13 +33,11 @@ export default function Header() {
             <div className='ribbon-right'>
                 <p>tel: +40 371 152 977</p>
             </div>
-            <div>
+            {/* <div>
                 <a href="#top" className='back-to-top visited-link-ribbon-left'>back to top</a>
                 <div id='quick-menu' className='visited-link-ribbon-left to-be-relative'>
                     <p>quick menu</p>
-                    {/* <div className='circle circle1'></div>
-                    <div className='circle circle2'></div>
-                    <div className='screen-border'></div> */}
+                    
 
                     <div className='links-inside-menu visited-link-ribbon-left flex'>
 
@@ -74,8 +73,8 @@ export default function Header() {
 
                     </div>
                 </div>
-                {/* <a href=""  id='quick-menu' className=' visited-link-ribbon-left' activeClassName="clicked-menu">quick menu</a> */}
-            </div>
+               
+            </div> */}
             {/* ------------------- */}
             <div className="nav-menu">
                 <nav>
@@ -100,6 +99,8 @@ export default function Header() {
                     </ul>
                 </nav>
             </div>
+
+            
 
         </div>
     )

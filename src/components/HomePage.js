@@ -25,6 +25,11 @@ import '../assets/locomotive-scroll.css';
 // import myFunction from '../assets/locomotive-scroll-copy-unminified.js';
 
 // images
+import DlogoSVG from '../assets/donaldson-company-1.svg';
+import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
+
+
+
 import Dlogo from '../assets/donaldson-logo.jpg';
 import GDlogo from '../assets/gardner-denver-logo.jpg';
 
@@ -76,6 +81,11 @@ import arrowDown from '../assets/arrow-down-339.svg';
 import arrowRightDown from '../assets/arrow-right-down355.svg';
 import arrowLeft from '../assets/arrow-left-334-svgrepo-com.svg';
 import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
+import mapSketch from '../assets/map.png';
+import UFRteam from '../assets/team.jpg';
+import onTopOfMountain from '../assets/ontopofmountain5000x4112.png';
+import Picture49 from '../assets/Picture49.png';
+
 
 
 
@@ -120,15 +130,15 @@ export default function HomePage() {
     const divRefs = useRef([]);
     const searchRef = useRef(null);
 
-    const handleHover = (index) => {
-        divRefs.current.forEach((div, i) => {
-            if (i === index) {
-                div.style.zIndex = divRefs.current.length;
-            } else {
-                div.style.zIndex = divRefs.current.length - i;
-            }
-        });
-    };
+    // const handleHover = (index) => {
+    //     divRefs.current.forEach((div, i) => {
+    //         if (i === index) {
+    //             div.style.zIndex = divRefs.current.length;
+    //         } else {
+    //             div.style.zIndex = divRefs.current.length - i;
+    //         }
+    //     });
+    // };
 
     const handleClick = (index) => {
         divRefs.current.forEach((div, i) => {
@@ -178,14 +188,11 @@ export default function HomePage() {
 
     return (
         <div data-scroll toberelative>
-            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
+            {/* <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                 <div className='containsPage1 slide slide-top containsPage1-mobile'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
                             <a href='#despre-Donaldson' className='active-link-D-GD'>despre Donaldson</a>
-                            {/* <Link to="/Donaldson" rel="noreferrer" className='active-link-D-GD'>
-                                despre Donaldson
-                            </Link> */}
                         </div>
                         <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
                     </div>
@@ -194,31 +201,40 @@ export default function HomePage() {
                     <div className='page2GardnerDenver-container'>
                         <div className='slide-content-GD'>
                             <a href='#despre-Gardner-Denver' className='active-link-D-GD'>despre Gardner Denver</a>
-                            {/* <Link to="/GardnerDenver" rel="noreferrer" className='active-link-D-GD'>
-                                despre Gardner Denver
-                            </Link> */}
                         </div>
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                     </div>
                 </div>
+            </div> */}
+
+            {/* NEW D and GD background with mountains */}
+            <div className='margin-from-header top-banner'>
+                <div className='toberelative'>
+                    <p>tehnologie pentru un mediu mai curat</p>
+                    <img className='reallyBigIMG' src={onTopOfMountain} alt="Donaldson logo can.t be seen" />
+                    <div className='D-and-GD-logos-container-flex'>
+                        <div className='GD-container--'>
+                            <img className='page2GardnerDenver--' src={GDlogoSVG} alt="Donaldson logo can.t be seen"></img>
+                        </div>
+                        <div className='D-container--'>
+                            <img className='page1Donaldson--' src={DlogoSVG} alt="Donaldson logo can.t be seen"></img>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            {/* "TITLURILE MARI" */}
-            <section className='section1-buttons-under-D-and-GD two-columns'>
-                <div className='display-block'>
-                    {/* Donaldson */}
-                    <p className='title3-1'>filtre, desprafuire industriala<br /><img className='arrow-for-title' src={arrowDown} alt='svg missing' /></p>
-                    <hr></hr>
-                    <div className='padding-buttons-in-display-block'>
-                        <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        {/* <p><a className='buttonV1'></a></p> */}
-                        <p><a className='buttonV1'>Ventilatoare</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Filtre pentru ventilatii</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Aspiratoare industriale</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    </div>
 
+            {/* <div className='section-team'>
+                <div className='toberelative'>
+                    <p className=''>impreuna, in echipa, gasim solutii</p>
+                    <div className='overlap-gradient'></div>
+                    <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
                 </div>
+            </div> */}
+
+
+            {/* "TITLURILE MARI" */}
+            <section className='section1-buttons-under-D-and-GD two-columns' style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
                 <div className='display-block'>
                     {/* <h1>
                         <span></span>
@@ -232,7 +248,7 @@ export default function HomePage() {
                     {/* <p className='title3-2'>compresoare si retele de aer comprimat</p> */}
                     <p className='title3-2'>
                         compresoare si retele de aer comprimat<br />
-                        <img className='arrow-for-title' src={arrowDown} alt='svg missing' />
+                        {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
                     </p>
                     <hr></hr>
                     <div className='padding-buttons-in-display-block'>
@@ -242,8 +258,23 @@ export default function HomePage() {
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                     </div>
-
                 </div>
+                <div className='display-block'>
+                    {/* Donaldson */}
+                    <p className='title3-1'>filtre, desprafuire industriala
+                        {/* <br /><img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
+                    </p>
+                    <hr></hr>
+                    <div className='padding-buttons-in-display-block'>
+                        <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        {/* <p><a className='buttonV1'></a></p> */}
+                        <p><a className='buttonV1'>Ventilatoare</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Filtre pentru ventilatii</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Aspiratoare industriale</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    </div>
+                </div>
+
             </section>
 
 
@@ -268,6 +299,15 @@ export default function HomePage() {
                     Specialitatea noastra a ramas expertiza in domeniul filtrarilor cu specializare in retele de aer comprimat; compresoare, filtre si uscatoare pentru aerul comprimat, putem realiza filtrarea aerului comprimat pana la nivelul de sterilizare; filtrare solutii lichide si racitoare frigorifice – water chillers pentru controlul temperaturii apei de racire; desprafuire industriala si colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie; filtre rama pentru ventilatie si filtre Hepa; ventilatoare centrifugale si axiale; puneri in functiune, service, piese de schimb pentru compresoare si cartuse filtrante hidraulice, masuratori de debite, masutarori calitate aer comprimat, inchiriei compresoare, proiectare si solutii la cheie.
                 </p>
             </section>
+
+            {/* idei de lucrat in procreate. decupeaza fundalul pozei si pune blue gradient */}
+            {/* <div className='section-team'>
+                <div className='toberelative'>
+                    <p className=''>impreuna, in echipa, gasim solutii</p>
+                    <div className='overlap-gradient'></div>
+                    <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
+                </div>
+            </div> */}
 
             {/* section GD intro */}
             <section className='sectionX-despre-GD'>
@@ -296,9 +336,10 @@ export default function HomePage() {
             </section>
 
             {/* section Compresoare cu piston */}
-            <section className='sectionX-compresoare-cu-piston'>
-                <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston  
-                {/* <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup> */}
+            <section className='sectionX-compresoare-cu-piston tobeabsolute'>
+                <div className='blue-behind-c-cu-piston to-be-absolute'></div>
+                <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston
+                    {/* <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup> */}
                 </h1>
                 {/* <div className='card1'> */}
 
@@ -409,6 +450,7 @@ export default function HomePage() {
 
 
             <div className="container" style={{ marginTop: '100px' }}>
+                {/* style={{backgroundColor: 'pink'}} */}
 
                 <div
                     ref={(el) => (divRefs.current[0] = el)}
@@ -476,25 +518,253 @@ export default function HomePage() {
                         </div>
                         <div className='manila-folder-content'>
                             <div className='manila-folder-content-T'>
-                                4
+                                {/* 4 */}
                                 <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
                                 <div className='line-separation'></div>
                                 <div className='flex'>
-                                    <img src={GD15} alt="img missing" className='img-inside-slider' />
-                                    <div className='product-text'>
-                                        <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
-                                        <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
-                                        <div className='margin-bottom-p'>
-                                            <p>- timpi scurti de umplere a buteliilor;</p>
-                                            <p>- functionare automata;</p>
-                                            <p>- diverse modele de motoare de actionare;</p>
-                                            <p>- usor de utilizat;</p>
-                                            <p>- montate pe sasiu sau in carcasa isonorizata;</p>
-                                            <p>- actionate cu motor electric sau cu motor termic Honda;</p>
-                                            <p>- inlcud o varietate larga de accesorii.</p>
-                                        </div>
+                                    <div className='text-col2'>
 
+                                        <img src={GD15} alt="img missing" className='img-inside-slider' />
+                                        <div className='product-text'>
+
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
+
+                                            <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
+                                            <div className='margin-bottom-p'>
+                                                <p><div className='ul-style'></div>timpi scurti de umplere a buteliilor;</p>
+                                                <p><div className='ul-style'></div>functionare automata;</p>
+                                                <p><div className='ul-style'></div>diverse modele de motoare de actionare;</p>
+                                                <p><div className='ul-style'></div>usor de utilizat;</p>
+                                                <p><div className='ul-style'></div>montate pe sasiu sau in carcasa isonorizata;</p>
+                                                <p><div className='ul-style'></div>actionate cu motor electric sau cu motor termic Honda;</p>
+                                                <p><div className='ul-style'></div>inlcud o varietate larga de accesorii.</p>
+                                            </div>
+
+                                        </div>
                                     </div>
+
+                                    <div className='line-separation'></div>
+
+                                    <table className='tabletemplate1'>
+
+                                        <tr>
+                                            <td rowspan='2'></td>
+                                            <td rowspan='2'>Compresoare cu piston si ungere cu ulei Champion, model</td>
+                                            <td>Debit</td>
+                                            <td>Presiune maxima</td>
+                                            <td>Putere motor</td>
+                                            <td>Nivel zgomot</td>
+                                            <td>Alimentare</td>
+                                            <td>Cu recipient</td>
+                                        </tr>
+                                        <tr>
+                                            <td>m³/min</td>
+                                            <td>Bar</td>
+                                            <td>Kw</td>
+                                            <td>d(B)</td>
+                                            <td>Volt/50Hz</td>
+                                            <td>Volum litrii</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
+                                            <td><NavLink to='/GardnerDenver/C_cu_excentric_si_cu_paleti_centrifugali/PDF'>CB-OF-6-CF15 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></NavLink></td>
+                                            <td>0,12</td>
+                                            <td>8</td>
+                                            <td>1,1</td>
+                                            <td>82</td>
+                                            <td>230</td>
+                                            <td>6</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CB-3-CF2 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></td>
+                                            <td>0,19</td>
+                                            <td>8</td>
+                                            <td>1,5</td>
+                                            <td>76</td>
+                                            <td>230</td>
+                                            <td>3 ÷ 100</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CB-24-CM25</td>
+                                            <td>0,24</td>
+                                            <td>9</td>
+                                            <td>1,8</td>
+                                            <td>79</td>
+                                            <td>230</td>
+                                            <td>24 ÷ 100</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CB-24-WB3</td>
+                                            <td>0,34</td>
+                                            <td>9</td>
+                                            <td>2,2</td>
+                                            <td>82</td>
+                                            <td>230</td>
+                                            <td>24 ÷ 100</td>
+                                        </tr>
+
+                                        <tr className='empty-row'></tr>
+
+                                        <tr>
+                                            <td rowspan='2'>Compresoare cu transmisie prin curele, o singura treapta de compresie, o singura faza.</td>
+                                            <td>CL28B-25-CM2</td>
+                                            <td>0,25</td>
+                                            <td>10</td>
+                                            <td>1,5</td>
+                                            <td>77</td>
+                                            <td>230</td>
+                                            <td>25 ÷ 150</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>CP28B-50-CM3</td>
+                                            <td>0.29 ÷ 0.42</td>
+                                            <td>10</td>
+                                            <td>2,2</td>
+                                            <td>76 ÷ 78</td>
+                                            <td>230 ÷ 400</td>
+                                            <td>50 ÷ 270</td>
+                                        </tr>
+
+                                        <tr className='empty-row'></tr>
+
+                                        <tr>
+                                            <td rowspan='5'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu  motor electric trifazat.</td>
+                                            <td>CL4-200-FT4</td>
+                                            <td>0,54</td>
+                                            <td>10</td>
+                                            <td>3</td>
+                                            <td>75</td>
+                                            <td>400</td>
+                                            <td>200 ÷ 270</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CL5-200-FT55</td>
+                                            <td>0,61</td>
+                                            <td>11</td>
+                                            <td>4</td>
+                                            <td>82</td>
+                                            <td>400</td>
+                                            <td>200 ÷ 500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CL6-200-FT75</td>
+                                            <td>0,8</td>
+                                            <td>11</td>
+                                            <td>5,5</td>
+                                            <td>82</td>
+                                            <td>400</td>
+                                            <td>200 ÷ 500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CL10-270-FT10</td>
+                                            <td>1,25</td>
+                                            <td>11</td>
+                                            <td>7,5</td>
+                                            <td>82</td>
+                                            <td>400</td>
+                                            <td>200 ÷ 900</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA15-500-FT155</td>
+                                            <td>1,51</td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>82</td>
+                                            <td>400</td>
+                                            <td>200 ÷ 900</td>
+                                        </tr>
+
+                                        <tr className='empty-row'></tr>
+
+                                        <tr>
+                                            <td rowspan='4'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu motor electric trifazat.</td>
+                                            <td>CA5-270-15-FT55</td>
+                                            <td>0,43</td>
+                                            <td>15</td>
+                                            <td>4</td>
+                                            <td>81</td>
+                                            <td>400</td>
+                                            <td>270</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA6-270-15-FT75</td>
+                                            <td>0,57</td>
+                                            <td>15</td>
+                                            <td>5,5</td>
+                                            <td>81</td>
+                                            <td>400</td>
+                                            <td>270</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA10-500-15-FT10</td>
+                                            <td>0,94</td>
+                                            <td>15</td>
+                                            <td>7,5</td>
+                                            <td>81</td>
+                                            <td>400</td>
+                                            <td>500</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA15-500-15-FT155 SDS</td>
+                                            <td>1,14</td>
+                                            <td>15</td>
+                                            <td>11</td>
+                                            <td>81</td>
+                                            <td>400</td>
+                                            <td>500</td>
+                                        </tr>
+
+                                        <tr className='empty-row'></tr>
+
+                                        <tr>
+                                            <td rowspan='3'>Compresoare cu motor termic, tip Honda, cu benzina</td>
+                                            <td>CA3-11+11-C4</td>
+                                            <td>0,3</td>
+                                            <td>10</td>
+                                            <td>3</td>
+                                            <td>74</td>
+                                            <td>Honda</td>
+                                            <td>22</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA4-100-C55	</td>
+                                            <td>0,42</td>
+                                            <td>10</td>
+                                            <td>4</td>
+                                            <td>75</td>
+                                            <td>Honda</td>
+                                            <td>100 ÷ 200</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>CA5-270-C9</td>
+                                            <td>0,56</td>
+                                            <td>10</td>
+                                            <td>7,1</td>
+                                            <td>81</td>
+                                            <td>Honda</td>
+                                            <td>270</td>
+                                        </tr>
+                                    </table>
+
                                 </div>
                             </div>
 
@@ -521,8 +791,23 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+            <div className='bigIMG-map'>
+                <img className='bigIMG-map' src={mapSketch} alt="map drawing can.t be seen"></img>
+
+            </div>
+            <div className='section-team'>
+                <div className='toberelative'>
+                    <p className=''>impreuna, in echipa, gasim solutii</p>
+                    <div className='overlap-gradient'></div>
+                    <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
+                </div>
+            </div>
+
+            {/* footer */}
+            <div className='footer-container'>
 
 
+            </div>
 
 
 
@@ -549,3 +834,31 @@ export default function HomePage() {
     )
 }
 
+
+{/* <div>
+    <div className='display-as-column padding-top card2'>
+        <div className='inline-flex contact-info'>
+            <div>
+                <p>Telefon:</p>
+                <p>Fax:</p>
+                <p>Email:</p>
+                <p>Web:</p>
+            </div>
+            <div>
+                <p>+40371 152 977</p>
+                <p>+40213260004</p>
+                <p>office@ultrafilter.ro</p>
+                <p className='underline-simple'>https://ultrafilter.ro</p>
+            </div>
+        </div>
+
+       
+        <div className='contact-info'>
+            <p>Intrarea</p>
+            <p>Profesor Gheorghe Costa Foru, nr. 4,</p>
+            <p>sector 2, </p>
+            <p>024098 Bucuresti</p>
+        </div>
+    </div>
+
+</div> */}
