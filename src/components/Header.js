@@ -33,6 +33,9 @@ export default function Header() {
             <div className='ribbon-right'>
                 <p>tel: +40 371 152 977</p>
             </div>
+            <div>
+            <a href="#top" className='back-to-top visited-link-ribbon-left'>înapoi sus</a>
+            </div>
             {/* <div>
                 <a href="#top" className='back-to-top visited-link-ribbon-left'>back to top</a>
                 <div id='quick-menu' className='visited-link-ribbon-left to-be-relative'>
