@@ -1639,7 +1639,7 @@ summary {
     right: 0;
     writing-mode: vertical-rl;
     background-color: #17009c;
-    background-color: #005faf;
+    /* background-color: #005faf; */
     z-index: 1000;
     padding-top: 80px;
     /* padding-bottom: 30px; */
