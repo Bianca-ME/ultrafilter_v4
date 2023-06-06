@@ -1639,6 +1639,7 @@ summary {
     right: 0;
     writing-mode: vertical-rl;
     background-color: #17009c;
+    background-color: #005faf;
     z-index: 1000;
     padding-top: 80px;
     /* padding-bottom: 30px; */
@@ -3101,6 +3102,7 @@ text-underline-offset: 13px;
     line-height: 0.9;
     font-weight: 700;
     background-color: #0000ff;
+    background-color: #005faf;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -3196,6 +3198,7 @@ img.bigIMG {
     line-height: 0.9;
     font-weight: 700;
     background-color: #0000ff;
+    background-color: #005faf;
     border-radius: 0 0 45px 45px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;

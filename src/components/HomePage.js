@@ -2,7 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
+// import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
+import { Document, Page, pdfjs } from 'react-pdf';
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -94,7 +95,8 @@ import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
 import mapSketch from '../assets/map2.png';
 import UFRteam from '../assets/team.jpg';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056.png';
-import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop1.png';
+// import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop1.png';
+import onTopOfMountain from '../assets/creasta-crop1.png';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop2.png';
 // import Picture49 from '../assets/Picture49.png';
 // import Picture49 from '../assets/Picture49-grainy.png';
