@@ -2,7 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { Document, Page } from 'react-pdf';
+import { Document, Page, pdfjs } from "react-pdf";
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 import Cabinete_dentare_compresoare_fara_ungere from '../pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import SlidingPane from "../sliding-pane/react-sliding-pane.js";
@@ -103,7 +105,8 @@ import displaymoregrainbrightercrop1 from '../assets/display-more-grain-brighter
 import displaymoregrainbrightercrop2 from '../assets/display-more-grain-brighter-crop2.png';
 
 
-import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+// import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+import scufpdf from '../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
 
 
 import addClassOnInView from '../testingPurposes/inViewTrigger';
@@ -115,6 +118,7 @@ import '../assets/commonstyle.css';
 
 const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
 console.log(randomNumber);
+
 
 
 export default function HomePage() {
@@ -235,32 +239,32 @@ export default function HomePage() {
                 className="some-custom-class stop-background-scroll"
                 overlayClassName="some-custom-overlay-class"
                 isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
-                title="Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii"
-                subtitle="Optional subtitle."
+                title="titlu titlu titlu titlu"
+                subtitle="subtitlu subtitlu subtitlu"
                 onRequestClose={() => {
                     // triggered on "<" on left top click or on outside click
                     setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
                 }}
             >
-                <div>
+                {/* <div>
                     <object data='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
                         <p>Alternative text - include a link <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>to the PDF!</a></p>
                     </object>
-                </div>
-                {/* <div className='bring-slide-to-front stop-background-scroll'> */}
-                <iframe src={scufpdf} width="1000px" height="500px" allow="autoplay"></iframe>
-                <Document file={scufpdf}>
+                </div> */}
+                <div className='bring-slide-to-front stop-background-scroll'>
+                    {/* <iframe src={scufpdf} width="1000px" height="500px" allow="autoplay"></iframe> */}
+                    <Document file="../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf">
                         <Page pageNumber={1} />
                     </Document>
 
-                {/* </div> */}
+                </div>
                 {/* <br />
                 <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
             </SlidingPane>
 
 
 
-
+           
 
 
 
@@ -339,10 +343,10 @@ export default function HomePage() {
 
             {/* section despre Ultrafilter */}
             <section className='sectionX-despre-UFR'>
-                <h1 id='despre-Ultrafilter' className='
+                <h1 id='despre-Ultrafilter' className='title2-custom'
                 // title4
-                title2-custom
-                '>Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
+                
+                >Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
                 <p className='card1 line-height'>
                     Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
                     <div className='blue-fill-gap1'></div>

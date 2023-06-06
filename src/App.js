@@ -4,6 +4,9 @@ import { Redirect, Switch, BrowserRouter as Router, Route, Link } from 'react-ro
 
 import LocomotiveScroll from 'locomotive-scroll';
 
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 // components
 import NotFound from './components/NotFound';
 import Header from './components/Header';
