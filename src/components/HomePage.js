@@ -96,7 +96,7 @@ import mapSketch from '../assets/map2.png';
 import UFRteam from '../assets/team.jpg';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056.png';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop1.png';
-import onTopOfMountain from '../assets/creasta-crop1.png';
+import onTopOfMountain from '../assets/creasta-crop2.jpg';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop2.png';
 // import Picture49 from '../assets/Picture49.png';
 // import Picture49 from '../assets/Picture49-grainy.png';
