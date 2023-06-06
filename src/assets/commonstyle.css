@@ -1640,6 +1640,7 @@ summary {
     writing-mode: vertical-rl;
     /* background-color: #17009c; */
     background-color: #005faf;
+    background-color: #89a3b2;
     z-index: 1000;
     padding-top: 80px;
     /* padding-bottom: 30px; */
@@ -2527,6 +2528,7 @@ summary {
 
 .ul-style {
     background-color: #f4b50b;
+    background-color: #005faf;
     background-color: #d2202e;
     width: 10px;
     height: 10px;
@@ -2896,6 +2898,7 @@ text-underline-offset: 13px;
     background-color: #f5f2e6;
     background-color: #fdfcf7;
     background-color: #f4b50b;
+    background-color: #005faf;
     background-color: #d2202e;
     color: #3f4f96;
     color: #1834b3;
@@ -3101,8 +3104,10 @@ text-underline-offset: 13px;
     justify-content: center;
     line-height: 0.9;
     font-weight: 700;
+    background-color: #17009c;
     background-color: #0000ff;
     background-color: #005faf;
+    background-color: #89a3b2;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -3199,6 +3204,7 @@ img.bigIMG {
     font-weight: 700;
     background-color: #0000ff;
     background-color: #005faf;
+    background-color: #89a3b2;
     border-radius: 0 0 45px 45px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
