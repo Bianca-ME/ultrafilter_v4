@@ -1011,6 +1011,7 @@ button:hover {
 .buttonV1 {
     font-size: 1.5rem;
     background-color: #fcfcf5;
+    /* background-color: #f1f5ed; */
 }
 
 a.buttonV1 {
@@ -3222,6 +3223,7 @@ img.bigIMG {
     background-color: #524d4d;
     background-color: #fcfcf5;
     background-color: #302d31;
+    background-color: #89a3b2;
 
     margin-top: 100px;
     margin-bottom: 0;
