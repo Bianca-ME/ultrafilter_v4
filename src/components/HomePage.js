@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 import Cabinete_dentare_compresoare_fara_ungere from '../pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import SlidingPane from "../sliding-pane/react-sliding-pane.js";
@@ -122,6 +122,28 @@ console.log(randomNumber);
 
 
 export default function HomePage() {
+    // const [numPages, setNumPages] = useState(null);
+    // const [pageNumber, setPageNumber] = useState(1);
+
+    // function onDocumentLoadSuccess({ numPages }) {
+    //     setNumPages(numPages);
+    //     setPageNumber(1);
+    // }
+
+    // function changePage(offSet) {
+    //     setPageNumber(prevPageNumber => prevPageNumber + offSet);
+    // }
+
+    // function changePageBack() {
+    //     changePage(-1)
+    // }
+
+    // function changePageNext() {
+    //     changePage(+1)
+    // }
+
+
+    // --------------------------------
 
     // TEST sliding pane >
     const [state, setState] = useState({
@@ -253,9 +275,13 @@ export default function HomePage() {
                 </div> */}
                 <div className='bring-slide-to-front stop-background-scroll'>
                     {/* <iframe src={scufpdf} width="1000px" height="500px" allow="autoplay"></iframe> */}
-                    <Document file="../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf">
+                    <Document file={scufpdf}>
                         <Page pageNumber={1} />
                     </Document>
+
+                    {/* <Document file={scufpdf} onLoadSuccess={onDocumentLoadSuccess}>
+                        <Page height="600" pageNumber={pageNumber} />
+                    </Document> */}
 
                 </div>
                 {/* <br />
@@ -264,7 +290,7 @@ export default function HomePage() {
 
 
 
-           
+
 
 
 
@@ -345,7 +371,7 @@ export default function HomePage() {
             <section className='sectionX-despre-UFR'>
                 <h1 id='despre-Ultrafilter' className='title2-custom'
                 // title4
-                
+
                 >Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
                 <p className='card1 line-height'>
                     Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
@@ -878,7 +904,7 @@ export default function HomePage() {
             <div className='section-team'>
                 <div className='toberelative'>
                     <p className=''>impreuna, in echipa, gasim solutii</p>
-                    <div className='overlap-gradient'></div>
+                    {/* <div className='overlap-gradient'></div> */}
                     <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
                 </div>
             </div>
