@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import { Document, Page } from 'react-pdf';
 
 import Cabinete_dentare_compresoare_fara_ungere from '../pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import SlidingPane from "../sliding-pane/react-sliding-pane.js";
@@ -102,7 +103,7 @@ import displaymoregrainbrightercrop1 from '../assets/display-more-grain-brighter
 import displaymoregrainbrightercrop2 from '../assets/display-more-grain-brighter-crop2.png';
 
 
-
+import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
 
 
 import addClassOnInView from '../testingPurposes/inViewTrigger';
@@ -234,16 +235,25 @@ export default function HomePage() {
                 className="some-custom-class stop-background-scroll"
                 overlayClassName="some-custom-overlay-class"
                 isOpen={state.pane_Cabinete_dentare_compresoare_fara_ungere}
-                // title="Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii"
-                // subtitle="Optional subtitle."
+                title="Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii"
+                subtitle="Optional subtitle."
                 onRequestClose={() => {
                     // triggered on "<" on left top click or on outside click
                     setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
                 }}
             >
-                <div className='bring-slide-to-front stop-background-scroll'>
-                <iframe src="https://drive.google.com/file/d/198tU7MsLr05TrW2C4RdT_VOYVOlnd-zj/preview" width="1000px" height="600px" allow="autoplay"></iframe>
+                <div>
+                    <object data='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
+                        <p>Alternative text - include a link <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>to the PDF!</a></p>
+                    </object>
                 </div>
+                {/* <div className='bring-slide-to-front stop-background-scroll'> */}
+                <iframe src={scufpdf} width="1000px" height="500px" allow="autoplay"></iframe>
+                <Document file={scufpdf}>
+                        <Page pageNumber={1} />
+                    </Document>
+
+                {/* </div> */}
                 {/* <br />
                 <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
             </SlidingPane>
@@ -626,9 +636,11 @@ export default function HomePage() {
 
                                             <tr>
                                                 <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
-                                                <td><button className='buttonV1' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
-                                                    test scroll inside sliding pane  <img className='arrow' src={arrow} alt='svg missing' />
-                                                </button></td>
+                                                <td>
+                                                    <button className='buttonV2' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
+                                                        CB-OF-6-CF15                                                    </button>
+                                                    <img className='arrow-in-table' src={arrow} alt='svg missing' style={{ height: '12px', width: '12px' }} />
+                                                </td>
                                                 <td>0,12</td>
                                                 <td>8</td>
                                                 <td>1,1</td>
@@ -638,7 +650,7 @@ export default function HomePage() {
                                             </tr>
 
                                             <tr>
-                                                <td>CB-3-CF2 <img className='arrow' src={arrow} alt='svg missing' style={{ height: '12px' }} /></td>
+                                                <td>CB-3-CF2  <img className='arrow-in-table' src={arrow} alt='svg missing' style={{ height: '12px', width: '12px' }} /></td>
                                                 <td>0,19</td>
                                                 <td>8</td>
                                                 <td>1,5</td>

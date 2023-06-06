@@ -555,11 +555,11 @@ button {
     /* border-radius: 45px; */
     /* border: 0.5px solid #124838; */
     border: none;
-    color: #124838;
+    /* color: #124838; */
     /* nu merge size */
-    font-size: 15px;
-    margin: 7px;
-}
+    /* font-size: 15px;
+    margin: 7px; */
+} 
 
 /* buttonV1 ------------------------ */
 .buttonV1 {
@@ -964,26 +964,7 @@ form textarea {
     text-align: center;
 }
 
-button.submit-button {
-    font-size: 17px;
-    color: #2e2e2e;
-    background-color: #767578;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Cousine';
-    font-family: 'Work Sans';
-    font-weight: 600;
-    position: absolute;
-    padding: 0;
-    top:288px;
-    left: 205px;
-    cursor: pointer;
-    border-radius: 10px 0 0 0;
-}
 
-button.submit-button:hover {
-    /* color: ; */
-    text-shadow: 1px 1px 2px #fcfcf5;
-}
 
 
 /* when you select text box to write inside */
@@ -1218,7 +1199,7 @@ table tr:nth-child(18) {
     margin-top: 50px;
 }
 
-
+/* modele */
 table tr:nth-child(3) td:nth-child(2),
 table tr:nth-child(4) td:nth-child(1),
 table tr:nth-child(5) td:nth-child(1),
@@ -1260,6 +1241,31 @@ table tr:nth-child(24) td:nth-child(1) {
     /* box-shadow: 0 0 0 1px black; */
 }
 
+button.buttonV2 {
+    text-align: left;
+    padding-left: 0;
+    border-left: 0px solid red;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #e7e6d9;
+    color: #2807E0;
+    color: #65756D;
+    color: #551a8b;
+    font-size: 17px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ /* img {
+    display: inline-block;
+   width: 12px;
+    border-right: 5px solid pink;
+} */
+
+
+/* table.tabletemplate1  */
 
 
 /* table tr:nth-child(3),
@@ -1336,7 +1342,7 @@ summary {
     font-family: 'Work Sans', sans-serif;
     position: absolute;
     /* nu merge z peste logo */
-    z-index: 201;
+    z-index: 5;
     /* font-family: 'Cutive Mono', monospace; */
 }
 
@@ -1659,7 +1665,6 @@ summary {
     left: -1px;
     background-color: #fcfcf5;
     background-color: #f5f5ed;
-    /* z-index: 5; */
     /* padding-top: 80px; */
     /* padding-bottom: 30px; */
     letter-spacing: 2px;
@@ -1668,7 +1673,7 @@ summary {
     width: 20px;
 
     /* nu stiu cum sa fac sa suprapuna carouselul */
-    z-index: 50000;
+    z-index: 40;
 
     writing-mode: vertical-rl;
 }
@@ -1690,7 +1695,7 @@ summary {
     /* justify-content: center; */
     left: 5vw;
     background-color: #fcfcf5;
-    /* z-index: 5; */
+   
     /* padding-top: 80px; */
     /* padding-bottom: 30px; */
     letter-spacing: 5px;
@@ -1699,7 +1704,7 @@ summary {
     width: 200px;
 
     /* nu stiu cum sa fac sa suprapuna carouselul */
-    /* z-index: 50000; */
+
     transition: transform 0.3s ease;
 
 
@@ -1755,7 +1760,7 @@ summary {
     z-index: 19;
 }
 
-.links-inside-menu {
+/* .links-inside-menu {
     padding-top: 50px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -1763,11 +1768,10 @@ summary {
     margin-left: 13px;
     margin-right: 13px;
     border-radius: 10px;
-    /* border: 1px solid black; */
-    z-index: 30;
+  
     overflow-x: scroll;
     height: 490px;
-}
+} */
 
 .links-inside-menu a {
     font-family: 'Press Start 2P', cursive;
@@ -1875,7 +1879,7 @@ summary {
         height: 100vh;
         width: 20px;
         opacity: 1;
-        z-index: 10;
+        /* z-index: 10; */
 
         /* pt a anula padding original */
         padding-right: 0;
@@ -2180,6 +2184,8 @@ summary {
         text-decoration: underline;
         text-underline-offset: 7px;
     }
+
+
 
     .button-color {
         color: black;
@@ -2578,6 +2584,10 @@ summary {
 
 /* ---------------------------------- */
 /* nav */
+
+.div.nav-menu {
+    z-index: 199;
+}
 .nav-menu {
     position: fixed;
     /* display: flex;
@@ -2587,6 +2597,7 @@ summary {
     /* width: 920px; */
     width: 100vw;
     /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
+    z-index: 199;
 }
 
 nav {
@@ -3258,6 +3269,30 @@ textarea:focus {
     /* background-color: #5b8c38; */
     background-image: url('./display-more-grain-brighter-crop1.png');
 }
+
+button.submit-button {
+    font-size: 17px;
+    color: #2e2e2e;
+    background-color: #767578;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Cousine';
+    font-family: 'Work Sans';
+    font-weight: 600;
+    position: absolute;
+    padding: 0;
+    top:290px;
+    left: 212px;
+    cursor: pointer;
+    border-radius: 10px 0 0 0;
+
+   
+}
+
+button.submit-button:hover {
+    /* color: ; */
+    text-shadow: 1px 1px 2px #fcfcf5;
+}
+
 
 .address-container,
 .links-container {
