@@ -3,9 +3,9 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 // import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
-import { Document, Page, pdfjs } from 'react-pdf';
+// import { Document, Page, pdfjs } from 'react-pdf';
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 import Cabinete_dentare_compresoare_fara_ungere from '../pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
 import SlidingPane from "../sliding-pane/react-sliding-pane.js";
@@ -113,7 +113,10 @@ import displaymoregrainbrightercrop2 from '../assets/display-more-grain-brighter
 
 
 // import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
-import scufpdf from '../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+// import pdftesst from '../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+import pdftesstpublic from '../../public/testPDF.pdf';
+import pdftesstout from '../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+import pdftesst from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
 
 
 import addClassOnInView from '../testingPurposes/inViewTrigger';
@@ -275,18 +278,59 @@ export default function HomePage() {
                     setState({ pane_Cabinete_dentare_compresoare_fara_ungere: false });
                 }}
             >
-                {/* <div>
-                    <object data='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
-                        <p>Alternative text - include a link <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>to the PDF!</a></p>
-                    </object>
-                </div> */}
-                <div className='bring-slide-to-front stop-background-scroll'>
-                    {/* <iframe src={scufpdf} width="1000px" height="500px" allow="autoplay"></iframe> */}
-                    <Document file={scufpdf}>
+                <div className=''>
+
+                    {/* <div> */}
+                    {/* VARIANTELE CARE MERG: */}
+
+                    {/* pare sa mearga in toate browserele */}
+                    <iframe src='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe>
+
+                    {/* a - merge dar nu mi-e prea utila */}
+                    {/* <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' target="_blank" rel='noopener'>vezi daca merge</a> */}
+
+                    {/* merge dar nu prea. doar in chrome ok. pe ipad nu */}
+                    {/* <object data='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
+                        <p>v2 PDF did not load. a link-- <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
+                    </object> */}
+
+                    {/* NU MERG: */}
+                    {/* <object data={pdftesstout} type="application/pdf" width="100%" height="600px">
+                        <p>v1 PDF did not load. a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
+                    </object> */}
+
+                    {/* <object data={pdftesst} type="application/pdf" width="100%" height="600px">
+                        <p>v3 PDF did not load. a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
+                    </object> */}
+                    {/* <object data='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
+                        <p>v4 PDF did not load  a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
+                    </object> */}
+                    {/* </div> */}
+
+
+                    {/* <Document file='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>
+                        <Page pageNumber={1} />
+                    </Document>
+                    <Document file={pdftesst}>
+                        <Page pageNumber={1} />
+                    </Document>
+                    <Document file={pdftesstpublic}>
+                        <Page pageNumber={1} />
+                    </Document>
+                    <Document file='../../public/testPDF.pdf'>
+                        <Page pageNumber={1} />
+                    </Document>
+                    <Document file='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>
                         <Page pageNumber={1} />
                     </Document>
 
-                    {/* <Document file={scufpdf} onLoadSuccess={onDocumentLoadSuccess}>
+                    <Document file={pdftesst} onLoadSuccess={onDocumentLoadSuccess}>
+                        <Page height="600" pageNumber={pageNumber} />
+                    </Document>
+                    <Document file={pdftesstpublic} onLoadSuccess={onDocumentLoadSuccess}>
+                        <Page height="600" pageNumber={pageNumber} />
+                    </Document>
+                    <Document file='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' onLoadSuccess={onDocumentLoadSuccess}>
                         <Page height="600" pageNumber={pageNumber} />
                     </Document> */}
 
@@ -1025,6 +1069,11 @@ export default function HomePage() {
                 </div>
                 <p className='copyright'>Copyright © 2023 ultrafilter. Toate drepturile rezervate. | Design by
                     <span className='tooltip'> B4a<span className='tooltiptext'>bianca.mgeg@gmail.com 🚴‍♀️</span></span></p>
+                {/* <div>
+      <object data={pdftesst} type="application/pdf" width="100%" height="600px">
+                        <p>PDF did not load</p>
+                    </object>
+</div> */}
 
 
             </div>
