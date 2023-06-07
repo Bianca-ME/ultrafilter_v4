@@ -285,7 +285,8 @@ export default function HomePage() {
 
                     {/* pare sa mearga in toate browserele */}
                     <iframe src='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe>
-
+                    {/* <iframe src='public\CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe> */}
+                    
                     {/* a - merge dar nu mi-e prea utila */}
                     {/* <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' target="_blank" rel='noopener'>vezi daca merge</a> */}
 
