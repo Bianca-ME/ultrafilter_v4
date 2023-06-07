@@ -93,10 +93,15 @@ import arrowLeft from '../assets/arrow-left-334-svgrepo-com.svg';
 import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
 // import mapSketch from '../assets/map.png';
 import mapSketch from '../assets/map2.png';
-import UFRteam from '../assets/team-grainy1.jpg';
+import UFRteam from '../assets/team-2.jpg';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056.png';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop1.png';
-import onTopOfMountain from '../assets/creasta-crop2.jpg';
+// import onTopOfMountain from '../assets/creasta-crop1.png';
+// going to work
+import onTopOfMountain from '../assets/_DSC7118Copy1.jpg';
+// golden fields
+// import onTopOfMountain from '../assets/_DSC6759Copy1.jpg';
+// import onTopOfMountain from '../assets/creasta-crop2.jpg';
 // import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop2.png';
 // import Picture49 from '../assets/Picture49.png';
 // import Picture49 from '../assets/Picture49-grainy.png';

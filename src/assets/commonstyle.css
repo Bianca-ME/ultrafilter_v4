@@ -1642,6 +1642,7 @@ summary {
     /* background-color: #17009c; */
     background-color: #005faf;
     background-color: #89a3b2;
+    background-color: #7A909E;
     z-index: 1000;
     padding-top: 80px;
     /* padding-bottom: 30px; */
@@ -3107,8 +3108,10 @@ text-underline-offset: 13px;
     font-weight: 700;
     background-color: #17009c;
     background-color: #0000ff;
-    background-color: #005faf;
     background-color: #89a3b2;
+    background-color: #7E95A3;
+    background-color: #005faf;
+    background-color: #7A909E;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -3206,6 +3209,7 @@ img.bigIMG {
     background-color: #0000ff;
     background-color: #005faf;
     background-color: #89a3b2;
+    background-color: #7A909E;
     border-radius: 0 0 45px 45px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
@@ -3224,6 +3228,7 @@ img.bigIMG {
     background-color: #fcfcf5;
     background-color: #302d31;
     background-color: #89a3b2;
+    background-color: #7A909E;
 
     margin-top: 100px;
     margin-bottom: 0;
