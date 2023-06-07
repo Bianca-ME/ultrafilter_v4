@@ -614,9 +614,18 @@ button {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 100px;
+    /* top: 100px; */
+    top: 10px;
+    padding-top: 5px;
+    /* top: 2px; */
     width: 100%;
-
+    
+    background-color: #dde6ef;
+    /* background-color: #fcfcf5; */
+    /* border-top: 1px solid black; */
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+    /* border-radius: 45px 45px 0 0; */
     /* width: 50vw; */
     /* align-items: center; */
     /* aliniaza central pe verticala */
@@ -635,17 +644,20 @@ button {
 
 /* logo D */
 .page1Donaldson-- {
-    width: 40vw;
+    /* width: 40vw; */
+    width: 20vw;
 }
 
 /* logo GD */
 /* temp disable */
 .page2GardnerDenver-- {
-    width: 35vw;
+    /* width: 35vw; */
+    width: 15vw;
 }
 
 .space-between-logos-D-and-GD {
-    width: 50px;
+    /* width: 50px; */
+    width: 200px;
     height: auto;
 }
 
@@ -3179,6 +3191,20 @@ img.bigIMG {
     border-radius: 45px;
     /* padding-bottom: 5px; */
 }
+.overlap-gradient-white {
+    /* background-image: linear-gradient(120deg, rgb(23, 0, 156, 0), #dde6ef); */
+    background-color: #dde6efbe;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 3px;
+    /* bottom: 0; */
+    border-radius: 45px  45px 0 0;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    /* padding-bottom: 5px; */
+}
 
 .section-team {
     display: flex;
@@ -3257,6 +3283,7 @@ img.display-img-leave-a-message {
     height: 500px;
     width: auto;
     border-radius: 45px;
+    /* opacity: 0; */
 }
 
 .leave-msg {
@@ -3274,9 +3301,10 @@ form textarea {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Hind';
     color: #7AFC38;
+    background-color: #617839;
     font-size: 1rem;
     border: none;
-    background: rgba(8, 53, 168, 0);
+    /* background: rgba(8, 53, 168, 0); */
     margin: 7px;
     border-radius: 0px;
 }

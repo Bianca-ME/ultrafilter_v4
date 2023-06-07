@@ -94,15 +94,15 @@ import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
 // import mapSketch from '../assets/map.png';
 import mapSketch from '../assets/map2.png';
 import UFRteam from '../assets/team-2.jpg';
-// import onTopOfMountain from '../assets/ontopofmountain2500x2056.png';
-// import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop1.png';
-// import onTopOfMountain from '../assets/creasta-crop1.png';
+// import bannerIMG from '../assets/bannerIMG2500x2056.png';
+// import bannerIMG from '../assets/bannerIMG2500x2056-crop1.png';
+// import bannerIMG from '../assets/creasta-crop1.png';
 // going to work
-import onTopOfMountain from '../assets/_DSC7118Copy1.jpg';
+// import bannerIMG from '../assets/_DSC7118Copy1.jpg';
 // golden fields
-// import onTopOfMountain from '../assets/_DSC6759Copy1.jpg';
-// import onTopOfMountain from '../assets/creasta-crop2.jpg';
-// import onTopOfMountain from '../assets/ontopofmountain2500x2056-crop2.png';
+// import bannerIMG from '../assets/_DSC6759Copy1.jpg';
+// import bannerIMG from '../assets/test/creasta-crop2.jpg';
+// import bannerIMG from '../assets/bannerIMG2500x2056-crop2.png';
 // import Picture49 from '../assets/Picture49.png';
 // import Picture49 from '../assets/Picture49-grainy.png';
 import Picture49 from '../assets/Picture49-less-grainy.png';
@@ -110,6 +110,12 @@ import displaylessgrain from '../assets/display-less-grain.png';
 import displaymoregrainbrighter from '../assets/display-more-grain-brighter.png';
 import displaymoregrainbrightercrop1 from '../assets/display-more-grain-brighter-crop1.png';
 import displaymoregrainbrightercrop2 from '../assets/display-more-grain-brighter-crop2.png';
+// import bannerIMG from '../assets/test/forest1.jpg';
+// import bannerIMG from '../assets/test/greenfield.jpg';
+// import bannerIMG from '../assets/test/abstract4.jpg';
+// import bannerIMG from '../assets/test/mountains12.jpg';
+// import bannerIMG from '../assets/test/mo4.jpg';
+import bannerIMG from '../assets/test/mountains13.jpg';
 
 
 // import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
@@ -286,7 +292,7 @@ export default function HomePage() {
                     {/* pare sa mearga in toate browserele */}
                     <iframe src='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe>
                     {/* <iframe src='public\CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe> */}
-                    
+
                     {/* a - merge dar nu mi-e prea utila */}
                     {/* <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' target="_blank" rel='noopener'>vezi daca merge</a> */}
 
@@ -350,7 +356,8 @@ export default function HomePage() {
             <div className='margin-from-header top-banner'>
                 <div className='toberelative'>
                     <p>tehnologie pentru un mediu mai curat</p>
-                    <img className='reallyBigIMG' src={onTopOfMountain} alt="Donaldson logo can.t be seen" />
+                    <img className='reallyBigIMG' src={bannerIMG} alt="Donaldson logo can.t be seen" />
+                    {/* <div className='overlap-gradient-white'></div> */}
                     <div className='D-and-GD-logos-container-flex'>
                         <div className='GD-container--'>
                             <img className='page2GardnerDenver--' src={GDlogoSVG} alt="Donaldson logo can.t be seen"></img>
