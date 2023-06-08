@@ -381,7 +381,9 @@ export default function HomePage() {
 
 
             {/* "TITLURILE MARI" */}
-            <section className='section1-buttons-under-D-and-GD two-columns' style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
+            <section className='section1-buttons-under-D-and-GD two-columns' 
+            // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+            >
                 <div className='display-block'>
                     {/* <h1>
                         <span></span>

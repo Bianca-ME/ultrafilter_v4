@@ -63,12 +63,59 @@ font-family: 'Ultra', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* font-family: 'Alumni Sans', sans-serif; */
 
-
-
 /* numbers fonts */
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap');
 /* font-family: 'Homemade Apple', cursive; */
 /* font-family: 'Shadows Into Light', cursive; */
+
+
+/* testate pe font-size 16 */
+/* wght@400;500;600;700;800 */
+/* font-family: 'Syne', sans-serif; */
+/* destul de caligrafic, line height aproape bun */
+/* font-family: 'Cantarell', sans-serif; */
+/* wght@300 */
+/* font-family: 'Hind', sans-serif; */
+/* wght@200;300;400;500;600;700;800;900 */
+/* font-family: 'Inconsolata', monospace; */
+/* wght@400;700 */
+/* font-family: 'News Cycle', sans-serif; */
+/* wght@300;400;700 */
+/* font-family: 'Sulphur Point', sans-serif; */
+/* neutru, maruntel, line height bun, dar prea maruntel in navbar */
+/* wght@300;400;500;600;700;800;900 */
+/* font-family: 'Work Sans', sans-serif; */
+/* typemachine , un pic cam grosut... literele putin prea spaced */
+/* wght@300;400;500 */
+/* font-family: 'Roboto Mono', monospace; */
+/* cam gros, dar perfect neutru. se potriveste cu Syne din navbar. daca schimb culoarea s-ar putea sa se potriveasca */
+/* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+/* font-family: 'Noto Sans', sans-serif; */
+/* dragutel. typemachine, dar prea subtire - il face inutilizabil */
+/* font-family: 'Cutive Mono', monospace; */
+/* typemachine - este superb. folosit ca text in product cards. line height perfect. litere perfect proportionate, usor patratoase*/
+/* font-family: 'Cousine', monospace; */
+/* font-family: 'Xanh Mono', monospace; */
+/* nici gabd. scris cu marker parca. caligrafic */
+/* font-family: 'Yatra One', cursive; */
+/* liric, nu merge ca text normal */
+/* :ital,wght@0,400;0,500;1,400;1,500 */
+/* font-family: 'Lora', serif; */
+/* okish dar prea liric */
+/* :ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 */
+/* font-family: 'Gelasio', serif; */
+/* ASTA NU - l-as sterge de tot */
+/* font-family: 'Klee One', cursive;  */
+/* scris f frumos de mana, seamana cu a lui R */
+/* font-family: 'Mynerve', cursive; */
+/* prea inghesuit */
+/* :ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+/* font-family: 'Alumni Sans', sans-serif; */
+/* numbers fonts */
+/* font-family: 'Homemade Apple', cursive; */
+/* font-family: 'Shadows Into Light', cursive; */
+
+
 
 /* TEMPORARILY */
 /* TEMPORARILY */
@@ -559,7 +606,7 @@ button {
     /* nu merge size */
     /* font-size: 15px;
     margin: 7px; */
-} 
+}
 
 /* buttonV1 ------------------------ */
 .buttonV1 {
@@ -619,7 +666,7 @@ button {
     padding-top: 5px;
     /* top: 2px; */
     width: 100%;
-    
+
     background-color: #dde6ef;
     /* background-color: #fcfcf5; */
     /* border-top: 1px solid black; */
@@ -1271,7 +1318,7 @@ button.buttonV2 {
     cursor: pointer;
 }
 
- /* img {
+/* img {
     display: inline-block;
    width: 12px;
     border-right: 5px solid pink;
@@ -1711,7 +1758,7 @@ summary {
     /* justify-content: center; */
     left: 5vw;
     background-color: #fcfcf5;
-   
+
     /* padding-top: 80px; */
     /* padding-bottom: 30px; */
     letter-spacing: 5px;
@@ -2605,6 +2652,7 @@ summary {
 .div.nav-menu {
     z-index: 199;
 }
+
 .nav-menu {
     position: fixed;
     /* display: flex;
@@ -2622,11 +2670,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     /* max-width: 1000px; */
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Hind', sans-serif;
-    /* font-family: 'Sulphur Point', sans-serif; */
-
-    font-weight: 500;
 
     /* gray */
     /* background-color: #8f8f8f; */
@@ -2639,6 +2682,19 @@ nav {
 
 ul {
     list-style: none;
+}
+
+/* only the navbar titles */
+#navbar-title>a {
+    font-size: 17px;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.menu1>a,
+.menu1>a:link,
+.menu1>a:visited {
+    color: #484F4C;
 }
 
 .menu {
@@ -2656,15 +2712,50 @@ ul {
     display: inline-block;
 }
 
+.arrow-nav {
+    width: 12px;
+    /* width: 12px; */
+    display: inline-block;
+}
+
+/* the rest of the 'a' links */
 .menu a {
     display: block;
-    padding: 5px 10px;
-    margin: 0 10px;
+    /* padding-left: 5px; */
+    /* margin: 0 10px; */
     /* transition: background-color .22s ease; */
     /* color: white; */
 
+    /* pt navbar ori Hind, ori Noto Sans */
+    font-family: 'Hind', sans-serif;
     font-size: 17px;
+    /* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Sulphur Point';
+
+    font-weight: 500;
+    /* nu merge */
+    /* color: #65756d;
+    color: #33443b;
+    color: #8f8f8f; */
+
 }
+
+.menu a,
+.menu a:link,
+.menu a:visited {
+    color: #8f8f8f;
+    color: #777777;
+    color: #65756d;
+    color: #8f8f8f;
+    color: #455a4f;
+    text-decoration: none;
+}
+
+/* test . nu bun*/
+/* .menu1 li {
+    display: flex;
+} */
 
 .menu-in-footer a {
     font-size: 20px;
@@ -2678,16 +2769,21 @@ ul {
     
 } */
 
-.menu a:link,
+
 .menu-in-footer a:link {
     text-decoration: none;
+    color: #8f8f8f;
 }
 
-.menu a:visited {
+/* .menu a:visited {
     color: #0000ff;
     color: #fcfcf5;
     color: black;
-}
+    color: #8f8f8f;
+    color: #8f8f8f;;
+    color: #65756d;
+    color: #32463c;
+} */
 
 .menu-in-footer a:visited {
     color: #fcfcf5;
@@ -2706,9 +2802,9 @@ ul {
     background-color: #2807E0;
 }
 
-.submenu {
+.submenu1 {
     position: absolute;
-    width: 200px;
+    width: 210px;
     padding: 0;
     margin: 0 0 0 10px;
     display: none;
@@ -2720,17 +2816,18 @@ ul {
     border-right: 1px solid #dddddd;
 }
 
-.submenu a {
+.submenu1 a {
 
     /* background-color: #17009c;
     background-color: #8f8f8f;
     background-color: white;
     background-color: #65756d; */
     /* color: white; */
-    color: #65756d;
+    
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 6px;
     /* border: 1px solid white; */
     /* border-radius: 20px 20px 0 0; */
     /* border-radius: 0 0 20px 20px; */
@@ -2740,6 +2837,11 @@ ul {
     /* line-height: 0.8; */
 }
 
+/* line above "li" elements except the first one from the "ul" */
+.submenu1 li:not(:first-child) > a {
+    border-top: 1px solid #e5e9e2;
+  }
+
 .submenu2 {
     position: absolute;
     left: 100%;
@@ -2747,27 +2849,32 @@ ul {
     padding: 0;
     margin: 0;
     display: none;
-    width: 250px;
+    width: 230px;
     border-radius: 20px;
     background-color: #F1F5ED;
     border-right: 1px solid #dddddd;
 }
 
-submnu2 a {
+/* submenu2 a {
     padding-top: 30px;
-}
+    padding-left: 10px;
+} */
 
-.menu li:hover>.submenu {
+.menu li:hover>.submenu1 {
     display: block;
 }
 
-.submenu li:hover>.submenu2 {
+.submenu1 li:hover>.submenu2 {
+    display: block;
+}
+
+.submenu2 li:hover>.submenu3 {
     display: block;
 }
 
 .menu1>a {
-    color: #fcfcf5;
-    color: #8f8f8f;
+    /* color: #fcfcf5;
+    color: #8f8f8f; */
     font-family: 'Syne', sans-serif;
 
     /* background-color: #d4d4cd; */
@@ -2775,12 +2882,12 @@ submnu2 a {
     /* border-radius: 35px; */
 }
 
-.menu1>a:visited {
+/* .menu1>a:visited {
     color: #fcfcf5;
     color: #8f8f8f;
     color: black;
     color: #484F4C;
-}
+} */
 
 .menu1>a:hover {
     /* background-color: #65756d; */
@@ -2793,6 +2900,26 @@ submnu2 a {
     color: #65756d;
     border-radius: 15px 15px 0 0;
     /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
+}
+
+.submenu3 {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    /* width: 350px; */
+    width: 200px;
+    border-radius: 20px;
+    /* background-color: #fcfcf5;
+    border-right: 1px solid #b9b9b9;
+    border-top: 1px solid #888888; */
+
+    background-color: #F1F5ED;
+    border-right: 1px solid #dddddd;
+
+    z-index: 201;
 }
 
 /* .menu a:active {
@@ -3191,6 +3318,7 @@ img.bigIMG {
     border-radius: 45px;
     /* padding-bottom: 5px; */
 }
+
 .overlap-gradient-white {
     /* background-image: linear-gradient(120deg, rgb(23, 0, 156, 0), #dde6ef); */
     background-color: #dde6efbe;
@@ -3199,7 +3327,7 @@ img.bigIMG {
     position: absolute;
     top: 3px;
     /* bottom: 0; */
-    border-radius: 45px  45px 0 0;
+    border-radius: 45px 45px 0 0;
     border-top: 1px solid #000000;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
@@ -3324,12 +3452,12 @@ button.submit-button {
     font-weight: 600;
     position: absolute;
     padding: 0;
-    top:290px;
+    top: 290px;
     left: 212px;
     cursor: pointer;
     border-radius: 10px 0 0 0;
 
-   
+
 }
 
 button.submit-button:hover {

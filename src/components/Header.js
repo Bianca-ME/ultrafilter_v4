@@ -6,6 +6,8 @@ import greenScreen from '../assets/green-screen.png';
 // styling
 import '../assets/Header.css';
 
+import arrowRight from '../assets/arrow-right-333-svgrepo-com.svg';
+
 export default function Header() {
 
     // js function to click on something and open / close it
@@ -34,7 +36,7 @@ export default function Header() {
                 <p>tel: +40 371 152 977</p>
             </div>
             <div>
-            <a href="#top" className='back-to-top visited-link-ribbon-left'>înapoi sus</a>
+                <a href="#top" className='back-to-top visited-link-ribbon-left'>înapoi sus</a>
             </div>
             {/* <div>
                 <a href="#top" className='back-to-top visited-link-ribbon-left'>back to top</a>
@@ -82,28 +84,43 @@ export default function Header() {
             <div className="nav-menu">
                 <nav>
                     <ul className='menu'>
-                        <li className='menu1'><a href="#despre-Ultrafilter">Despre Ultrafilter</a></li>
-                        <li className='menu1'><a href="#Donaldson">Donaldson</a></li>
-                        <li className='menu1'><a href="#Gardner-Denver">Gardner Denver</a>
-                            <ul className='submenu'>
+                        <li className='menu1' id='navbar-title'><a href="#despre-Ultrafilter">Despre Ultrafilter</a></li>
+                        <li className='menu1' id='navbar-title'><a href="#Donaldson">Donaldson</a></li>
+                        <li className='menu1' id='navbar-title'><a href="#Gardner-Denver">Gardner Denver</a>
+                            <ul className='submenu1'>
+                                {/* <img className='arrow-nav' src={arrowRight} alt='svg missing' /> */}
+                                {/* <span style={{color:'#0000ff'}}>&#10095;</span> */}
+                                {/* <span style={{color:'#F1F5ED'}}>&#9776;</span> */}
                                 <li><a href='#despre-Gardner-Denver'>Despre Gardner Denver</a></li>
-                                <li><a href='#compresoare-cu-piston'>Compresoare cu piston</a>
+                                <li><a href='#compresoare-cu-piston'>Compresoare</a>
                                     <ul className='submenu2'>
-                                        <li><a href="#compresoare-cu-piston-Champion">Compresoare cu piston Champion</a></li>
-                                        <li><a href="#compresoare-pentru-cabinete-dentare">Compresoare pentru cabinete dentare</a></li>
-                                        <li><a href="#compresoare-pentru-suflat-PET-uri">Compresaore pentru suflat PET-uri</a></li>
+                                        <li><a href="#">cu piston</a>
+                                            <ul className='submenu3'>
+                                                <li><a href='#'>cabinete dentare compresoare oil free</a></li>
+                                                <li><a href='#'>debite mici</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">cu suruburi elicoidale Gadner Denver</a>
+                                            <ul className='submenu3'>
+                                                <li><a href='#'>si injectie de ulei</a></li>
+                                                <li><a href='#'>oil free</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">cu excentric si paleti Vane Compressors</a></li>
+                                        <li><a href="#">pentru suflat PET-uri</a></li>
+                                        <li><a href="#">pentru scafandrii</a></li>
                                     </ul>
                                 </li>
-                                <li><a href='#compresoare-rotative'>Compresoare rotative</a></li>
+                                <li><a href='#'>Recipienti de aer comprimat si purje evacuare condens</a></li>
                             </ul>
                         </li>
-                        <li className='menu1'><a href="#linkuri-utile">linkuri utile</a></li>
-                        <li className='menu1'><a href="#contact">contact</a></li>
+                        <li className='menu1' id='navbar-title'><a href="#linkuri-utile">linkuri utile</a></li>
+                        <li className='menu1' id='navbar-title'><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
 
-            
+
 
         </div>
     )
