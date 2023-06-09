@@ -983,10 +983,11 @@ form textarea {
 .input1,
 .input2,
 .input3 {
-    background-color: #617839;
+    /* background-color: #617839; */
     display: block;
     position: absolute;
     color: #7afc38;
+    color: #000000;
 
     left: 110px;
     width: 225px;
@@ -2770,9 +2771,12 @@ ul {
 } */
 
 
-.menu-in-footer a:link {
+.menu-in-footer a:link,
+.menu-in-footer a:visited {
     text-decoration: none;
     color: #8f8f8f;
+    color: #fcfcf5;
+    color: #000000;
 }
 
 /* .menu a:visited {
@@ -2784,10 +2788,6 @@ ul {
     color: #65756d;
     color: #32463c;
 } */
-
-.menu-in-footer a:visited {
-    color: #fcfcf5;
-}
 
 .menu a:hover {
     /* temp */
@@ -2960,6 +2960,14 @@ text-underline-offset: 13px;
     color: rgb(192, 15, 15);
     text-align: left;
 }
+
+/* .search-compresoare-cu-piston input {
+} */
+
+/* input {
+    border: none;
+
+} */
 
 
 
@@ -3377,12 +3385,12 @@ img.bigIMG {
     /* width: calc(100vw-20px); */
     width: calc(100vw-20px);
     /* bottom: 0px; */
-    background-color: #17009c;
-    background-color: #524d4d;
+    /* background-color: #17009c;
+    background-color: #524d4d; */
     background-color: #fcfcf5;
-    background-color: #302d31;
+    /* background-color: #302d31;
     background-color: #89a3b2;
-    background-color: #7A909E;
+    background-color: #7A909E; */
 
     margin-top: 100px;
     margin-bottom: 0;
@@ -3398,6 +3406,7 @@ margin-right: 30px; */
     font-size: 60px;
     font-weight: 400;
     color: #f5f5ed;
+    color: #65756d;
     margin-left: 165px;
     margin-top: 0;
     padding-top: 0;
@@ -3429,7 +3438,8 @@ form textarea {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Hind';
     color: #7AFC38;
-    background-color: #617839;
+    color: #000000;
+    /* background-color: #617839; */
     font-size: 1rem;
     border: none;
     /* background: rgba(8, 53, 168, 0); */
@@ -3445,7 +3455,7 @@ textarea:focus {
 button.submit-button {
     font-size: 17px;
     color: #2e2e2e;
-    background-color: #767578;
+    /* background-color: #767578; */
     font-family: 'Inconsolata', monospace;
     font-family: 'Cousine';
     font-family: 'Work Sans';
@@ -3460,20 +3470,20 @@ button.submit-button {
 
 }
 
-button.submit-button:hover {
-    /* color: ; */
+/* button.submit-button:hover {
     text-shadow: 1px 1px 2px #fcfcf5;
-}
+} */
 
 
 .address-container,
 .links-container {
 
     height: 500px;
-    color: #000000;
     color: #fcfcf5;
+    color: #000000;
     font-family: 'Work Sans';
     font-family: 'Inconsolata', monospace;
+    font-family: 'Hind', sans-serif;
 
 
     padding-left: 50px;
@@ -3504,8 +3514,8 @@ button.submit-button:hover {
 
 table.address-table tr:nth-child(1) td:nth-child(2) {
     border-bottom: 0px solid rgba(0, 0, 0, 0);
-    color: #000000;
     color: #fcfcf5;
+    color: #000000;
     font-family: 'Work Sans';
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
@@ -3516,6 +3526,7 @@ p.copyright {
     font-family: 'Syne';
     font-size: 14px;
     color: #fcfcf5;
+    color: #000000;
     margin-top: 50px;
 }
 

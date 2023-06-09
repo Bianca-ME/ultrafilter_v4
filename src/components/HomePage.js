@@ -118,8 +118,7 @@ import displaymoregrainbrightercrop2 from '../assets/display-more-grain-brighter
 import bannerIMG from '../assets/test/mountains13.jpg';
 
 
-// import scufpdf from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
-// import pdftesst from '../../public/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
+
 import pdftesstpublic from '../../public/testPDF.pdf';
 import pdftesstout from '../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
 import pdftesst from '../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf';
@@ -138,26 +137,6 @@ console.log(randomNumber);
 
 
 export default function HomePage() {
-    // const [numPages, setNumPages] = useState(null);
-    // const [pageNumber, setPageNumber] = useState(1);
-
-    // function onDocumentLoadSuccess({ numPages }) {
-    //     setNumPages(numPages);
-    //     setPageNumber(1);
-    // }
-
-    // function changePage(offSet) {
-    //     setPageNumber(prevPageNumber => prevPageNumber + offSet);
-    // }
-
-    // function changePageBack() {
-    //     changePage(-1)
-    // }
-
-    // function changePageNext() {
-    //     changePage(+1)
-    // }
-
 
     // --------------------------------
 
@@ -167,42 +146,10 @@ export default function HomePage() {
     });
     // TEST <
 
-    // const divRefs = useRef([]);
-
-    // const handleHover = (index) => {
-    //     divRefs.current.forEach((div, i) => {
-    //         if (i === index) {
-    //             div.style.zIndex = divRefs.current.length;
-    //         } else {
-    //             div.style.zIndex = divRefs.current.length - i;
-    //         }
-    //     });
-    // };
-
-    // const handleClick = (index) => {
-    //     divRefs.current.forEach((div, i) => {
-    //         if (i === index) {
-    //             div.style.zIndex = divRefs.current.length;
-    //         } else {
-    //             div.style.zIndex = divRefs.current.length - i;
-    //         }
-    //     });
-    // };
-
     // 
 
     const divRefs = useRef([]);
     const searchRef = useRef(null);
-
-    // const handleHover = (index) => {
-    //     divRefs.current.forEach((div, i) => {
-    //         if (i === index) {
-    //             div.style.zIndex = divRefs.current.length;
-    //         } else {
-    //             div.style.zIndex = divRefs.current.length - i;
-    //         }
-    //     });
-    // };
 
     const handleClick = (index) => {
         divRefs.current.forEach((div, i) => {
@@ -252,27 +199,6 @@ export default function HomePage() {
 
     return (
         <div data-scroll toberelative >
-            {/* <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
-                <div className='containsPage1 slide slide-top containsPage1-mobile'>
-                    <div className='page1Donaldson-container'>
-                        <div className='slide-content-D'>
-                            <a href='#despre-Donaldson' className='active-link-D-GD'>despre Donaldson</a>
-                        </div>
-                        <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
-                    </div>
-                </div>
-                <div className='containsPage2 slide slide-top containsPage2-mobile'>
-                    <div className='page2GardnerDenver-container'>
-                        <div className='slide-content-GD'>
-                            <a href='#despre-Gardner-Denver' className='active-link-D-GD'>despre Gardner Denver</a>
-                        </div>
-                        <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
-                    </div>
-                </div>
-            </div> */}
-
-
-
             <SlidingPane
                 className="some-custom-class stop-background-scroll"
                 overlayClassName="some-custom-overlay-class"
@@ -285,65 +211,8 @@ export default function HomePage() {
                 }}
             >
                 <div className=''>
-
-                    {/* <div> */}
-                    {/* VARIANTELE CARE MERG: */}
-
-                    {/* pare sa mearga in toate browserele */}
                     <iframe src='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe>
-                    {/* <iframe src='public\CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' width="1000px" height="550px" allow="autoplay"></iframe> */}
-
-                    {/* a - merge dar nu mi-e prea utila */}
-                    {/* <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' target="_blank" rel='noopener'>vezi daca merge</a> */}
-
-                    {/* merge dar nu prea. doar in chrome ok. pe ipad nu */}
-                    {/* <object data='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
-                        <p>v2 PDF did not load. a link-- <a href='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
-                    </object> */}
-
-                    {/* NU MERG: */}
-                    {/* <object data={pdftesstout} type="application/pdf" width="100%" height="600px">
-                        <p>v1 PDF did not load. a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
-                    </object> */}
-
-                    {/* <object data={pdftesst} type="application/pdf" width="100%" height="600px">
-                        <p>v3 PDF did not load. a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
-                    </object> */}
-                    {/* <object data='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' type="application/pdf" width="100%" height="600px">
-                        <p>v4 PDF did not load  a link-- <a href='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>a link</a></p>
-                    </object> */}
-                    {/* </div> */}
-
-
-                    {/* <Document file='../assets/PDFs/CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>
-                        <Page pageNumber={1} />
-                    </Document>
-                    <Document file={pdftesst}>
-                        <Page pageNumber={1} />
-                    </Document>
-                    <Document file={pdftesstpublic}>
-                        <Page pageNumber={1} />
-                    </Document>
-                    <Document file='../../public/testPDF.pdf'>
-                        <Page pageNumber={1} />
-                    </Document>
-                    <Document file='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf'>
-                        <Page pageNumber={1} />
-                    </Document>
-
-                    <Document file={pdftesst} onLoadSuccess={onDocumentLoadSuccess}>
-                        <Page height="600" pageNumber={pageNumber} />
-                    </Document>
-                    <Document file={pdftesstpublic} onLoadSuccess={onDocumentLoadSuccess}>
-                        <Page height="600" pageNumber={pageNumber} />
-                    </Document>
-                    <Document file='../../CHAMPION_BREATHING_AIR_COMPRESSORS.pdf' onLoadSuccess={onDocumentLoadSuccess}>
-                        <Page height="600" pageNumber={pageNumber} />
-                    </Document> */}
-
                 </div>
-                {/* <br />
-                <img className='simpleimg' src={gdimg1} alt='image missing' /> */}
             </SlidingPane>
 
 
@@ -370,31 +239,12 @@ export default function HomePage() {
                 </div>
             </div>
 
-
-            {/* <div className='section-team'>
-                <div className='toberelative'>
-                    <p className=''>impreuna, in echipa, gasim solutii</p>
-                    <div className='overlap-gradient'></div>
-                    <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
-                </div>
-            </div> */}
-
-
             {/* "TITLURILE MARI" */}
-            <section className='section1-buttons-under-D-and-GD two-columns' 
+            <section className='section1-buttons-under-D-and-GD two-columns'
             // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
             >
                 <div className='display-block'>
-                    {/* <h1>
-                        <span></span>
-                        <div class="message">
-                            <div class="word1">compresoare</div>
-                            <div class="word2">si</div>
-                            <div class="word3">retele de aer comprimat</div>
-                        </div>
-                    </h1> */}
-                    {/* GD */}
-                    {/* <p className='title3-2'>compresoare si retele de aer comprimat</p> */}
+
                     <p className='title3-2'>
                         compresoare si retele de aer comprimat<br />
                         {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
@@ -449,15 +299,6 @@ export default function HomePage() {
                 </p>
             </section>
 
-            {/* idei de lucrat in procreate. decupeaza fundalul pozei si pune blue gradient */}
-            {/* <div className='section-team'>
-                <div className='toberelative'>
-                    <p className=''>impreuna, in echipa, gasim solutii</p>
-                    <div className='overlap-gradient'></div>
-                    <img className='bigIMG' src={UFRteam} alt="img can.t be seen"></img>
-                </div>
-            </div> */}
-
             {/* section GD intro */}
             <section className='sectionX-despre-GD'>
                 <h1 id='despre-Gardner-Denver' className='
@@ -488,62 +329,11 @@ export default function HomePage() {
             <section className='sectionX-compresoare-cu-piston tobeabsolute' >
                 <div className='blue-behind-c-cu-piston to-be-absolute' ></div>
                 <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston
-                    {/* <sup style={{ color: '#1b2bff', fontSize: '10px' }}>click pentru a deschide / inchide rubrica </sup> */}
                 </h1>
-                {/* <div className='card1'> */}
 
-
-                {/* <div className="container">
-                    {[...Array(5)].map((_, index) => (
-                        <div
-                            key={index}
-                            ref={(el) => (divRefs.current[index] = el)}
-                            className="box"
-                            onMouseOver={() => handleHover(index)}
-                            onClick={() => handleClick(index)}
-                            style={{ left: index * 50 + "px" }}
-                        >
-                            {index + 1}
-                        </div>
-                    ))}
-                </div> */}
-
-
-
-                {/* </div> */}
             </section >
 
-            {/* <div className='toberelative'>
-                <div className=' manila-folder1'>
-                    <div className='manila-folder-label'>
-                        compress
-                    </div>
-                    <div className='manila-folder-content'>
-                        gfhdgndgndgddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    </div>
-                </div>
-                <div className='manila-folder2 to-be-absolute'>
-                    <div className='manila-folder-label'>
-                        compress
-                    </div>
-                    <div className='manila-folder-content'>
-                        gfhdgndgndgddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    </div>
-                </div>
-                <div className='manila-folder3 to-be-absolute'>
-                    <div className='manila-folder-label'>
-                        compress
-                    </div>
-                    <div className='manila-folder-content'>
-                        gfhdgndgndgddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-                    </div>
-                </div>
-            </div> */}
-
-            <div className='div-for-bg-img-and-height-of-product-card'
-            // style={{ backgroundImage: `url(${cc1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}
-            >
-                {/* <div className='overlap-gradient-red'></div> */}
+            <div className='div-for-bg-img-and-height-of-product-card'>
                 <div className='search-compresoare-cu-piston'>
                     <input
                         type="text"
@@ -552,58 +342,6 @@ export default function HomePage() {
                         onChange={handleSearch}
                     />
                 </div>
-
-                {/* <div className="container">
-                
-                <div
-                    ref={(el) => (divRefs.current[0] = el)}
-                    className="box"
-                    onMouseOver={() => handleHover(0)}
-                    onClick={() => handleClick(0)}
-                    style={{ left: "0px" }}
-                >
-                    1
-                </div>
-                <div
-                    ref={(el) => (divRefs.current[1] = el)}
-                    className="box"
-                    onMouseOver={() => handleHover(1)}
-                    onClick={() => handleClick(1)}
-                    style={{ left: "50px" }}
-                >
-                    2comp
-                </div>
-                <div
-                    ref={(el) => (divRefs.current[2] = el)}
-                    className="box"
-                    onMouseOver={() => handleHover(2)}
-                    onClick={() => handleClick(2)}
-                    style={{ left: "100px" }}
-                >
-                    3 pirati
-                </div>
-                <div
-                    ref={(el) => (divRefs.current[3] = el)}
-                    className="box"
-                    onMouseOver={() => handleHover(3)}
-                    onClick={() => handleClick(3)}
-                    style={{ left: "150px" }}
-                >
-                    4
-                </div>
-                <div
-                    ref={(el) => (divRefs.current[4] = el)}
-                    className="box"
-                    onMouseOver={() => handleHover(4)}
-                    onClick={() => handleClick(4)}
-                    style={{ left: "200px" }}
-                >
-                    5
-                </div>
-            </div> */}
-
-                {/* style={{ backgroundImage: `url(${cc1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed' }} */}
-
                 <div className="container" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -952,16 +690,6 @@ export default function HomePage() {
                 </div>
             </div>
 
-
-
-
-
-            {/* <div className='bigIMG-map toberelative'>
-                <img className='bigIMG-map' src={mapSketch} alt="map drawing can.t be seen"></img>
-                <div className='map-container'>
-                    <iframe className='the-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.852694494476!2d26.12399741479579!3d44.43618377910226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff2ed43cc651%3A0xc3f3d069cd2f0453!2sUltrafilter!5e0!3m2!1sen!2sro!4v1677702958374!5m2!1sen!2sro" width="300px" height="300px" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div> */}
             <div className='section-team'>
                 <div className='toberelative'>
                     <p className=''>impreuna, in echipa, gasim solutii</p>
@@ -1055,15 +783,11 @@ export default function HomePage() {
                                 </tr>
                             </tbody>
                         </table>
-
-
-
-                        {/* <iframe className='the-map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.852694494476!2d26.12399741479579!3d44.43618377910226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff2ed43cc651%3A0xc3f3d069cd2f0453!2sUltrafilter!5e0!3m2!1sen!2sro!4v1677702958374!5m2!1sen!2sro" width="300px" height="300px" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
                     </div>
 
 
                     <div className='contact-us-to-be-relative toberelative'>
-                        <img className='display-img-leave-a-message' src={displaymoregrainbrighter} alt="img can.t be seen"></img>
+                        {/* <img className='display-img-leave-a-message' src={displaymoregrainbrighter} alt="img can.t be seen"></img> */}
                         {/* <img className='display-img-leave-a-message' src={displaymoregrainbrightercrop2} alt="img can.t be seen"></img> */}
                         <div className=''>
                             {/* form-container padding-top */}
@@ -1079,13 +803,6 @@ export default function HomePage() {
                 </div>
                 <p className='copyright'>Copyright © 2023 ultrafilter. Toate drepturile rezervate. | Design by
                     <span className='tooltip'> B4a<span className='tooltiptext'>bianca.mgeg@gmail.com 🚴‍♀️</span></span></p>
-                {/* <div>
-      <object data={pdftesst} type="application/pdf" width="100%" height="600px">
-                        <p>PDF did not load</p>
-                    </object>
-</div> */}
-
-
             </div>
 
 
