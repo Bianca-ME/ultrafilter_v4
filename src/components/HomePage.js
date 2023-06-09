@@ -2,6 +2,12 @@ import React, { useRef, useEffect, useState } from 'react';
 // import { NavLink, Link} from 'react-router-dom'; ca nu mai folosit NavLink
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+
+// products images
+// GD
+import GD01 from '../assets/products/34002_28_3_19_CA5_BP_FT55_m.jpg';
+import GD02 from '../assets/products/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
+
 // import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 // import { Document, Page, pdfjs } from 'react-pdf';
 // pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -140,11 +146,11 @@ export default function HomePage() {
 
     // --------------------------------
 
-    // TEST sliding pane >
+    // sliding pane --- >
     const [state, setState] = useState({
         pane_Cabinete_dentare_compresoare_fara_ungere: false,
     });
-    // TEST <
+    // --- sliding pane <
 
     // 
 
@@ -325,21 +331,23 @@ export default function HomePage() {
                 </p>
             </section>
 
-            {/* section Compresoare cu piston */}
-            <section className='sectionX-compresoare-cu-piston tobeabsolute' >
-                {/* <h1 id='compresoare' className='title4-custom'>Compresoare</h1> */}
-                {/* <div className='search-compresoare-cu-piston'>
+            {/* section Compresoare */}
+            {/* <section className='sectionX-compresoare-cu-piston tobeabsolute' >
+                <h1 id='compresoare' className='title2-custom'>Compresoare</h1>
+                <div className='search-compresoare-cu-piston'>
                     <input
                         type="text"
                         placeholder="cauta :-)"
                         ref={searchRef}
                         onChange={handleSearch}
                     />
-                </div> */}
-            </section >
+                </div>
+            </section > */}
 
-            <div className='div-for-bg-img-and-height-of-product-card'>
-                <div id='compresoare' className='title4-custom stick-compresoare'>Compresoare</div>
+            {/* compresoare ... cu piston */}
+            <div className='entire-height-of-product-card'>
+                <div id='compresoare-cu-piston' className='hidden-titles'>Compresoare cu piston</div>
+                <div className='title4-custom'>Compresoare cu piston</div>
                 <div className="container" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -348,15 +356,34 @@ export default function HomePage() {
                         className="box"
                         onMouseOver={() => handleHover(0)}
                         onClick={() => handleClick(0)}
-                        style={{ left: "0px", top: '0' }}
+                        style={{ left: "0px", top: '0px' }}
                     >
                         <div className='toberelative'>
                             <div className='to-be-absolute label1 label'>
-                                Compresoare cu piston Champion
-
+                                Compresoare cu piston Champion, debite mici
                             </div>
                             <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
-                                <p>(poza9)</p>
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
+                                                <br />
+                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -375,12 +402,49 @@ export default function HomePage() {
                                 Compresoare pentru cabinete dentare
                             </div>
                             <div className='manila-folder-content'>
-                                2
+                            <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD02} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <p>Compresoare cu piston actionate cu motor termic Honda</p>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoare Champion pentru furnizarea aerului comprimat la scaunele cabinetelor dentare asigura un aer comprimat de calitate, fara continut de ulei, avand optiunea cu uscator cu membrana integrat si filtrare la 0.01µm. Pentru reducerea zgomotului pot fi montate in cabinete isonorizate.</p>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                    <div
+                    {/* <div
                         ref={(el) => (divRefs.current[2] = el)}
                         className="box"
                         onMouseOver={() => handleHover(2)}
@@ -395,8 +459,8 @@ export default function HomePage() {
                                 3 compress
                             </div>
                         </div>
-                    </div>
-                    <div
+                    </div> */}
+                    {/* <div
                         ref={(el) => (divRefs.current[3] = el)}
                         className="box"
                         onMouseOver={() => handleHover(3)}
@@ -409,7 +473,6 @@ export default function HomePage() {
                             </div>
                             <div className='manila-folder-content'>
                                 <div className='manila-folder-content-T'>
-                                    {/* 4 */}
                                     <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
@@ -665,8 +728,8 @@ export default function HomePage() {
 
                             </div>
                         </div>
-                    </div>
-                    <div
+                    </div> */}
+                    {/* <div
                         ref={(el) => (divRefs.current[4] = el)}
                         className="box"
                         onMouseOver={() => handleHover(4)}
@@ -676,6 +739,140 @@ export default function HomePage() {
                         <div className='toberelative'>
                             <div className='to-be-absolute label5 label'>
                                 label5
+                            </div>
+                            <div className='manila-folder-content'>
+                                <div>
+                                    5
+                                </div>
+
+                            </div>
+                        </div>
+                    </div> */}
+                </div>
+            </div>
+
+            {/* compresoare ... cu suruburi elicoidale GD */}
+            <div className='entire-height-of-product-card-x1'>
+                <div id='compresoare-cu-suruburi-elicoidale' className='hidden-titles'>Compresoare cu suruburi elicoidale Gardner Denver</div>
+                <div className='title4-custom'>Compresoare cu suruburi elicoidale Gardner Denver</div>
+                <div className="container-x1" style={{ marginTop: '100px' }} >
+                    {/* style={{backgroundColor: 'pink'}} */}
+
+                    <div
+                        ref={(el) => (divRefs.current[5] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(5)}
+                        onClick={() => handleClick(5)}
+                        style={{ left: "0px", top: '0' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label1-1 label-x1'>
+                            ESM 23-29
+
+                            </div>
+                            <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
+                                <p>(poza9)</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        ref={(el) => (divRefs.current[6] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(6)}
+                        onClick={() => handleClick(6)}
+                        style={{ left: "10px", top: '2px' }}
+                    >
+
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label2-1 label-x1'>
+                            ESM 30-45
+                            </div>
+                            <div className='manila-folder-content'>
+                                2
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        ref={(el) => (divRefs.current[7] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(7)}
+                        onClick={() => handleClick(7)}
+                        style={{ left: "20px", top: '4px' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label3-1 label-x1'>
+                            ESM 55-75
+                            </div>
+                            <div className='manila-folder-content'>
+                                3 compress
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        ref={(el) => (divRefs.current[8] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(8)}
+                        onClick={() => handleClick(8)}
+                        style={{ left: "40px", top: '6px' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label4-1 label-x1'>
+                            ESM 90-132
+                            </div>
+                            <div className='manila-folder-content'>
+                                <div className='manila-folder-content-T'>
+                                    {/* 4 */}
+                                    <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+
+                                            <img src={GD15} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
+
+                                                <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
+                                                <div className='margin-bottom-p'>
+                                                    <p><div className='ul-style'></div>timpi scurti de umplere a buteliilor;</p>
+                                                    <p><div className='ul-style'></div>functionare automata;</p>
+                                                    <p><div className='ul-style'></div>diverse modele de motoare de actionare;</p>
+                                                    <p><div className='ul-style'></div>usor de utilizat;</p>
+                                                    <p><div className='ul-style'></div>montate pe sasiu sau in carcasa isonorizata;</p>
+                                                    <p><div className='ul-style'></div>actionate cu motor electric sau cu motor termic Honda;</p>
+                                                    <p><div className='ul-style'></div>inlcud o varietate larga de accesorii.</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* table */}
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        ref={(el) => (divRefs.current[9] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(9)}
+                        onClick={() => handleClick(9)}
+                        style={{ left: "50px", top: '8px' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label5-1 label-x1'>
+                            ESM 160-290
                             </div>
                             <div className='manila-folder-content'>
                                 <div>

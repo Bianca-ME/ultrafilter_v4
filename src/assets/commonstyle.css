@@ -2592,11 +2592,15 @@ summary {
     background-color: #f4b50b;
     background-color: #005faf;
     background-color: #d2202e;
+    background-color: #0000ff;
+    background-color: #dde6ef;
+    background-color: #e7e6d9;
     width: 10px;
     height: 10px;
     display: inline-block;
     margin-left: 0px;
     margin-right: 3px;
+    border-radius: 50%;
 }
 
 .margin-bottom-p p {
@@ -2972,7 +2976,13 @@ text-underline-offset: 13px;
 
 
 /* ---------------------- */
-.div-for-bg-img-and-height-of-product-card {
+.entire-height-of-product-card {
+    height: 1550px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* position: relative; */
+}
+.entire-height-of-product-card-x1 {
     height: 1200px;
     margin-top: 50px;
     /* position: relative; */
@@ -2993,7 +3003,7 @@ text-underline-offset: 13px;
 div.title4-custom {
     font-family: 'Syne', sans-serif;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 700;
     color: #005faf;
     /* transform: rotate(270deg); */
     z-index: 99;
@@ -3003,17 +3013,33 @@ div.title4-custom {
 
     /* width: 70px; */
     height: 40px;
-    background-color: #dde6ef;
+    /* background-color: #dde6ef; */
+    background-image: linear-gradient(90deg, #dde6ef, #dde6ef, #dde6ef00 );
     /* text-align: start; */
     display: flex;
     padding-left: 50px;
+}
+
+.hidden-titles {
+    font-size: 30px;
+    font-family: 'Syne', sans-serif;
+    height: 30px;
+    /* opacity: 0; */
+    color: rgba(255, 255, 255, 0);
 }
 
 .container {
     position: relative;
     width: 500px;
     height: 300px;
-    margin-left: 50px;
+    margin-left: 165px;
+    margin-bottom: 50px;
+}
+.container-x1 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin-left: 165px;
     margin-bottom: 50px;
 }
 
@@ -3033,6 +3059,7 @@ div.title4-custom {
     /* border-right: 1px solid #65756d; */
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    border-top: 0.5px solid rgb(190, 190, 190);
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -3069,12 +3096,17 @@ div.title4-custom {
     background-color: #f4b50b;
     background-color: #005faf;
     background-color: #d2202e;
-    color: #3f4f96;
+    background-color: #dde6ef;
+    background-color: #dbdac5;
+    background-color: #e0e0d4;
     color: #1834b3;
-    color: #74727a;
     color: #000000;
     color: #5E4402;
     color: #fcfcf5;
+    color: #74727a;
+    color: #3f4f96;
+    color: #005faf;
+    color: #0000ff;
     font-family: 'Gelasio', serif;
     font-family: 'Inconsolata', monospace;
     font-family: 'Xanh Mono', monospace;
@@ -3085,7 +3117,7 @@ div.title4-custom {
     font-size: 17px;
     padding-left: 20px;
     padding-right: 5px;
-    top: -31px;
+    /* top: -31px; */
     /* min-width: 100px; */
     /* width: auto; */
     margin-top: 0;
@@ -3102,55 +3134,61 @@ div.title4-custom {
     vertical-align: middle;
 
     cursor: pointer;
+
+    /* transform: rotate(270deg); */
+}
+.label-x1 {
+    border-radius: 15px 15px 0 0;
+    background-color: #f5f2e6;
+    background-color: #fdfcf7;
+    background-color: #d2202e;
+    background-color: #005faf;
+    background-color: #f4b50b;
+    background-color: #fcfcf5;
+    background-color: #e0e0d4;
+    color: #3f4f96;
+    color: #1834b3;
+    color: #74727a;
+    color: #000000;
+    color: #5E4402;
+    color: #fcfcf5;
+    color: #0000ff;
+    font-family: 'Cousine', monospace;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 5px;
+    top: -31px;
+    margin-top: 0;
+    padding-top: 8px;
+    padding: auto;
+    word-wrap: break-word;
+    box-shadow: 12px -0.5px 1px 0.3px #65756d8e;
+    border-right: 1px solid black;
+    border-bottom: 0px solid black;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 
 
 .label1 {
     height: 50px;
-    width: 200px;
-    /* width: 100px; */
-    /* top: -30px; */
-    left: 5px;
-    top: -51px;
-
-    /* border-radius: 10px 10px 0 0; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 0px solid black; */
-    /* background-color: #fcfcf5; */
+    top: -58px;
+    left: 30px;
+    width: 250px;
 }
 
 .label2 {
     height: 90px;
+    top: -98px;
+    left: 301px;
     width: 175px;
-    top: -91px;
-    left: 210px;
-    /* width: 100px; */
-    /* top: -30px; */
-    /* left: 368px; */
-
-    /* border-radius: 10px 10px 0 0; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 0px solid black; */
-    /* background-color: white; */
 }
 
 .label3 {
     height: 90px;
-    /* width: 100px; */
     top: -91px;
     left: 780px;
-
-    /* border-radius: 10px 10px 0 0; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 0px solid black; */
-    /* background-color: white; */
 }
 
 .label4 {
@@ -3158,27 +3196,44 @@ div.title4-custom {
     width: 210px;
     top: -71px;
     left: 400px;
-
-    /* border-radius: 10px 10px 0 0; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 0px solid black; */
-    /* background-color: white; */
 }
 
 .label5 {
     height: 50px;
-    /* width: 100px; */
     top: -51px;
     left: 635px;
+}
+.label1-1 {
+    height: 50px;
+    width: 200px;
+    left: 5px;
+    top: -58px;
+}
 
-    /* border-radius: 10px 10px 0 0; */
-    /* border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 0px solid black; */
-    /* background-color: white; */
+.label2-1 {
+    height: 90px;
+    width: 175px;
+    top: -98px;
+    left: 210px;
+}
+
+.label3-1 {
+    height: 90px;
+    top: -98px;
+    left: 780px;
+}
+
+.label4-1 {
+    height: 70px;
+    width: 210px;
+    top: -78px;
+    left: 400px;
+}
+
+.label5-1 {
+    height: 50px;
+    top: -58px;
+    left: 635px;
 }
 
 /* -------------------------------------------- */

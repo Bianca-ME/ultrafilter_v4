@@ -94,13 +94,13 @@ export default function Header() {
                                 <li><a href='#despre-Gardner-Denver'>Despre Gardner Denver</a></li>
                                 <li><a href='#compresoare'>Compresoare</a>
                                     <ul className='submenu2'>
-                                        <li><a href="#">cu piston</a>
+                                        <li><a href="#compresoare-cu-piston">cu piston</a>
                                             <ul className='submenu3'>
                                                 <li><a href='#'>cabinete dentare compresoare oil free</a></li>
                                                 <li><a href='#'>debite mici</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">cu suruburi elicoidale Gadner Denver</a>
+                                        <li><a href="#compresoare-cu-suruburi-elicoidale">cu suruburi elicoidale Gadner Denver</a>
                                             <ul className='submenu3'>
                                                 <li><a href='#'>si injectie de ulei</a></li>
                                                 <li><a href='#'>oil free</a></li>
