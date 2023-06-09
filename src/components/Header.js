@@ -92,7 +92,7 @@ export default function Header() {
                                 {/* <span style={{color:'#0000ff'}}>&#10095;</span> */}
                                 {/* <span style={{color:'#F1F5ED'}}>&#9776;</span> */}
                                 <li><a href='#despre-Gardner-Denver'>Despre Gardner Denver</a></li>
-                                <li><a href='#compresoare-cu-piston'>Compresoare</a>
+                                <li><a href='#compresoare'>Compresoare</a>
                                     <ul className='submenu2'>
                                         <li><a href="#">cu piston</a>
                                             <ul className='submenu3'>

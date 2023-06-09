@@ -327,21 +327,19 @@ export default function HomePage() {
 
             {/* section Compresoare cu piston */}
             <section className='sectionX-compresoare-cu-piston tobeabsolute' >
-                <div className='blue-behind-c-cu-piston to-be-absolute' ></div>
-                <h1 id='compresoare-cu-piston' className='title2-custom'>Compresoare cu piston
-                </h1>
-
-            </section >
-
-            <div className='div-for-bg-img-and-height-of-product-card'>
-                <div className='search-compresoare-cu-piston'>
+                {/* <h1 id='compresoare' className='title4-custom'>Compresoare</h1> */}
+                {/* <div className='search-compresoare-cu-piston'>
                     <input
                         type="text"
                         placeholder="cauta :-)"
                         ref={searchRef}
                         onChange={handleSearch}
                     />
-                </div>
+                </div> */}
+            </section >
+
+            <div className='div-for-bg-img-and-height-of-product-card'>
+                <div id='compresoare' className='title4-custom stick-compresoare'>Compresoare</div>
                 <div className="container" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
