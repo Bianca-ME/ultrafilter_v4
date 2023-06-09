@@ -3204,36 +3204,38 @@ div.title4-custom {
     left: 635px;
 }
 .label1-1 {
-    height: 50px;
-    width: 200px;
+    height: 20px;
+    top: -28px;
     left: 5px;
-    top: -58px;
+    width: 120px;
 }
 
 .label2-1 {
-    height: 90px;
-    width: 175px;
-    top: -98px;
-    left: 210px;
+    height: 22px;
+    top: -30px;
+    left: 147px;
+    width: 120px;
 }
 
 .label3-1 {
-    height: 90px;
-    top: -98px;
-    left: 780px;
+    height: 24px;
+    top: -32px;
+    left: 289px;
+    width: 120px;
 }
 
 .label4-1 {
-    height: 70px;
-    width: 210px;
-    top: -78px;
-    left: 400px;
+    height: 26px;
+    top: -34px;
+    width: 120px;
+    left: 425px;
 }
 
 .label5-1 {
-    height: 50px;
-    top: -58px;
-    left: 635px;
+    height: 28px;
+    top: -36px;
+    width: 120px;
+    left: 567px;
 }
 
 /* -------------------------------------------- */

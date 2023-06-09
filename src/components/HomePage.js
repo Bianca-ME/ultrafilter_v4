@@ -7,6 +7,7 @@ import { NavLink } from 'react-router-dom';
 // GD
 import GD01 from '../assets/products/34002_28_3_19_CA5_BP_FT55_m.jpg';
 import GD02 from '../assets/products/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
+import GD03 from '../assets/products/ESM_23_29.jpg';
 
 // import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 // import { Document, Page, pdfjs } from 'react-pdf';
@@ -402,7 +403,7 @@ export default function HomePage() {
                                 Compresoare pentru cabinete dentare
                             </div>
                             <div className='manila-folder-content'>
-                            <div className='manila-folder-content-T'>
+                                <div className='manila-folder-content-T'>
                                     <p className='product-title'>Compresoare Champion, fara ungere, pentru aplicatii la cabinetele dentare si mici ateliere de bijuterii</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
@@ -767,11 +768,37 @@ export default function HomePage() {
                     >
                         <div className='toberelative'>
                             <div className='to-be-absolute label1-1 label-x1'>
-                            ESM 23-29
-
+                                ESM 23-29
                             </div>
                             <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
-                                <p>(poza9)</p>
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 23, ESM 26, ESM 29 si cu turatie variabila VS 23, VS 26, VS 29 optional cu uscator de aer prin refrigerare – integrat</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD03} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                <br/>
+                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                                                <br />
+                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                                                <br />
+                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -787,10 +814,30 @@ export default function HomePage() {
 
                         <div className='toberelative'>
                             <div className='to-be-absolute label2-1 label-x1'>
-                            ESM 30-45
+                                ESM 30-45
                             </div>
                             <div className='manila-folder-content'>
-                                2
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
+                                                <br />
+                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -804,10 +851,30 @@ export default function HomePage() {
                     >
                         <div className='toberelative'>
                             <div className='to-be-absolute label3-1 label-x1'>
-                            ESM 55-75
+                                ESM 55-75
                             </div>
                             <div className='manila-folder-content'>
-                                3 compress
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
+                                                <br />
+                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -820,42 +887,27 @@ export default function HomePage() {
                     >
                         <div className='toberelative'>
                             <div className='to-be-absolute label4-1 label-x1'>
-                            ESM 90-132
+                                ESM 90-132
                             </div>
                             <div className='manila-folder-content'>
                                 <div className='manila-folder-content-T'>
-                                    {/* 4 */}
-                                    <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
+                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
                                         <div className='text-col2'>
-
-                                            <img src={GD15} alt="img missing" className='img-inside-slider' />
+                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
                                             <div className='product-text'>
-
+                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
+                                                <br />
+                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
                                                 <br />
                                                 <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
-
-                                                <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
-                                                <div className='margin-bottom-p'>
-                                                    <p><div className='ul-style'></div>timpi scurti de umplere a buteliilor;</p>
-                                                    <p><div className='ul-style'></div>functionare automata;</p>
-                                                    <p><div className='ul-style'></div>diverse modele de motoare de actionare;</p>
-                                                    <p><div className='ul-style'></div>usor de utilizat;</p>
-                                                    <p><div className='ul-style'></div>montate pe sasiu sau in carcasa isonorizata;</p>
-                                                    <p><div className='ul-style'></div>actionate cu motor electric sau cu motor termic Honda;</p>
-                                                    <p><div className='ul-style'></div>inlcud o varietate larga de accesorii.</p>
-                                                </div>
-
                                             </div>
                                         </div>
 
                                         <div className='line-separation'></div>
 
-                                        {/* table */}
+                                        {/* tabel */}
 
                                     </div>
                                 </div>
@@ -872,12 +924,32 @@ export default function HomePage() {
                     >
                         <div className='toberelative'>
                             <div className='to-be-absolute label5-1 label-x1'>
-                            ESM 160-290
+                                ESM 160-290
                             </div>
                             <div className='manila-folder-content'>
-                                <div>
-                                    5
+
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
+                                                <br />
+                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
                                 </div>
+
 
                             </div>
                         </div>
