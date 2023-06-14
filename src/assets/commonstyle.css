@@ -3059,7 +3059,7 @@ div.title4-custom {
     /* border-right: 1px solid #65756d; */
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    border-top: 0.5px solid rgb(190, 190, 190);
+    /* border-top: 0.5px solid rgb(190, 190, 190); */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -3093,27 +3093,33 @@ div.title4-custom {
     background-color: #fcfcf5;
     background-color: #f5f2e6;
     background-color: #fdfcf7;
-    background-color: #f4b50b;
     background-color: #005faf;
-    background-color: #d2202e;
     background-color: #dde6ef;
     background-color: #dbdac5;
     background-color: #e0e0d4;
+    background-color: #f4b50b;
+    background-color: #1834b3;
+    background-color: #07163f;
+    background-color: #000000;
+    background-color: #d2202e;
+    background-color: rgb(238, 0, 0);
     color: #1834b3;
     color: #000000;
     color: #5E4402;
-    color: #fcfcf5;
     color: #74727a;
     color: #3f4f96;
     color: #005faf;
     color: #0000ff;
+    color: #fcfcf5;
     font-family: 'Gelasio', serif;
     font-family: 'Inconsolata', monospace;
     font-family: 'Xanh Mono', monospace;
     font-family: 'Mynerve';
     font-family: 'Syne', sans-serif;
     font-family: 'Cousine', monospace;
+    /* font-family: 'Noto Sans', sans-serif; */
     /* font-weight: 700; */
+    /* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
     font-size: 17px;
     padding-left: 20px;
     padding-right: 5px;
@@ -3141,19 +3147,22 @@ div.title4-custom {
     border-radius: 15px 15px 0 0;
     background-color: #f5f2e6;
     background-color: #fdfcf7;
-    background-color: #d2202e;
     background-color: #005faf;
     background-color: #f4b50b;
     background-color: #fcfcf5;
     background-color: #e0e0d4;
+    background-color: #000000;
+    background-color: #d2202e;
+    background-color: rgb(238, 0, 0);
     color: #3f4f96;
     color: #1834b3;
     color: #74727a;
     color: #000000;
     color: #5E4402;
-    color: #fcfcf5;
     color: #0000ff;
+    color: #fcfcf5;
     font-family: 'Cousine', monospace;
+    /* font-family: 'Noto Sans', sans-serif; */
     font-size: 17px;
     padding-left: 20px;
     padding-right: 5px;
