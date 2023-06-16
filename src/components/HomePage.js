@@ -773,6 +773,7 @@ export default function HomePage() {
                     <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                     {/* <br /> */} 
                 </div>
+                <div style={{height: '50px'}}></div>
                 
                 <div className="container-x1" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}

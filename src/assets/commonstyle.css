@@ -2526,13 +2526,15 @@ summary {
 }
 
 .product-title {
-    font-family: 'News Cycle', sans-serif;
     font-family: 'Xanh Mono', monospace;
     font-family: 'Sulphur Point', sans-serif;
-    font-family: 'Work Sans', sans-serif;
     font-family: 'Inconsolata', monospace;
     font-family: 'Syne', sans-serif;
     font-family: "Cousine";
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'News Cycle', sans-serif;
+    font-family: 'Roboto Mono';
+    letter-spacing: 0.2px;
     color: #65756d;
     color: black;
     font-size: 24px;
@@ -3009,7 +3011,7 @@ text-underline-offset: 13px;
     color: red;
 
     /* margin-left: 165px; */
-    margin-left: 50px;
+    margin-left: 165px;
     margin-bottom: 20px;
 
     line-height: 1;
@@ -3024,32 +3026,41 @@ div.title4-custom {
     font-weight: 700;
     color: #000000;
     color: #005faf;
+    color: #65756d;
     color: #ff0000;
+    color: red;
     /* transform: rotate(270deg); */
     z-index: 99;
     position: sticky;
     top: 30px;
     /* bottom: 500; */
 
-    width: 1000px;
-    height: 40px;
+    width: 950px;
+    height: 60px;
     /* background-color: #dde6ef; */
     background-color: #dee1e4;
     background-color: #f5f5ed;
+    background-color: #f0f0e9;
+    background-color: #f5f5ed;
+    /* box-shadow: inset 0px 5px 10px #e6e6df; */
     /* background-image: linear-gradient(90deg, #dde6ef, #dde6ef, #dde6ef00 ); */
     /* background-image: linear-gradient(90deg, #dee1e4, #dde6ef, #dde6ef00 ); */
     /* text-align: start; */
     display: flex;
     /* padding-left: 50px; */
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin-left: 165px;
     /* border-bottom: 1px solid black; */
-    /* text-decoration: underline; */
+    text-decoration: underline;
+    text-underline-offset: 13px;
     border-radius: 0px 0px 20px 20px;
+
 
 }
 
 .text-under-title4 {
-    color: #ee0000;
+    /* color: #ee0000; */
+    color: #65756d;
     padding-left: 200px;
     padding-right: 200px;
     font-size: 24px;
@@ -3069,15 +3080,33 @@ div.title4-custom {
     background-color: #FCFCF5;
 
     border-radius: 45px;
-    /* border: 1px solid black; */
-    color: #65756d;
+    border-left: 1px solid #ee000060;
     color: #D0EEDF;
     color: #000000;
     color: #ff0000;
+    color: #000000;
+    color: #65756d;
     text-align: justify;
     text-justify: inter-word;
     font-size: 20px;
+    font-family: "Hind";
     font-family: 'Cousine', monospace;
+
+    /* box-shadow: 20px 30px red; */
+    box-shadow: 20px 30px #ee0000;
+}
+
+/* urat */
+.card4 {
+    font-family: 'Cousine', monospace;
+    color: #65756d;
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    box-shadow: 50px 30px 100px #a5aea6;
+    background-color: #f5f5ed;
+    border-radius: 45px;
+    padding: 10px 20px 20px 20px;
 }
 
 .hidden-titles {
@@ -3100,7 +3129,7 @@ div.title4-custom {
     position: relative;
     width: 500px;
     height: 300px;
-    margin-left: 165px;
+    margin-left: 175px;
     margin-bottom: 50px;
 }
 
@@ -3224,6 +3253,7 @@ div.title4-custom {
     color: #0000ff;
     color: #fcfcf5;
     font-family: 'Cousine', monospace;
+    /* font-family: 'Roboto Mono'; */
     /* font-family: 'Noto Sans', sans-serif; */
     font-size: 17px;
     padding-left: 20px;
