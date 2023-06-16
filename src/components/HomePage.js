@@ -10,6 +10,11 @@ import GD02 from '../assets/products/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
 import GD03 from '../assets/products/ESM_23_29.jpg';
 import GD04 from '../assets/products/ESM_30_45(1).jpg';
 import GD05 from '../assets/products/ESM_30_45(2).jpg';
+import GD06 from '../assets/products/ESM_55_75.jpg';
+import GD07 from '../assets/products/ESM_90_132.jpg';
+import GD08 from '../assets/products/ESM_160_290.jpg';
+import GD09 from '../assets/products/FM_7_22.jpg';
+
 
 // import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 // import { Document, Page, pdfjs } from 'react-pdf';
@@ -756,8 +761,19 @@ export default function HomePage() {
 
             {/* compresoare ... cu suruburi elicoidale GD */}
             <div className='entire-height-of-product-card-x1'>
+            <h1 id='despre-Ultrafilter' className='title5-custom'>Compresoare cu suruburi elicoidale<br/>Gardner Denver<br/><br/></h1>
                 <div id='compresoare-cu-suruburi-elicoidale' className='hidden-titles'>Compresoare cu suruburi elicoidale Gardner Denver</div>
-                <div className='title4-custom'>Compresoare cu suruburi elicoidale Gardner Denver</div>
+                <div className='title4-custom'>Compresoare cu suruburi si injectie de ulei</div>
+                {/* <div className='text-under-title4'> */}
+                <div className='card3'>
+                    <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                    {/* <br /> */}
+                    <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                    {/* <br /> */}
+                    <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
+                    {/* <br /> */} 
+                </div>
+                
                 <div className="container-x1" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -779,7 +795,7 @@ export default function HomePage() {
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <img src={GD03} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
+                                            {/* <div className='product-text'>
                                                 <br />
                                                 <br />
                                                 <br />
@@ -792,7 +808,7 @@ export default function HomePage() {
                                                 <br />
                                                 <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
@@ -825,7 +841,9 @@ export default function HomePage() {
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <img src={GD04} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
+                                            {/* <div className='product-text'>
+                                                <br />
+                                                <br />
                                                 <br />
                                                 <br />
                                                 <br />
@@ -855,7 +873,7 @@ export default function HomePage() {
                                                 <br />
                                                 <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
-                                            </div>
+                                            </div> */}
                                             <img src={GD05} alt="img missing" className='img-inside-slider' />
                                         </div>
 
@@ -882,16 +900,30 @@ export default function HomePage() {
                             </div>
                             <div className='manila-folder-content'>
                                 <div className='manila-folder-content-T'>
-                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <p className='product-title'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 55, ESM 75, ESM 55<span>e</span>, ESM 75<span>e</span> si cu turatie variabila VS 55, VS 75</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
                                         <div className='text-col2'>
-                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <img src={GD06} alt="img missing" className='img-inside-slider' />
                                             <div className='product-text'>
-                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
                                                 <br />
-                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
                                                 <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                                                <br />
+                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                                                <br />
+                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
                                             </div>
                                         </div>
@@ -918,16 +950,27 @@ export default function HomePage() {
                             </div>
                             <div className='manila-folder-content'>
                                 <div className='manila-folder-content-T'>
-                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <p className='product-title'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 55, ESM 75, ESM 55<span>e</span>, ESM 75<span>e</span> si cu turatie variabila VS 55, VS 75</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
                                         <div className='text-col2'>
-                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <img src={GD07} alt="img missing" className='img-inside-slider' />
                                             <div className='product-text'>
-                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
                                                 <br />
-                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
                                                 <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                                                <br />
+                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                                                <br />
+                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
                                             </div>
                                         </div>
@@ -956,16 +999,27 @@ export default function HomePage() {
                             <div className='manila-folder-content'>
 
                                 <div className='manila-folder-content-T'>
-                                    <p className='product-title'>Compresoare cu piston, Champion, debite mici, presiuni pana la 15 bar, pentru ateliere de lucru</p>
+                                    <p className='product-title'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 160, ESM 200, ESM 260 si cu turatie variabila VS 160, VS 200, VS 250, VS 290</p>
                                     <div className='line-separation'></div>
                                     <div className='flexy'>
                                         <div className='text-col2'>
-                                            <img src={GD01} alt="img missing" className='img-inside-slider' />
+                                            <img src={GD08} alt="img missing" className='img-inside-slider' />
                                             <div className='product-text'>
-                                                <p>Compresoare cu piston actionate cu motor temic Honda</p>
                                                 <br />
-                                                <p>Compresoare cu piston, actionate cu motor electric cu puteri intre 1.5 si 22 Kw, cu transmisie prin cuplaj cu o singura faza sau transmisie prin curele actionate cu motoare electrice trifazice, cu obtiunea de montaj in carcasa isonorizata, presiuni de refultare intre 8 si 15 bar, alimentate la 230V ÷ 400V. Compresoarele cu piston Champion pot fi montate pe sasiu sau pe recipientul de aer comprimat.</p>
                                                 <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                                                <br />
+                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                                                <br />
+                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
                                             </div>
                                         </div>
