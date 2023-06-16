@@ -2534,7 +2534,7 @@ summary {
     font-family: 'Work Sans', sans-serif;
     font-family: 'News Cycle', sans-serif;
     font-family: 'Roboto Mono';
-    letter-spacing: 0.2px;
+    letter-spacing: -0.8px;
     color: #65756d;
     color: black;
     font-size: 24px;
@@ -2981,7 +2981,7 @@ text-underline-offset: 13px;
 
 /* ---------------------- */
 .entire-height-of-product-card {
-    height: 1550px;
+    height: 3000px;
     margin-top: 50px;
     margin-bottom: 100px;
     /* position: relative; */
@@ -3319,6 +3319,7 @@ div.title4-custom {
     width: 120px;
 }
 
+
 .label3-1 {
     height: 24px;
     top: -32px;
@@ -3338,6 +3339,21 @@ div.title4-custom {
     top: -36px;
     width: 120px;
     left: 567px;
+}
+
+
+.label6-1 {
+    height: 20px;
+    top: -28px;
+    left: 5px;
+    width: 120px;
+}
+
+.label7-1 {
+    height: 90px;
+    top: -98px;
+    left: 147px;
+    width: 300px;
 }
 
 /* -------------------------------------------- */
@@ -3527,7 +3543,7 @@ img.bigIMG {
     align-items: center;
     box-sizing: border-box;
 
-    margin-top: 650px;
+    margin-top: 5000px;
 }
 
 .section-team p {

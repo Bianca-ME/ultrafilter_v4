@@ -14,6 +14,7 @@ import GD06 from '../assets/products/ESM_55_75.jpg';
 import GD07 from '../assets/products/ESM_90_132.jpg';
 import GD08 from '../assets/products/ESM_160_290.jpg';
 import GD09 from '../assets/products/FM_7_22.jpg';
+import GD10 from '../assets/products/portabile-cu-suruburi.jpg';
 
 
 // import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
@@ -61,14 +62,14 @@ import arrow from '../assets/north-east-arrow.svg';
 // import hpimg2 from '../assets/HomePage/2_Saci_filtranti.jpg';
 // import hpimg3 from '../assets/HomePage/3_Elemente_filtrante_cartuse_filtrante.jpg';
 // import GD9 from '../assets/HomePage/9_compresoare_cu_piston_Champion.jpg';
-import GD9 from '../assets/test/c9.png';
-import GD9_ from '../assets/test/c9_.png';
-import GD10 from '../assets/HomePage/10_Compresoare_pentru_cabinete_dentare.jpg';
-import GD11 from '../assets/HomePage/11_Compresoare_portabile.jpg';
-import GD12 from '../assets/HomePage/12_Comprresoare_cu_excentric_si_paleti.jpg';
-import GD13 from '../assets/HomePage/13_Compresoare_Scroll_fara_ungere.jpg';
-import GD14 from '../assets/HomePage/14_compresoare_pentru_suflat_PET-uri_BELLISS_MORCOM.jpg';
-import GD15 from '../assets/HomePage/15_Compresoare_pentru_umplut_butelii.jpg';
+// import GD9 from '../assets/test/c9.png';
+// import GD9_ from '../assets/test/c9_.png';
+// import GD10 from '../assets/HomePage/10_Compresoare_pentru_cabinete_dentare.jpg';
+// // import GD11 from '../assets/HomePage/11_Compresoare_portabile.jpg';
+// import GD12 from '../assets/HomePage/12_Comprresoare_cu_excentric_si_paleti.jpg';
+// import GD13 from '../assets/HomePage/13_Compresoare_Scroll_fara_ungere.jpg';
+// import GD14 from '../assets/HomePage/14_compresoare_pentru_suflat_PET-uri_BELLISS_MORCOM.jpg';
+// import GD15 from '../assets/HomePage/15_Compresoare_pentru_umplut_butelii.jpg';
 
 
 
@@ -761,8 +762,8 @@ export default function HomePage() {
 
             {/* compresoare ... cu suruburi elicoidale GD */}
             <div className='entire-height-of-product-card-x1'>
-            <h1 id='despre-Ultrafilter' className='title5-custom'>Compresoare cu suruburi elicoidale<br/>Gardner Denver<br/><br/></h1>
-                <div id='compresoare-cu-suruburi-elicoidale' className='hidden-titles'>Compresoare cu suruburi elicoidale Gardner Denver</div>
+            <h1 id='compresoare-cu-suruburi-elicoidale' className='title5-custom'>Compresoare cu suruburi elicoidale<br/>Gardner Denver<br/><br/></h1>
+                <div id='' className='hidden-titles'>Compresoare cu suruburi elicoidale Gardner Denver</div>
                 <div className='title4-custom'>Compresoare cu suruburi si injectie de ulei</div>
                 {/* <div className='text-under-title4'> */}
                 <div className='card3'>
@@ -773,7 +774,7 @@ export default function HomePage() {
                     <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                     {/* <br /> */} 
                 </div>
-                <div style={{height: '50px'}}></div>
+                <div style={{height: '80px'}}></div>
                 
                 <div className="container-x1" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
@@ -906,7 +907,7 @@ export default function HomePage() {
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <img src={GD06} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
+                                            {/* <div className='product-text'>
                                                 <br />
                                                 <br />
                                                 <br />
@@ -926,7 +927,7 @@ export default function HomePage() {
                                                 <br />
                                                 <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
@@ -956,7 +957,7 @@ export default function HomePage() {
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <img src={GD07} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
+                                            {/* <div className='product-text'>
                                                 <br />
                                                 <br />
                                                 <br />
@@ -973,7 +974,7 @@ export default function HomePage() {
                                                 <br />
                                                 <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
@@ -1005,7 +1006,7 @@ export default function HomePage() {
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <img src={GD08} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
+                                            {/* <div className='product-text'>
                                                 <br />
                                                 <br />
                                                 <br />
@@ -1022,7 +1023,7 @@ export default function HomePage() {
                                                 <br />
                                                 <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
                                                 <br />
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
@@ -1036,6 +1037,127 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+<div style={{height:'700px'}}></div>
+{/* ----------------------------------------------------------------------- */}
+
+
+                <div className="container-x1" style={{ marginTop: '100px' }} >
+                    {/* style={{backgroundColor: 'pink'}} */}
+
+                    <div
+                        ref={(el) => (divRefs.current[10] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(10)}
+                        onClick={() => handleClick(10)}
+                        style={{ left: "0px", top: '0' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label6-1 label-x1'>
+                            FM 7-22
+                            </div>
+                            <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare Champion cu suruburi elicoidale si ungere cu ulei</p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD09} alt="img missing" className='img-inside-slider' />
+                                            <div className='product-text'>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoarele Champion cu suruburi elicoidale model Enduro de mare fiabilitate si eficiente energetic, folosesc injectia de ulei in blocul de ocmpresie pentru a asigura ungerea mecanismului, etansarea cat si preluarea temperaturii de compresie.</p>
+                                                <br />
+                                                <p>Controllerul C-PRO 2.0 guverneaza functionarea compresorului, indica parametrii de stare cat si avertizari, alarme si protectia termica a motorului si a circuitului de aer si ulei.</p>
+                                                <br />
+                                                <p>Compresoarele cu surub Champion este recomandabil sa fie folosite in temperature ambientale de maximum 46⁰C.</p>
+                                                <br />
+                                                <p>Compresoarele cu suruburi elicoidale Champion pot fi livrate de sine stataor cat si montate pe recipient de aer comprimat in pachet cu filtru si uscator de aer prin refrigerare.</p>
+                                            </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div
+                        ref={(el) => (divRefs.current[11] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(11)}
+                        onClick={() => handleClick(11)}
+                        style={{ left: "10px", top: '2px' }}
+                    >
+
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label7-1 label-x1'>
+                            Compresoare portabile cu suruburi elicoidale_compresoare de asfalt
+                            </div>
+                            <div className='manila-folder-content'>
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'>Compresoare cu suruburi elicodale si injectie de ulei, Gardner Denver cu turatie fixa ESM 30, ESM 37, ESM 45, ESM 30<span>e</span>, ESM 37<span>e</span>, ESM 45<span>e</span> si cu turatie variabila VS 30, VS 37, VS 45, VS 37<span>e</span>, VS 45<span>e</span></p>
+                                    <div className='line-separation'></div>
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <img src={GD10} alt="img missing" className='img-inside-slider' />
+                                            {/* <div className='product-text'>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
+                                                <br />
+                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
+                                                <br />
+                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
+                                                <br />
+                                            </div> */}
+                                            
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
                 </div>
             </div>
 
