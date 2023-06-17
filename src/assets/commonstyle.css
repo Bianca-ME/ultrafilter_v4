@@ -325,6 +325,8 @@ body {
     background-color: #ebf3ef;
     background-color: #d9e7e0;
     background-color: #f5f5ed;
+    /* background-color: #ddddd2; fain dar mna */
+    /* background-color: #17009c; */
     font-family: 'Inconsolata', monospace;
     font-family: 'Cantarell', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -2511,6 +2513,8 @@ summary {
 
 .manila-folder-content-T {
     background-color: #fcfcf5;
+    background-color: white;
+
     padding: 20px 50px;
     /* border-radius: 45px; */
     text-align: justify;
@@ -2520,9 +2524,10 @@ summary {
 
 .text-col2 {
     column-count: 2;
-    column-gap: 30px;
+    column-gap: 60px;
     padding-top: 20px;
     margin-bottom: 30px;
+    column-rule: 1px solid #a5a5a1;
 }
 
 .product-title {
@@ -2531,9 +2536,9 @@ summary {
     font-family: 'Inconsolata', monospace;
     font-family: 'Syne', sans-serif;
     font-family: "Cousine";
-    font-family: 'Work Sans', sans-serif;
     font-family: 'News Cycle', sans-serif;
     font-family: 'Roboto Mono';
+    font-family: 'Work Sans', sans-serif;
     letter-spacing: -0.8px;
     color: #65756d;
     color: black;
@@ -2577,9 +2582,10 @@ summary {
 .product-text {
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
-    font-family: 'Hind', sans-serif;
-
+    
     font-family: 'Cousine';
+    font-family: 'Hind', sans-serif;
+    font-family: 'Work Sans';
 
     /* font-family: 'Work Sans', sans-serif; */
     font-weight: 400;
@@ -2593,18 +2599,22 @@ summary {
 }
 
 .ul-style {
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+    clip-path: polygon(65% 0%, 100% 0%, 35% 100%, 0% 100%);
     background-color: #f4b50b;
     background-color: #005faf;
     background-color: #d2202e;
     background-color: #0000ff;
     background-color: #dde6ef;
     background-color: #e7e6d9;
+    background-color: #d4d4c9;
+    background-color: #ee0000;
     width: 10px;
     height: 10px;
     display: inline-block;
     margin-left: 0px;
     margin-right: 3px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .margin-bottom-p p {
@@ -2728,6 +2738,7 @@ ul {
 }
 
 /* the rest of the 'a' links */
+/* //fix */
 .menu a {
     display: block;
     /* padding-left: 5px; */
@@ -2739,10 +2750,10 @@ ul {
     font-family: 'Hind', sans-serif;
     font-size: 17px;
     /* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
-    font-family: 'Noto Sans', sans-serif;
     font-family: 'Sulphur Point';
+    font-family: 'Noto Sans', sans-serif;
 
-    font-weight: 500;
+    /* font-weight: 500; */
     /* nu merge */
     /* color: #65756d;
     color: #33443b;
@@ -2992,6 +3003,11 @@ text-underline-offset: 13px;
     margin-top: 50px;
     /* position: relative; */
 }
+.entire-height-of-product-card-x2 {
+    height: 5000px;
+    margin-top: 50px;
+    /* position: relative; */
+}
 
 /* .overlap-gradient-red {
     background-image: linear-gradient(335deg, rgb(23, 0, 156, 0), rgb(23, 0, 156, 1));
@@ -3015,6 +3031,16 @@ text-underline-offset: 13px;
     margin-bottom: 20px;
 
     line-height: 1;
+}
+
+.title6-custom {
+    /* font-family: 'Syne', sans-serif; */
+    font-size: 25px;
+    font-weight: 400;
+    color: black;
+    /* text-decoration: underline; */
+    text-align: left;
+    /* text-justify: auto; */
 }
 
 /* trying to make a vertical title for products */
@@ -3128,7 +3154,7 @@ div.title4-custom {
 .container-x1 {
     position: relative;
     width: 500px;
-    height: 300px;
+    height: 800px;
     margin-left: 175px;
     margin-bottom: 50px;
 }
@@ -3144,6 +3170,8 @@ div.title4-custom {
     background-color: #fdfcf7;
     background-color: #f4b50b;
     background-color: #fcfcf5;
+    background-color: #ee0000;
+    /* background-color: white; */
 
     /* border: 1px solid #ccc; */
     /* border-right: 1px solid #65756d; */
@@ -3350,10 +3378,48 @@ div.title4-custom {
 }
 
 .label7-1 {
-    height: 90px;
-    top: -98px;
+    height: 22px;
+    top: -30px;
     left: 147px;
     width: 300px;
+}
+/* --- */
+/* //fix here I am */
+
+.label8-1 {
+    height: 40px;
+    top: -48px;
+    left: 5px;
+    /* width: 120px; */
+    width: 220px;
+}
+
+.label9-1 {
+    height: 42px;
+    top: -50px;
+    /* left: 147px; */
+    left: 247px;
+    /* width: 120px; */
+    width: 200px;
+}
+
+
+.label10-1 {
+    height: 24px;
+    top: -32px;
+    /* left: 289px; */
+    left: 469px;
+    /* width: 120px; */
+    width: 150px;
+}
+
+.label11-1 {
+    height: 46px;
+    top: -54px;
+    /* width: 120px; */
+    width: 200px;
+    /* left: 425px; */
+    left: 641px;
 }
 
 /* -------------------------------------------- */
@@ -3752,3 +3818,12 @@ p.copyright {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+/* -------------------------- */
+
+/* .flip-book {
+    position:relative;padding-top:max(60%,324px);width:100%;height:0;
+}
+
+.iframe-flip-book {
+    position:absolute;border:none;width:100%;height:100%;left:0;top:0;
+} */

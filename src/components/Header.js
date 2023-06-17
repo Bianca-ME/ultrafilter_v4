@@ -102,8 +102,8 @@ export default function Header() {
                                         </li>
                                         <li><a href="#compresoare-cu-suruburi-elicoidale">cu suruburi elicoidale Gadner Denver</a>
                                             <ul className='submenu3'>
-                                                <li><a href='#'>si injectie de ulei</a></li>
-                                                <li><a href='#'>oil free</a></li>
+                                                <li><a href='#si-injectie-de-ulei'>si injectie de ulei</a></li>
+                                                <li><a href='#oil-free'>oil free</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">cu excentric si paleti Vane Compressors</a></li>

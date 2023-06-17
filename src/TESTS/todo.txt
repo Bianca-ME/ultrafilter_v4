@@ -1,0 +1,6 @@
+//TODO 
+
+[ ] change container-x1, entire-height-of-product-card-x1 to x2, x3 ...
+[ ]   .menu a{ } decide the font-family
+[ ] reintegrate .ul-style {}
+[ ] .text-col2 {}  
