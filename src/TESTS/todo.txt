@@ -4,3 +4,9 @@
 [ ]   .menu a{ } decide the font-family
 [ ] reintegrate .ul-style {}
 [ ] .text-col2 {}  
+
+
+//FIX
+
+[ ] in compresoare-cu-piston (href) in navbar nu imi scoate in prim plan box-ul care ma intereseaza daca ii dau un id si href
+[ ] cand dau search, sa scrolluie la box-ul respectiv

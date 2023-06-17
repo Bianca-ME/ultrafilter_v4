@@ -96,8 +96,8 @@ export default function Header() {
                                     <ul className='submenu2'>
                                         <li><a href="#compresoare-cu-piston">cu piston</a>
                                             <ul className='submenu3'>
-                                                <li><a href='#'>cabinete dentare compresoare oil free</a></li>
-                                                <li><a href='#'>debite mici</a></li>
+                                                <li><a href='#compresoare-cu-piston'>cabinete dentare compresoare oil free</a></li>
+                                                <li><a href='#compresoare-cu-piston'>debite mici</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#compresoare-cu-suruburi-elicoidale">cu suruburi elicoidale Gadner Denver</a>
