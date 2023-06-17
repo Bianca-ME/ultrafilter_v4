@@ -106,9 +106,9 @@ export default function Header() {
                                                 <li><a href='#oil-free'>oil free</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">cu excentric si paleti Vane Compressors</a></li>
-                                        <li><a href="#">pentru suflat PET-uri</a></li>
-                                        <li><a href="#">pentru scafandrii</a></li>
+                                        <li><a href="#compresoare-cu-excentric-si-paleti">cu excentric si paleti Vane Compressors</a></li>
+                                        <li><a href="#compresoare-pentru-suflat-PET-uri">pentru suflat PET-uri</a></li>
+                                        <li><a href="#pentru-scafandrii">pentru scafandrii</a></li>
                                     </ul>
                                 </li>
                                 <li><a href='#'>Recipienti de aer comprimat si purje evacuare condens</a></li>

@@ -2507,7 +2507,7 @@ summary {
     font-family: 'Inconsolata', monospace;
     color: #65756d;
     color: #000000;
-    padding: 25px 10px;
+    padding: 25px 10px 5px 10px;
     /* background-color: #fcfcf5; */
 }
 
@@ -2991,7 +2991,7 @@ text-underline-offset: 13px;
 
 
 /* ---------------------- */
-.entire-height-of-product-card {
+.entire-height-of-product-card-x0 {
     height: 1550px;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -3003,7 +3003,22 @@ text-underline-offset: 13px;
     margin-top: 50px;
     /* position: relative; */
 }
-.entire-height-of-product-card-x2 {
+.entire-height-of-product-card-x3 {
+    height: 5000px;
+    margin-top: 50px;
+    /* position: relative; */
+}
+.entire-height-of-product-card-x4 {
+    height: 5000px;
+    margin-top: 50px;
+    /* position: relative; */
+}
+.entire-height-of-product-card-x5 {
+    height: 5000px;
+    margin-top: 50px;
+    /* position: relative; */
+}
+.entire-height-of-product-card-x6 {
     height: 5000px;
     margin-top: 50px;
     /* position: relative; */
@@ -3143,15 +3158,50 @@ div.title4-custom {
     color: rgba(255, 255, 255, 0);
 }
 
-.container {
+.container-x0 {
     position: relative;
     width: 500px;
-    height: 300px;
+    height: 800px;
     margin-left: 165px;
     margin-bottom: 50px;
 }
 
 .container-x1 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x2 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x3 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x4 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x5 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x6 {
     position: relative;
     width: 500px;
     height: 800px;
@@ -3420,6 +3470,28 @@ div.title4-custom {
     width: 200px;
     /* left: 425px; */
     left: 641px;
+}
+/* ------------------ */
+
+.label12-1 {
+    height: 20px;
+    top: -28px;
+    left: 5px;
+    width: 120px;
+}
+/* -------------------- */
+.label13-1 {
+    height: 20px;
+    top: -28px;
+    left: 5px;
+    width: 120px;
+}
+/* -------------------- */
+.label14-1 {
+    height: 20px;
+    top: -28px;
+    left: 5px;
+    width: 120px;
 }
 
 /* -------------------------------------------- */

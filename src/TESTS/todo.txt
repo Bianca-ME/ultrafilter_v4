@@ -8,5 +8,11 @@
 
 //FIX
 
+[ ] label
 [ ] in compresoare-cu-piston (href) in navbar nu imi scoate in prim plan box-ul care ma intereseaza daca ii dau un id si href
 [ ] cand dau search, sa scrolluie la box-ul respectiv
+
+//FIX
+
+nu inteleg daca container-x height da cu adevarat inaltimea continutului ca sa mut urmatoarea sectiune mai jos
+nici entire-height-of-product-card-x nu misca din loc continutul de desubt
