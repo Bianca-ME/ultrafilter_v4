@@ -1413,7 +1413,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-//! OK
+{/* //! OK */}
             {/* compresoare ... cu excentric si paleti Vane Compressors */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x4'>
@@ -1485,7 +1485,7 @@ export default function HomePage() {
 
             </div>
 
-//! OK
+{/* //! OK */}
             {/* compresoare ... pentru suflat PET-uri */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x5'>
@@ -1549,6 +1549,7 @@ export default function HomePage() {
 
             </div>
 
+{/* //! OK */}
             {/* compresoare ... pentru scafandrii_aer respirabil */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x6'>
@@ -1592,6 +1593,60 @@ export default function HomePage() {
                                                     {/* <li><div className='ul-style'></div></li> */}
                                                 </ul>
                                             </div>
+                                        </div>
+
+                                        <div className='line-separation'></div>
+
+                                        {/* tabel */}
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div style={{ height: '700px' }}></div>
+
+            </div>
+
+
+            {/* Recipienti de aer comprimat si purje evacuare condens */}
+            {/* //CHUNK */}
+            <div className='entire-height-of-product-card-x7'>
+                <div id='recipienti-si-purje' className='hidden-titles'>Recipienti de aer comprimat si purje evacuare condens</div>
+                <div className='title4-custom'>Recipienti de aer comprimat si purje evacuare condens</div>
+                {/* //CHUNK */}
+                <div className="container-x7" style={{ marginTop: '100px' }} >
+                    {/* style={{backgroundColor: 'pink'}} */}
+
+                    <div
+                        ref={(el) => (divRefs.current[18] = el)}
+                        className="box"
+                        onMouseOver={() => handleHover(18)}
+                        onClick={() => handleClick(18)}
+                        style={{ left: "0px", top: '0' }}
+                    >
+                        <div className='toberelative'>
+                            <div className='to-be-absolute label15-1 label-x1'>
+                                .
+                            </div>
+                            <div id="compresoare-cu-piston-Champion" className='manila-folder-content'>
+                                <div className='manila-folder-content-T'>
+                                    <p className='product-title'></p>
+                                    <div className='line-separation'></div>
+
+                                    <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/qgzj/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+                                    {/* //FIX aici sunt */}
+                                   
+
+                                    <div className='flexy'>
+                                        <div className='text-col2'>
+                                            <div className='product-text'>
+                                                </div>
                                         </div>
 
                                         <div className='line-separation'></div>

@@ -111,7 +111,7 @@ export default function Header() {
                                         <li><a href="#pentru-scafandrii">pentru scafandrii</a></li>
                                     </ul>
                                 </li>
-                                <li><a href='#'>Recipienti de aer comprimat si purje evacuare condens</a></li>
+                                <li><a href='#recipienti-si-purje'>Recipienti de aer comprimat si purje evacuare condens</a></li>
                             </ul>
                         </li>
                         <li className='menu1' id='navbar-title'><a href="#linkuri-utile">linkuri utile</a></li>

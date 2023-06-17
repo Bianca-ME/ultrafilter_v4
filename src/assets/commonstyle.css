@@ -3023,6 +3023,11 @@ text-underline-offset: 13px;
     margin-top: 50px;
     /* position: relative; */
 }
+.entire-height-of-product-card-x7 {
+    height: 5000px;
+    margin-top: 50px;
+    /* position: relative; */
+}
 
 /* .overlap-gradient-red {
     background-image: linear-gradient(335deg, rgb(23, 0, 156, 0), rgb(23, 0, 156, 1));
@@ -3202,6 +3207,13 @@ div.title4-custom {
     margin-bottom: 50px;
 }
 .container-x6 {
+    position: relative;
+    width: 500px;
+    height: 800px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.container-x7 {
     position: relative;
     width: 500px;
     height: 800px;
@@ -3488,6 +3500,13 @@ div.title4-custom {
 }
 /* -------------------- */
 .label14-1 {
+    height: 20px;
+    top: -28px;
+    left: 5px;
+    width: 120px;
+}
+/* -------------------- */
+.label15-1 {
     height: 20px;
     top: -28px;
     left: 5px;

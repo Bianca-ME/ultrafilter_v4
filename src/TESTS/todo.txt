@@ -1,9 +1,13 @@
 //TODO 
 
-[ ] change container-x1, entire-height-of-product-card-x1 to x2, x3 ...
+[x] change container-x1, entire-height-of-product-card-x1 to x2, x3 ...
 [ ]   .menu a{ } decide the font-family
-[ ] reintegrate .ul-style {}
-[ ] .text-col2 {}  
+[x] reintegrate .ul-style {}
+[x] .text-col2 {}  
+
+[] upload in code: (51250_3_2_23_23114_)GD_IMAGE_BROCHURE_12PP_EN_WORK din Compresoare cu suruburi elicoidale Gadner Denver
+[] upload in code: CHAMPION_BREATHING_AIR_COMPRESSORS din Compresaore pentru scafandrii_aer respirabil
+[] upload in code: CHAMPION_ROTARY_VANE_COMPRESSORS din Compresoare cu excentric si paleti_Champion vane compressors
 
 
 //FIX
@@ -11,8 +15,3 @@
 [ ] label
 [ ] in compresoare-cu-piston (href) in navbar nu imi scoate in prim plan box-ul care ma intereseaza daca ii dau un id si href
 [ ] cand dau search, sa scrolluie la box-ul respectiv
-
-//FIX
-
-nu inteleg daca container-x height da cu adevarat inaltimea continutului ca sa mut urmatoarea sectiune mai jos
-nici entire-height-of-product-card-x nu misca din loc continutul de desubt
