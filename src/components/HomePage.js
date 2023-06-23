@@ -3,6 +3,12 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
+// imported smaller components (it's like storing code in a variable and importing those variables)
+import { TestTable, TableCuPistonDebiteMici, TableScafandrii, TableCPtCabineteDentare, TableCCuExcentricSiCuPaletiCentrifugali, TableESM_23_29, TableESM_30_45, TableESM_55_75, TableESM_90_132, TableESM_VS_160_290, TableFM_7_22, TableCPortabile, TableCTipScroll } from '../TESTS/tables';
+
+// asta va fi standardul pt flip html
+{/* <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/vnvn/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div> */}
+
 // products images
 // GD
 import GD01 from '../assets/products/34002_28_3_19_CA5_BP_FT55_m.jpg';
@@ -160,6 +166,7 @@ import addClassOnInView from '../testingPurposes/inViewTrigger';
 
 // styling
 import '../assets/commonstyle.css';
+import { unknownTable } from '../TESTS/tables';
 
 //
 
@@ -176,6 +183,7 @@ export default function HomePage() {
     const [state, setState] = useState({
         pane_Cabinete_dentare_compresoare_fara_ungere: false,
         pane_EnviroAir_T: false,
+        pane_brosura_compresoare_cu_suruburi_elicoidale: false
     });
 
     // --- sliding pane <
@@ -267,18 +275,49 @@ export default function HomePage() {
                 </div>
             </SlidingPane>
 
+            <SlidingPane
+                className="some-custom-class stop-background-scroll"
+                overlayClassName="some-custom-overlay-class"
+                isOpen={state.pane_brosura_compresoare_cu_suruburi_elicoidale}
+                title="compresoare cu suruburi elicoidale"
+                subtitle="brosura"
+                onRequestClose={() => {
+                    // triggered on "<" on left top click or on outside click
+                    setState({ pane_brosura_compresoare_cu_suruburi_elicoidale: false });
+                }}
+            >            
+                    <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '0' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/mqmf/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+            </SlidingPane>
+
+            
 
 
-
+            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
+                <div className='containsPage1 slide slide-top containsPage1-mobile'>
+                    <div className='page1Donaldson-container'>
+                        <div className='slide-content-D'>
+                            filtre, desprafuire industriala
+                        </div>
+                        <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
+                    </div>
+                </div>
+                <div className='containsPage2 slide slide-top containsPage2-mobile'>
+                    <div className='page2GardnerDenver-container'>
+                        <div className='slide-content-GD'>
+                            compresoare si retele de aer comprimat
+                        </div>
+                        <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
+                    </div>
+                </div>
+            </div>
 
 
 
             {/* NEW D and GD background with mountains */}
-            <div className='margin-from-header top-banner'>
+            {/* <div className='margin-from-header top-banner'>
                 <div className='toberelative'>
                     <p>tehnologie pentru un mediu mai curat</p>
                     <img className='reallyBigIMG' src={bannerIMG} alt="Donaldson logo can.t be seen" />
-                    {/* <div className='overlap-gradient-white'></div> */}
                     <div className='D-and-GD-logos-container-flex'>
                         <div className='GD-container--'>
                             <img className='page2GardnerDenver--' src={GDlogoSVG} alt="Donaldson logo can.t be seen"></img>
@@ -289,27 +328,12 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* "TITLURILE MARI" */}
             <section className='section1-buttons-under-D-and-GD two-columns'
-            // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
             >
-                <div className='display-block'>
-
-                    <p className='title3-2'>
-                        compresoare si retele de aer comprimat<br />
-                        {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
-                    </p>
-                    <hr></hr>
-                    <div className='padding-buttons-in-display-block'>
-                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    </div>
-                </div>
                 <div className='display-block'>
                     {/* Donaldson */}
                     <p className='title3-1'>filtre, desprafuire industriala
@@ -323,6 +347,21 @@ export default function HomePage() {
                         <p><a className='buttonV1'>Filtre pentru ventilatii</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1'>Aspiratoare industriale</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                    </div>
+                </div>
+                <div className='display-block'>
+
+                    <p className='title3-2'>
+                        compresoare si retele de aer comprimat<br />
+                        {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
+                    </p>
+                    <hr></hr>
+                    <div className='padding-buttons-in-display-block'>
+                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                     </div>
                 </div>
 
@@ -396,7 +435,7 @@ export default function HomePage() {
             <div className='entire-height-of-product-card'>
                 <div id='compresoare-cu-piston' className='hidden-titles'>Compresoare cu piston</div>
                 <div className='title4-custom'>Compresoare cu piston</div>
-                //! OK
+                {/* OK */}
                 <div className="container-x0" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -430,6 +469,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableCuPistonDebiteMici />
 
                                     </div>
                                 </div>
@@ -486,327 +526,23 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableCPtCabineteDentare/>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    {/* <div
-                        ref={(el) => (divRefs.current[2] = el)}
-                        className="box"
-                        onMouseOver={() => handleHover(2)}
-                        onClick={() => handleClick(2)}
-                        style={{ left: "20px", top: '4px' }}
-                    >
-                        <div className='toberelative'>
-                            <div className='to-be-absolute label3 label'>
-                                Compresaore pentru suflat PET-uri
-                            </div>
-                            <div className='manila-folder-content'>
-                                3 compress
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div
-                        ref={(el) => (divRefs.current[3] = el)}
-                        className="box"
-                        onMouseOver={() => handleHover(3)}
-                        onClick={() => handleClick(3)}
-                        style={{ left: "40px", top: '6px' }}
-                    >
-                        <div className='toberelative'>
-                            <div className='to-be-absolute label4 label'>
-                                Compresoare pentru umplut butelii
-                            </div>
-                            <div className='manila-folder-content'>
-                                <div className='manila-folder-content-T'>
-                                    <p className='product-title'>Compresoare Champion de inalta presiune HP (232 – 300 bar), pentru umplut butelii cu aer respirabil</p>
-                                    <div className='line-separation'></div>
-                                    <div className='flexy'>
-                                        <div className='text-col2'>
-
-                                            <img src={GD15} alt="img missing" className='img-inside-slider' />
-                                            <div className='product-text'>
-
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresooare Champion de inalta presiune, pentru umplut butelii/ cilindrii, aer respirabil utilizat de pompieri, echipaje de salvare (ex. Salvare miniera, metoru, etc), scafandrii autonomi.</p>
-
-                                                <p>Compresoarele Champion sunt versatile, sigure, flexibile in aplicatii si utilizari asigurand:</p>
-                                                <div className='margin-bottom-p'>
-                                                    <p><div className='ul-style'></div>timpi scurti de umplere a buteliilor;</p>
-                                                    <p><div className='ul-style'></div>functionare automata;</p>
-                                                    <p><div className='ul-style'></div>diverse modele de motoare de actionare;</p>
-                                                    <p><div className='ul-style'></div>usor de utilizat;</p>
-                                                    <p><div className='ul-style'></div>montate pe sasiu sau in carcasa isonorizata;</p>
-                                                    <p><div className='ul-style'></div>actionate cu motor electric sau cu motor termic Honda;</p>
-                                                    <p><div className='ul-style'></div>inlcud o varietate larga de accesorii.</p>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div className='line-separation'></div>
-
-                                        <table className='tabletemplate1'>
-
-                                            <tr>
-                                                <td rowspan='2'></td>
-                                                <td rowspan='2'>Compresoare cu piston si ungere cu ulei Champion, model</td>
-                                                <td>Debit</td>
-                                                <td>Presiune maxima</td>
-                                                <td>Putere motor</td>
-                                                <td>Nivel zgomot</td>
-                                                <td>Alimentare</td>
-                                                <td>Cu recipient</td>
-                                            </tr>
-                                            <tr>
-                                                <td>m³/min</td>
-                                                <td>Bar</td>
-                                                <td>Kw</td>
-                                                <td>d(B)</td>
-                                                <td>Volt/50Hz</td>
-                                                <td>Volum litrii</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td rowspan='4' className='td-smaller-width1'>Compresoare cu actionare directa prin cuplaj "C base"</td>
-                                                <td>
-                                                    <button className='buttonV2' onClick={() => setState({ pane_Cabinete_dentare_compresoare_fara_ungere: true })}>
-                                                        CB-OF-6-CF15                                                    </button>
-                                                    <img className='arrow-in-table' src={arrow} alt='svg missing' style={{ height: '12px', width: '12px' }} />
-                                                </td>
-                                                <td>0,12</td>
-                                                <td>8</td>
-                                                <td>1,1</td>
-                                                <td>82</td>
-                                                <td>230</td>
-                                                <td>6</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CB-3-CF2  <img className='arrow-in-table' src={arrow} alt='svg missing' style={{ height: '12px', width: '12px' }} /></td>
-                                                <td>0,19</td>
-                                                <td>8</td>
-                                                <td>1,5</td>
-                                                <td>76</td>
-                                                <td>230</td>
-                                                <td>3 ÷ 100</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CB-24-CM25</td>
-                                                <td>0,24</td>
-                                                <td>9</td>
-                                                <td>1,8</td>
-                                                <td>79</td>
-                                                <td>230</td>
-                                                <td>24 ÷ 100</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CB-24-WB3</td>
-                                                <td>0,34</td>
-                                                <td>9</td>
-                                                <td>2,2</td>
-                                                <td>82</td>
-                                                <td>230</td>
-                                                <td>24 ÷ 100</td>
-                                            </tr>
-
-                                            <tr className='empty-row'></tr>
-
-                                            <tr>
-                                                <td rowspan='2'>Compresoare cu transmisie prin curele, o singura treapta de compresie, o singura faza.</td>
-                                                <td>CL28B-25-CM2</td>
-                                                <td>0,25</td>
-                                                <td>10</td>
-                                                <td>1,5</td>
-                                                <td>77</td>
-                                                <td>230</td>
-                                                <td>25 ÷ 150</td>
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>CP28B-50-CM3</td>
-                                                <td>0.29 ÷ 0.42</td>
-                                                <td>10</td>
-                                                <td>2,2</td>
-                                                <td>76 ÷ 78</td>
-                                                <td>230 ÷ 400</td>
-                                                <td>50 ÷ 270</td>
-                                            </tr>
-
-                                            <tr className='empty-row'></tr>
-
-                                            <tr>
-                                                <td rowspan='5'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu  motor electric trifazat.</td>
-                                                <td>CL4-200-FT4</td>
-                                                <td>0,54</td>
-                                                <td>10</td>
-                                                <td>3</td>
-                                                <td>75</td>
-                                                <td>400</td>
-                                                <td>200 ÷ 270</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CL5-200-FT55</td>
-                                                <td>0,61</td>
-                                                <td>11</td>
-                                                <td>4</td>
-                                                <td>82</td>
-                                                <td>400</td>
-                                                <td>200 ÷ 500</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CL6-200-FT75</td>
-                                                <td>0,8</td>
-                                                <td>11</td>
-                                                <td>5,5</td>
-                                                <td>82</td>
-                                                <td>400</td>
-                                                <td>200 ÷ 500</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CL10-270-FT10</td>
-                                                <td>1,25</td>
-                                                <td>11</td>
-                                                <td>7,5</td>
-                                                <td>82</td>
-                                                <td>400</td>
-                                                <td>200 ÷ 900</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA15-500-FT155</td>
-                                                <td>1,51</td>
-                                                <td>11</td>
-                                                <td>11</td>
-                                                <td>82</td>
-                                                <td>400</td>
-                                                <td>200 ÷ 900</td>
-                                            </tr>
-
-                                            <tr className='empty-row'></tr>
-
-                                            <tr>
-                                                <td rowspan='4'>Compresoare cu transmisie prin curele, doua trepte de compresie, actionate cu motor electric trifazat.</td>
-                                                <td>CA5-270-15-FT55</td>
-                                                <td>0,43</td>
-                                                <td>15</td>
-                                                <td>4</td>
-                                                <td>81</td>
-                                                <td>400</td>
-                                                <td>270</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA6-270-15-FT75</td>
-                                                <td>0,57</td>
-                                                <td>15</td>
-                                                <td>5,5</td>
-                                                <td>81</td>
-                                                <td>400</td>
-                                                <td>270</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA10-500-15-FT10</td>
-                                                <td>0,94</td>
-                                                <td>15</td>
-                                                <td>7,5</td>
-                                                <td>81</td>
-                                                <td>400</td>
-                                                <td>500</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA15-500-15-FT155 SDS</td>
-                                                <td>1,14</td>
-                                                <td>15</td>
-                                                <td>11</td>
-                                                <td>81</td>
-                                                <td>400</td>
-                                                <td>500</td>
-                                            </tr>
-
-                                            <tr className='empty-row'></tr>
-
-                                            <tr>
-                                                <td rowspan='3'>Compresoare cu motor termic, tip Honda, cu benzina</td>
-                                                <td>CA3-11+11-C4</td>
-                                                <td>0,3</td>
-                                                <td>10</td>
-                                                <td>3</td>
-                                                <td>74</td>
-                                                <td>Honda</td>
-                                                <td>22</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA4-100-C55	</td>
-                                                <td>0,42</td>
-                                                <td>10</td>
-                                                <td>4</td>
-                                                <td>75</td>
-                                                <td>Honda</td>
-                                                <td>100 ÷ 200</td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>CA5-270-C9</td>
-                                                <td>0,56</td>
-                                                <td>10</td>
-                                                <td>7,1</td>
-                                                <td>81</td>
-                                                <td>Honda</td>
-                                                <td>270</td>
-                                            </tr>
-                                        </table>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div
-                        ref={(el) => (divRefs.current[4] = el)}
-                        className="box"
-                        onMouseOver={() => handleHover(4)}
-                        onClick={() => handleClick(4)}
-                        style={{ left: "50px", top: '8px' }}
-                    >
-                        <div className='toberelative'>
-                            <div className='to-be-absolute label5 label'>
-                                label5
-                            </div>
-                            <div className='manila-folder-content'>
-                                <div>
-                                    5
-                                </div>
-
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
 
             {/* adauga spatiu */}
 
             {/* compresoare ... cu suruburi elicoidale GD */}
-            {/* //CHUNK */}
+            {/* //CHUNK  */}
             <div className='entire-height-of-product-card-x1'>
                 <h1 id='compresoare-cu-suruburi-elicoidale' className='title5-custom'>Compresoare cu suruburi elicoidale<br />Gardner Denver<br /><br /></h1>
-                //! OK
+                {/* OK */}
                 {/* compresoare ... cu suruburi elicoidale GD ... si injectie de ulei */}
                 <div id='si-injectie-de-ulei' className='hidden-titles'>Compresoare cu suruburi si injectie de ulei</div>
                 <div className='title4-custom'>Compresoare cu suruburi si injectie de ulei</div>
@@ -818,10 +554,11 @@ export default function HomePage() {
                     <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
                     {/* <br /> */}
                     <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                    {/* <br /> */}
+                    <br />
+                    <p onClick={() => setState({ pane_brosura_compresoare_cu_suruburi_elicoidale: true })} className='see-brochure'>broșură</p>
                 </div>
                 <div style={{ height: '80px' }}></div>
-                {/* //CHUNK  //! OK*/}
+                {/* //CHUNK OK*/}
                 <div className="container-x1" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -844,24 +581,14 @@ export default function HomePage() {
                                         <div className='text-col2'>
                                             <img src={GD03} alt="img missing" className='img-inside-slider' />
                                             {/* <div className='product-text'>
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
-                                                <br />
-                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
-                                                <br />
-                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                                                <br />
+                                                
                                             </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableESM_23_29/>
 
                                     </div>
                                 </div>
@@ -890,37 +617,7 @@ export default function HomePage() {
                                         <div className='text-col2'>
                                             <img src={GD04} alt="img missing" className='img-inside-slider' />
                                             {/* <div className='product-text'>
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
-                                                <br />
-                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
-                                                <br />
-                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                                                <br />
+                                                
                                             </div> */}
                                             <img src={GD05} alt="img missing" className='img-inside-slider' />
                                         </div>
@@ -928,6 +625,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableESM_30_45/>
 
                                     </div>
                                 </div>
@@ -954,31 +652,14 @@ export default function HomePage() {
                                         <div className='text-col2'>
                                             <img src={GD06} alt="img missing" className='img-inside-slider' />
                                             {/* <div className='product-text'>
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
-                                                <br />
-                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
-                                                <br />
-                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                                                <br />
+                                                
                                             </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableESM_55_75/>
 
                                     </div>
                                 </div>
@@ -1004,28 +685,14 @@ export default function HomePage() {
                                         <div className='text-col2'>
                                             <img src={GD07} alt="img missing" className='img-inside-slider' />
                                             {/* <div className='product-text'>
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
-                                                <br />
-                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
-                                                <br />
-                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, cee ace afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                                                <br />
+                                               
                                             </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableESM_90_132/>
 
                                     </div>
                                 </div>
@@ -1053,28 +720,14 @@ export default function HomePage() {
                                         <div className='text-col2'>
                                             <img src={GD08} alt="img missing" className='img-inside-slider' />
                                             {/* <div className='product-text'>
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <br />
-                                                <p>Compresoarele sunt mai mult decat o investitie financiara, ele reprezinta o cheie importanta in asigurarea fabricarii, procesarii si operarii fluxurilor tehnologice, a produsului finit, utilizant o forta de miscare de inalta calitate asigurata cu costrui reduse.</p>
-                                                <br />
-                                                <p>Elementele de compresie- suruburile elicoidale si blocul de compresie – sunt principalele componente ale compresorului si de aceea Gardner Denver pastreaza “in house” proiectarea si fabricarea acestor componente utilizand cele mai modern masini CNC de prelucrare prin rectificare impreuna cu tehnologie laser “on line”.</p>
-                                                <br />
-                                                <p>Rezultatul este un bloc de compresie eficient energetic, performant si durabil in exploatare, ceea ce afec ca Gardner Denver sa acorde un maxim de garantie de 10 ani sau de 44000 h de functionare, care dintre cele doua conditii expira prima.</p>
-                                                <br />
+                                               
                                             </div> */}
                                         </div>
 
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableESM_VS_160_290/>
 
                                     </div>
                                 </div>
@@ -1089,7 +742,7 @@ export default function HomePage() {
                 <div style={{ height: '700px' }}></div>
 
                 {/* ----------------------------------------------------------------------- */}
-                {/* //! OK */}
+                {/* OK */}
                 {/* compresoare ... cu suruburi elicoidale GD ... si injectie de ulei (continuare)*/}
                 <div className="container-x2" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
@@ -1132,6 +785,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableFM_7_22/>
 
                                     </div>
                                 </div>
@@ -1173,6 +827,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableCPortabile/>
 
                                     </div>
                                 </div>
@@ -1199,7 +854,7 @@ export default function HomePage() {
                 {/* //CHUNK */}
                 {/* <div className='card3'></div> */}
                 {/* <div style={{ height: '80px' }}></div> */}
-                {/* //CHUNK  //! OK */}
+                {/* //CHUNK OK */}
                 <div className="container-x3" style={{ marginTop: '100px' }} >
                     {/* style={{backgroundColor: 'pink'}} */}
 
@@ -1235,6 +890,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableCTipScroll/>
 
                                     </div>
                                 </div>
@@ -1413,7 +1069,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-{/* //! OK */}
+            {/* OK */}
             {/* compresoare ... cu excentric si paleti Vane Compressors */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x4'>
@@ -1469,7 +1125,12 @@ export default function HomePage() {
 
                                         <div className='line-separation'></div>
 
+                                        <div style={{ height: '50px' }}></div>
+                                        
                                         {/* tabel */}
+                                        <TableCCuExcentricSiCuPaletiCentrifugali/>
+
+                                        <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/rwgs/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
 
                                     </div>
                                 </div>
@@ -1485,7 +1146,7 @@ export default function HomePage() {
 
             </div>
 
-{/* //! OK */}
+            {/* OK */}
             {/* compresoare ... pentru suflat PET-uri */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x5'>
@@ -1549,7 +1210,7 @@ export default function HomePage() {
 
             </div>
 
-{/* //! OK */}
+            {/* OK */}
             {/* compresoare ... pentru scafandrii_aer respirabil */}
             {/* //CHUNK */}
             <div className='entire-height-of-product-card-x6'>
@@ -1598,6 +1259,17 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableScafandrii />
+
+                                        <div className='product-text'>
+                                            <p>pentru mai multe detalii despre modele, vedeti brosura, pagina 4 si 5 / din 5</p>
+                                            <p> copiaza [copy]  modelul de compresor, si lipeste [paste] modelul in bara de search a brosurii </p>
+                                        </div>
+
+
+                                        <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '0' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/xufr/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+
+                                        {/* ca sa creasca pdf ul cred ca trebe marit height of container? */}
 
                                     </div>
                                 </div>
@@ -1640,18 +1312,20 @@ export default function HomePage() {
                                     <div className='line-separation'></div>
 
                                     <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/qgzj/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
-                                    {/* //FIX aici sunt */}
-                                   
+
+                                    {/* (aici eram) */}
 
                                     <div className='flexy'>
                                         <div className='text-col2'>
                                             <div className='product-text'>
-                                                </div>
+                                            </div>
                                         </div>
 
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        {/* <TestTable /> */}
+                                        
 
                                     </div>
                                 </div>

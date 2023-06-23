@@ -14,7 +14,7 @@ export default function Cabinete_dentare_compresoare_fara_ungere () {
 
             
 
-            <table className='temptable'>
+            <table className='alt'>
                 {/* 1 */}
                 <tr>
                     <td rowspan='2'></td>
