@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 // imported smaller components (it's like storing code in a variable and importing those variables)
-import { TestTable, TableCuPistonDebiteMici, TableScafandrii, TableCPtCabineteDentare, TableCCuExcentricSiCuPaletiCentrifugali, TableESM_23_29, TableESM_30_45, TableESM_55_75, TableESM_90_132, TableESM_VS_160_290, TableFM_7_22, TableCPortabile, TableCTipScroll } from '../TESTS/tables';
+import { TestTable, TableCuPistonDebiteMici, TableScafandrii, TableCPtCabineteDentare, TableCCuExcentricSiCuPaletiCentrifugali, TableESM_23_29, TableESM_30_45, TableESM_55_75, TableESM_90_132, TableESM_VS_160_290, TableFM_7_22, TableCPortabile, TableCTipScroll, TableIndustry4, TableEnviroAirApa, TablePET } from '../TESTS/tables';
 
 // asta va fi standardul pt flip html
 {/* <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/vnvn/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div> */}
@@ -984,6 +984,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableEnviroAirApa />
 
                                     </div>
                                 </div>
@@ -1058,6 +1059,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TableIndustry4 />
 
                                     </div>
                                 </div>
@@ -1088,10 +1090,10 @@ export default function HomePage() {
                     {/* style={{backgroundColor: 'pink'}} */}
 
                     <div
-                        ref={(el) => (divRefs.current[15] = el)}
+                        ref={(el) => (divRefs.current[16] = el)}
                         className="box"
-                        onMouseOver={() => handleHover(15)}
-                        onClick={() => handleClick(15)}
+                        onMouseOver={() => handleHover(16)}
+                        onClick={() => handleClick(16)}
                         style={{ left: "0px", top: '0' }}
                     >
                         <div className='toberelative'>
@@ -1157,10 +1159,10 @@ export default function HomePage() {
                     {/* style={{backgroundColor: 'pink'}} */}
 
                     <div
-                        ref={(el) => (divRefs.current[16] = el)}
+                        ref={(el) => (divRefs.current[17] = el)}
                         className="box"
-                        onMouseOver={() => handleHover(16)}
-                        onClick={() => handleClick(16)}
+                        onMouseOver={() => handleHover(17)}
+                        onClick={() => handleClick(17)}
                         style={{ left: "0px", top: '0' }}
                     >
                         <div className='toberelative'>
@@ -1195,6 +1197,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
+                                        <TablePET />
 
                                     </div>
                                 </div>
@@ -1221,10 +1224,10 @@ export default function HomePage() {
                     {/* style={{backgroundColor: 'pink'}} */}
 
                     <div
-                        ref={(el) => (divRefs.current[17] = el)}
+                        ref={(el) => (divRefs.current[18] = el)}
                         className="box"
-                        onMouseOver={() => handleHover(17)}
-                        onClick={() => handleClick(17)}
+                        onMouseOver={() => handleHover(18)}
+                        onClick={() => handleClick(18)}
                         style={{ left: "0px", top: '0' }}
                     >
                         <div className='toberelative'>
@@ -1296,10 +1299,10 @@ export default function HomePage() {
                     {/* style={{backgroundColor: 'pink'}} */}
 
                     <div
-                        ref={(el) => (divRefs.current[18] = el)}
+                        ref={(el) => (divRefs.current[19] = el)}
                         className="box"
-                        onMouseOver={() => handleHover(18)}
-                        onClick={() => handleClick(18)}
+                        onMouseOver={() => handleHover(19)}
+                        onClick={() => handleClick(19)}
                         style={{ left: "0px", top: '0' }}
                     >
                         <div className='toberelative'>

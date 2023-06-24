@@ -5,6 +5,520 @@ import '../assets/react-sliding-pane.css';
 
 import arrow from '../assets/north-east-arrow.svg';
 
+export const TablePET = () => {
+    return (
+        <div>
+            <p>m3 / h?</p>
+            <table className='alt'>
+                {/* 1 */}
+                <tr>
+                    <td rowspan='2'></td>
+                    <td rowspan='2' className='productModelHeader'>Compresoare Champion cu piston si ungere cu ulei</td>
+                    <td className='parameterName'>Debit FAD</td>
+                    <td className='parameterName'>Putere ax motor</td>
+                </tr>
+                {/* 2 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='parameterUnity'>m³/h</td>
+                    <td className='parameterUnity'>Kw</td>
+                </tr>
+                {/* 3 */}
+                <tr>
+                    <td rowspan='14' className='productDescription'>Compresoare cu piston in trepte de compresie, racite cu apa, fara ungere, pentru suflat recipienti din PET.</td>
+                    <td className='productModel'>VH 7</td>
+                    <td className='tableData'>423</td>
+                    <td className='tableData'>70</td>
+                </tr>
+                {/* 4 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 9</td>
+                    <td className='tableData'>584</td>
+                    <td className='tableData'>94</td>
+                </tr>
+                {/* 5 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 12</td>
+                    <td className='tableData'>734</td>
+                    <td className='tableData'>108</td>
+                </tr>
+                {/* 6 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 15</td>
+                    <td className='tableData'>922</td>
+                    <td className='tableData'>135</td>
+                </tr>
+                {/* 7 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 18</td>
+                    <td className='tableData'>1123</td>
+                    <td className='tableData'>172</td>
+                </tr>
+                {/* 8 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 21</td>
+                    <td className='tableData'>1411</td>
+                    <td className='tableData'>211</td>
+                </tr>
+                {/* 9 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 25</td>
+                    <td className='tableData'>1510</td>
+                    <td className='tableData'>224</td>
+                </tr>
+                {/* 10 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 28</td>
+                    <td className='tableData'>1691</td>
+                    <td className='tableData'>239</td>
+                </tr>
+                {/* 11 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 29</td>
+                    <td className='tableData'>1811</td>
+                    <td className='tableData'>250</td>
+                </tr>
+                {/* 12 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 35</td>
+                    <td className='tableData'>2133</td>
+                    <td className='tableData'>306</td>
+                </tr>
+                {/* 13 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 40</td>
+                    <td className='tableData'>2315</td>
+                    <td className='tableData'>325</td>
+                </tr>
+                {/* 14 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 40</td>
+                    <td className='tableData'>2315</td>
+                    <td className='tableData'>325</td>
+                </tr>
+                {/* 15 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 45</td>
+                    <td className='tableData'>2717</td>
+                    <td className='tableData'>405</td>
+                </tr>
+                {/* 16 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VH 50</td>
+                    <td className='tableData'>3220</td>
+                    <td className='tableData'>468</td>
+                </tr>
+            </table>
+        </div>
+    );
+};
+
+export const TableEnviroAirApa = () => {
+    return (
+        <div>
+            <table className='alt'>
+                {/* 1 */}
+                <tr>
+                    <td rowspan='2'></td>
+                    <td rowspan='2' className='productModelHeader'>Oil Free and Silicon Free, Gardner Denver cu injectie de apa pura</td>
+                    <td className='parameterName'>Debit FAD</td>
+                    <td className='parameterName'>Fluidul de racire</td>
+                    <td className='parameterName'>Presiuni de lucru</td>
+                    <td className='parameterName'>Putere motor</td>
+                    <td className='parameterName'>Nivel de zgomot</td>
+                    <td className='parameterName'>Greutate</td>
+                    <td className='parameterName'>Gabarit</td>
+                </tr>
+                {/* 2 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='parameterUnity'>m³/min</td>
+                    <td className='parameterUnity'></td>
+                    <td className='parameterUnity'>Bar</td>
+                    <td className='parameterUnity'>Kw</td>
+                    <td className='parameterUnity'>dB(A)</td>
+                    <td className='parameterUnity'>Kg</td>
+                    <td className='parameterUnity'>mm</td>
+                </tr>
+                {/* 3 */}
+                <tr>
+                    <td rowspan='6' className='productDescription'>Compresoare cu injectie de apa pura in blocul de compresie, pentru etansare si preluarea temperaturii de comprimare. Cu turatie fixa.</td>
+                    <td className='productModel' rowspan='2'>EnviroAire 15</td>
+                    <td className='tableData'>2.3</td>
+                    <td className='tableData' rowspan='2'>Aer/Apa</td>
+                    <td className='tableData'>8</td>
+                    <td className='tableData' rowspan='2'>15</td>
+                    <td className='tableData' rowspan='2'>68/65</td>
+                    <td className='tableData' rowspan='2'>672/624</td>
+                    <td className='tableData' rowspan='2'>1345x880x1612</td>
+                </tr>
+                {/* 4 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>1.8</td>
+                    {/* <td className='tableData'></td> */}
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 5 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel' rowspan='2'>EnviroAire 22</td>
+                    <td className='tableData'>3.5</td>
+                    <td className='tableData' rowspan='2'>Aer/Apa</td>
+                    <td className='tableData'>8</td>
+                    <td className='tableData' rowspan='2'>22</td>
+                    <td className='tableData' rowspan='2'>68/65</td>
+                    <td className='tableData' rowspan='2'>691/643</td>
+                    <td className='tableData' rowspan='2'>1345x880x1612</td>
+                </tr>
+                {/* 6 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>2.89</td>
+                    {/* <td></td> */}
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 7 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel' rowspan='2'>EnviroAire 37</td>
+                    <td className='tableData'>5.89</td>
+                    <td className='tableData' rowspan='2'>Aer/Apa</td>
+                    <td className='tableData'>8</td>
+                    <td className='tableData' rowspan='2'>37</td>
+                    <td className='tableData' rowspan='2'>71/61</td>
+                    <td className='tableData' rowspan='2'>960/860</td>
+                    <td className='tableData' rowspan='2'>1722x920x1659</td>
+                </tr>
+                {/* 8 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>5.14</td>
+                    {/* <td></td> */}
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+
+                <tr className='empty-row'></tr>
+
+                {/* 9 */}
+                <tr>
+                    <td rowspan='6' className='productDescription'>Compresoare cu injectie de apa pura in blocul de compresie, pentru etansare si preluarea temperaturii de comprimare. Cu turatie si debit variabile.</td>
+                    <td className='productModel'>EnviroAire VS 15</td>
+                    <td className='tableData'>0.34 - 2.25</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>15</td>
+                    <td className='tableData'>67/64</td>
+                    <td className='tableData'>687/639</td>
+                    <td className='tableData'>1345x880x1612</td>
+                </tr>
+                {/* 10 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>EnviroAire VS 22</td>
+                    <td className='tableData'>0.69 - 3.37</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>22</td>
+                    <td className='tableData'>67/64</td>
+                    <td className='tableData'>687/658</td>
+                    <td className='tableData'>1345x880x1612</td>
+                </tr>
+                {/* 11 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>EnviroAire VS 37</td>
+                    <td className='tableData'>1.22 - 6.42</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>37</td>
+                    <td className='tableData'>71/61</td>
+                    <td className='tableData'>995/895</td>
+                    <td className='tableData'>1722x920x1659</td>
+                </tr>
+                {/* 12 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>EnviroAire VS 50</td>
+                    <td className='tableData'>1.23 - 7.54</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>50</td>
+                    <td className='tableData'>73</td>
+                    <td className='tableData'>1570/1490</td>
+                    <td className='tableData'>2158 x 1412 x 1971</td>
+                </tr>
+                {/* 13 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>EnviroAire VS 75</td>
+                    <td className='tableData'>1.86 - 11.34</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>75</td>
+                    <td className='tableData'>75</td>
+                    <td className='tableData'>1890/1810</td>
+                    <td className='tableData'>2158 x 1412 x 1971</td>
+                </tr>
+                {/* 14 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>EnviroAire VS 100</td>
+                    <td className='tableData'>3.17 - 18.46</td>
+                    <td className='tableData'>Aer/ apa</td>
+                    <td className='tableData'>5 - 10</td>
+                    <td className='tableData'>110</td>
+                    <td className='tableData'>78</td>
+                    <td className='tableData'>2200</td>
+                    <td className='tableData'>2158 x 1412 x 1971</td>
+                </tr>
+            </table>
+        </div>
+    );
+};
+
+export const TableIndustry4 = () => {
+    return (
+        <div>
+            <p>de reparat hover</p>
+            <p>de verificat daca tabelul este identic cu cel de la ESM 160-290</p>
+            <table className='alt'>
+                {/* 1 */}
+                <tr>
+                    <td rowspan='2'></td>
+                    <td rowspan='2' className='productModelHeader'>Compresoare Gardner Denver cu suruburi elicoidale si injectie cu ulei</td>
+                    <td className='parameterName'>Debit FAD</td>
+                    <td className='parameterName'>Presiune</td>
+                    <td className='parameterName'>Putere motor</td>
+                    <td className='parameterName'>Nivel de zgomot</td>
+                    <td className='parameterName'>Greutate</td>
+                    <td className='parameterName'>Gabarit</td>
+                </tr>
+                {/* 2 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='parameterUnity'>m³/h</td>
+                    <td className='parameterUnity'>bar</td>
+                    <td className='parameterUnity'>Kw</td>
+                    <td className='parameterUnity'>dB(A)</td>
+                    <td className='parameterUnity'>kg</td>
+                    <td className='parameterUnity'>mm</td>
+                </tr>
+                {/* 3 */}
+                <tr>
+                    <td rowspan='12' className='productDescription'>Compresoare Gardner Denver tip ESM cu turatie fixa</td>
+                    <td rowspan='3' className='productModel'>ESM 160</td>
+                    <td className='tableData'>32.04</td>
+                    <td className='tableData'>7.5</td>
+                    <td className='tableData' rowspan='3'>160</td>
+                    <td className='tableData' rowspan='3'>76</td>
+                    <td className='tableData' rowspan='3'>4186</td>
+                    <td className='tableData' rowspan='3'>2949/2111/2193</td>
+                </tr>
+                {/* 4 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>28.2</td>
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 5 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>23.91</td>
+                    <td className='tableData'>13</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 6 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td rowspan='3' className='productModel'>ESM 200</td>
+                    <td className='tableData'>39.23</td>
+                    <td className='tableData'>7.5</td>
+                    <td className='tableData' rowspan='3'>200</td>
+                    <td className='tableData' rowspan='3'>77</td>
+                    <td className='tableData' rowspan='3'>4415</td>
+                    <td className='tableData' rowspan='3'>2949/2111/2193</td>
+                </tr>
+                {/* 7 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>34.85</td>
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 8 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>29.38</td>
+                    <td className='tableData'>13</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 9 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td rowspan='3' className='productModel'>ESM 250</td>
+                    <td className='tableData'>42.03</td>
+                    <td className='tableData'>7.5</td>
+                    <td className='tableData' rowspan='3'>250</td>
+                    <td className='tableData' rowspan='3'>78</td>
+                    <td className='tableData' rowspan='3'>4625</td>
+                    <td className='tableData' rowspan='3'>2949/2111/2193</td>
+                </tr>
+                {/* 10 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>37.01</td>
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 11 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>32.64</td>
+                    <td className='tableData'>13</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 12 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td rowspan='3' className='productModel'>ESM 290</td>
+                    <td className='tableData'>47.1</td>
+                    <td className='tableData'>7.5</td>
+                    <td className='tableData' rowspan='3'>290</td>
+                    <td className='tableData' rowspan='3'>79</td>
+                    <td className='tableData' rowspan='3'>4650</td>
+                    <td className='tableData' rowspan='3'>2949/2111/2193</td>
+                </tr>
+                {/* 13 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>41.53</td>
+                    <td className='tableData'>10</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+                {/* 14 */}
+                <tr>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    <td className='tableData'>36.44</td>
+                    <td className='tableData'>13</td>
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                    {/* <td></td> */}
+                </tr>
+
+                <tr className='empty-row'></tr>
+
+                {/* 15 */}
+                <tr>
+                    <td rowspan='4' className='productDescription'>Compresoare Gardner Denver tip<br />VS cu turatie si debit variabile</td>
+                    <td className='productModel'>VS 90</td>
+                    <td className='tableData'>6.54 - 32.33</td>
+                    <td className='tableData'>5 - 13</td>
+                    <td className='tableData'>160</td>
+                    <td className='tableData'>75</td>
+                    <td className='tableData'>4378</td>
+                    <td className='tableData'>2949/2111/2193</td>
+                </tr>
+                {/* 16 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VS 200</td>
+                    <td className='tableData'>5.99 - 39.44</td>
+                    <td className='tableData'>5 - 13</td>
+                    <td className='tableData'>200</td>
+                    <td className='tableData'>77</td>
+                    <td className='tableData'>4573</td>
+                    <td className='tableData'>2949/2111/2193</td>
+                </tr>
+                {/* 17 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VS 250</td>
+                    <td className='tableData'>5.83 - 42.80</td>
+                    <td className='tableData'>5 - 13</td>
+                    <td className='tableData'>250</td>
+                    <td className='tableData'>78</td>
+                    <td className='tableData'>4669</td>
+                    <td className='tableData'>2949/2111/2193</td>
+                </tr>
+                {/* 18 */}
+                <tr>
+                    {/* <td></td> */}
+                    <td className='productModel'>VS 290</td>
+                    <td className='tableData'>5.87 - 47.02</td>
+                    <td className='tableData'>5 - 13</td>
+                    <td className='tableData'>290</td>
+                    <td className='tableData'>79</td>
+                    <td className='tableData'>4684</td>
+                    <td className='tableData'>2949/2111/2193</td>
+                </tr>
+            </table>
+        </div>
+    );
+};
+
 export const TableCTipScroll = () => {
     return (
         <div>
@@ -129,14 +643,14 @@ export const TableCPortabile = () => {
                 </tr>
                 {/* 3 */}
                 <tr>
-                   <td className='productModel'>CMP-P10-12  ÷  CMP-P14 </td>
-                   <td className='tableData'>1 ÷ 1.4</td>
-                   <td className='tableData'>7 ÷ 12</td>
-                   <td className='tableData'>15.5</td>
-                   <td className='tableData'>Honda GX 630</td>
-                   <td className='tableData'>93</td>
-                   <td className='tableData'>Honda</td>
-                   <td className='tableData'>20</td>
+                    <td className='productModel'>CMP-P10-12  ÷  CMP-P14 </td>
+                    <td className='tableData'>1 ÷ 1.4</td>
+                    <td className='tableData'>7 ÷ 12</td>
+                    <td className='tableData'>15.5</td>
+                    <td className='tableData'>Honda GX 630</td>
+                    <td className='tableData'>93</td>
+                    <td className='tableData'>Honda</td>
+                    <td className='tableData'>20</td>
                 </tr>
                 {/* 4 */}
                 <tr>
@@ -151,36 +665,36 @@ export const TableCPortabile = () => {
                 </tr>
                 {/* 5 */}
                 <tr>
-                   <td className='productModel'>CMP-P36-10 ÷ CMP-P51</td>
-                   <td className='tableData'>3.5 ÷ 5</td>
-                   <td className='tableData'>7 ÷ 10</td>
-                   <td className='tableData'>35</td>
-                   <td className='tableData'>4TNV88C-DCP</td>
-                   <td className='tableData'>69</td>
-                   <td className='tableData'>Yanmar</td>
-                   <td className='tableData'>60</td>
+                    <td className='productModel'>CMP-P36-10 ÷ CMP-P51</td>
+                    <td className='tableData'>3.5 ÷ 5</td>
+                    <td className='tableData'>7 ÷ 10</td>
+                    <td className='tableData'>35</td>
+                    <td className='tableData'>4TNV88C-DCP</td>
+                    <td className='tableData'>69</td>
+                    <td className='tableData'>Yanmar</td>
+                    <td className='tableData'>60</td>
                 </tr>
                 {/* 6 */}
                 <tr>
-                   <td className='productModel'>CMP-P56-14 ÷ CMP-P77</td>
-                   <td className='tableData'>5.5 ÷ 7.6</td>
-                   <td className='tableData'>7 ÷ 14</td>
-                   <td className='tableData'>53.7</td>
-                   <td className='tableData'>4TNV98CT-NCP</td>
-                   <td className='tableData'>69</td>
-                   <td className='tableData'>Yanmar</td>
-                   <td className='tableData'>140</td>
+                    <td className='productModel'>CMP-P56-14 ÷ CMP-P77</td>
+                    <td className='tableData'>5.5 ÷ 7.6</td>
+                    <td className='tableData'>7 ÷ 14</td>
+                    <td className='tableData'>53.7</td>
+                    <td className='tableData'>4TNV98CT-NCP</td>
+                    <td className='tableData'>69</td>
+                    <td className='tableData'>Yanmar</td>
+                    <td className='tableData'>140</td>
                 </tr>
                 {/* 7 */}
                 <tr>
-                   <td className='productModel'>CMP-P86-14 ÷ CMP-P141-9</td>
-                   <td className='tableData'>3.5 ÷ 5</td>
-                   <td className='tableData'>8.6 ÷ 13.3</td>
-                   <td className='tableData'>90 ÷ 105</td>
-                   <td className='tableData'>Deutz TCD 4.1 L4</td>
-                   <td className='tableData'>70</td>
-                   <td className='tableData'>Deutz</td>
-                   <td className='tableData'>175</td>
+                    <td className='productModel'>CMP-P86-14 ÷ CMP-P141-9</td>
+                    <td className='tableData'>3.5 ÷ 5</td>
+                    <td className='tableData'>8.6 ÷ 13.3</td>
+                    <td className='tableData'>90 ÷ 105</td>
+                    <td className='tableData'>Deutz TCD 4.1 L4</td>
+                    <td className='tableData'>70</td>
+                    <td className='tableData'>Deutz</td>
+                    <td className='tableData'>175</td>
                 </tr>
                 {/* 8 */}
                 <tr>
@@ -286,6 +800,9 @@ export const TableFM_7_22 = () => {
                     <td className='tableData'>500</td>
                     <td className='tableData'>Da</td>
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 8 */}
                 <tr>
                     <td rowspan='5' className='productDescription'>Seria FM RS, turatie variabila, transmisie prin culere</td>
@@ -510,6 +1027,9 @@ export const TableESM_VS_160_290 = () => {
                     {/* <td></td> */}
                     {/* <td></td> */}
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 15 */}
                 <tr>
                     <td rowspan='4' className='productDescription'>Compresoare Gardner Denver tip<br />VS cu turatie si debit variabile</td>
@@ -751,6 +1271,9 @@ export const TableESM_90_132 = () => {
                     {/* <td></td> */}
                     {/* <td></td> */}
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 18 */}
                 <tr>
                     <td rowspan='3' className='productDescription'>Compresoare Gardner Denver tip<br />VS cu turatie si debit variabile</td>
@@ -927,6 +1450,9 @@ export const TableESM_55_75 = () => {
                     {/* <td></td> */}
                     {/* <td></td> */}
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 13 */}
                 <tr>
                     <td rowspan='2' className='productDescription'>Compresoare Gardner Denver tip VS cu turatie si debit variabile</td>
@@ -1147,6 +1673,9 @@ export const TableESM_30_45 = () => {
                     {/* <td></td> */}
                     {/* <td></td> */}
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 18 */}
                 <tr>
                     <td rowspan='5' className='productDescription'>Compresoare Gardner Denver tip VS cu turatie si debit variabile</td>
@@ -1345,6 +1874,9 @@ export const TableESM_23_29 = () => {
                     {/* <td></td> */}
                     <td className='tableData'>F 29 E</td>
                 </tr>
+
+                <tr className='empty-row'></tr>
+
                 {/* 12 */}
                 <tr>
                     <td rowspan='3' className='productDescription'>Compresoare Gardner Denver tip VS cu turatie si debit variabile</td>
