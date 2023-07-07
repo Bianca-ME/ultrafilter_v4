@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Syne', sans-serif; */
+
 .logo-home-page-text-margin-left {
     margin-left: 10px;
 }
@@ -10,27 +13,60 @@
     /* display: inline-block; */
     /* padding: 7px 30px; */
     padding: 1px 50px;
-    z-index: 101;
+    z-index: 201;
     margin: 0;
     position: fixed;
     /* top: 0; */
     left: 0;
+    right: 0;
     top: 0;
-    background-color: #fcfcf5;
+ 
     /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
     /* width: 400px; */
     /* transform: rotate(-90deg); */
     /* border-bottom: 1px solid #8f8f8f; */
-    border-bottom: 1px solid #d1d1d1;
-    
+    /* border-bottom: 1px solid #d1d1d1; */
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
 }
+
+
 
 .logo-home-page {
     height: 26px;
-    z-index: 200;
+    /* z-index: 201; */
 }
 
 .right-corner {
     position: fixed;
-
+    
 }
+
+.ufr-quote-top {
+
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    margin-left: 50px;
+    
+}
+
+/* versiune pe alb */
+.logo-home-page-container {
+    background-color: #fcfcf5;
+}
+
+.ufr-quote-top {
+    color: #1b2bff;
+}
+
+/* versiune pe albastru */
+/* .logo-home-page-container {
+    background-color: #17009c;
+}
+
+.ufr-quote-top {
+    color: #fcfcf5;
+} */

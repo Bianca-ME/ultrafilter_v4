@@ -1011,12 +1011,16 @@ form textarea {
 }
 
 /* ATNTIE ASTA ARE NEVOIE DE ALTA CUL IN SEARCH BAR */
-/* ::placeholder {
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #f1f5ed;
     opacity: 1;
     font-family: 'Inconsolata', monospace;
+    /* Firefox */
+
+    /* dar aliniaza doar textarea pe mijloc sau nu stiu, ma mai gandesc */
     text-align: center;
-} */
+}
 
 
 
@@ -1139,9 +1143,9 @@ table.alt tr:nth-child(1) td:nth-child(1) {
 td.tableData {
     text-align: center;
     font-size: 17px;
-
+    
     /* font-weight: 400; */
-
+    
     /* font-family: 'Inconsolata'; */
 }
 
@@ -1153,7 +1157,7 @@ td.parameterUnity {
     /* border-bottom: 0.3px solid rgb(235, 235, 228); */
 }
 
-tr .tableData {
+tr .tableData{
     border-bottom: 0.3px solid rgb(192, 192, 181);
 }
 
@@ -1209,9 +1213,8 @@ mark {
 }
 
 td.parameterName
-
 /* td.productDescription */
-    {
+ {
     font-size: 12px;
 }
 
@@ -1867,7 +1870,9 @@ summary {
         height: 100vh;
         width: 20px;
         opacity: 1;
+        /* z-index: 10; */
 
+        /* pt a anula padding original */
         padding-right: 0;
         justify-content: center;
     }
@@ -2501,7 +2506,7 @@ summary {
 .product-text {
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
-
+    
     font-family: 'Cousine';
     font-family: 'Hind', sans-serif;
     font-family: 'Work Sans';
@@ -2587,44 +2592,39 @@ summary {
 /* ---------------------------------- */
 /* nav */
 
-/* .div.nav-menu {
+.div.nav-menu {
     z-index: 199;
-} */
+}
 
-/* .nav-menu {
+.nav-menu {
     position: fixed;
+    /* display: flex;
+    justify-content: flex-end; */
+    /* max-width: 1000px; */
     left: 280px;
-    width: 100vw; 
+    /* width: 920px; */
+    width: 100vw;
+    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
     z-index: 199;
-} */
+}
 
-/* nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* max-width: 1000px; */
+
+    /* gray */
+    /* background-color: #8f8f8f; */
     background-color: #fcfcf5;
+    /* margin: 0 auto; */
     height: 30px;
     border-bottom: 0.5px solid #eeeeee;
-} */
+    /* box-shadow: 0 5px 15px #65756d1e; */
+}
 
 ul {
     list-style: none;
-}
-
-/* adaugat de la portofoliu */
-.menu {
-    position: fixed;
-    right: 0;
-    top: 0;
-    /* bottom: 0; */
-    background-color: #fcfcf5;
-    /* height: 100vh; */
-    height: 180px;
-    margin-top: 0;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 10vh;
-    z-index: 200;
 }
 
 /* only the navbar titles */
@@ -2634,7 +2634,26 @@ ul {
     margin: 0 10px;
 }
 
+.menu1>a,
+.menu1>a:link,
+.menu1>a:visited {
+    color: #484F4C;
+}
 
+.menu {
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu>li,
+.menu>a {
+    display: inline-block;
+}
 
 .arrow-nav {
     width: 12px;
@@ -2642,13 +2661,28 @@ ul {
     display: inline-block;
 }
 
-
-/* meniul principal */
+/* the rest of the 'a' links */
+/* //fix */
 .menu a {
     display: block;
+    /* padding-left: 5px; */
+    /* margin: 0 10px; */
+    /* transition: background-color .22s ease; */
+    /* color: white; */
+
+    /* pt navbar ori Hind, ori Noto Sans */
+    font-family: 'Hind', sans-serif;
     font-size: 17px;
-    font-family: 'Syne', sans-serif;
-    font-weight: 300;
+    /* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+    font-family: 'Sulphur Point';
+    font-family: 'Noto Sans', sans-serif;
+
+    /* font-weight: 500; */
+    /* nu merge */
+    /* color: #65756d;
+    color: #33443b;
+    color: #8f8f8f; */
+
 }
 
 .menu a,
@@ -2660,9 +2694,12 @@ ul {
     color: #8f8f8f;
     color: #455a4f;
     text-decoration: none;
-
 }
 
+/* test . nu bun*/
+/* .menu1 li {
+    display: flex;
+} */
 
 .menu-in-footer a {
     font-size: 20px;
@@ -2672,7 +2709,9 @@ ul {
     padding-left: 0;
 }
 
-
+/* .menu + li {
+    
+} */
 
 
 .menu-in-footer a:link,
@@ -2683,6 +2722,15 @@ ul {
     color: #000000;
 }
 
+/* .menu a:visited {
+    color: #0000ff;
+    color: #fcfcf5;
+    color: black;
+    color: #8f8f8f;
+    color: #8f8f8f;;
+    color: #65756d;
+    color: #32463c;
+} */
 
 .menu a:hover {
     /* temp */
@@ -2697,15 +2745,134 @@ ul {
     background-color: #2807E0;
 }
 
+.submenu1 {
+    position: absolute;
+    width: 210px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    display: none;
+    border-radius: 20px;
+    background-color: #8fa198;
+    background-color: #a6c5b6;
+    background-color: #bacfc5;
+    background-color: #F1F5ED;
+    /* background-color: #e0e9ee; */
+    /* border-right: 1px solid #dddddd; */
 
 
+    /* border: 1px solid black; */
+}
 
+.submenu1 a {
+
+    /* background-color: #17009c;
+    background-color: #8f8f8f;
+    background-color: white;
+    background-color: #65756d; */
+    /* color: white; */
+
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    /* border: 1px solid white; */
+    /* border-radius: 20px 20px 0 0; */
+    /* border-radius: 0 0 20px 20px; */
+    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
+    /* background-color: #8fa198; */
+    /* background-color: #bacfc5; */
+    /* line-height: 0.8; */
+}
+
+/* line above "li" elements except the first one from the "ul" */
+.submenu1 li:not(:first-child)>a {
+    border-top: 1px solid #e5e9e2;
+}
+
+.submenu2 {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 230px;
+    border-radius: 20px;
+    background-color: #F1F5ED;
+    border-right: 1px solid #dddddd;
+}
+
+/* submenu2 a {
+    padding-top: 30px;
+    padding-left: 10px;
+} */
 
 .menu li:hover>.submenu1 {
     display: block;
 }
 
+.submenu1 li:hover>.submenu2 {
+    display: block;
+}
 
+.submenu2 li:hover>.submenu3 {
+    display: block;
+}
+
+.menu1>a {
+    /* color: #fcfcf5;
+    color: #8f8f8f; */
+    font-family: 'Syne', sans-serif;
+
+    /* background-color: #d4d4cd; */
+
+    /* border-radius: 35px; */
+}
+
+/* .menu1>a:visited {
+    color: #fcfcf5;
+    color: #8f8f8f;
+    color: black;
+    color: #484F4C;
+} */
+
+.menu1>a:hover {
+    /* background-color: #65756d; */
+    /* culoarea asta imi place cel mai mult */
+    background-color: #56706B;
+    background-color: #bacfc5;
+    background-color: #f1f5ed;
+    color: #FCFCE6;
+    color: #484F4C;
+    color: #65756d;
+    border-radius: 15px 15px 0 0;
+    /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
+}
+
+.submenu3 {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+    /* width: 350px; */
+    width: 200px;
+    border-radius: 20px;
+    /* background-color: #fcfcf5;
+    border-right: 1px solid #b9b9b9;
+    border-top: 1px solid #888888; */
+
+    background-color: #F1F5ED;
+    border-right: 1px solid #dddddd;
+
+    z-index: 201;
+}
+
+/* .menu a:active {
+text-decoration: underline;
+text-underline-offset: 13px;
+} */
 
 /* ---------------------- */
 
@@ -2764,31 +2931,26 @@ ul {
     margin-top: 50px;
     /* position: relative; */
 }
-
 .entire-height-of-product-card-x3 {
     height: 3800px;
     margin-top: 50px;
     /* position: relative; */
 }
-
 .entire-height-of-product-card-x4 {
     height: 2700px;
     margin-top: 50px;
     /* position: relative; */
 }
-
 .entire-height-of-product-card-x5 {
     height: 5000px;
     margin-top: 50px;
     /* position: relative; */
 }
-
 .entire-height-of-product-card-x6 {
     height: 2500px;
     margin-top: 50px;
     /* position: relative; */
 }
-
 .entire-height-of-product-card-x7 {
     height: 5000px;
     margin-top: 50px;
@@ -2812,7 +2974,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x2 {
     position: relative;
     width: 500px;
@@ -2820,7 +2981,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x3 {
     position: relative;
     width: 500px;
@@ -2828,7 +2988,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x4 {
     position: relative;
     width: 500px;
@@ -2836,7 +2995,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x5 {
     position: relative;
     width: 500px;
@@ -2844,7 +3002,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x6 {
     position: relative;
     width: 500px;
@@ -2852,7 +3009,6 @@ ul {
     margin-left: 175px;
     margin-bottom: 50px;
 }
-
 .container-x7 {
     position: relative;
     width: 500px;
@@ -3222,7 +3378,6 @@ div.title4-custom {
     left: 147px;
     width: 300px;
 }
-
 /* --- */
 /* //fix here I am */
 
@@ -3261,7 +3416,6 @@ div.title4-custom {
     /* left: 425px; */
     left: 641px;
 }
-
 /* ------------------ */
 
 .label12-1 {
@@ -3270,7 +3424,6 @@ div.title4-custom {
     left: 5px;
     width: 120px;
 }
-
 /* -------------------- */
 .label13-1 {
     height: 20px;
@@ -3278,7 +3431,6 @@ div.title4-custom {
     left: 5px;
     width: 120px;
 }
-
 /* -------------------- */
 .label14-1 {
     height: 20px;
@@ -3286,7 +3438,6 @@ div.title4-custom {
     left: 5px;
     width: 120px;
 }
-
 /* -------------------- */
 .label15-1 {
     height: 20px;
@@ -3708,7 +3859,6 @@ p.copyright {
 .tooltip:hover .tooltiptexttable {
     visibility: visible;
 }
-
 /* -------------------------- */
 
 /* .flip-book {
@@ -3725,181 +3875,4 @@ p.copyright {
     color: red;
     font-weight: 500;
     cursor: pointer;
-}
-
-/* ------------------- */
-
-.errorPage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.huge-title {
-    font-size: 300px;
-    font-family: 'Press Start 2P', cursive;
-    color: #7AFC38;
-}
-
-/* CompresoareGD page */
-.huge-title-2 {
-    font-size: 150px;
-    text-align: right;
-    font-family: 'Syne', sans-serif;
-    font-weight: 555;
-    background-color: #ff0000;
-    background-color: #1b2bfd;
-    color: #fcfcf5;
-    padding: 0;
-    margin: 0;
-    height: 180px;
-    padding-right: 20px;
-}
-
-/* tutorial */
-
-nav.nav-tutorial {
-    display:flex;
-    border-bottom:  2px solid #ededed;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    z-index: 999;
-    margin-left: 2rem;
-}
-
-/* TODO:: de schimbat asta mai tarziu */
-/* search bar */
-input {
-    padding: 12px 20px;
-    /* border: none; */
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid  red;
-    background-color: #f7f6f6;
-    background-color: #ffffff;
-    outline: none;
-    margin-right: 20px;
-    border-radius: 0;
-    position: relative;
-    width: 14rem;
-
-    font-family: 'Work Sans';
-}
-
-/* .nav-icons */
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 15rem;
-    margin-top: 2rem;
-    z-index: -2;
-}
-
-.card {
-    margin: 20px;
-    /* border: 2px solid #ededed; */
-    border: 0.5px solid black;
-    padding: 20px;
-    cursor: pointer;
-    background-color: #fcfcf5;
-    border-radius: 40px;
-
-    width: 250px;
-    height: 300px;
-}
-
-.card-img {
-    width: 13rem;
-    margin-bottom: 1rem;
-}
-
-.card-title {
-    margin-bottom: 1rem;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 50px;
-}
-
-/* .card-reviews */
-
-/* sidebar */
-
-.sidebar-title {
-font-size: 22px;
-font-weight: normal;
-margin-bottom: 20px;
-}
-
-.sidebar {
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    border-right: 2px solid #e5e5e5;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-}
-
-.sidebar-label-container {
-    display: block;
-    position: relative;
-    padding-left: 35px ;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.sidebar-label-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border: 1px solid black;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-.sidebar-label-container:hover input ~ .checkmark {
-    background-color: #d8dbc6;
-}
-.sidebar-label-container input:checked ~ .checkmark {
-
-    background-color: #f5f5ed;
-    /* border: none; */
-    /* height: 15px;
-    width: 15px;
-    padding: 4px; */
-}
-
-.checkmark::after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.sidebar-label-container input:checked ~ .checkmark::after {
-    display: block;
-}
-
-.sidebar-label-container .checkmark::after {
-    top: 4px;
-    left: 3.5px;
-    width: 15px;
-    height: 15px;
-    background-color: #1b2bff;
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Redirect, Switch, BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Redirect, Switch, BrowserRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
 
 import LocomotiveScroll from 'locomotive-scroll';
@@ -22,6 +22,7 @@ import Presiuni4_13bari from './pages/Donaldson/Compresoare/Presiuni4_13bari';
 import Presiuni20_400bari from './pages/Donaldson/Compresoare/Presiuni20_400bari';
 // components GD
 import GardnerDenver from './pages/Gardner-Denver/GardnerDenver';
+import CompresoareGD from './pages/Gardner-Denver/Compresoare/CompresoareGD';
 import C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/C_cu_excentric_si_cu_paleti_centrifugali';
 import PDF_page_C_cu_excentric_si_cu_paleti_centrifugali from './pages/Gardner-Denver/Compresoare/PDF_page_C_cu_excentric_si_cu_paleti_centrifugali';
 import Cabinete_dentare_compresoare_fara_ungere from './pages/Gardner-Denver/Compresoare/Cabinete_dentare_compresoare_fara_ungere';
@@ -50,7 +51,7 @@ function App() {
         setShowHomePage(true);
     }
 
-// TEMPORARILY DISABLE LOCOMOTIVE SCROLL
+    // TEMPORARILY DISABLE LOCOMOTIVE SCROLL
     // useEffect(() => {
     //     const scroll = new LocomotiveScroll({
     //         el: document.querySelector('[data-scroll-container]'),
@@ -66,18 +67,18 @@ function App() {
     //         }
     //     });
 
-        // // Disable the default browser scrolling behavior
-        // const disableScroll = (event) => {
-        //     event.preventDefault();
-        // };
-        // window.addEventListener('mousewheel', disableScroll, { passive: false });
-        // window.addEventListener('touchmove', disableScroll, { passive: false });
+    // // Disable the default browser scrolling behavior
+    // const disableScroll = (event) => {
+    //     event.preventDefault();
+    // };
+    // window.addEventListener('mousewheel', disableScroll, { passive: false });
+    // window.addEventListener('touchmove', disableScroll, { passive: false });
 
-        // return () => {
-        //     // Remove event listeners when component unmounts
-        //     window.removeEventListener('mousewheel', disableScroll);
-        //     window.removeEventListener('touchmove', disableScroll);
-        // };
+    // return () => {
+    //     // Remove event listeners when component unmounts
+    //     window.removeEventListener('mousewheel', disableScroll);
+    //     window.removeEventListener('touchmove', disableScroll);
+    // };
 
     // }, []);
     // END OF JAVASCRIPT
@@ -96,8 +97,40 @@ function App() {
                         <Link to="/" onClick={handleLogoClick}>
                             <Logo />
                         </Link>
+                        <div className='ribbon-right fixed-position'>
+                            <p>tel: +40 371 152 977</p>
+                        </div>
+
+                        <nav >
+                            <ul className='menu'>
+                                {/* <li>
+                                    <Link to="/" onClick={handleLogoClick} className='visited-link'>
+                                        <Logo />
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <NavLink className='visited-link' to='/web-design' activeClassName="active-link">Despre Ultrafilter</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className='visited-link' to='/photography' activeClassName="active-link">Donaldson</NavLink>
+                                </li>
+
+                                <li>
+                                    <NavLink className='visited-link' to='/GardnerDenver' activeClassName="active-link">Gardner Denver</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className='visited-link' to='/GardnerDenver/compresoare' activeClassName="active-link">Compresoare</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className='visited-link' to='/contact' activeClassName="active-link">Linkuri Utile</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className='visited-link' to='/vision' activeClassName="active-link">Contact</NavLink>
+                                </li>
+                            </ul>
+                        </nav>
                     </header>
-                    <Header />
+                    {/* <Header /> */}
                     {/* <Breadcrumbs /> */}
                     <div data-scroll-container>
                         <Switch>
@@ -121,6 +154,9 @@ function App() {
                             </Route>
                             <Route exact path='/GardnerDenver'>
                                 <GardnerDenver />
+                            </Route>
+                            <Route exact path='/GardnerDenver/compresoare'>
+                                <CompresoareGD />
                             </Route>
                             <Route exact path='/Donaldson/compresoare'>
                                 <Compresoare />
