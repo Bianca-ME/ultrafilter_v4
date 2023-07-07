@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { TestTable, TableCuPistonDebiteMici, TableScafandrii, TableCPtCabineteDentare, TableCCuExcentricSiCuPaletiCentrifugali, TableESM_23_29, TableESM_30_45, TableESM_55_75, TableESM_90_132, TableESM_VS_160_290, TableFM_7_22, TableCPortabile, TableCTipScroll, TableIndustry4, TableEnviroAirApa, TablePET } from '../TESTS/tables';
 
 // asta va fi standardul pt flip html
-{/* <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/vnvn/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div> */}
+{/* <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/vnvn/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div> */ }
 
 // products images
 // GD
@@ -285,11 +285,11 @@ export default function HomePage() {
                     // triggered on "<" on left top click or on outside click
                     setState({ pane_brosura_compresoare_cu_suruburi_elicoidale: false });
                 }}
-            >            
-                    <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '0' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/mqmf/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
+            >
+                <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '0' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/mqmf/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
             </SlidingPane>
 
-            
+
 
 
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
@@ -413,8 +413,19 @@ export default function HomePage() {
                     <br />
                     <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a> <img className='arrow-smaller' src={arrow} alt='svg missing' />.</p>
                     <p>Pentru mai multe detalii vedeti sectiunea <span style={{ color: '#1b2bff' }}>linkuri utile</span>.</p>
+
+
+
+
                 </p>
             </section>
+
+            <input
+                type="text"
+                placeholder="cauta :-)"
+                ref={searchRef}
+                onChange={handleSearch}
+            />
 
             {/* section Compresoare */}
             {/* <section className='sectionX-compresoare-cu-piston tobeabsolute' >
@@ -526,7 +537,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableCPtCabineteDentare/>
+                                        <TableCPtCabineteDentare />
 
                                     </div>
                                 </div>
@@ -588,7 +599,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableESM_23_29/>
+                                        <TableESM_23_29 />
 
                                     </div>
                                 </div>
@@ -625,7 +636,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableESM_30_45/>
+                                        <TableESM_30_45 />
 
                                     </div>
                                 </div>
@@ -659,7 +670,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableESM_55_75/>
+                                        <TableESM_55_75 />
 
                                     </div>
                                 </div>
@@ -692,7 +703,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableESM_90_132/>
+                                        <TableESM_90_132 />
 
                                     </div>
                                 </div>
@@ -727,7 +738,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableESM_VS_160_290/>
+                                        <TableESM_VS_160_290 />
 
                                     </div>
                                 </div>
@@ -785,7 +796,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableFM_7_22/>
+                                        <TableFM_7_22 />
 
                                     </div>
                                 </div>
@@ -827,7 +838,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableCPortabile/>
+                                        <TableCPortabile />
 
                                     </div>
                                 </div>
@@ -890,7 +901,7 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         {/* tabel */}
-                                        <TableCTipScroll/>
+                                        <TableCTipScroll />
 
                                     </div>
                                 </div>
@@ -1128,9 +1139,9 @@ export default function HomePage() {
                                         <div className='line-separation'></div>
 
                                         <div style={{ height: '50px' }}></div>
-                                        
+
                                         {/* tabel */}
-                                        <TableCCuExcentricSiCuPaletiCentrifugali/>
+                                        <TableCCuExcentricSiCuPaletiCentrifugali />
 
                                         <div style={{ position: 'relative', paddingTop: 'max(60%,324px)', width: '100%', height: '500px' }}><iframe style={{ position: 'absolute', border: 'none', width: '100%', height: '100%', left: '0', top: '0' }} src="https://online.fliphtml5.com/bvxpp/rwgs/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe></div>
 
@@ -1328,7 +1339,7 @@ export default function HomePage() {
 
                                         {/* tabel */}
                                         {/* <TestTable /> */}
-                                        
+
 
                                     </div>
                                 </div>
