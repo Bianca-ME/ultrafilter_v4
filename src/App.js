@@ -108,16 +108,16 @@ function App() {
                                         <Logo />
                                     </Link>
                                 </li> */}
-                                <li>
+                                {/* <li>
                                     <NavLink className='visited-link' to='/web-design' activeClassName="active-link">Despre Ultrafilter</NavLink>
-                                </li>
-                                <li>
+                                </li> */}
+                                {/* <li>
                                     <NavLink className='visited-link' to='/photography' activeClassName="active-link">Donaldson</NavLink>
-                                </li>
+                                </li> */}
 
-                                <li>
+                                {/* <li>
                                     <NavLink className='visited-link' to='/GardnerDenver' activeClassName="active-link">Gardner Denver</NavLink>
-                                </li>
+                                </li> */}
                                 <li>
                                     <NavLink className='visited-link' to='/GardnerDenver/compresoare' activeClassName="active-link">Compresoare</NavLink>
                                 </li>
