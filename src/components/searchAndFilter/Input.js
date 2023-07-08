@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Input() {
+export default function Input({handleChange, value, title, subtitle, name }) {
   return (
     <label className='sidebar-label-container'>
-      <input type='radio' name='test' />
+      <input onChange={handleChange} type='radio' value={value} name={name} />
       <span className='checkmark'></span>
-      categ1
+      {title}
     </label>
   )
 }

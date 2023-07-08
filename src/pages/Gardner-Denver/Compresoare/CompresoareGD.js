@@ -70,12 +70,12 @@ export default function CompresoareGD() {
     <div>
       <h1 className='huge-title-2'>compresoare</h1>
       <Sidebar handleChange={handleChange}/>
-      <Navigation />
-      <Products />
-      {/* <Recommended /> */}
+      <Navigation query={query} handleInputChange={handleInputChange}/>
+      <Products result={result}/>
+      {/* <Recommended handleClick={handleClick}/> */}
     </div>
   );
 }
 
-// ramas la min 1.22.00
+// ramas la min 1.33.00
 // https://www.youtube.com/watch?v=lfm_Hu0hEms&ab_channel=HuXnWebDev
