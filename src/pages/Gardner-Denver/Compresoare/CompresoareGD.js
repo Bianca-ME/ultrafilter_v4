@@ -3,43 +3,45 @@ import React, {useState} from 'react';
 import Navigation from '../../../components/searchAndFilter/Navigation/Navigation';
 import Products from '../../../components/searchAndFilter/Products/Products';
 import Sidebar from '../../../components/searchAndFilter/Sidebar/Sidebar';
+import Card from '../../../components/searchAndFilter/Card';
 // import { useState } from 'react';
 
 // Database
-import CompresoareGDdata from '../../../data/database_products';
+import products from '../../../data/database_products';
 
 export default function CompresoareGD() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // ---------Input Filter --- search bar
-  const [query,setQuery] = useState("");
+  // ----------- Input Filter -----------
+  const [query, setQuery] = useState("");
 
-  const handleInputChange = event => {
-    setQuery(event.target.value)
-  }
+  const handleInputChange = (event) => {
+    setQuery(event.target.value);
+  };
 
-  const filteredItems = CompresoareGDdata.filter(product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()!== -1) 
+  const filteredItems = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
-  // ---------Radio Filter --- checkboxes
-  const handleChange = event => {
-    setSelectedCategory(event.target.value)
-  }
+  // ----------- Radio Filtering -----------
+  const handleChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
 
-  // ---------Buttons Filter --- the buttons from Recommended
-  const handleClick = event => {
-    setSelectedCategory(event.target.value)
-  }
+  // ------------ Button Filtering -----------
+  const handleClick = (event) => {
+    setSelectedCategory(event.target.value);
+  };
 
   function filteredData(products, selected, query) {
-    let filteredProducts = products
+    let filteredProducts = products;
 
     // Filtering Input Items
     if (query) {
-      filteredProducts = filteredItems
+      filteredProducts = filteredItems;
     }
 
-    // Selected Filter
+    // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({category,title,subtitle}) => 
@@ -51,7 +53,7 @@ export default function CompresoareGD() {
     }
 
 
-    const result = filteredData(CompresoareGDdata, selectedCategory, query)
+    
 
     return filteredProducts.map(({title,subtitle,info,table}) => (
       <Card 
@@ -65,6 +67,7 @@ export default function CompresoareGD() {
 
   }
 
+  const result = filteredData(products, selectedCategory, query)
 
   return (
     <div>
@@ -77,5 +80,3 @@ export default function CompresoareGD() {
   );
 }
 
-// ramas la min 1.33.00
-// https://www.youtube.com/watch?v=lfm_Hu0hEms&ab_channel=HuXnWebDev

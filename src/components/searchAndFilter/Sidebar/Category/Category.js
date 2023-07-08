@@ -9,24 +9,24 @@ export default function Category({handleChange}) {
       <div>
         <label className='sidebar-label-container'>
           <input onChange={handleChange} type='radio' value="" name="test" />
-          <span className="checkmark"></span> Hey   
+          <span className="checkmark"></span> Toate   
         </label>
+        {/* <Input
+        handleChange={handleChange}
+        value="compresoare cu suruburi"
+        title="Compresoare cu suruburi"
+        name="test"
+        /> */}
         <Input
         handleChange={handleChange}
-        value="categ1"
-        title="Categ1"
+        value="injectie de ulei"
+        title="Injectie de ulei"
         name="test"
         />
         <Input
         handleChange={handleChange}
-        value="categ2"
-        title="Categ2"
-        name="test"
-        />
-        <Input
-        handleChange={handleChange}
-        value="categ3"
-        title="Categ3"
+        value="oil free"
+        title="Oil free"
         name="test"
         />
       </div>
