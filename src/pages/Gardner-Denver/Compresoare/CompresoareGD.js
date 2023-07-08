@@ -6,6 +6,8 @@ import Sidebar from '../../../components/searchAndFilter/Sidebar/Sidebar';
 import Card from '../../../components/searchAndFilter/Card';
 // import { useState } from 'react';
 
+// import GDLOGO from '../../../assets/gardner-denver-logo.jpg';
+
 // Database
 import products from '../../../data/database_products';
 
@@ -56,9 +58,10 @@ export default function CompresoareGD() {
 
     
 
-    return filteredProducts.map(({title,subtitle,info,table}) => (
+    return filteredProducts.map(({img,title,subtitle,info,table}) => (
       <Card 
       key={Math.random()} 
+      img={img}
       title={title}
       subtitle={subtitle}
       info={info}
@@ -71,11 +74,14 @@ export default function CompresoareGD() {
   const result = filteredData(products, selectedCategory, query)
 
   return (
-    <div>
+    <div 
+    // TODO: de lucru la background image
+    // style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto' }}
+    >
       <h1 className='huge-title-2'>compresoare</h1>
       <Sidebar handleChange={handleChange}/>
       <Navigation query={query} handleInputChange={handleInputChange}/>
-      <Products result={result}/>
+      <Products result={result} />
       {/* <Recommended handleClick={handleClick}/> */}
     </div>
   );

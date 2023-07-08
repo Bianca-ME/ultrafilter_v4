@@ -1405,13 +1405,17 @@ summary {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    /* text-align: justify;
+    text-justify: inter-word; */
     background-color: rgba(23, 0, 156, 0.966);
     /* 0.966 */
     padding: 20px;
     color: white;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+
+    /* font-family: 'Sulphur Point'; */
 }
 
 /* logo D */
@@ -2614,12 +2618,12 @@ ul {
 /* adaugat de la portofoliu */
 .menu {
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     /* bottom: 0; */
     background-color: #fcfcf5;
     /* height: 100vh; */
-    height: 180px;
+    height: 150px;
     margin-top: 0;
     padding-left: 30px;
     padding-right: 20px;
@@ -3709,6 +3713,52 @@ p.copyright {
     visibility: visible;
 }
 
+/* ------ tooltip to show image when hovering over product card */
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    /* width: 200px; */
+    /* background-color: black; */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -50px;
+    top: -90px;
+}
+
+/* nu stiu de fapt ce-i cu asta */
+
+.tooltip2 .tooltiptexttable2 {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -180px;
+    top: -25px;
+}
+
+.tooltip2:hover .tooltiptext2,
+.tooltip2:hover .tooltiptexttable2 {
+    visibility: visible;
+}
+
 /* -------------------------- */
 
 /* .flip-book {
@@ -3759,8 +3809,8 @@ p.copyright {
 /* tutorial */
 
 nav.nav-tutorial {
-    display:flex;
-    border-bottom:  2px solid #ededed;
+    display: flex;
+    border-bottom: 2px solid #ededed;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -3776,7 +3826,7 @@ input {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid  red;
+    border-bottom: 1px solid red;
     background-color: #f7f6f6;
     background-color: #ffffff;
     outline: none;
@@ -3812,8 +3862,10 @@ input {
 }
 
 .card-img {
-    width: 13rem;
-    margin-bottom: 1rem;
+    width: 200px;
+    /* margin-bottom: 1rem; */
+    /* border: 1px solid black;
+    border-radius: 40px; */
 }
 
 .card-title {
@@ -3834,6 +3886,7 @@ input {
     font-size: 11;
     justify-content: space-between;
     text-decoration: underline;
+    /* color: #1b2bfe; */
 }
 
 /* .card-reviews */
@@ -3841,9 +3894,9 @@ input {
 /* sidebar */
 
 .sidebar-title {
-font-size: 22px;
-font-weight: normal;
-margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .sidebar {
@@ -3860,7 +3913,7 @@ margin-bottom: 20px;
 .sidebar-label-container {
     display: block;
     position: relative;
-    padding-left: 35px ;
+    padding-left: 35px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -3888,10 +3941,11 @@ margin-bottom: 20px;
     align-items: center; */
 }
 
-.sidebar-label-container:hover input ~ .checkmark {
+.sidebar-label-container:hover input~.checkmark {
     background-color: #d8dbc6;
 }
-.sidebar-label-container input:checked ~ .checkmark {
+
+.sidebar-label-container input:checked~.checkmark {
 
     background-color: #f5f5ed;
     /* border: none; */
@@ -3906,7 +3960,7 @@ margin-bottom: 20px;
     display: none;
 }
 
-.sidebar-label-container input:checked ~ .checkmark::after {
+.sidebar-label-container input:checked~.checkmark::after {
     display: block;
 }
 

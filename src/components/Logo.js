@@ -1,12 +1,12 @@
 import React from 'react';
 
 // original blue logo
-import logo from '../assets/LOGO-lines-svg-original-blue.svg';
-import logotext from '../assets/LOGO-ufr-svg-original-blue.svg';
+// import logo from '../assets/LOGO-lines-svg-original-blue.svg';
+// import logotext from '../assets/LOGO-ufr-svg-original-blue.svg';
 
 // white logo
-// import logo from '../assets/LOGO-lines-svg-white.svg';
-// import logotext from '../assets/LOGO-ufr-svg-white.svg';
+import logo from '../assets/LOGO-lines-svg-white.svg';
+import logotext from '../assets/LOGO-ufr-svg-white.svg';
 
 import { Link } from 'react-router-dom';
 
