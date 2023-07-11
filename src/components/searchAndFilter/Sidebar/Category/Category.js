@@ -29,6 +29,24 @@ export default function Category({handleChange}) {
         title="Oil free"
         name="test"
         />
+        <Input
+        handleChange={handleChange}
+        value="cu piston"
+        title="Cu piston"
+        name="test"
+        />
+        <Input
+        handleChange={handleChange}
+        value="cu excentric si paleti Vane Compressors"
+        title="Cu excentric si paleti Vane Compressors"
+        name="test"
+        />
+        <Input
+        handleChange={handleChange}
+        value="pentru scafandrii"
+        title="Pentru scafandrii"
+        name="test"
+        />
       </div>
     </div>
   )
