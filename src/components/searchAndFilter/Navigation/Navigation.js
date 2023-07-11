@@ -13,9 +13,9 @@ export default function Navigation({ handleInputChange, query }) {
         />
       </div>
 
-      <div className='profile-container'>
+      {/* <div className='profile-container'>
         <a href="#">some icons</a>
-      </div>
+      </div> */}
 
 
     </nav>

@@ -130,6 +130,8 @@ font-family: 'Ultra', serif; */
     border: 1px solid red;
 } */
 
+
+
 /* * {
     border: 1px solid black;
 } */
@@ -301,12 +303,31 @@ font-family: 'Ultra', serif; */
 } */
 
 
+html {
+    margin: 0;
+    padding: 0;
+}
 
-html,
 body {
-    margin: 0px;
-    padding: 0px;
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 19px;
+    /* padding-top: 30px; */
+    padding: 0;
 
+}
+
+.menu-p {
+    writing-mode: vertical-rl;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Sulphur Point', sans-serif;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
 }
 
 body {
@@ -716,7 +737,8 @@ button {
 /* SPACING */
 
 .margin-from-header {
-    padding-top: 30px;
+    /* temporarily disable padding-top because I will add the padding to the body */
+    /* padding-top: 30px; */
     /* inainte era 30 */
     background-color: #f5f5ed;
     /* border-top: 3px solid red; */
@@ -1010,13 +1032,7 @@ form textarea {
     top: 57px;
 }
 
-/* ATNTIE ASTA ARE NEVOIE DE ALTA CUL IN SEARCH BAR */
-/* ::placeholder {
-    color: #f1f5ed;
-    opacity: 1;
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
-} */
+
 
 
 
@@ -3794,11 +3810,11 @@ p.copyright {
 /* CompresoareGD page */
 .huge-title-2 {
     font-size: 150px;
+    /* font-size: 60px; */
     text-align: right;
     font-family: 'Syne', sans-serif;
     font-weight: 555;
-    background-color: #ff0000;
-    background-color: #1b2bfd;
+    /* background-color: #1b2bfd; */
     color: #fcfcf5;
     padding: 0;
     margin: 0;
@@ -3806,36 +3822,78 @@ p.copyright {
     padding-right: 20px;
 }
 
+.flex-this {
+    align-items: center;
+    justify-content: center;
+}
+
+/* * {
+    border: 1px solid red;
+} */
+
+.blue-top {
+    background-color: #ff0000;
+    background-color: #1b2bfd;
+
+    height: 300px;
+    display: flex;
+    /* align-items: center; */
+    color: white;
+
+    padding-left: 80px;
+}
+
+
+
 /* tutorial */
 
 nav.nav-tutorial {
-    display: flex;
-    border-bottom: 2px solid #ededed;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    /* display: flex; */
+    /* border-bottom: 2px solid #ededed; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* padding: 20px; */
     z-index: 999;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    
+}
+
+.search-n-checkmark {
+    font-family: 'Work Sans';
+    font-family: 'Roboto Mono';
+ 
+    line-height: 1.7;
+    padding-top: 20px;
 }
 
 /* TODO:: de schimbat asta mai tarziu */
 /* search bar */
 input {
-    padding: 12px 20px;
+    padding: 12px 20px 5px 20px;
     /* border: none; */
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #fff;
     background-color: #f7f6f6;
     background-color: #ffffff;
+    background-color: #0012d8;
     outline: none;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     border-radius: 0;
     position: relative;
-    width: 14rem;
+    width: 100px;
 
-    font-family: 'Work Sans';
+    font-family: 'Roboto Mono';
+}
+
+/* ATNTIE ASTA ARE NEVOIE DE ALTA CUL IN SEARCH BAR */
+::placeholder {
+    color: #f1f5ed;
+    opacity: 1;
+    /* font-family: 'Inconsolata', monospace; */
+    padding-bottom: 20px;
+    /* text-align: center; */
 }
 
 /* .nav-icons */
@@ -3861,11 +3919,16 @@ input {
     height: auto;
 }
 
+/* .card:hover {
+    background-color: #000;
+    color: #fff;
+} */
+
 .card-img {
-    width: 200px;
+    width: 300px;
     /* margin-bottom: 1rem; */
-    /* border: 1px solid black;
-    border-radius: 40px; */
+    border: 0.5px solid black;
+    /* border-radius: 40px; */
 }
 
 .card-title {
@@ -3894,19 +3957,21 @@ input {
 /* sidebar */
 
 .sidebar-title {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
 .sidebar {
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    border-right: 2px solid #e5e5e5;
+    /* width: 15%; */
+    /* position: fixed; */
+    /* height: 100%; */
+    /* border-right: 2px solid #e5e5e5; */
     z-index: 3;
     display: flex;
     flex-direction: column;
+
+    background-color: #1b2bfd;
     /* align-items: center; */
 }
 
@@ -3933,8 +3998,8 @@ input {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
-    border: 1px solid black;
+    background-color: #fcfcf5;
+    border: 1px solid #fff;
 
     /* display: flex;
     justify-content: center;
@@ -3942,7 +4007,7 @@ input {
 }
 
 .sidebar-label-container:hover input~.checkmark {
-    background-color: #d8dbc6;
+    background-color: #efff0b;
 }
 
 .sidebar-label-container input:checked~.checkmark {
@@ -3970,4 +4035,10 @@ input {
     width: 15px;
     height: 15px;
     background-color: #1b2bff;
+}
+
+.sidebar-style {
+    /* position: fixed; */
+    top: 0;
+    bottom: 0;
 }

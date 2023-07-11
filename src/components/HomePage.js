@@ -11,7 +11,8 @@ import arrow from '../assets/north-east-arrow.svg';
 import arrowRightDown from '../assets/arrow-right-down355.svg';
 
 // TODO: creeaza un paralax effect
-import Picture49 from '../assets/Picture49-less-grainy.png';
+// import Picture49 from '../assets/Picture49-less-grainy.png';
+import Picture49 from '../assets/Picture49.png';
 
 
 // styling
@@ -134,7 +135,9 @@ export default function HomePage() {
 
             {/* "TITLURILE MARI" */}
             <section className='section1-buttons-under-D-and-GD two-columns'
-                style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+
+                style={{backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', height: '100%'}}
             >
                 <div className='display-block'>
                     {/* Donaldson */}

@@ -16,6 +16,8 @@ import Contact from './components/Contact';
 import Donaldson from './components/Donaldson';
 import HomePage from './components/HomePage';
 import Logo from './components/Logo';
+
+import SideNavBar from './components/sidenavlibrary/SideNavBar';
 // components Donaldson
 import Compresoare from './pages/Donaldson/Compresoare';
 import Presiuni4_13bari from './pages/Donaldson/Compresoare/Presiuni4_13bari';
@@ -42,6 +44,7 @@ import C_oil_free_tip_scroll from './pages/Gardner-Denver/Compresoare/C_oil_free
 
 // styling
 import './assets/App.css';
+
 
 function App() {
     // JAVASCRIPT
@@ -101,23 +104,8 @@ function App() {
                             <p>tel: +40 371 152 977</p>
                         </div>
 
-                        <nav >
+                        {/* <nav >
                             <ul className='menu'>
-                                {/* <li>
-                                    <Link to="/" onClick={handleLogoClick} className='visited-link'>
-                                        <Logo />
-                                    </Link>
-                                </li> */}
-                                {/* <li>
-                                    <NavLink className='visited-link' to='/web-design' activeClassName="active-link">Despre Ultrafilter</NavLink>
-                                </li> */}
-                                {/* <li>
-                                    <NavLink className='visited-link' to='/photography' activeClassName="active-link">Donaldson</NavLink>
-                                </li> */}
-
-                                {/* <li>
-                                    <NavLink className='visited-link' to='/GardnerDenver' activeClassName="active-link">Gardner Denver</NavLink>
-                                </li> */}
                                 <li>
                                     <NavLink className='visited-link' to='/GardnerDenver/compresoare' activeClassName="active-link">Compresoare</NavLink>
                                 </li>
@@ -128,8 +116,9 @@ function App() {
                                     <NavLink className='visited-link' to='/vision' activeClassName="active-link">Contact</NavLink>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> */}
                     </header>
+                    <SideNavBar />
                     {/* <Header /> */}
                     {/* <Breadcrumbs /> */}
                     <div data-scroll-container>
