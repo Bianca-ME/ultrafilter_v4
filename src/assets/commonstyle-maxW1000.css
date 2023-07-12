@@ -1,0 +1,23 @@
+@media screen and (max-width: 1000px) {
+    .ufr-quote-top {
+        margin-left: 10vw;
+    }
+
+    .blue-top {
+        display: block;
+        padding-left: 0;
+        /* flex-wrap: wrap-reverse; */
+    }
+
+    .search-n-checkmark {
+        padding-left: 10vw;
+    }
+
+    .flex-this {
+        align-items: flex-end;
+    }
+
+    .huge-title-2 {
+        font-size: 13vw;
+    }
+}

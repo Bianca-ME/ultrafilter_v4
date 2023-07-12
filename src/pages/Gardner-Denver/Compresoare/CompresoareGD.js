@@ -7,9 +7,13 @@ import Card from '../../../components/searchAndFilter/Card';
 // import { useState } from 'react';
 
 import GDLOGO from '../../../assets/gardner-denver-logo.jpg';
+// import GDLOGO from '../../../assets/HomePage/7_compresoare_cu_suruburi_elicoidale_Gardner_Dnever_cu_ulei.jpg';
 
 // Database
 import products from '../../../data/database_products';
+
+// styling
+import '../../../assets/commonstyle-maxW1000.css';
 
 export default function CompresoareGD() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -76,17 +80,19 @@ export default function CompresoareGD() {
   return (
     <div
     // TODO: de lucru la background image
-    // style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto' }}
+    // style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto', backgroundAttachment: 'fixed', height: '100%' }}
     >
       <div className='blue-top'>
+
         <div className='search-n-checkmark'>
           <Navigation query={query} handleInputChange={handleInputChange} />
           <Sidebar handleChange={handleChange} />
         </div>
-
+        
         <div className='flex flex-this'>
           <h1 className='huge-title-2'>compresoare</h1>
         </div>
+
 
       </div>
       {/* <div style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto', minHeight: '450px', backgroundColor: '#fff' }}> */}

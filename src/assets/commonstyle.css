@@ -1354,8 +1354,11 @@ summary {
     display: flex;
     width: 100%;
     /* width: 100vw; era */
-    height: 50vh;
+    /* TODO: */
+    /* height: 50vh; */
+    height: 300px;
     /* z-index: 10; */
+
 }
 
 .slide {
@@ -1373,19 +1376,30 @@ summary {
     /* aliniaza central pe verticala */
     justify-content: center;
     /* aliniaza central pe orizontala */
+
+    /* TODO: */
+    
+    
 }
 
 .page1Donaldson-container {
     background-color: #0082ca;
+    background-color: #fff;
+    background-color: #fcfcf5;
     height: 100%;
     display: flex;
+
+    border-right: 2px solid black;
 }
 
 .page2GardnerDenver-container {
     background-color: white;
+    background-color: #fcfcf5;
     height: 100%;
     display: flex;
     width: 50vw;
+
+    border-left: 2px solid black;
 }
 
 .slide-content-D {
@@ -1436,13 +1450,15 @@ summary {
 
 /* logo D */
 .page1Donaldson {
-    width: 30vw;
+    /* width: 30vw; */
+    width: 45vw;
 }
 
 /* logo GD */
 /* temp disable */
 .page2GardnerDenver {
-    width: 25vw;
+    /* width: 25vw; */
+    width: 40vw;
 }
 
 .slide:hover .slide-content-D {
@@ -3809,7 +3825,8 @@ p.copyright {
 
 /* CompresoareGD page */
 .huge-title-2 {
-    font-size: 150px;
+    /* font-size: 150px; */
+    font-size: 10vw;
     /* font-size: 60px; */
     text-align: right;
     font-family: 'Syne', sans-serif;
@@ -3818,7 +3835,7 @@ p.copyright {
     color: #fcfcf5;
     padding: 0;
     margin: 0;
-    height: 180px;
+    /* height: 180px; */
     padding-right: 20px;
 }
 
@@ -3835,13 +3852,18 @@ p.copyright {
     background-color: #ff0000;
     background-color: #1b2bfd;
 
-    height: 300px;
+    height: auto;
     display: flex;
     /* align-items: center; */
     color: white;
 
-    padding-left: 80px;
+    /* flex-wrap: wrap-reverse; */
+
+    /* padding-left: 80px; */
+   
 }
+
+
 
 
 
@@ -3864,6 +3886,8 @@ nav.nav-tutorial {
  
     line-height: 1.7;
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5vw;
 }
 
 /* TODO:: de schimbat asta mai tarziu */
@@ -3901,8 +3925,9 @@ input {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15rem;
-    margin-top: 2rem;
+    /* margin-left: 15rem;
+    margin-top: 2rem; */
+
     z-index: -2;
 }
 
@@ -4041,4 +4066,24 @@ input {
     /* position: fixed; */
     top: 0;
     bottom: 0;
+}
+
+.ufr-quote-big p {
+    color: #ffffff;
+    color: #17009c;
+    color: #f1f5ed;
+    background-color: #1b2bfd;
+    background-color: #000;
+    background-color: #ed6927;
+    background-color: #909a9a;
+    background-color: #17009c;
+    background-color: #fcfcf5;
+    background-color: #7a909e;
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+    font-size: 8vw;
+    line-height: 0.7;
+    font-weight: 700;
+    text-align: center;
 }

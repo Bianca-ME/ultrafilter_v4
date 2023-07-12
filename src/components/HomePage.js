@@ -4,15 +4,17 @@ import React, { useRef, useEffect, useState } from 'react';
 import DlogoSVG from '../assets/donaldson-company-1.svg';
 import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
 
-import Dlogo from '../assets/donaldson-logo.jpg';
-import GDlogo from '../assets/gardner-denver-logo.jpg';
+// import Dlogo from '../assets/donaldson-logo.jpg';
+import Dlogo from '../assets/donaldson-company-1.svg';
+// import GDlogo from '../assets/gardner-denver-logo.jpg';
+import GDlogo from '../assets/Gardner_Denver_logo.svg.png';
 
 import arrow from '../assets/north-east-arrow.svg';
 import arrowRightDown from '../assets/arrow-right-down355.svg';
 
 // TODO: creeaza un paralax effect
-// import Picture49 from '../assets/Picture49-less-grainy.png';
-import Picture49 from '../assets/Picture49.png';
+import Picture49 from '../assets/Picture49-less-grainy.png';
+// import Picture49 from '../assets/Picture49.png';
 
 
 // styling
@@ -92,13 +94,16 @@ export default function HomePage() {
 
     return (
         <div data-scroll toberelative >
-          
+            {/* <section class='ufr-quote-big'>
+                <p>Tehnologie pentru un mediu mai curat</p>
+            </section> */}
+
             <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                 <div className='containsPage1 slide slide-top containsPage1-mobile'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
                             filtre, desprafuire industriala
-                            <br/>
+                            <br />
                             [ pagină în lucru ]
                         </div>
                         <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
@@ -107,7 +112,7 @@ export default function HomePage() {
                 <div className='containsPage2 slide slide-top containsPage2-mobile'>
                     <div className='page2GardnerDenver-container'>
                         <div className='slide-content-GD'>
-                        Gardner Denver face parte din cel mai mare grup de producatori de utilaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
+                            Gardner Denver face parte din cel mai mare grup de producatori de utilaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
                         </div>
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                     </div>
@@ -133,11 +138,16 @@ export default function HomePage() {
                 </div>
             </div> */}
 
+
+
             {/* "TITLURILE MARI" */}
             <section className='section1-buttons-under-D-and-GD two-columns'
                 // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
 
-                style={{backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover', backgroundAttachment: 'fixed', height: '100%'}}
+                style={{
+                    backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
+                    // backgroundAttachment: 'fixed', height: '100%'
+                }}
             >
                 <div className='display-block'>
                     {/* Donaldson */}

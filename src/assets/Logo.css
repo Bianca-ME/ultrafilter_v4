@@ -8,11 +8,12 @@
 .logo-home-page-container {
     box-sizing: border-box;
     /* width: 100vw; */
-    height: 31px;
+    /* height: 31px; */
+    height: auto;
     /* height: 100px; */
     /* display: inline-block; */
     /* padding: 7px 30px; */
-    padding: 1px 50px;
+    padding: 2px 50px;
     z-index: 201;
     margin: 0;
     position: fixed;
@@ -37,6 +38,7 @@
 
 .logo-home-page {
     height: 26px;
+
     /* z-index: 201; */
 }
 
@@ -46,10 +48,13 @@
 }
 
 .ufr-quote-top {
-
+    color: #fcfcf5;
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     
 }
 
@@ -67,6 +72,3 @@
     background-color: #17009c;
 }
 
-.ufr-quote-top {
-    color: #fcfcf5;
-}
