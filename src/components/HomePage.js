@@ -1,19 +1,25 @@
 import React, { useRef, useEffect, useState } from 'react';
 
+import Footer from './Footer';
+
 // images
 import DlogoSVG from '../assets/donaldson-company-1.svg';
-import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
+// import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
+// import GDlogo from '../assets/test/ezgif.com-video-to-gif.gif';
 
 // import Dlogo from '../assets/donaldson-logo.jpg';
 import Dlogo from '../assets/donaldson-company-1.svg';
 // import GDlogo from '../assets/gardner-denver-logo.jpg';
-import GDlogo from '../assets/Gardner_Denver_logo.svg.png';
+// import GDlogo from '../assets/gardner-denver-inc-logo-vector.svg';
+import GDlogo from '../assets/gardner-denver-inc-logo-vector_copy.svg';
 
 import arrow from '../assets/north-east-arrow.svg';
 import arrowRightDown from '../assets/arrow-right-down355.svg';
 
 // TODO: creeaza un paralax effect
 import Picture49 from '../assets/Picture49-less-grainy.png';
+// import random1 from '../assets/test/s12-1024x341.jpg';
+import random1 from '../assets/test/WhatsAppImage2023-07-27at3.05.21PM_2_1.jpg';
 // import Picture49 from '../assets/Picture49.png';
 
 
@@ -98,7 +104,9 @@ export default function HomePage() {
                 <p>Tehnologie pentru un mediu mai curat</p>
             </section> */}
 
-            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
+            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'
+            style={{ backgroundImage: `url(${random1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+            >
                 <div className='containsPage1 slide slide-top containsPage1-mobile'>
                     <div className='page1Donaldson-container'>
                         <div className='slide-content-D'>
@@ -142,19 +150,19 @@ export default function HomePage() {
 
             {/* "TITLURILE MARI" */}
             <section className='section1-buttons-under-D-and-GD two-columns'
-                // style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
 
-                style={{
-                    backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
-                    // backgroundAttachment: 'fixed', height: '100%'
-                }}
+                // style={{
+                //     backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
+                // }}
+                // backgroundAttachment: 'fixed', height: '100%'
             >
                 <div className='display-block'>
                     {/* Donaldson */}
                     <p className='title3-1'>filtre, desprafuire industriala
                         {/* <br /><img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
                     </p>
-                    <hr></hr>
+                    {/* <hr></hr> */}
                     <div className='padding-buttons-in-display-block'>
                         <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         {/* <p><a className='buttonV1'></a></p> */}
@@ -166,13 +174,14 @@ export default function HomePage() {
                 </div>
                 <div className='display-block'>
 
+
                     <p className='title3-2'>
                         compresoare si retele de aer comprimat<br />
                         {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
                     </p>
-                    <hr></hr>
+                    {/* <hr></hr> */}
                     <div className='padding-buttons-in-display-block'>
-                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
                         <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
@@ -234,6 +243,7 @@ export default function HomePage() {
 
                 </p>
             </section>
+            <Footer/>
         </div >
     )
 }

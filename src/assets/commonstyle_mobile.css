@@ -1,0 +1,529 @@
+/* retro computer font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
+/* bold fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Oswald:wght@700&family=Ultra&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ultra', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Syne', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+/* font-family: 'Cantarell', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+/* font-family: 'Hind', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+/* font-family: 'News Cycle', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Sulphur+Point:wght@300;400;700&display=swap');
+/* font-family: 'Sulphur Point', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Cousine', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+/* font-family: 'Xanh Mono', monospace; */
+
+/* for quote marks */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+/* font-family: 'Yatra One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* font-family: 'Lora', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* font-family: 'Gelasio', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+/* font-family: 'Klee One', cursive; ASTA NU */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+/* font-family: 'Mynerve', cursive; NU PREA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Alumni Sans', sans-serif; */
+
+/* numbers fonts */
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Homemade Apple', cursive; */
+/* font-family: 'Shadows Into Light', cursive; */
+
+
+/* testate pe font-size 16 */
+/* wght@400;500;600;700;800 */
+/* font-family: 'Syne', sans-serif; */
+/* destul de caligrafic, line height aproape bun */
+/* font-family: 'Cantarell', sans-serif; */
+/* wght@300 */
+/* font-family: 'Hind', sans-serif; */
+/* wght@200;300;400;500;600;700;800;900 */
+/* font-family: 'Inconsolata', monospace; */
+/* wght@400;700 */
+/* font-family: 'News Cycle', sans-serif; */
+/* wght@300;400;700 */
+/* font-family: 'Sulphur Point', sans-serif; */
+/* neutru, maruntel, line height bun, dar prea maruntel in navbar */
+/* wght@300;400;500;600;700;800;900 */
+/* font-family: 'Work Sans', sans-serif; */
+/* typemachine , un pic cam grosut... literele putin prea spaced */
+/* wght@300;400;500 */
+/* font-family: 'Roboto Mono', monospace; */
+/* cam gros, dar perfect neutru. se potriveste cu Syne din navbar. daca schimb culoarea s-ar putea sa se potriveasca */
+/* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+/* font-family: 'Noto Sans', sans-serif; */
+/* dragutel. typemachine, dar prea subtire - il face inutilizabil */
+/* font-family: 'Cutive Mono', monospace; */
+/* typemachine - este superb. folosit ca text in product cards. line height perfect. litere perfect proportionate, usor patratoase*/
+/* font-family: 'Cousine', monospace; */
+/* font-family: 'Xanh Mono', monospace; */
+/* nici gabd. scris cu marker parca. caligrafic */
+/* font-family: 'Yatra One', cursive; */
+/* liric, nu merge ca text normal */
+/* :ital,wght@0,400;0,500;1,400;1,500 */
+/* font-family: 'Lora', serif; */
+/* okish dar prea liric */
+/* :ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 */
+/* font-family: 'Gelasio', serif; */
+/* ASTA NU - l-as sterge de tot */
+/* font-family: 'Klee One', cursive;  */
+/* scris f frumos de mana, seamana cu a lui R */
+/* font-family: 'Mynerve', cursive; */
+/* prea inghesuit */
+/* :ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
+/* font-family: 'Alumni Sans', sans-serif; */
+/* numbers fonts */
+/* font-family: 'Homemade Apple', cursive; */
+/* font-family: 'Shadows Into Light', cursive; */
+
+@media only screen and (max-width: 500px) {
+
+    /* NAV BAR (left) */
+    .header {
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        color: white;
+        display: flex;
+        align-items: center;
+        left: 0;
+        writing-mode: vertical-rl;
+        background-color: #17009c;
+        letter-spacing: 5px;
+        height: 100vh;
+        width: 20px;
+        opacity: 1;
+
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .visited-link {
+        /* temporary distance */
+        margin-right: 0px;
+        margin-top: 10px;
+        color: #F8FAF9;
+        text-decoration: none;
+    }
+
+    /* tre modificat */
+    .active-link {
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        color: #F8FAF9;
+    }
+
+    .margin-from-header {
+        padding-top: 60px;
+        /* background-color: rgb(185, 238, 164); */
+        /* border-top: 3px solid red; */
+    }
+
+    .visited-link {
+        margin-left: 0px;
+    }
+
+
+    .logo-home-page-container {
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 44px;
+        margin: 0;
+    }
+
+    .logo-home-page-text-margin-left {
+        margin-left: 2px;
+    }
+
+    .logo-home-page {
+        height: 40px;
+        /* width: 100vw; */
+    }
+
+    /* .header {
+        opacity: 0;
+    } */
+
+    /* --------------------------- */
+    /* SECTION Donaldson and GD */
+
+    /* nu merge */
+    .slide-top {
+        width: 100vw;
+    }
+
+    /* nu merge */
+    .active-link-D-GD {
+        font-size: 1rem;
+    }
+
+    .DonaldsonAndGD {
+        display: flex;
+        flex-wrap: wrap;
+        height: calc(100vh - 60px);
+        width: 100%;
+        /* height: 40vh; */
+
+        /* opacity: 0; */
+        /* height: calc(100vh-60px); */
+
+    }
+
+    .page1Donaldson-container,
+    .page2GardnerDenver-container {
+        width: 100%;
+    }
+
+    /* unhidded the blue slides */
+    .slide-top .slide-content-D {
+        transform: translate(0, 0);
+    }
+
+    .slide-top .slide-content-GD {
+        transform: translate(0, 0);
+    }
+
+    .slide-content-D,
+    .slide-content-GD {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+    }
+
+    .slide-content-D {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.925 */
+        padding: 20px;
+    }
+
+    .slide-content-GD {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.966 */
+        padding: 20px;
+    }
+
+    .op-class {
+        opacity: 1;
+    }
+
+    /* logo D */
+    .page1Donaldson {
+        width: 100%;
+    }
+
+    /* logo GD */
+    .page2GardnerDenver {
+        width: 100%;
+    }
+
+
+    /* .containsPage1-mobile,
+    .containsPage2-mobile {
+
+    } */
+
+    /* --------------------------- */
+    /* SECTION WITH "distribuitorul tau de..." */
+    .background-bluee {
+        padding: 0 20px 0 20px;
+    }
+
+    .home-page-title {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 1.2;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .home-page-title-smallerr {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 0.8;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .underline-red {
+        border-bottom: 10px solid #00a571;
+    }
+
+
+    .home-page-content h2 {
+        /* color: rgb(0, 47, 255); */
+        font-size: 50px;
+    }
+
+    .wrapper--text h2 {
+        padding-left: 5px;
+        margin: 0;
+        padding: 0;
+        /* color: red; */
+    }
+
+    .wrapper--img,
+    .wrapper--text {
+        width: 100%;
+    }
+
+    .wrapper--img {
+        align-items: flex-end;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper--img img {
+        width: 100%;
+        height: auto;
+        /* opacity: 0.5; */
+    }
+
+    .wrapper--text {
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 60px;
+        border-bottom: 1px solid black;
+        /* scroll-snap-align: end; */
+        height: calc(100vh - 60px);
+        /* border-left: 1px solid black;
+        border-right: 1px solid black; */
+        /* margin: 0 80px 0 10px; */
+    }
+
+    /* body,
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-snap-type: mandatory;
+    } */
+
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    /* --------------------------- */
+    /* PAGE GD */
+    .big-word {
+        font-size: 50px;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    p.regular-text-important {
+        font-size: 50px;
+        line-height: 0.9;
+        padding-bottom: 0;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    button {
+        /* background-color: rgb(156, 235, 208); */
+        /* background-color: #e6f0eb00; */
+
+        height: auto;
+        /* width: 100px; */
+        /* border-radius: 45px; */
+        /* border: 0.5px solid #124838; */
+        border: none;
+        color: #124838;
+        font-family: 'Sulphur Point', sans-serif;
+        /* font-size: 1rem; */
+        margin: 7px;
+    }
+
+    .buttonV1 {
+        height: auto;
+        /* font-weight: 700; */
+        text-align: left;
+        border: 1px solid #124838;
+        border-radius: 35px;
+        background-color: #fcfcf5;
+        /* border-left: 10px solid #d0f5e9; */
+    }
+
+
+
+    .buttonV1:hover {
+        background-color: #e6f0eb00;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+
+
+    .button-color {
+        color: black;
+    }
+
+    .narrow-padding-mobile {
+        padding: 5px 28px;
+    }
+
+    .quote-marks-opening {
+        font-family: 'Yatra One', cursive;
+        font-size: 300px;
+        color: #124838;
+        position: absolute;
+    }
+
+    .text-gardnerdenver {
+        text-align: left;
+    }
+
+    .narrow-padding-mobile2 {
+        padding: 5px 40px
+    }
+
+    .overflow-scroll {
+        overflow-x: scroll;
+        /* de rezolvat width */
+        width: 80hw;
+        max-width: 400px;
+    }
+
+    /* test stick */
+    .stick-in-table {
+        position: sticky;
+        left: 0;
+        /* color: black; */
+        /* background-color: #c0b9e6; */
+        background-color: #cfcddd;
+        background-color: #00A571;
+        background-color: #D0EEDF;
+        background-color: #2807E0;
+        border-radius: 15px;
+        /* border: 1px solid black; */
+    }
+
+    .vertical-text-lr {
+        writing-mode: vertical-rl;
+        font-size: 10px;
+        word-wrap: break-word;
+        height: 200px;
+        text-align: start;
+    }
+
+    /* .same-font-size-inside-table {
+        font-size: 10px;
+    } */
+
+    .text-align-start {
+        text-align: start;
+        /* nu merge width */
+        /* width: 50px; */
+    }
+
+    /* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
+    /* .test-stop-scroll {
+        overscroll-behavior: contain;
+    } */
+}
+
+/*-----------------------------------------------------*/
+
+@media screen and (min-width: 501px) and (max-width: 1366px) {
+    .home-page-content h2 {
+        /* color: red; */
+        font-size: 90px;
+    }
+
+    .logo-home-page {
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel img {
+        width: 100%;
+    }
+}

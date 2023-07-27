@@ -4,6 +4,7 @@ import Navigation from '../../../components/searchAndFilter/Navigation/Navigatio
 import Products from '../../../components/searchAndFilter/Products/Products';
 import Sidebar from '../../../components/searchAndFilter/Sidebar/Sidebar';
 import Card from '../../../components/searchAndFilter/Card';
+import Footer from '../../../components/Footer';
 // import { useState } from 'react';
 
 import GDLOGO from '../../../assets/gardner-denver-logo.jpg';
@@ -100,6 +101,7 @@ export default function CompresoareGD() {
       {/* </div> */}
       
       {/* <Recommended handleClick={handleClick}/> */}
+      <Footer/>
     </div>
   );
 }
