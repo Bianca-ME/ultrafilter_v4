@@ -1308,6 +1308,13 @@ summary {
     transform: translate(0, -100%);
 }
 
+/* CREATIVE CODING SKETCH */
+
+.sketch-changing-text-on-hover-container {
+    height: 500px;
+    background-color: #f5f5ed;
+}
+
 ::selection {
     text-shadow: none;
     color: #236b59;

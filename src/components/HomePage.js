@@ -22,6 +22,8 @@ import Picture49 from '../assets/Picture49-less-grainy.png';
 import random1 from '../assets/test/WhatsAppImage2023-07-27at3.05.21PM_2_1.jpg';
 // import Picture49 from '../assets/Picture49.png';
 
+import p5 from 'p5';
+import sketch1 from '../pages/HomePage/ccSketch1';
 
 // styling
 import '../assets/commonstyle.css';
@@ -98,14 +100,21 @@ export default function HomePage() {
         };
     }, []);
 
+    // creative coding sketch ---
+    const sketch1Ref = useRef(null);
+
+    useEffect(() => {
+        new p5(sketch1, sketch1Ref.current);
+    }, []);
+
     return (
         <div data-scroll toberelative >
             {/* <section class='ufr-quote-big'>
                 <p>Tehnologie pentru un mediu mai curat</p>
             </section> */}
 
-            <div className='DonaldsonAndGD margin-from-header' id='toStickTo'
-            style={{ backgroundImage: `url(${random1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
+            {/* <div className='DonaldsonAndGD margin-from-header' id='toStickTo'
+                style={{ backgroundImage: `url(${random1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
             >
                 <div className='containsPage1 slide slide-top containsPage1-mobile'>
                     <div className='page1Donaldson-container'>
@@ -125,6 +134,11 @@ export default function HomePage() {
                         <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                     </div>
                 </div>
+            </div> */}
+
+            {/* let's try implement a creative coding sketch */}
+            <div className='sketch-changing-text-on-hover-container'>
+                <div ref={sketch1Ref} className=''></div>
             </div>
 
 
@@ -152,10 +166,10 @@ export default function HomePage() {
             <section className='section1-buttons-under-D-and-GD two-columns'
                 style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
 
-                // style={{
-                //     backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
-                // }}
-                // backgroundAttachment: 'fixed', height: '100%'
+            // style={{
+            //     backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
+            // }}
+            // backgroundAttachment: 'fixed', height: '100%'
             >
                 <div className='display-block'>
                     {/* Donaldson */}
@@ -243,7 +257,7 @@ export default function HomePage() {
 
                 </p>
             </section>
-            <Footer/>
+            <Footer />
         </div >
     )
 }
