@@ -131,16 +131,29 @@ export default function sketch1(p) {
     let fg = '#0000ff';
     let bg = '#fcfcf5';
 
-    let fontSize = 200;
+    let fontSizePercentage = 0.1;
+    let fontSize = p.windowWidth * fontSizePercentage;
+
+    
 
 
-    p.preload = function () {
-        mono = p.loadFont("/fonts/RobotoMono-Regular.ttf");
-    }
+    // p.preload = function () {
+    //     // mono = p.loadFont("/fonts/Syne-ExtraBold.ttf");
+    //     mono = p.loadFont("Syne.ttf");
+    // }
 
     p.setup = function () {
-        p.createCanvas(p.windowWidth-40, p.windowHeight);
+        p.createCanvas(p.windowWidth - 40, p.windowHeight);
         p.noStroke();
+
+        p.windowResized = function () {
+            // console.log("Window resized!");
+            p.resizeCanvas(p.windowWidth - 40, p.windowHeight);
+            fontSize = p.windowWidth * fontSizePercentage; // Update the font size as well
+        };
+
+        // Update the maximum width for text wrapping
+ 
 
         // p.loadFont(RobotoMonoRegular);
     }
@@ -154,7 +167,8 @@ export default function sketch1(p) {
 
         let string = array[num];
 
-        p.textFont(mono);
+        p.textFont("Syne");
+       
         // p.textFont("RobotoMono-Regular.ttf.ttf");
         p.textAlign(p.CENTER, p.CENTER);
         p.textSize(fontSize);

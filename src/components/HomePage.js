@@ -138,7 +138,7 @@ export default function HomePage() {
 
             {/* let's try implement a creative coding sketch */}
             <div className='sketch-changing-text-on-hover-container'>
-                <div ref={sketch1Ref} className=''></div>
+                <div ref={sketch1Ref} className='sketch1-css'></div>
             </div>
 
 
