@@ -24,7 +24,7 @@ import random1 from '../assets/test/WhatsAppImage2023-07-27at3.05.21PM_2_1.jpg';
 
 import p5 from 'p5';
 import sketch1 from '../pages/HomePage/ccSketch1';
-import sketch2 from '../pages/HomePage/ccSketch2';
+// import sketch2 from '../pages/HomePage/ccSketch2';
 
 // images of ufr team
 import ufrteam1 from '../pages/HomePage/sketch2/img1.jpg';
