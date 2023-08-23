@@ -120,21 +120,23 @@ export default function sketch1(p) {
     let mono;
 
     let array = [
-        "Stockholm",
-        "Gothenburg",
-        "Malmö",
-        "Uppsala",
-        "Västerås",
-        "städer i\nSverige"
+        "filtre industriale",
+        "desprafuire",
+        "compresoare",
+        "uscare\naer comprimat",
+        "recipienti stocare\naer comprimat",
+        "aspiratoare\nindustriale",
+        "proiectare"
     ]
 
     let fg = '#0000ff';
-    let bg = '#fcfcf5';
+    // let bg = '#fcfcf5';
+    let bg = '#f5f5ed';
 
     let fontSizePercentage = 0.1;
     let fontSize = p.windowWidth * fontSizePercentage;
 
-    
+
 
 
     // p.preload = function () {
@@ -145,18 +147,27 @@ export default function sketch1(p) {
     p.setup = function () {
         p.createCanvas(p.windowWidth - 40, p.windowHeight);
         p.noStroke();
+        p.textFont("Syne");
 
-        p.windowResized = function () {
-            // console.log("Window resized!");
-            p.resizeCanvas(p.windowWidth - 40, p.windowHeight);
-            fontSize = p.windowWidth * fontSizePercentage; // Update the font size as well
-        };
+        p.canvas.className += " customFont";
+        p.canvas.style.fontWeight = "800";
+
+
+        p.textAlign(p.CENTER, p.CENTER);
+
+
 
         // Update the maximum width for text wrapping
- 
+
 
         // p.loadFont(RobotoMonoRegular);
     }
+
+    p.windowResized = function () {
+        // console.log("Window resized!");
+        p.resizeCanvas(p.windowWidth - 40, p.windowHeight);
+        fontSize = p.windowWidth * fontSizePercentage; // Update the font size as well
+    };
 
 
     p.draw = function () {
@@ -167,18 +178,26 @@ export default function sketch1(p) {
 
         let string = array[num];
 
-        p.textFont("Syne");
-       
-        // p.textFont("RobotoMono-Regular.ttf.ttf");
-        p.textAlign(p.CENTER, p.CENTER);
+        // p.textFont("Syne"); //this worked
+
         p.textSize(fontSize);
+
         p.push();
         p.translate(p.width / 2, p.height / 2 - (fontSize * 0.15));
+
+
         p.text(string, 0, 0);
         p.pop();
 
+        // p.push();
+        // p.rect(p.mouseX, 0, 5, p.height);
+        // p.pop();
+
         p.push();
-        p.rect(p.mouseX, 0, 5, p.height);
+        p.textFont("Syne");
+        p.fill(fg);
+        p.textSize(20);
+        p.text("servicii", p.mouseX, p.mouseY, 200, 50);
         p.pop();
     }
 }

@@ -6,6 +6,7 @@
 }
 
 .logo-home-page-container {
+    background-color: #17009c;
     box-sizing: border-box;
     /* width: 100vw; */
     /* height: 31px; */
@@ -13,7 +14,8 @@
     /* height: 100px; */
     /* display: inline-block; */
     /* padding: 7px 30px; */
-    padding: 2px 50px;
+
+    /* padding: 2px 50px 2px 40vw; */
     z-index: 201;
     margin: 0;
     position: fixed;
@@ -21,6 +23,7 @@
     left: 0;
     right: 0;
     top: 0;
+    
  
     /* clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%); */
     /* width: 400px; */
@@ -29,11 +32,15 @@
     /* border-bottom: 1px solid #d1d1d1; */
 
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
     text-decoration: none;
+    width: 100vw;
 }
 
+.logo-container {
+    min-width: 250px;
+}
 
 
 .logo-home-page {
@@ -51,10 +58,11 @@
     color: #fcfcf5;
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-    margin-left: 50px;
+  
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    min-width: 155px;
     
 }
 
@@ -63,12 +71,10 @@
     background-color: #fcfcf5;
 }
 
-.ufr-quote-top {
-    color: #1b2bff;
-} */
+
 
 /* versiune pe albastru */
 .logo-home-page-container {
-    background-color: #17009c;
+
 }
 

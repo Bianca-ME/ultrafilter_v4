@@ -13,20 +13,26 @@ import { Link } from 'react-router-dom';
 // styling
 import '../assets/Logo.css';
 
-export default function Logo () {
-return (
-    <div 
-    // className='toberelative fixed-position right-corner'
-    >
-        <div>
-            <Link to="/" rel="noreferrer" className='logo-home-page-container '>
-                <img className='logo-home-page' src={logo} alt="Ultrafilter logo can.t be seen"></img>
-                <img className='logo-home-page logo-home-page-text-margin-left' src={logotext} alt="Ultrafilter logo can.t be seen"></img>
-                <p className='ufr-quote-top'>distribuitorul tau de compresoare si filtre industriale</p>
-            </Link>
+export default function Logo() {
+    return (
+        <div
+        // className='toberelative fixed-position right-corner'
+        >
+            <div>
+                <Link to="/" rel="noreferrer" className=''>
+                    <div className='logo-home-page-container'>
+                        <div className='logo-container'>
+                            <img className='logo-home-page' src={logo} alt="Ultrafilter logo can.t be seen"></img>
+                            <img className='logo-home-page logo-home-page-text-margin-left' src={logotext} alt="Ultrafilter logo can.t be seen"></img>
+                        </div>
+
+                        <p className='ufr-quote-top'>distribuitorul tau de compresoare si filtre industriale</p>
+                    </div>
+
+                </Link>
+            </div>
         </div>
-    </div>
-)
+    )
 }
 
 // strong-blue-background

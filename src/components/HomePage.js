@@ -24,15 +24,21 @@ import random1 from '../assets/test/WhatsAppImage2023-07-27at3.05.21PM_2_1.jpg';
 
 import p5 from 'p5';
 import sketch1 from '../pages/HomePage/ccSketch1';
+import sketch2 from '../pages/HomePage/ccSketch2';
+
+// images of ufr team
+import ufrteam1 from '../pages/HomePage/sketch2/img1.jpg';
+import ufrteam10 from '../pages/HomePage/sketch2/img10.jpg';
 
 // styling
 import '../assets/commonstyle.css';
+import '../assets/commonstyle_maxW500.css';
 
 
 //
 
 const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
-console.log(randomNumber);
+console.log("for testing purposes print a random number: " + randomNumber);
 
 
 
@@ -102,9 +108,55 @@ export default function HomePage() {
 
     // creative coding sketch ---
     const sketch1Ref = useRef(null);
+    // const sketch2Ref = useRef(null);
 
     useEffect(() => {
         new p5(sketch1, sketch1Ref.current);
+        // new p5(sketch2, sketch2Ref.current);
+
+    }, []);
+
+    // reveal effect when element is in view
+    // window.addEventListener('scroll', reveal);
+
+    // function reveal() {
+    //     var reveals = document.querySelectorAll('.reveal');
+
+    //     for(var i = 0; i < reveals.length; i++) {
+    //         var windowheight = window.innerHeight;
+    //         var revealtop = reveals[i].getBoundingClientRect().top;
+    //         var revealpoint = 150;
+
+    //         if(revealtop < windowheight - revealpoint){
+    //             reveals[i].classList.add('active');
+    //         } else {
+    //             reveals[i].classList.remove('active');
+    //         }
+    //     }
+    // }
+
+    //same but to use in react
+    useEffect(() => {
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowheight = window.innerHeight;
+            const revealpoint = 70;
+
+            reveals.forEach((element) => {
+                const revealtop = element.getBoundingClientRect().top;
+
+                if (revealtop < windowheight - revealpoint) {
+                    element.classList.add('active');
+                } else {
+                    element.classList.remove('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', reveal);
+        return () => {
+            window.removeEventListener('scroll', reveal);
+        };
     }, []);
 
     return (
@@ -143,6 +195,7 @@ export default function HomePage() {
 
 
 
+
             {/* NEW D and GD background with mountains */}
             {/* <div className='margin-from-header top-banner'>
                 <div className='toberelative'>
@@ -161,102 +214,117 @@ export default function HomePage() {
             </div> */}
 
 
-
-            {/* "TITLURILE MARI" */}
-            <section className='section1-buttons-under-D-and-GD two-columns'
-                style={{ backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
-
-            // style={{
-            //     backgroundImage: `url(${Picture49})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'
-            // }}
-            // backgroundAttachment: 'fixed', height: '100%'
-            >
-                <div className='display-block'>
-                    {/* Donaldson */}
-                    <p className='title3-1'>filtre, desprafuire industriala
-                        {/* <br /><img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
-                    </p>
-                    {/* <hr></hr> */}
-                    <div className='padding-buttons-in-display-block'>
-                        <p><a className='buttonV1'>Desprafuire industriala, colectoare de praf, fum si COV</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        {/* <p><a className='buttonV1'></a></p> */}
-                        <p><a className='buttonV1'>Ventilatoare</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Filtre pentru ventilatii</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Aspiratoare industriale</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1'>Filtre pentru solutii lichide, filtre de proces</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
+            <section>
+                <p className='partners-title' style={{marginTop:'100px'}}>Parteneri</p>
+                <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
+                    <div className='containsPage1 slide slide-top containsPage1-mobile'>
+                        <div className='page1Donaldson-container'>
+                            {/* <div className='slide-content-D'>
+                                filtre, desprafuire industriala
+                            </div> */}
+                            <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
+                        </div>
+                    </div>
+                    <div className='containsPage2 slide slide-top containsPage2-mobile'>
+                        <div className='page2GardnerDenver-container'>
+                            {/* <div className='slide-content-GD'>
+                                compresoare si retele de aer comprimat
+                            </div> */}
+                            <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
+                        </div>
                     </div>
                 </div>
-                <div className='display-block'>
-
-
-                    <p className='title3-2'>
-                        compresoare si retele de aer comprimat<br />
-                        {/* <img className='arrow-for-title' src={arrowDown} alt='svg missing' /> */}
-                    </p>
-                    {/* <hr></hr> */}
-                    <div className='padding-buttons-in-display-block'>
-                        <p><a href='#despre-Gardner-Denver' className='buttonV1 visited-link' activeClassName="active-link">Despre GD</a><img className='arrow' src={arrowRightDown} alt='svg missing' /><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                        <p><a className='buttonV1 visited-link' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    </div>
-                </div>
-
             </section>
+
 
 
 
             {/* section despre Ultrafilter */}
             <section className='sectionX-despre-UFR'>
-                <h1 id='despre-Ultrafilter' className='title2-custom'
-                // title4
+                {/* <h1 id='despre-Ultrafilter' className='title2-custom'
 
-                >Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1>
-                <p className='card1 line-height'>
-                    Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
-                    <div className='blue-fill-gap1'></div>
-                    <div className='blue-fill-gap2'></div>
+                >Despre Ultrafilter <sup style={{ color: '#1b2bff', fontSize: '20px', fontWeight: '700' }}>distribuitorul tau de compresoare si filtre industriale</sup></h1> */}
+                <p className='card5 line-height' style={{marginTop:'100px'}}>
+                    <div className='reveal'>
+                        Infiintata in aprilie 1999 cu un personal format din doi angajati, s-a dezvoltat ca experta in domeniul filtratii/ purificarii aerului comprimat si a solutiilor lichide.
+                    </div>
+                    <div className='reveal'>
+                        Actualmente ne consideram o firma inca mica, dar cu mare flexibililtate si dinamism cu un personal compus din 12 angajati, cu acoperire in zonele invecinate cu Satu Mare – Timisoara, Brasov, Sibiu, Ploiesti, Bucuresti si Constanta.
+                    </div>
+                    <div className='reveal'>
+                        Cheia succesului nostru o reprezinta munca sustinuta, know how-ul acumulat “din teren” si imbinat cu sustinerea tehnica si experienta fabricantilor reprezentati de noi in Romania.
+                    </div>
+                    <div className='reveal'>
+                        Specialitatea noastra a ramas expertiza in domeniul filtrarilor cu specializare in retele de aer comprimat;
+                    </div>
+                    <div className='reveal efff'>
+                        compresoare,
+                    </div>
                     {/* <br /> */}
-                    Actualmente ne consideram o firma inca mica, dar cu mare flexibililtate si dinamism cu un personal compus din 12 angajati, cu acoperire in zonele invecinate cu Satu Mare – Timisoara, Brasov, Sibiu, Ploiesti, Bucuresti si Constanta.
-                    <div className='blue-fill-gap3'></div>
+                    <div className='reveal efff'>
+                        filtre
+                    </div>
                     {/* <br /> */}
-                    Cheia succesului nostru o reprezinta munca sustinuta, know how-ul acumulat “din teren” si imbinat cu sustinerea tehnica si experienta fabricantilor reprezentati de noi in Romania.
-                    <div className='blue-fill-gap4'></div>
+                    <div className='reveal efff'>
+                        si uscatoare pentru aerul comprimat,
+                    </div>
                     {/* <br /> */}
-                    Specialitatea noastra a ramas expertiza in domeniul filtrarilor cu specializare in retele de aer comprimat; compresoare, filtre si uscatoare pentru aerul comprimat, putem realiza filtrarea aerului comprimat pana la nivelul de sterilizare; filtrare solutii lichide si racitoare frigorifice – water chillers pentru controlul temperaturii apei de racire; desprafuire industriala si colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie; filtre rama pentru ventilatie si filtre Hepa; ventilatoare centrifugale si axiale; puneri in functiune, service, piese de schimb pentru compresoare si cartuse filtrante hidraulice, masuratori de debite, masutarori calitate aer comprimat, inchiriei compresoare, proiectare si solutii la cheie.
+                    <div className='reveal efff'>
+                        putem realiza filtrarea aerului comprimat pana la nivelul de sterilizare;
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        filtrare solutii lichide si racitoare frigorifice – water chillers pentru controlul temperaturii apei de racire;
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        desprafuire industriala si colectoare de praf, fum si emulsii utilizate pentru purificarea mediului unde apar contaminanti in atmosfera degajati din procese tehnologice de productie;
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        filtre rama pentru ventilatie si filtre Hepa;
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        ventilatoare centrifugale si axiale;
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        puneri in functiune,
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        service,
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        piese de schimb pentru compresoare
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        si cartuse filtrante hidraulice,
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        masuratori de debite, masutarori calitate aer comprimat,
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        inchiriei compresoare,
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        proiectare
+                    </div>
+                    {/* <br /> */}
+                    <div className='reveal efff'>
+                        si solutii la cheie.
+                    </div>
                 </p>
             </section>
 
-            {/* section GD intro */}
-            <section className='sectionX-despre-GD'>
-                <h1 id='despre-Gardner-Denver' className='
-                title4
-                title2-custom
-                '>Despre Gardner Denver</h1>
-                <p className='card1'>
-                    <span className='line-height'>
-                        Gardner Denver face parte din cel mai mare grup de producatori de utiaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
-                    </span>
-
-                    <br />
-                    <br />
-                    Gardner Denver cuprinde:
-                    <br />
-                    <p><a href='#compresoare-cu-piston' className='buttonV1 visited-link button-color1' activeClassName="active-link">Compresoare cu piston</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Compresare rotative (fara ungere/ cu ungere)</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Filtrare si uscare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    <p><a className='buttonV1 visited-link button-color1' activeClassName="active-link">Recipienti de stocare aer comprimat</a><img className='arrow' src={arrowRightDown} alt='svg missing' /></p>
-                    <br />
-                    <br />
-                    <p>Pentru cea mai buna intelegere a aerului comprimat puteti consulta acest <a href="https://www.cagi.org/performance-verification/" target='_blank'>link</a> <img className='arrow-smaller' src={arrow} alt='svg missing' />.</p>
-                    <p>Pentru mai multe detalii vedeti sectiunea <span style={{ color: '#1b2bff' }}>linkuri utile</span>.</p>
 
 
-
-
-                </p>
-            </section>
             <Footer />
         </div >
     )

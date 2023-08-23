@@ -1972,12 +1972,12 @@ summary {
 
     .logo-home-page-container {
         box-sizing: border-box;
-        padding: 0;
+        /* padding: 0; */
         display: flex;
         align-items: center;
         justify-content: start;
         height: 44px;
-        margin: 0;
+        /* margin: 0; */
     }
 
     .logo-home-page-text-margin-left {

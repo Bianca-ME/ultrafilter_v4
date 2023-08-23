@@ -8,7 +8,7 @@ export default function Footer() {
         <div className='display-as-column padding-top card2'>
             <p className='letstalk'>Contact</p>
             <div className='flex wrap '>
-                <div className=''>
+                <div className='write-us'>
                     {/* form-container padding-top */}
                     <form className=''>
                         <input className='input1' type='text' id='name' placeholder='nume, prenume' required />

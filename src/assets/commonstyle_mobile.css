@@ -141,14 +141,14 @@ font-family: 'Ultra', serif; */
     }
 
     .visited-link {
-        /* temporary distance */
+       
         margin-right: 0px;
         margin-top: 10px;
         color: #F8FAF9;
         text-decoration: none;
     }
 
-    /* tre modificat */
+
     .active-link {
         text-decoration: underline;
         text-underline-offset: 13px;
@@ -157,23 +157,10 @@ font-family: 'Ultra', serif; */
 
     .margin-from-header {
         padding-top: 60px;
-        /* background-color: rgb(185, 238, 164); */
-        /* border-top: 3px solid red; */
     }
 
     .visited-link {
         margin-left: 0px;
-    }
-
-
-    .logo-home-page-container {
-        box-sizing: border-box;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        height: 44px;
-        margin: 0;
     }
 
     .logo-home-page-text-margin-left {
@@ -182,7 +169,6 @@ font-family: 'Ultra', serif; */
 
     .logo-home-page {
         height: 40px;
-        /* width: 100vw; */
     }
 
     /* .header {
@@ -379,6 +365,10 @@ font-family: 'Ultra', serif; */
         /* border-left: 1px solid black;
         border-right: 1px solid black; */
         /* margin: 0 80px 0 10px; */
+    }
+
+    .card5 {
+        padding: 200px 10vw;
     }
 
     /* body,
