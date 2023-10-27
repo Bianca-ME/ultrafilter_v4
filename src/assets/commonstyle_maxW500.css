@@ -130,12 +130,14 @@ font-family: 'Ultra', serif; */
 @media only screen and (min-width: 650px) {}
 
 @media only screen and (min-width: 901px) {
+    /* footer related */
     .contact-info {
         margin-left: 5vw;
     }
 }
 
 @media only screen and (max-width: 900px) {
+    /* footer related */
     .contact-info {
         margin-left: 0px;
         margin-top: 20px;
@@ -147,10 +149,13 @@ font-family: 'Ultra', serif; */
         margin-right: auto;
     }
 
+
+    /* card2 holds the content of the footer */
     .card2 {
         padding-left: 0;
     }
 
+    /* footer related */
     p.letstalk {
         text-align: center;
     }

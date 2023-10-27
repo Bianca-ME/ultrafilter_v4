@@ -1,10 +1,8 @@
 import React from 'react'
-import arrowRight from '../assets/arrow-right-333-svgrepo-com-white.svg';
+import arrowRight from '../assets/arrows-svg/arrow-right-333-svgrepo-com-white.svg';
 
 export default function Footer() {
     return (
-
-
         <div className='display-as-column padding-top card2'>
             <p className='letstalk'>Contact</p>
             <div className='flex wrap '>
@@ -82,8 +80,6 @@ export default function Footer() {
                 </div>
 
             </div>
-
-
             <p className='copyright'>Copyright © 2023 ultrafilter. Toate drepturile rezervate. | Design by
                 <span className='tooltip'> B4a<span className='tooltiptext'>bianca.mgeg@gmail.com 🚴‍♀️</span></span></p>
         </div>

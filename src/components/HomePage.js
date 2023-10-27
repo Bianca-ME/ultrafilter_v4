@@ -3,38 +3,19 @@ import React, { useRef, useEffect, useState } from 'react';
 import Footer from './Footer';
 
 // images
-import DlogoSVG from '../assets/donaldson-company-1.svg';
-// import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
-// import GDlogo from '../assets/test/ezgif.com-video-to-gif.gif';
-
-// import Dlogo from '../assets/donaldson-logo.jpg';
-import Dlogo from '../assets/donaldson-company-1.svg';
-
-// import GDlogo from '../assets/gardner-denver-inc-logo-vector.svg';
-import GDlogo from '../assets/gardner-denver-inc-logo-vector_copy.svg';
-
-import arrow from '../assets/north-east-arrow.svg';
-import arrowRightDown from '../assets/arrow-right-down355.svg';
-
-
+import Dlogo from '../assets/Logos/donaldson-company-1.svg';
+import GDlogo from '../assets/Logos/gardner-denver-inc-logo-vector_copy.svg';
 
 import p5 from 'p5';
 import sketch1 from '../pages/HomePage/ccSketch1';
-// import sketch2 from '../pages/HomePage/ccSketch2';
-
-
 
 // styling
 import '../assets/commonstyle.css';
 import '../assets/commonstyle_maxW500.css';
-
-
 //
 
 const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;
 console.log("for testing purposes print a random number: " + randomNumber);
-
-
 
 export default function HomePage() {
 
@@ -87,49 +68,16 @@ export default function HomePage() {
         }
     };
 
-    useEffect(() => {
-        const handleKeyPress = (event) => {
-            if (event.ctrlKey && event.key === "f") {
-                searchRef.current.focus();
-            }
-        };
-
-        document.addEventListener("keydown", handleKeyPress);
-        return () => {
-            document.removeEventListener("keydown", handleKeyPress);
-        };
-    }, []);
-
-    // creative coding sketch ---
+    // creative coding sketch ---->
     const sketch1Ref = useRef(null);
     // const sketch2Ref = useRef(null);
 
     useEffect(() => {
         new p5(sketch1, sketch1Ref.current);
-        // new p5(sketch2, sketch2Ref.current);
-
     }, []);
+    // ----> creative coding sketch 
 
-    // reveal effect when element is in view
-    // window.addEventListener('scroll', reveal);
-
-    // function reveal() {
-    //     var reveals = document.querySelectorAll('.reveal');
-
-    //     for(var i = 0; i < reveals.length; i++) {
-    //         var windowheight = window.innerHeight;
-    //         var revealtop = reveals[i].getBoundingClientRect().top;
-    //         var revealpoint = 150;
-
-    //         if(revealtop < windowheight - revealpoint){
-    //             reveals[i].classList.add('active');
-    //         } else {
-    //             reveals[i].classList.remove('active');
-    //         }
-    //     }
-    // }
-
-    //same but to use in react
+    //same but to use in react smth with reveal
     useEffect(() => {
         const reveal = () => {
             const reveals = document.querySelectorAll('.reveal');
@@ -155,49 +103,21 @@ export default function HomePage() {
 
     return (
         <div data-scroll toberelative >
-
             {/* let's try implement a creative coding sketch */}
             <div className='sketch-changing-text-on-hover-container'>
                 <div ref={sketch1Ref} className='sketch1-css'></div>
             </div>
-
-
-
-
-            {/* NEW D and GD background with mountains */}
-            {/* <div className='margin-from-header top-banner'>
-                <div className='toberelative'>
-                    <p>tehnologie pentru un mediu mai curat</p>
-                    <img className='reallyBigIMG' src={bannerIMG} alt="Donaldson logo can.t be seen" />
-                    <div className='D-and-GD-logos-container-flex'>
-                        <div className='GD-container--'>
-                            <img className='page2GardnerDenver--' src={GDlogoSVG} alt="Donaldson logo can.t be seen"></img>
-                        </div>
-                        <div className='space-between-logos-D-and-GD'></div>
-                        <div className='D-container--'>
-                            <img className='page1Donaldson--' src={DlogoSVG} alt="Donaldson logo can.t be seen"></img>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
 
             <section>
                 <p className='partners-title' style={{marginTop:'100px'}}>Parteneri</p>
                 <div className='DonaldsonAndGD margin-from-header' id='toStickTo'>
                     <div className='containsPage1 slide slide-top containsPage1-mobile'>
                         <div className='page1Donaldson-container'>
-                            {/* <div className='slide-content-D'>
-                                filtre, desprafuire industriala
-                            </div> */}
                             <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
                         </div>
                     </div>
                     <div className='containsPage2 slide slide-top containsPage2-mobile'>
                         <div className='page2GardnerDenver-container'>
-                            {/* <div className='slide-content-GD'>
-                                compresoare si retele de aer comprimat
-                            </div> */}
                             <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
                         </div>
                     </div>
@@ -290,9 +210,6 @@ export default function HomePage() {
                     </div>
                 </p>
             </section>
-
-
-
             <Footer />
         </div >
     )

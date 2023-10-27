@@ -302,7 +302,7 @@ font-family: 'Ultra', serif; */
         margin: 7px;
     }
 
-    .buttonV1 {
+    /* .buttonV1 {
         height: auto;
         text-align: left;
         border: 1px solid #124838;
@@ -314,7 +314,7 @@ font-family: 'Ultra', serif; */
         background-color: #e6f0eb00;
         text-decoration: underline;
         text-underline-offset: 7px;
-    }
+    } */
 
     .button-color {
         color: black;

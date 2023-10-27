@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/About.css'
 import '../assets/commonstyle.css';
 
 export default function About() {
