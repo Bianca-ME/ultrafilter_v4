@@ -1,0 +1,1597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Sulphur+Point:wght@300;400;700&display=swap');
+/* font-family: 'Sulphur Point', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Cousine', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+/* font-family: 'Xanh Mono', monospace; */
+
+/* for quote marks */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+/* font-family: 'Yatra One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* font-family: 'Lora', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* font-family: 'Gelasio', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+/* font-family: 'Klee One', cursive; ASTA NU */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+/* font-family: 'Mynerve', cursive; NU PREA*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Alumni Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+/* font-family: 'News Cycle', sans-serif; */
+
+/* TEMPORARILY */
+/* TEMPORARILY */
+/* TEMPORARILY */
+/* TEMPORARILY */
+/* TEMPORARILY */
+/* TEMPORARILY */
+
+/* GENERAL */
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* * {
+    border: 1px solid black;
+} */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.toberelative {
+    position: relative;
+}
+
+/* SPACING */
+
+.margin-from-header {
+    padding-top: 70px;
+    background-color: rgb(87, 0, 0);
+    /* border-top: 3px solid red; */
+}
+
+.wide-padding {
+    padding: 7vh 17vw;
+}
+
+.narrow-padding {
+    padding: 5px 3%;
+}
+
+/* COLORS */
+.white-background {
+    /* background-color: #F8FAF9; */
+    background-color: #ffffff;
+    /* background-color: #9cceb1; */
+}
+
+.soft-green-background {
+    background-color: #f8faf9;
+}
+
+.strong-blue-background {
+    background-color: #17009c;
+}
+
+.dark-blue-background {
+    background-color: #07163f;
+}
+
+.white-font {
+    color: white;
+}
+
+.dark-blue-font {
+    background-color: #07163f;
+}
+
+.dark-green {
+    color: #124838;
+}
+
+.card {
+    background-color: #F8FAF9;
+    border-radius: 45px;
+    padding: 5px 3%;
+    margin: 20px 70px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.regular-text {
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cousine', monospace;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 1.5rem;
+    /* padding: 5vh 10vw; */
+    color: #124838;
+    padding-bottom: 0;
+}
+
+p.regular-text-important {
+    font-size: 3rem;
+    padding-bottom: 0;
+}
+
+.sulphur-font {
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.regular-text-small {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.2rem;
+    padding: 2vh 10vw 15vh 10vw;
+    color: #124838;
+    text-align: right;
+}
+
+.big-word {
+    font-size: 10rem;
+    font-family: 'Sulphur Point', sans-serif;
+    padding-bottom: 0;
+}
+
+.underline {
+    border-bottom: 10px solid rgb(208, 245, 233);
+}
+
+.underline-red {
+    border-bottom: 50px solid #00a571;
+}
+
+/* IMAGES EFFECTS */
+
+/* FADE IN EFFECT */
+.op-class {
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.fadeIn2 {
+    opacity: 1;
+    transition: opacity 1.7s;
+}
+
+.fadeIn3 {
+    opacity: 1;
+    transition: opacity 1.9s;
+}
+
+.fadeIn4 {
+    opacity: 1;
+    transition: opacity 2.1s;
+}
+
+.fadeIn5 {
+    opacity: 1;
+    transition: opacity 2.3s;
+}
+
+
+/* ZOOM OUT EFFECT IN FIXED SIZE PARENT CONTAINER */
+.wrapper--img-fixed-size {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    padding-left: 200px;
+    /* background-color: #65756D;
+background-clip: border-box; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%;
+    height: auto; */
+}
+
+.home-page-img-to-be-zoomed-out {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.zoom-out {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+    /* opacity in the last stage after zooming out */
+}
+
+/* IMAGES EFFECT ABOVE */
+
+
+/* prea complicat. problema: nu stiam sa subliniez cu linie neintrerupta. se intrerupea sub literele gen p, g, q, j */
+/* text-decoration: underline;
+text-decoration-thickness: 20px;
+text-decoration-color: aquamarine;
+text-underline-offset: -0.1rem;
+text-decoration-line: underline; */
+/* background-color: rgb(208, 245, 233); */
+/* display: inline-block;
+line-height: 0.1; */
+
+.underline-on-hover:hover {
+    border-bottom: 10px solid rgb(208, 245, 233);
+}
+
+.text-about p,
+.text-utile p,
+.text-contact p,
+.text-donaldson p {
+    font-size: 1.5rem;
+    color: #124838;
+}
+
+/* Donaldson CSS page */
+
+/* era ID pt titlurile din Donaldson */
+#h {
+    font-size: 3rem;
+    font-family: 'Xanh Mono', monospace;
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.tabel-donaldson-compresoare {
+    color: #124838;
+}
+
+table.tabel-donaldson-compresoare {
+    border-radius: 40px;
+    background-color: white;
+    margin: 0;
+    /* border-collapse: collapse; */
+}
+
+
+.tabel-donaldson-compresoare td:first-child {
+    border-left: none;
+}
+
+.th-tr1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #124838;
+    /* font-weight: 500; */
+    border-top: none;
+    border-bottom: 1px solid #124838;
+    padding: 0 0 0 30px;
+}
+
+/* #tds-top {
+    padding-top: 30px;
+} */
+
+.tds {
+    font-size: 1rem;
+    margin: 0;
+    padding: 5px 30px
+}
+
+.tds:hover {
+    background-color: #f0f7f3;
+    /* border: 0.5px solid #124838; */
+    border-radius: 20px;
+}
+
+/* doar orientativ */
+/* .tds {
+    padding: 5px 15px 2px 50px;
+    border: 1px solid #124838;
+}
+
+.tds:hover {
+    border-radius: 30px;
+    background-color: rgb(228, 243, 255);
+} */
+
+/* GardnerDenver CSS page */
+
+.text-gardnerdenver p {
+    font-size: 1.2rem;
+    color: #124838;
+}
+
+.text-gardnerdenver {
+    padding: 20vh 5vw 30vh 5vw;
+    /* transform: skew(1turn, -10deg); */
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #e8f1ef;
+    border-radius: 45px;
+    margin-top: 3vh;
+}
+
+.quote-marks-opening {
+    font-family: 'Yatra One', cursive;
+    font-size: 20rem;
+    color: #124838;
+    position: absolute;
+}
+
+
+
+table.table-GD-c {
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    border-collapse: collapse;
+    color: #124838;
+    margin: 0;
+    padding: 50px;
+}
+
+.td-gd-c {
+    padding: 5px 15px 2px 50px;
+    border: 1px solid #124838;
+}
+
+.td-gd-c:hover {
+    border-radius: 30px;
+    /* background-color: rgb(176, 221, 255); */
+    background-color: rgb(228, 243, 255);
+    /* background-color: azure; */
+}
+
+.quote-author {
+    text-align: right;
+}
+
+.signature {
+    right: 5vw;
+    bottom: 2vh;
+    /* margin-left: 0; */
+    position: absolute;
+    width: 30%;
+    color: #124838;
+}
+
+/* Contact CSS */
+
+/* * {
+    border: 1px solid red;
+} */
+
+/* let's try imitate default css */
+.main-1-custom1 {
+    background-color: #F8FAF9;
+    /* padding: 5px 3%; */
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.regular-text-custom1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5rem;
+    /* padding: 5vh 10vw; */
+    color: #124838;
+}
+
+.regular-text-important-custom {
+    font-size: 3rem;
+    padding-left: 740px;
+    padding-top: 5vh;
+    margin: 0;
+    /* ca sa anulez marginea inherited de unde nu stiu */
+}
+
+
+
+.inline-flex-container {
+    display: inline-flex;
+    width: 100%;
+    /* padding: 0 50px; */
+    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
+    border-top: 1px solid #124838;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.inline-flex {
+    display: inline-flex;
+    width: 100%;
+    /* padding: 0 50px; */
+    /* AICI AM FACUT ULTIMA MODIFICARE SI NU E BINE */
+    border-top: 1px solid #124838;
+}
+
+.contact-info {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 100px;
+    margin-left: 300px;
+
+
+}
+
+.contact-info div:last-child {
+    /* border: 1px solid black; */
+    margin-left: 50px;
+}
+
+.underline-simple {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+/* nu stiu cum sa selectez doar formul ca sa-l trimit in dreapta paginii */
+/* .inline-flex.form-container div:last-child {
+    justify-content: flex-end;
+    border: 1px solid red;
+} */
+
+.form-container {
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* border-left: 1px solid #124838; */
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: center; */
+    border-right: 1px solid #124838;
+}
+
+.form-column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* after you deselect text box */
+input,
+select,
+textarea {
+    color: rgb(250, 238, 183);
+    text-align: left;
+
+}
+
+form input,
+form textarea {
+    width: 500px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    /* padding: 15px 5px 2px 5px; */
+    /* padding: 15px; */
+    border: none;
+    /* background-color: rgb(235, 235, 235); */
+    /* background: #f0f7f3; */
+    background: rgb(8, 53, 168);
+    /* background: #F8FAF9; */
+    margin: 7px;
+    /* border-bottom: 1px solid #124838; */
+    border-radius: 0px;
+}
+
+.input1 {
+    height: 3px;
+}
+
+.input2 {
+    height: 8px;
+}
+
+.input1 {
+    height: 10px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d0e2d9;
+    opacity: 1;
+    /* Firefox */
+
+    /* dar aliniaza doar textarea pe mijloc sau nu stiu, ma mai gandesc */
+    text-align: center;
+}
+
+/* background-color: lightgreen;
+border-color: rgb(42, 236, 42); */
+/* input:valid {
+    color: rgb(253, 84, 149);
+} */
+
+/* nu merge */
+::placeholder:hover {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-decoration: wavy;
+}
+
+/* when you select text box to write inside */
+textarea:focus,
+input:focus {
+    color: rgb(250, 209, 27);
+    background-color: rgb(80, 110, 187);
+    border: none;
+    text-align: left;
+}
+
+textarea {
+    /* text-align: center; */
+
+    /* nu merge pe verticala ca nu e intr-un box propriu-zis */
+    vertical-align: middle;
+}
+
+/* button v1 */
+/* button {
+    background-color: #f0f7f3;
+    height: 50px;
+    width: 120px;
+    border-radius: 45px;
+    border: 0.5px solid #124838;
+    color: #124838;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+button:hover {
+    background-color: #c2e3f0;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+} */
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* button v2 */
+button {
+    /* background-color: rgb(156, 235, 208); */
+    background-color: #e6f0eb;
+    height: 25px;
+    /* width: 100px; */
+    /* border-radius: 45px; */
+    /* border: 0.5px solid #124838; */
+    border: none;
+    color: #124838;
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1rem;
+    margin: 7px;
+}
+
+button:hover {
+    background-color: #cee4d9;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+
+.map-container {
+    padding-top: 100px;
+    border-top: 1px solid #124838;
+}
+
+/* nu merge */
+.form input:hover {
+    background-color: #3adb80;
+    border-radius: 20px;
+}
+
+
+.compressors-buttons {
+    font-size: 1.5rem;
+}
+
+.arrow {
+    height: 1.4rem;
+}
+
+.arrow-smaller {
+    height: 0.8rem;
+}
+
+
+
+
+
+
+
+/* test */
+
+/* .tobesticky {
+    position: sticky;
+    font-size: 2rem;
+    color: red;
+    right: 5vw;
+    bottom: 0.5vh;
+    top: 0.5vh;
+    z-index: 2;
+} */
+
+.imgtest {
+    height: 100%;
+}
+
+.imgtest2 {
+    height: 20%;
+    position: sticky;
+    right: 5vw;
+    bottom: 2vh;
+    z-index: 2;
+}
+
+.imm {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+}
+
+.simpleimg {
+    width: 300px;
+    height: auto;
+}
+
+.temptable {
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    /* background-color: #17009c; */
+    /* background-color: #a3a2a7; */
+    background-color: #140666;
+    color:white;
+    text-align: center;
+border-bottom: 1px solid #124838;
+
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+
+
+td {
+    /* border: 1px solid white; */
+    /* border-color:#124838; */
+    border-collapse: collapse;
+
+    /* border: 0.5px solid #124838; */
+}
+
+
+.temptable tr:nth-child(even) {
+    background-color: #F0EFF5;
+    background-color: #17009C;
+}
+/* background-color: #533cd6; */
+
+/* si mai mult test */
+
+summary {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.details summary {
+    background-color: crimson;
+}
+
+.details,
+.details1 {
+    font-weight: normal;
+    /* background-color: rgba(230, 245, 22, 0.904); */
+}
+
+.details1 {
+    padding-left: 30px;
+}
+
+.bring-slide-to-front {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    /* nu merge z peste logo */
+    z-index: 201; 
+    /* font-family: 'Cutive Mono', monospace; */
+}
+
+/* .stop-background-scroll {
+    overscroll-behavior: contain;
+    overflow-y: scroll !important;
+    scrollbar-color: #0ad44d;
+}
+
+.stop-background-scroll::-webkit-scrollbar-thumb {
+    background: rgb(240, 79, 5);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(233, 240, 235);
+    border-radius: 10px;
+} */
+
+/* HOME PAGE - WORK IN PROGRESS */
+
+/* DONALDSON & GD LOGOS AND LINKS */
+/* DonaldsonAndGD > containsPage1, slide, slide-top > page1Donaldson-container > slide-content-D (text filtre...), img page1Donaldson */
+
+.DonaldsonAndGD {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    width: 100%;
+    /* width: 100vw; era */
+    height: 50vh;
+    /* z-index: 10; */
+}
+
+.slide {
+    position: relative;
+    display: inline;
+    overflow: hidden;
+    width: 100vw;
+    height: calc((100vh-60px)/2);
+}
+
+.page1Donaldson-container,
+.page2GardnerDenver-container {
+    width: 50vw;
+    align-items: center;
+    /* aliniaza central pe verticala */
+    justify-content: center;
+    /* aliniaza central pe orizontala */
+}
+
+.page1Donaldson-container {
+    background-color: #0082ca;
+    height: 100%;
+    display: flex;
+}
+
+.page2GardnerDenver-container {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    width: 50vw;
+}
+
+.slide-content-D {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(23, 0, 156, 0.5);
+    /* 0.925 */
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.slide-content-GD {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(23, 0, 156, 0.5);
+    /* 0.966 */
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+/* logo D */
+.page1Donaldson {
+    width: 30vw;
+}
+
+/* logo GD */
+/* temp disable */
+.page2GardnerDenver {
+    width: 25vw;
+}
+
+.slide:hover .slide-content-D {
+    transform: translate(0, 0);
+}
+
+.slide-top .slide-content-D {
+    transform: translate(0, -100%);
+}
+
+
+.slide:hover .slide-content-GD {
+    transform: translate(0, 0);
+}
+
+.slide-top .slide-content-GD {
+    transform: translate(0, -100%);
+}
+
+/* SMARTPHONE */
+@media only screen and (max-width: 500px) {
+    /* .slide {
+        height: calc(50vh-60px);
+        height: calc((100vh-60px)/2);
+        height: 100%;
+    } */
+
+
+}
+
+
+::selection {
+    text-shadow: none;
+    color: #236b59;
+    background: #d0f5e9;
+    /* color: #9ff1d7;
+    background: #124838; */
+}
+
+
+
+/* (TUTORIAL) */
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.to-be-overlapped {
+    position: relative;
+    z-index: 1;
+}
+
+.overlap-grid {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 100px;
+}
+
+.wrapper--img,
+.wrapper--text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper--text--higher {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-items: start;
+    padding-left: 5px;
+    /* color: red; */
+    font-family: 'News Cycle', sans-serif;
+    color: #65756D;
+}
+
+.wrapper--text--custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    padding-left: 50px;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.wrapper--img img {
+    width: 60%;
+    height: auto;
+
+    /* border: 1px solid #07163f; */
+    /* padding: 15px 7px 50px 7px; */
+}
+
+/* daca ai paragraf sub text, ti le aliniaza */
+.wrapper--text {
+    align-items: start;
+    padding-left: 50px;
+    /* font-family: 'Sulphur Point', sans-serif; */
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Xanh Mono', monospace; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Cousine', monospace;
+    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'News Cycle', sans-serif;
+    /* background-color: #17009c;
+    background-color: #07163f;
+    background-color: #f0eff5;
+    background-color: #65756D; */
+    color: #0082ca;
+    color: #2807e0;
+    color: #8aa195;
+    color: #124838;
+    color: #00a571;
+    color: #f0eff5;
+    color: #65756D;
+
+    /* border: 0.5px solid #2a302d;
+    border-radius: 45px;  */
+}
+
+/* .wrapper--text--custom h2 {
+    color: #65756D;
+    letter-spacing: 2px;
+    font-size: 70px;
+
+    font-weight: 400;
+    line-height: 0;
+    margin-top: 0;
+} */
+
+h2 {
+    letter-spacing: 2px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 0.75;
+}
+
+.custom h2 {
+    font-size: 200px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 500;
+}
+
+/* .underline { 
+} */
+
+/* nu merge */
+/* .go-behind {
+    z-index: -5;
+} */
+
+/* simple zoom in, not useful right now */
+/* .zoom-in {
+    opacity: 1;
+    transform: scale(2);
+    transition: transform 0.5s;
+} */
+/* transition-delay: .3s; */
+
+/* .flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.background-bluee {
+    background-color: #140666;
+}
+
+.border-test {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    overflow: hidden;
+}
+
+.home-page-title {
+    font-size: 10rem;
+    /* font-family: 'Cousine', monospace; */
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Lora', serif;
+
+    /* background-color: #140666; */
+    /* background-color: #124838; */
+    /* background-color: #f8faf9; */
+    color: #d0eedf;
+    /* color: #17009c; */
+    font-weight: 700;
+    margin: 0;
+    /* padding: 50px 30px 150px 30px; */
+    padding-top: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0.8;
+    /* background-image: url('../assets/test.gif'); */
+    animation: fadeIn 1s;
+}
+
+.home-page-title-smallerr {
+    font-size: 9rem;
+    /* font-family: 'Cousine', monospace; */
+    /* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Lora', serif;
+
+    /* background-color: #140666; */
+    /* background-color: #124838; */
+    /* background-color: #f8faf9; */
+    color: #d0eedf;
+    /* color: #17009c; */
+    font-weight: 700;
+    margin: 0;
+    /* padding: 50px 30px 150px 30px; */
+    padding-top: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 0.8;
+    /* background-image: url('../assets/test.gif'); */
+    animation: fadeIn 1s;
+}
+
+/* mnu... nu merge background mg */
+.hover-over-word:hover {
+    background: url('../assets/textxx.png');
+    color: #2000d8;
+    transition: color ease-in 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ribbon-right {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    right: 0;
+    writing-mode: vertical-rl;
+    background-color: #17009c;
+    /* z-index: 5; */
+    padding-top: 80px;
+    /* padding-bottom: 30px; */
+    letter-spacing: 5px;
+    /* height: 90vw; */
+    height: 100vh;
+    width: 20px;
+}
+
+/* .ribbon-bottom {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17009c;
+    background-color: #00a571;
+    z-index: 5;
+    padding-left: 80px;
+    
+    letter-spacing: 5px;
+    height: 10px;
+    width: 100vw;
+    text-overflow: clip;
+    white-space: nowrap; 
+    overflow: hidden;
+} */
+
+
+/* 
+.home-page-content > *:not(.background-bluee) {
+    border: 1px solid black;
+} */
+
+/* section > * {
+    border: 1px solid black;
+} */
+
+/* .wrapper--img {
+    background-color: #65756D;
+    background-clip: border-box;
+} */
+
+/* merge da nu prea */
+/* .change-background-color-on-scroll {
+    background-color: #65756D;
+    color: #F0EFF5;
+    transition: background-color 0.2s ease-in;
+} */
+/* transition: color 0.3s ease-out; */
+
+section.p-hw {
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.try-repair {
+    /* min-height: calc(100vh - 80px);
+    overflow-x: hidden; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* html,
+body {
+    height: 100%;
+    width: 100%;
+} */
+html,
+body {
+    /* height: 100vh;
+    width: 100vw; */
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+    /* overflow: auto; */
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+}
+
+.fixed-position {
+    position: fixed;
+    z-index: 100;
+}
+
+/*-----------------------------------------------------*/
+/* SMARTPHONE */
+
+@media only screen and (max-width: 500px) {
+
+    /* NAV BAR (left) */
+    .header {
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        color: white;
+        display: flex;
+        align-items: center;
+        left: 0;
+        writing-mode: vertical-rl;
+        background-color: #17009c;
+        letter-spacing: 5px;
+        height: 100vh;
+        width: 20px;
+        opacity: 1;
+        z-index: 10;
+
+        /* pt a anula padding original */
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .visited-link {
+        /* temporary distance */
+        margin-right: 0px;
+        margin-top: 10px;
+        color: #F8FAF9;
+        text-decoration: none;
+    }
+
+    /* tre modificat */
+    /* .active-link {
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        color: #F8FAF9;
+    } */
+
+    .margin-from-header {
+        padding-top: 60px;
+        /* background-color: rgb(185, 238, 164); */
+        /* border-top: 3px solid red; */
+    }
+
+    .visited-link {
+        margin-left: 0px;
+    }
+
+    .logo-home-page-container {
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 44px;
+        margin: 0;
+    }
+
+    .logo-home-page-text-margin-left {
+        margin-left: 2px;
+    }
+
+    .logo-home-page {
+        height: 40px;
+        /* width: 100vw; */
+    }
+
+    /* .header {
+        opacity: 0;
+    } */
+
+    /* --------------------------- */
+    /* SECTION Donaldson and GD */
+
+    /* nu merge */
+    .slide-top {
+        width: 100vw;
+    }
+
+    /* nu merge */
+    .active-link-D-GD {
+        font-size: 1rem;
+    }
+
+    .DonaldsonAndGD {
+        display: flex;
+        flex-wrap: wrap;
+        height: calc(100vh - 60px);
+        width: 100%;
+        /* height: 40vh; */
+
+        /* opacity: 0; */
+        /* height: calc(100vh-60px); */
+
+    }
+
+    .page1Donaldson-container,
+    .page2GardnerDenver-container {
+        width: 100%;
+    }
+
+    /* unhidded the blue slides */
+    .slide-top .slide-content-D {
+        transform: translate(0, 0);
+    }
+
+    .slide-top .slide-content-GD {
+        transform: translate(0, 0);
+    }
+
+    .slide-content-D,
+    .slide-content-GD {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        color: white;
+        box-sizing: border-box;
+        transition: transform 0.3s ease;
+    }
+
+    .slide-content-D {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.925 */
+        padding: 20px;
+    }
+
+    .slide-content-GD {
+        background-color: rgba(23, 0, 156, 1);
+        /* 0.966 */
+        padding: 20px;
+    }
+
+    .op-class {
+        opacity: 1;
+    }
+
+    /* logo D */
+    .page1Donaldson {
+        width: 100%;
+    }
+
+    /* logo GD */
+    .page2GardnerDenver {
+        width: 100%;
+    }
+
+
+    /* .containsPage1-mobile,
+    .containsPage2-mobile {
+
+    } */
+
+    /* --------------------------- */
+    /* SECTION WITH "distribuitorul tau de..." */
+    .background-bluee {
+        padding: 0 20px 0 20px;
+    }
+
+    .home-page-title {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 1.2;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .home-page-title-smallerr {
+        font-size: 50px;
+        /* font-family: 'Cousine', monospace; */
+        /* font-family: 'Sulphur Point', sans-serif; */
+        font-family: 'Lora', serif;
+
+        /* background-color: #140666; */
+        /* background-color: #124838; */
+        /* background-color: #f8faf9; */
+        color: #d0eedf;
+        /* color: #17009c; */
+        font-weight: 700;
+        margin: 0;
+        /* padding: 50px 30px 150px 30px; */
+        padding-top: 50px;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 0.8;
+        /* background-image: url('../assets/test.gif'); */
+        animation: fadeIn 1s;
+    }
+
+    .underline-red {
+        border-bottom: 10px solid #00a571;
+    }
+
+
+    .home-page-content h2 {
+        /* color: rgb(0, 47, 255); */
+        font-size: 50px;
+    }
+
+    .wrapper--text h2 {
+        padding-left: 5px;
+        margin: 0;
+        padding: 0;
+        /* color: red; */
+    }
+
+    .wrapper--img,
+    .wrapper--text {
+        width: 100%;
+    }
+
+    .wrapper--img {
+        align-items: flex-end;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper--img img {
+        width: 100%;
+        height: auto;
+        /* opacity: 0.5; */
+    }
+
+    .wrapper--text {
+        height: auto;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 60px;
+        border-bottom: 1px solid black;
+        /* scroll-snap-align: end; */
+        height: calc(100vh - 60px);
+        /* border-left: 1px solid black;
+        border-right: 1px solid black; */
+        /* margin: 0 80px 0 10px; */
+    }
+
+    /* body,
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-snap-type: mandatory;
+    } */
+
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+
+    /* --------------------------- */
+    /* PAGE GD */
+    .big-word {
+        font-size: 50px;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    p.regular-text-important {
+        font-size: 3rem;
+        line-height: 0.9;
+        padding-bottom: 0;
+        font-family: 'Sulphur Point', sans-serif;
+    }
+
+    button {
+        /* background-color: rgb(156, 235, 208); */
+        background-color: #e6f0eb00;
+        height: auto;
+        /* width: 100px; */
+        /* border-radius: 45px; */
+        /* border: 0.5px solid #124838; */
+        border: none;
+        color: #124838;
+        font-family: 'Sulphur Point', sans-serif;
+        font-size: 1rem;
+        margin: 7px;
+    }
+
+    .compressors-buttons {
+        height: auto;
+        /* font-weight: 700; */
+        text-align: left;
+        border: 1px solid #124838;
+        border-radius: 35px;
+        /* border-left: 10px solid #d0f5e9; */
+    }
+
+    .compressors-buttons:hover {
+        background-color: #e6f0eb00;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .narrow-padding-mobile {
+        padding: 5px 28px;
+    }
+
+    .quote-marks-opening {
+        font-family: 'Yatra One', cursive;
+        font-size: 300px;
+        color: #124838;
+        position: absolute;
+    }
+
+    .text-gardnerdenver {
+        text-align: left;
+    }
+
+    .narrow-padding-mobile2 {
+        padding: 5px 40px
+    }
+
+    .overflow-scroll {
+        overflow-x: scroll;
+        /* de rezolvat width */
+        width: 80hw;
+        max-width: 400px;
+    }
+    
+    /* test stick */
+    .stick-in-table {
+    position: sticky;
+    left: 0;
+    /* color: black; */
+    /* background-color: #c0b9e6; */
+    background-color: #cfcddd;
+    background-color: #00A571;
+    background-color: #D0EEDF;
+    background-color: #2807E0;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    }
+
+    .vertical-text-lr {
+        writing-mode: vertical-rl;
+        font-size: 10px;
+        word-wrap: break-word;
+        height: 200px;
+        text-align: start;
+    }
+
+    /* .same-font-size-inside-table {
+        font-size: 10px;
+    } */
+
+    .text-align-start {
+        text-align: start;
+        /* nu merge width */
+        /* width: 50px; */
+    }
+
+/* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
+    /* .test-stop-scroll {
+        overscroll-behavior: contain;
+    } */
+}
+
+/*-----------------------------------------------------*/
+
+@media screen and (min-width: 501px) and (max-width: 1366px) {
+    .home-page-content h2 {
+        /* color: red; */
+        font-size: 90px;
+    }
+
+    .logo-home-page {
+        height: 60px;
+    }
+}

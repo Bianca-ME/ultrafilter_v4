@@ -1,7 +1,5 @@
 import React from 'react';
 import '../assets/About.css'
-// import imm from '../assets/PRINT_ok_02.jpg';
-import '../assets/locomotive-scroll.css';
 import '../assets/commonstyle.css';
 
 export default function About() {

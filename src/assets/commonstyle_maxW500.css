@@ -68,100 +68,28 @@ font-family: 'Ultra', serif; */
 /* font-family: 'Homemade Apple', cursive; */
 /* font-family: 'Shadows Into Light', cursive; */
 
-
-/* testate pe font-size 16 */
-/* wght@400;500;600;700;800 */
-/* font-family: 'Syne', sans-serif; */
-/* destul de caligrafic, line height aproape bun */
-/* font-family: 'Cantarell', sans-serif; */
-/* wght@300 */
-/* font-family: 'Hind', sans-serif; */
-/* wght@200;300;400;500;600;700;800;900 */
-/* font-family: 'Inconsolata', monospace; */
-/* wght@400;700 */
-/* font-family: 'News Cycle', sans-serif; */
-/* wght@300;400;700 */
-/* font-family: 'Sulphur Point', sans-serif; */
-/* neutru, maruntel, line height bun, dar prea maruntel in navbar */
-/* wght@300;400;500;600;700;800;900 */
-/* font-family: 'Work Sans', sans-serif; */
-/* typemachine , un pic cam grosut... literele putin prea spaced */
-/* wght@300;400;500 */
-/* font-family: 'Roboto Mono', monospace; */
-/* cam gros, dar perfect neutru. se potriveste cu Syne din navbar. daca schimb culoarea s-ar putea sa se potriveasca */
-/* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
-/* font-family: 'Noto Sans', sans-serif; */
-/* dragutel. typemachine, dar prea subtire - il face inutilizabil */
-/* font-family: 'Cutive Mono', monospace; */
-/* typemachine - este superb. folosit ca text in product cards. line height perfect. litere perfect proportionate, usor patratoase*/
-/* font-family: 'Cousine', monospace; */
-/* font-family: 'Xanh Mono', monospace; */
-/* nici gabd. scris cu marker parca. caligrafic */
-/* font-family: 'Yatra One', cursive; */
-/* liric, nu merge ca text normal */
-/* :ital,wght@0,400;0,500;1,400;1,500 */
-/* font-family: 'Lora', serif; */
-/* okish dar prea liric */
-/* :ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 */
-/* font-family: 'Gelasio', serif; */
-/* ASTA NU - l-as sterge de tot */
-/* font-family: 'Klee One', cursive;  */
-/* scris f frumos de mana, seamana cu a lui R */
-/* font-family: 'Mynerve', cursive; */
-/* prea inghesuit */
-/* :ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
-/* font-family: 'Alumni Sans', sans-serif; */
-/* numbers fonts */
-/* font-family: 'Homemade Apple', cursive; */
-/* font-family: 'Shadows Into Light', cursive; */
-
-/* @media only screen and (min-width: 840px) {
-    .logo-home-page-container {
-        padding: 2px 50px 2px 10vw;
-    }
-} */
 @media only screen and (min-width: 1281px) {
     .logo-home-page-container {
-        /* padding: 2px 50px 2px 40vw; */
         padding: 2px 50px 2px 40vw;
     }
-
-    /* .ufr-quote-top {
-        margin-left: 50px;
-    } */
 }
 
 @media only screen and (min-width: 1056px) and (max-width: 1280px) {
     .logo-home-page-container {
-        /* padding: 2px 50px 2px 40vw; */
         padding: 2px 50px 2px 30vw;
     }
-
-    /* .ufr-quote-top {
-        margin-left: 50px;
-    } */
 }
 
 @media only screen and (min-width: 946px) and (max-width: 1055px) {
     .logo-home-page-container {
-        /* padding: 2px 50px 2px 40vw; */
         padding: 2px 50px 2px 15vw;
     }
-
-    /* .ufr-quote-top {
-        margin-left: 50px;
-    } */
 }
 
 @media only screen and (min-width: 711px) and (max-width: 945px) {
     .logo-home-page-container {
-        /* padding: 2px 50px 2px 40vw; */
         padding: 2px 50px 2px 10vw;
     }
-
-    /* .ufr-quote-top {
-        margin-left: 50px;
-    } */
 }
 
 @media only screen and (min-width: 711px) {
@@ -179,9 +107,6 @@ font-family: 'Ultra', serif; */
         /* NU MERGE */
         padding: 2px 50px 2px 20vw;
 
-        /* display: flex; */
-        /* justify-content:flex-start; */
-        /* display: block; */
         flex-wrap: wrap;
         overflow: hidden;
     }
@@ -191,23 +116,15 @@ font-family: 'Ultra', serif; */
         min-width: 250px;
     }
 
-    .logo-home-page-container img:first-child {
-        /* margin-left: 50px; */
-        /* border: 1px solid red; */
-    }
-
     .ufr-quote-top {
         display: block;
         margin-left: 0px;
     }
 
-
     .page1Donaldson,
     .page2GardnerDenver {
         width: 100%;
     }
-
-
 }
 
 @media only screen and (min-width: 650px) {}
@@ -236,7 +153,6 @@ font-family: 'Ultra', serif; */
 
     p.letstalk {
         text-align: center;
-        /* padding-left: 100px; */
     }
 
     .wrap {
@@ -249,7 +165,6 @@ font-family: 'Ultra', serif; */
 
 @media only screen and (max-width: 650px) {
     .partners-title {
-        /* font-size: 26px; */
         margin-bottom: 100px;
     }
 
@@ -266,30 +181,4 @@ font-family: 'Ultra', serif; */
     .page2GardnerDenver {
         width: 60%;
     }
-
-
-
-    /* form {
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
-
-    /* .write-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-    .write-us>form {
-        /* padding-left: auto;
-    padding-right: auto; */
-        /* border: 1px solid red; */
-        /* padding-left: 100px; */
-        /* margin-left: auto;
-    margin-right: auto; */
-    }
-
 }

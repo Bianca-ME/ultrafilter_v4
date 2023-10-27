@@ -5,10 +5,6 @@ import Products from '../../../components/searchAndFilter/Products/Products';
 import Sidebar from '../../../components/searchAndFilter/Sidebar/Sidebar';
 import Card from '../../../components/searchAndFilter/Card';
 import Footer from '../../../components/Footer';
-// import { useState } from 'react';
-
-import GDLOGO from '../../../assets/gardner-denver-logo.jpg';
-// import GDLOGO from '../../../assets/HomePage/7_compresoare_cu_suruburi_elicoidale_Gardner_Dnever_cu_ulei.jpg';
 
 // Database
 import products from '../../../data/database_products';

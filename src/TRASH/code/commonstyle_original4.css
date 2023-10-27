@@ -326,14 +326,6 @@ body {
     font-family: 'Sulphur Point', sans-serif;
     font-family: 'Roboto Mono';
     font-size: 20px;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
-}
-
-body {
-    background-image: url("./green-screen3.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 html {

@@ -40,7 +40,6 @@ import FM_7_22 from './pages/Gardner-Denver/Compresoare/FM_7_22';
 import C_oil_free_tip_scroll from './pages/Gardner-Denver/Compresoare/C_oil_free_tip_scroll';
 
 
-// import Breadcrumbs from './components/Breadcrumbs';
 
 // styling
 import './assets/App.css';
@@ -120,7 +119,6 @@ function App() {
                     </header>
                     <SideNavBar />
                     {/* <Header /> */}
-                    {/* <Breadcrumbs /> */}
                     <div data-scroll-container>
                         <Switch>
                             <Route exact path="/">

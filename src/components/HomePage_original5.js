@@ -66,7 +66,6 @@ import p5 from 'p5';
 
 // import LocomotiveScroll from 'locomotive-scroll';
 // import '../../node_modules/locomotive-scroll/src/locomotive-scroll.scss';
-import '../assets/locomotive-scroll.css';
 // import '../assets/locomotive-scroll.min.js';
 // import myFunction from '../assets/locomotive-scroll-copy-unminified.js';
 
@@ -77,7 +76,7 @@ import GDlogoSVG from '../assets/Gardner_Denver_logo.svg.png';
 
 
 import Dlogo from '../assets/donaldson-logo.jpg';
-import GDlogo from '../assets/gardner-denver-logo.jpg';
+
 
 import arrow from '../assets/north-east-arrow.svg';
 

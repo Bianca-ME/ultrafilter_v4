@@ -9,26 +9,20 @@ import DlogoSVG from '../assets/donaldson-company-1.svg';
 
 // import Dlogo from '../assets/donaldson-logo.jpg';
 import Dlogo from '../assets/donaldson-company-1.svg';
-// import GDlogo from '../assets/gardner-denver-logo.jpg';
+
 // import GDlogo from '../assets/gardner-denver-inc-logo-vector.svg';
 import GDlogo from '../assets/gardner-denver-inc-logo-vector_copy.svg';
 
 import arrow from '../assets/north-east-arrow.svg';
 import arrowRightDown from '../assets/arrow-right-down355.svg';
 
-// TODO: creeaza un paralax effect
-import Picture49 from '../assets/Picture49-less-grainy.png';
-// import random1 from '../assets/test/s12-1024x341.jpg';
-import random1 from '../assets/test/WhatsAppImage2023-07-27at3.05.21PM_2_1.jpg';
-// import Picture49 from '../assets/Picture49.png';
+
 
 import p5 from 'p5';
 import sketch1 from '../pages/HomePage/ccSketch1';
 // import sketch2 from '../pages/HomePage/ccSketch2';
 
-// images of ufr team
-import ufrteam1 from '../pages/HomePage/sketch2/img1.jpg';
-import ufrteam10 from '../pages/HomePage/sketch2/img10.jpg';
+
 
 // styling
 import '../assets/commonstyle.css';
@@ -161,32 +155,6 @@ export default function HomePage() {
 
     return (
         <div data-scroll toberelative >
-            {/* <section class='ufr-quote-big'>
-                <p>Tehnologie pentru un mediu mai curat</p>
-            </section> */}
-
-            {/* <div className='DonaldsonAndGD margin-from-header' id='toStickTo'
-                style={{ backgroundImage: `url(${random1})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}
-            >
-                <div className='containsPage1 slide slide-top containsPage1-mobile'>
-                    <div className='page1Donaldson-container'>
-                        <div className='slide-content-D'>
-                            filtre, desprafuire industriala
-                            <br />
-                            [ pagină în lucru ]
-                        </div>
-                        <img className='page1Donaldson' src={Dlogo} alt="Donaldson logo can.t be seen"></img>
-                    </div>
-                </div>
-                <div className='containsPage2 slide slide-top containsPage2-mobile'>
-                    <div className='page2GardnerDenver-container'>
-                        <div className='slide-content-GD'>
-                            Gardner Denver face parte din cel mai mare grup de producatori de utilaje dinamice, impreuna cu Champion, Ingersol Rand, CompAir, TamRotor, Hydrovane, Belliss&Morcom, Nash, TCM Marine, Elmo Rietschle, Ravell, Robuski, Bottarini, Mako, Drum.
-                        </div>
-                        <img className='page2GardnerDenver' src={GDlogo} alt="Gardner Denver logo can.t be seen"></img>
-                    </div>
-                </div>
-            </div> */}
 
             {/* let's try implement a creative coding sketch */}
             <div className='sketch-changing-text-on-hover-container'>

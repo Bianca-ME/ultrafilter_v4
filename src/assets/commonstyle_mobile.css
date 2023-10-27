@@ -68,53 +68,6 @@ font-family: 'Ultra', serif; */
 /* font-family: 'Homemade Apple', cursive; */
 /* font-family: 'Shadows Into Light', cursive; */
 
-
-/* testate pe font-size 16 */
-/* wght@400;500;600;700;800 */
-/* font-family: 'Syne', sans-serif; */
-/* destul de caligrafic, line height aproape bun */
-/* font-family: 'Cantarell', sans-serif; */
-/* wght@300 */
-/* font-family: 'Hind', sans-serif; */
-/* wght@200;300;400;500;600;700;800;900 */
-/* font-family: 'Inconsolata', monospace; */
-/* wght@400;700 */
-/* font-family: 'News Cycle', sans-serif; */
-/* wght@300;400;700 */
-/* font-family: 'Sulphur Point', sans-serif; */
-/* neutru, maruntel, line height bun, dar prea maruntel in navbar */
-/* wght@300;400;500;600;700;800;900 */
-/* font-family: 'Work Sans', sans-serif; */
-/* typemachine , un pic cam grosut... literele putin prea spaced */
-/* wght@300;400;500 */
-/* font-family: 'Roboto Mono', monospace; */
-/* cam gros, dar perfect neutru. se potriveste cu Syne din navbar. daca schimb culoarea s-ar putea sa se potriveasca */
-/* ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
-/* font-family: 'Noto Sans', sans-serif; */
-/* dragutel. typemachine, dar prea subtire - il face inutilizabil */
-/* font-family: 'Cutive Mono', monospace; */
-/* typemachine - este superb. folosit ca text in product cards. line height perfect. litere perfect proportionate, usor patratoase*/
-/* font-family: 'Cousine', monospace; */
-/* font-family: 'Xanh Mono', monospace; */
-/* nici gabd. scris cu marker parca. caligrafic */
-/* font-family: 'Yatra One', cursive; */
-/* liric, nu merge ca text normal */
-/* :ital,wght@0,400;0,500;1,400;1,500 */
-/* font-family: 'Lora', serif; */
-/* okish dar prea liric */
-/* :ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 */
-/* font-family: 'Gelasio', serif; */
-/* ASTA NU - l-as sterge de tot */
-/* font-family: 'Klee One', cursive;  */
-/* scris f frumos de mana, seamana cu a lui R */
-/* font-family: 'Mynerve', cursive; */
-/* prea inghesuit */
-/* :ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 */
-/* font-family: 'Alumni Sans', sans-serif; */
-/* numbers fonts */
-/* font-family: 'Homemade Apple', cursive; */
-/* font-family: 'Shadows Into Light', cursive; */
-
 @media only screen and (max-width: 500px) {
 
     /* NAV BAR (left) */
@@ -135,19 +88,16 @@ font-family: 'Ultra', serif; */
         height: 100vh;
         width: 20px;
         opacity: 1;
-
         padding-right: 0;
         justify-content: center;
     }
 
     .visited-link {
-       
         margin-right: 0px;
         margin-top: 10px;
         color: #F8FAF9;
         text-decoration: none;
     }
-
 
     .active-link {
         text-decoration: underline;
@@ -171,10 +121,6 @@ font-family: 'Ultra', serif; */
         height: 40px;
     }
 
-    /* .header {
-        opacity: 0;
-    } */
-
     /* --------------------------- */
     /* SECTION Donaldson and GD */
 
@@ -193,11 +139,6 @@ font-family: 'Ultra', serif; */
         flex-wrap: wrap;
         height: calc(100vh - 60px);
         width: 100%;
-        /* height: 40vh; */
-
-        /* opacity: 0; */
-        /* height: calc(100vh-60px); */
-
     }
 
     .page1Donaldson-container,
@@ -225,7 +166,6 @@ font-family: 'Ultra', serif; */
         height: 100%;
         z-index: 1;
         display: flex;
-        /* align-items: center; */
         justify-content: center;
         text-align: center;
         padding: 20px;
@@ -260,12 +200,6 @@ font-family: 'Ultra', serif; */
         width: 100%;
     }
 
-
-    /* .containsPage1-mobile,
-    .containsPage2-mobile {
-
-    } */
-
     /* --------------------------- */
     /* SECTION WITH "distribuitorul tau de..." */
     .background-bluee {
@@ -274,45 +208,27 @@ font-family: 'Ultra', serif; */
 
     .home-page-title {
         font-size: 50px;
-        /* font-family: 'Cousine', monospace; */
-        /* font-family: 'Sulphur Point', sans-serif; */
         font-family: 'Lora', serif;
-
-        /* background-color: #140666; */
-        /* background-color: #124838; */
-        /* background-color: #f8faf9; */
         color: #d0eedf;
-        /* color: #17009c; */
         font-weight: 700;
         margin: 0;
-        /* padding: 50px 30px 150px 30px; */
         padding-top: 50px;
         letter-spacing: 2px;
         text-align: center;
         line-height: 1.2;
-        /* background-image: url('../assets/test.gif'); */
         animation: fadeIn 1s;
     }
 
     .home-page-title-smallerr {
         font-size: 50px;
-        /* font-family: 'Cousine', monospace; */
-        /* font-family: 'Sulphur Point', sans-serif; */
         font-family: 'Lora', serif;
-
-        /* background-color: #140666; */
-        /* background-color: #124838; */
-        /* background-color: #f8faf9; */
         color: #d0eedf;
-        /* color: #17009c; */
         font-weight: 700;
         margin: 0;
-        /* padding: 50px 30px 150px 30px; */
         padding-top: 50px;
         letter-spacing: 2px;
         text-align: center;
         line-height: 0.8;
-        /* background-image: url('../assets/test.gif'); */
         animation: fadeIn 1s;
     }
 
@@ -322,7 +238,6 @@ font-family: 'Ultra', serif; */
 
 
     .home-page-content h2 {
-        /* color: rgb(0, 47, 255); */
         font-size: 50px;
     }
 
@@ -330,7 +245,6 @@ font-family: 'Ultra', serif; */
         padding-left: 5px;
         margin: 0;
         padding: 0;
-        /* color: red; */
     }
 
     .wrapper--img,
@@ -348,7 +262,6 @@ font-family: 'Ultra', serif; */
     .wrapper--img img {
         width: 100%;
         height: auto;
-        /* opacity: 0.5; */
     }
 
     .wrapper--text {
@@ -360,27 +273,12 @@ font-family: 'Ultra', serif; */
         flex-wrap: wrap-reverse;
         margin-top: 60px;
         border-bottom: 1px solid black;
-        /* scroll-snap-align: end; */
         height: calc(100vh - 60px);
-        /* border-left: 1px solid black;
-        border-right: 1px solid black; */
-        /* margin: 0 80px 0 10px; */
     }
 
     .card5 {
         padding: 200px 10vw;
     }
-
-    /* body,
-    html {
-        scroll-snap-type: y mandatory;
-        scroll-snap-type: mandatory;
-    } */
-
-    /* * {
-        margin: 0;
-        padding: 0;
-    } */
 
     /* --------------------------- */
     /* PAGE GD */
@@ -397,39 +295,26 @@ font-family: 'Ultra', serif; */
     }
 
     button {
-        /* background-color: rgb(156, 235, 208); */
-        /* background-color: #e6f0eb00; */
-
         height: auto;
-        /* width: 100px; */
-        /* border-radius: 45px; */
-        /* border: 0.5px solid #124838; */
         border: none;
         color: #124838;
         font-family: 'Sulphur Point', sans-serif;
-        /* font-size: 1rem; */
         margin: 7px;
     }
 
     .buttonV1 {
         height: auto;
-        /* font-weight: 700; */
         text-align: left;
         border: 1px solid #124838;
         border-radius: 35px;
         background-color: #fcfcf5;
-        /* border-left: 10px solid #d0f5e9; */
     }
-
-
 
     .buttonV1:hover {
         background-color: #e6f0eb00;
         text-decoration: underline;
         text-underline-offset: 7px;
     }
-
-
 
     .button-color {
         color: black;
@@ -465,14 +350,11 @@ font-family: 'Ultra', serif; */
     .stick-in-table {
         position: sticky;
         left: 0;
-        /* color: black; */
-        /* background-color: #c0b9e6; */
         background-color: #cfcddd;
         background-color: #00A571;
         background-color: #D0EEDF;
         background-color: #2807E0;
         border-radius: 15px;
-        /* border: 1px solid black; */
     }
 
     .vertical-text-lr {
@@ -483,27 +365,15 @@ font-family: 'Ultra', serif; */
         text-align: start;
     }
 
-    /* .same-font-size-inside-table {
-        font-size: 10px;
-    } */
-
     .text-align-start {
         text-align: start;
-        /* nu merge width */
-        /* width: 50px; */
     }
-
-    /* caut sa opresc scrollul din fundal, din spatele slide panel-ului */
-    /* .test-stop-scroll {
-        overscroll-behavior: contain;
-    } */
 }
 
 /*-----------------------------------------------------*/
 
 @media screen and (min-width: 501px) and (max-width: 1366px) {
     .home-page-content h2 {
-        /* color: red; */
         font-size: 90px;
     }
 
