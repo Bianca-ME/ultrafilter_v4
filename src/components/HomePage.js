@@ -11,7 +11,7 @@ import sketch1 from '../pages/HomePage/ccSketch1';
 
 // styling
 import '../assets/commonstyle.css';
-import '../assets/commonstyle_maxW500.css';
+import '../assets/CSS/commonstyle_maxW500.css';
 //
 
 const randomNumber = Math.floor(Math.random() * (10 - 2 + 1)) + 2;

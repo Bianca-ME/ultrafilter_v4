@@ -5,7 +5,6 @@ import React from 'react'
 
 export default function Card({ img, title, subtitle, info, table }) {
 
-
   // const [state, setState] = useState({
   //   pane_brosura_compresoare_cu_suruburi_elicoidale: false
   // });
@@ -43,7 +42,6 @@ export default function Card({ img, title, subtitle, info, table }) {
           <p>{table}</p>
         </div>
         {/* <p onClick={() => setState({ pane_brosura_compresoare_cu_suruburi_elicoidale: true })} className='see-brochure'>broșură</p> */}
-
       </div>
     </section>
   )

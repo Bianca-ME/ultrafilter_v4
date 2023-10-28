@@ -19,7 +19,7 @@ export default function Footer() {
 
                 <div className='contact-info-all flex wrap'>
                     <div>
-                        {/* <p>Adresa</p> */}
+                        {/* <p>Address</p> */}
                         <div className='inline-flex contact-info'>
                             <div>
                                 <p>Telefon:</p>
@@ -34,8 +34,6 @@ export default function Footer() {
                                 <p className='underline-simple'>https://ultrafilter.ro</p>
                             </div>
                         </div>
-
-
                         <div className='contact-info'>
                             <p>Intrarea</p>
                             <p>Profesor Gheorghe Costa Foru, nr. 4,</p>
@@ -78,7 +76,6 @@ export default function Footer() {
 
                     </div>
                 </div>
-
             </div>
             <p className='copyright'>Copyright © 2023 ultrafilter. Toate drepturile rezervate. | Design by
                 <span className='tooltip'> B4a<span className='tooltiptext'>bianca.mgeg@gmail.com 🚴‍♀️</span></span></p>

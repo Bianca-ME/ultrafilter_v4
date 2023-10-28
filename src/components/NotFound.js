@@ -6,11 +6,8 @@ export default function Utile() {
             {/* temporary content */}
             <div>
                 <p className='huge-title'>404</p>
-                {/* <p>sorry bro</p>
-                <p>something is broken in my code</p>
-                <p>I'll try to fix it as soon as possible</p> */}
+                
             </div>
-
         </main>
     )
 }

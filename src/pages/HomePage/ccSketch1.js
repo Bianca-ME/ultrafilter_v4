@@ -169,7 +169,6 @@ export default function sketch1(p) {
         fontSize = p.windowWidth * fontSizePercentage; // Update the font size as well
     };
 
-
     p.draw = function () {
         p.background(bg);
         p.fill(fg);

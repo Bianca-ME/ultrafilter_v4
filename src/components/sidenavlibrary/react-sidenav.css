@@ -7,13 +7,13 @@
   bottom: 0;
   left: 0;
   z-index: 1006;
-  /* I think this is the right width of the menu ribbon ! */
+  /* width of sidebar navigation on the left */
   min-width: 20px;
   background: #fcfcf5;
   background: #f5f5ed;
   background: #65756D;
-  background: #8AA195;
   background: #140666;
+  background: #8AA195;
   background: #17009c;
   /* background: #000000; */
   /* border-right: 1px solid #efefef; */
@@ -264,7 +264,6 @@
 .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo,
 .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f {
   /* the color of menu titles */
-  font-family: 'Sulphur Point';
   font-family: 'Syne', sans-serif;
 
 font-size: 30px;

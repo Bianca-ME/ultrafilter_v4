@@ -12,12 +12,9 @@ export default function Navigation({ handleInputChange, query }) {
           placeholder="căutare/"
         />
       </div>
-
       {/* <div className='profile-container'>
         <a href="#">some icons</a>
       </div> */}
-
-
     </nav>
   )
 }

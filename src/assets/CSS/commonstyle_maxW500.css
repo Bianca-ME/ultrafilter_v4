@@ -1,0 +1,154 @@
+/* retro computer font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Syne', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+/* font-family: 'Hind', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inconsolata', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
+/* font-family: 'News Cycle', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Sulphur+Point:wght@300;400;700&display=swap');
+/* font-family: 'Sulphur Point', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+/* font-family: 'Roboto Mono', monospace; */
+
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Cousine', monospace; */
+
+/* for quote marks */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+/* font-family: 'Yatra One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+/* font-family: 'Lora', serif; */
+
+@media only screen and (min-width: 1281px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 40vw;
+    }
+}
+
+@media only screen and (min-width: 1056px) and (max-width: 1280px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 30vw;
+    }
+}
+
+@media only screen and (min-width: 946px) and (max-width: 1055px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 15vw;
+    }
+}
+
+@media only screen and (min-width: 711px) and (max-width: 945px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 10vw;
+    }
+}
+
+@media only screen and (min-width: 711px) {
+    .ufr-quote-top {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .card5 {
+        padding: 200px 14vw 200px 10vw;
+    }
+
+    .logo-home-page-container {
+        /* NU MERGE */
+        padding: 2px 50px 2px 20vw;
+
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .logo-container {
+        display: flex;
+        min-width: 250px;
+    }
+
+    .ufr-quote-top {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .page1Donaldson,
+    .page2GardnerDenver {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 650px) {}
+
+@media only screen and (min-width: 901px) {
+    /* footer related */
+    .contact-info {
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* footer related */
+    .contact-info {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .contact-info-all {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* card2 holds the content of the footer */
+    .card2 {
+        padding-left: 0;
+    }
+
+    /* footer related */
+    p.letstalk {
+        text-align: center;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .partners-title {
+        margin-bottom: 100px;
+    }
+
+    .DonaldsonAndGD {
+        flex-wrap: wrap;
+    }
+
+    .page1Donaldson-container,
+    .page2GardnerDenver-container {
+        width: 100%;
+    }
+
+    .page1Donaldson,
+    .page2GardnerDenver {
+        width: 60%;
+    }
+}

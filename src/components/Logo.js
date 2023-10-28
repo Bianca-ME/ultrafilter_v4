@@ -7,13 +7,11 @@ import logotext from '../assets/Logos/LOGO-ufr-svg-white.svg';
 import { Link } from 'react-router-dom';
 
 // styling
-import '../assets/Logo.css';
+import '../assets/CSS/Logo.css';
 
 export default function Logo() {
     return (
-        <div
-        // className='toberelative fixed-position right-corner'
-        >
+        <div>
             <div>
                 <Link to="/" rel="noreferrer" className=''>
                     <div className='logo-home-page-container'>
@@ -21,10 +19,8 @@ export default function Logo() {
                             <img className='logo-home-page' src={logo} alt="Ultrafilter logo can.t be seen"></img>
                             <img className='logo-home-page logo-home-page-text-margin-left' src={logotext} alt="Ultrafilter logo can.t be seen"></img>
                         </div>
-
                         <p className='ufr-quote-top'>distribuitorul tau de compresoare si filtre industriale</p>
                     </div>
-
                 </Link>
             </div>
         </div>

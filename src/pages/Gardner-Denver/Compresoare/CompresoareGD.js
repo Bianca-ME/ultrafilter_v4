@@ -10,7 +10,7 @@ import Footer from '../../../components/Footer';
 import products from '../../../data/database_products';
 
 // styling
-import '../../../assets/commonstyle-maxW1000.css';
+import '../../../assets/CSS/commonstyle-maxW1000.css';
 
 export default function CompresoareGD() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -56,9 +56,6 @@ export default function CompresoareGD() {
       // category, color, price
     }
 
-
-
-
     return filteredProducts.map(({ img, title, subtitle, info, table }) => (
       <Card
         key={Math.random()}
@@ -76,21 +73,17 @@ export default function CompresoareGD() {
 
   return (
     <div
-    // TODO: de lucru la background image
+    // TODO: to work on the background image
     // style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto', backgroundAttachment: 'fixed', height: '100%' }}
     >
       <div className='blue-top'>
-
         <div className='search-n-checkmark'>
           <Navigation query={query} handleInputChange={handleInputChange} />
           <Sidebar handleChange={handleChange} />
         </div>
-        
         <div className='flex flex-this'>
           <h1 className='huge-title-2'>compresoare</h1>
         </div>
-
-
       </div>
       {/* <div style={{ backgroundImage: `url(${GDLOGO})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'auto', minHeight: '450px', backgroundColor: '#fff' }}> */}
         <Products result={result}  />
@@ -101,4 +94,3 @@ export default function CompresoareGD() {
     </div>
   );
 }
-

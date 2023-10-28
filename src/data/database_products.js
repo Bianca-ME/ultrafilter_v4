@@ -1,19 +1,16 @@
-import img1 from '../assets/products/portabile-cu-suruburi.jpg';
-import img2 from '../assets/products/FM_7_22.jpg';
-import img3 from '../assets/products/ESM_23_29.jpg';
-import img4 from '../assets/products/ESM_30_45(1).jpg';
-import img5 from '../assets/products/ESM_55_75.jpg';
-import img6 from '../assets/products/ESM_90_132.jpg';
-import img7 from '../assets/products/ESM_160_290.jpg';
+import img1 from '../assets/images/products/portabile-cu-suruburi.jpg';
+import img2 from '../assets/images/products/FM_7_22.jpg';
+import img3 from '../assets/images/products/ESM_23_29.jpg';
+import img4 from '../assets/images/products/ESM_30_45(1).jpg';
+import img5 from '../assets/images/products/ESM_55_75.jpg';
+import img6 from '../assets/images/products/ESM_90_132.jpg';
+import img7 from '../assets/images/products/ESM_160_290.jpg';
 
-import img12 from '../assets/GD/34002_28_3_19_CA5_BP_FT55_m.jpg';
-import img13 from '../assets/GD/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
-import img14 from '../assets/GD/30496_24_4_18_CMPV04_RM_m.jpg';
-import img15 from '../assets/products/pentrusuflatpeturi.jpg';
-import img16 from '../assets/products/pentruscafandrii2.jpg';
-
-
-
+import img12 from '../assets/images/GD/34002_28_3_19_CA5_BP_FT55_m.jpg';
+import img13 from '../assets/images/GD/32434_23_10_18_C_PRIME_50_25_S_m.jpg';
+import img14 from '../assets/images/GD/30496_24_4_18_CMPV04_RM_m.jpg';
+import img15 from '../assets/images/products/pentrusuflatpeturi.jpg';
+import img16 from '../assets/images/products/pentruscafandrii2.jpg';
 
 const data = [
     // COMPRESOARE CU SURUBURI SI INJECTIE DE ULEI
