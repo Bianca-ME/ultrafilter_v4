@@ -10,7 +10,7 @@ import Footer from '../../../components/Footer';
 import products from '../../../data/database_products';
 
 // styling
-import '../../../assets/CSS/commonstyle-maxW1000.css';
+import '../../../assets/CSS/commonstyle.css';
 
 export default function CompresoareGD() {
   const [selectedCategory, setSelectedCategory] = useState(null);

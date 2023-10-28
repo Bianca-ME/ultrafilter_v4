@@ -1,24 +1,15 @@
-/* retro computer font */
+/* retro computer font - used for the 404 message*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 /* font-family: 'Press Start 2P', cursive; */
 
-/* bold fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Oswald:wght@700&family=Ultra&display=swap');
-/* font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Ultra', serif; */
-
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
 /* font-family: 'Syne', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
-/* font-family: 'Cantarell', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 /* font-family: 'Hind', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
-/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Inconsolata', monospace; can be deleted if not used*/
 
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
 /* font-family: 'News Cycle', sans-serif; */
@@ -32,50 +23,17 @@ font-family: 'Ultra', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 /* font-family: 'Roboto Mono', monospace; */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* font-family: 'Noto Sans', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Cutive+Mono&display=swap');
-/* font-family: 'Cutive Mono', monospace; */
-
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* font-family: 'Cousine', monospace; */
-
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
-/* font-family: 'Xanh Mono', monospace; */
+/* font-family: 'Cousine', monospace;  can be deleted if not used*/
 
 /* for quote marks */
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
-/* font-family: 'Yatra One', cursive; */
+/* font-family: 'Yatra One', cursive;  can be deleted if not used*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-/* font-family: 'Lora', serif; */
+/* font-family: 'Lora', serif;  can be deleted if not used*/
 
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
-/* font-family: 'Gelasio', serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
-/* font-family: 'Klee One', cursive; ASTA NU */
-
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-/* font-family: 'Mynerve', cursive; NU PREA*/
-
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* font-family: 'Alumni Sans', sans-serif; */
-
-/* numbers fonts */
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Shadows+Into+Light&display=swap');
-/* font-family: 'Homemade Apple', cursive; */
-/* font-family: 'Shadows Into Light', cursive; */
-
-
-/* GENERAL */
-
-.line-height {
-    line-height: 1.1;
-}
-
-/* ----------------------------------------------------------------------- */
+/* GENERAL ----> */
 
 html {
     margin: 0;
@@ -102,7 +60,118 @@ body {
     background: #0000ff;
 }
 
-/* menu on the left containing the pages of the website ----> */
+button {
+    background-color: #e6f0eb00;
+    height: auto;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* forms, inputs, */
+textarea {
+    /* nu merge pe verticala ca nu e intr-un box propriu-zis */
+    vertical-align: middle;
+}
+
+form textarea {
+    width: 500px;
+    font-family: 'Roboto Mono', monospace;
+    color: #000000;
+    color: #7AFC38;
+    background-color: #0012d8;
+    background-color: #17009c;
+    font-size: 13px;
+    border: none;
+    border-radius: 0px;
+}
+
+textarea:focus {
+    background-color: #0015ff;
+}
+
+button.submit-button {
+    font-size: 25px;
+    color: #2e2e2e;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Cousine';
+    font-family: 'Work Sans';
+    padding: 0;
+    cursor: pointer;
+}
+
+/* TODO:: de schimbat asta mai tarziu */
+/* search bar */
+input {
+    padding: 12px 20px 5px 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    background-color: #f7f6f6;
+    background-color: #ffffff;
+    background-color: #cf0000;
+    background-color: #0012d8;
+    outline: none;
+    border-radius: 0;
+    position: relative;
+    width: 100px;
+    font-family: 'Roboto Mono';
+}
+
+/* needs another color in the search bar */
+::placeholder {
+    color: #f1f5ed;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.margin-from-header {
+    background-color: #f5f5ed;
+}
+
+.toberelative {
+    position: relative;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.fixed-position {
+    position: fixed;
+    z-index: 100;
+}
+
+.flex {
+    display: flex;
+}
+
+.to-be-absolute {
+    position: absolute;
+}
+
+/* .wide-padding {
+    padding: 7vh 17vw;
+} */
+
+/* .narrow-padding {
+    padding: 5px 3%;
+} */
+
+.line-height {
+    line-height: 1.1;
+}
+
+/* this underline appears in the footer underlining the url of ufr */
+.underline {
+    border-bottom: 10px solid rgb(208, 245, 233);
+}
+/* ----> GENERAL */
+
+/* side navigation menu on the left containing the pages of the website ----> */
 .menu-p {
     writing-mode: vertical-rl;
     margin: 0;
@@ -113,28 +182,11 @@ body {
     font-size: 20px;
 }
 
-/* aplica style of button si la screen >> */
-button {
-    background-color: #e6f0eb00;
-    height: auto;
-    border: none;
+/* find this class */
+.button {
+    display: flex;
+    justify-content: center;
 }
-
-.toberelative {
-    position: relative;
-}
-
-.margin-from-header {
-    background-color: #f5f5ed;
-}
-
-/* .wide-padding {
-    padding: 7vh 17vw;
-} */
-
-/* .narrow-padding {
-    padding: 5px 3%;
-} */
 
 /* colors ----> */
 .white-background {
@@ -164,13 +216,7 @@ button {
 .dark-green {
     color: #124838;
 }
-
 /* colors ----> */
-
-/* this underline appears in the footer underlining the url of ufr */
-.underline {
-    border-bottom: 10px solid rgb(208, 245, 233);
-}
 
 /* FOOTER ----> */
 /* card2 holds the content of the footer */
@@ -236,32 +282,148 @@ p.letstalk {
     top: 5px;
 }
 
-textarea {
-    /* nu merge pe verticala ca nu e intr-un box propriu-zis */
-    vertical-align: middle;
+.leave-msg {
+    width: 230px;
+    height: 40px;
+    border-bottom: 2px solid #fff;
 }
 
+.send-arrow {
+    color: #fff;
+    height: 25px;
+}
+
+.address-container,
+.links-container {
+    height: 500px;
+    color: #fcfcf5;
+    color: #000000;
+    font-family: 'Work Sans';
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Hind', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.links-container {
+    width: 250px;
+}
+
+.address-container {
+    width: 400px;
+}
+
+.address-table th {
+    font-weight: 400;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+table.address-table tr:nth-child(1) td:nth-child(2) {
+    border-bottom: 0px solid rgba(0, 0, 0, 0);
+    color: #fcfcf5;
+    color: #000000;
+    color: #828aff;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Work Sans';
+    font-weight: 400;
+}
+
+p.copyright {
+    text-align: center;
+    font-family: 'Syne';
+    font-size: 14px;
+    color: #000000;
+    color: #fcfcf5;
+    color: #828aff;
+    margin-top: 50px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -180px;
+    top: -25px;
+}
+
+.tooltip .tooltiptexttable {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -180px;
+    top: -25px;
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:hover .tooltiptexttable {
+    visibility: visible;
+}
+
+/* ------ tooltip to show image when hovering over product card */
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -50px;
+    top: -90px;
+}
+
+/* nu stiu de fapt ce-i cu asta */
+
+.tooltip2 .tooltiptexttable2 {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    right: -180px;
+    top: -25px;
+}
+
+.tooltip2:hover .tooltiptext2,
+.tooltip2:hover .tooltiptexttable2 {
+    visibility: visible;
+}
 /* ----> FOOTER*/
 
-.wrap {
-    flex-wrap: wrap;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-}
-
-.arrow {
-    height: 1.4rem;
-}
-
-.arrow-smaller {
-    height: 0.8rem;
-}
-
 /* HOME PAGE ----> */
-
 .partners-title {
     font-size: 26px;
     text-align: center;
@@ -403,16 +565,13 @@ textarea {
 .efff:hover {
     font-style: italic;
 }
-
 /* ----> HOME PAGE*/
 
 /* CREATIVE CODING SKETCH ----> */
-
 .sketch-changing-text-on-hover-container {
     height: 500px;
     background-color: #f5f5ed;
 }
-
 /* ----> CREATIVE CODING SKETCH */
 
 /* idk */
@@ -423,7 +582,6 @@ textarea {
 }
 
 /* HEADER ----> */
-
 /* blue rectangle on the right with phone number */
 .ribbon-right {
     font-family: 'Sulphur Point', sans-serif;
@@ -449,17 +607,7 @@ textarea {
     height: 100vh;
     width: 20px;
 }
-
 /* ----> HEADER*/
-
-.fixed-position {
-    position: fixed;
-    z-index: 100;
-}
-
-.flex {
-    display: flex;
-}
 
 /* TEMP SCROLLBAR CSS ----> */
 /* width */
@@ -481,188 +629,9 @@ textarea {
 ::-webkit-scrollbar-thumb:hover {
     background: #0000ff;
 }
-
 /* ----> TEMP SCROLLBAR CSS */
 
-/* idk */
-ul {
-    list-style: none;
-}
-
-.to-be-absolute {
-    position: absolute;
-}
-
-/* used in FOOTER */
-.leave-msg {
-    width: 230px;
-    height: 40px;
-    border-bottom: 2px solid #fff;
-}
-
-/* form input, */
-form textarea {
-    width: 500px;
-    font-family: 'Roboto Mono', monospace;
-    color: #000000;
-    color: #7AFC38;
-    background-color: #0012d8;
-    background-color: #17009c;
-    font-size: 13px;
-    border: none;
-    border-radius: 0px;
-}
-
-textarea:focus {
-    background-color: #0015ff;
-}
-
-button.submit-button {
-    font-size: 25px;
-    color: #2e2e2e;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Cousine';
-    font-family: 'Work Sans';
-    padding: 0;
-    cursor: pointer;
-}
-
-.send-arrow {
-    color: #fff;
-    height: 25px;
-}
-
-.address-container,
-.links-container {
-    height: 500px;
-    color: #fcfcf5;
-    color: #000000;
-    font-family: 'Work Sans';
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Hind', sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.links-container {
-    width: 250px;
-}
-
-.address-container {
-    width: 400px;
-}
-
-.address-table th {
-    font-weight: 400;
-    text-align: left;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-table.address-table tr:nth-child(1) td:nth-child(2) {
-    border-bottom: 0px solid rgba(0, 0, 0, 0);
-    color: #fcfcf5;
-    color: #000000;
-    color: #828aff;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Work Sans';
-    font-weight: 400;
-}
-
-p.copyright {
-    text-align: center;
-    font-family: 'Syne';
-    font-size: 14px;
-    color: #000000;
-    color: #fcfcf5;
-    color: #828aff;
-    margin-top: 50px;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: -180px;
-    top: -25px;
-}
-
-.tooltip .tooltiptexttable {
-    visibility: hidden;
-    width: 300px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: -180px;
-    top: -25px;
-}
-
-.tooltip:hover .tooltiptext,
-.tooltip:hover .tooltiptexttable {
-    visibility: visible;
-}
-
-/* ------ tooltip to show image when hovering over product card */
-.tooltip2 {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: -50px;
-    top: -90px;
-}
-
-/* nu stiu de fapt ce-i cu asta */
-
-.tooltip2 .tooltiptexttable2 {
-    visibility: hidden;
-    width: 300px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    right: -180px;
-    top: -25px;
-}
-
-.tooltip2:hover .tooltiptext2,
-.tooltip2:hover .tooltiptexttable2 {
-    visibility: visible;
-}
-
 /* NotFound.js page ----> */
-
 .errorPage {
     display: flex;
     align-items: center;
@@ -674,38 +643,11 @@ p.copyright {
     font-family: 'Press Start 2P', cursive;
     color: #7AFC38;
 }
-
 /* NotFound.js page ----> */
 
 /* idk */
 nav.nav-tutorial {
     z-index: 999;
-}
-
-/* TODO:: de schimbat asta mai tarziu */
-/* search bar */
-input {
-    padding: 12px 20px 5px 20px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #fff;
-    background-color: #f7f6f6;
-    background-color: #ffffff;
-    background-color: #cf0000;
-    background-color: #0012d8;
-    outline: none;
-    border-radius: 0;
-    position: relative;
-    width: 100px;
-    font-family: 'Roboto Mono';
-}
-
-/* ATNTIE ASTA ARE NEVOIE DE ALTA CUL IN SEARCH BAR */
-::placeholder {
-    color: #f1f5ed;
-    opacity: 1;
-    padding-bottom: 20px;
 }
 
 /* GARDNER DENVER PAGE -- section with categories of products -- filtering ----> */
@@ -863,3 +805,147 @@ input {
 }
 
 /* ----> GARDNER DENVER PAGE -- section with categories of products -- filtering*/
+
+/* -------------------------------------- */
+/* ---------|||---------------|||-------- */
+/* ---------vvv OTHER DEVICES vvv-------- */
+/* to review */
+
+@media only screen and (min-width: 1281px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 40vw;
+    }
+}
+
+@media only screen and (min-width: 1056px) and (max-width: 1280px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 30vw;
+    }
+}
+
+@media only screen and (min-width: 946px) and (max-width: 1055px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 15vw;
+    }
+}
+
+/* to do something about the max-w 1000px */
+@media screen and (max-width: 1000px) {
+    .blue-top {
+        display: block;
+        padding-left: 0;
+    }
+
+    .search-n-checkmark {
+        padding-left: 10vw;
+    }
+
+    .flex-this {
+        align-items: flex-end;
+    }
+
+    .huge-title-2 {
+        font-size: 13vw;
+    }
+}
+
+@media only screen and (min-width: 711px) and (max-width: 945px) {
+    .logo-home-page-container {
+        padding: 2px 50px 2px 10vw;
+    }
+}
+
+@media only screen and (min-width: 711px) {
+    .ufr-quote-top {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .card5 {
+        padding: 200px 14vw 200px 10vw;
+    }
+
+    .logo-home-page-container {
+        /* NU MERGE */
+        padding: 2px 50px 2px 20vw;
+
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .logo-container {
+        display: flex;
+        min-width: 250px;
+    }
+
+    .ufr-quote-top {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .page1Donaldson,
+    .page2GardnerDenver {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 650px) {}
+
+@media only screen and (min-width: 901px) {
+    /* footer related */
+    .contact-info {
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* footer related */
+    .contact-info {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .contact-info-all {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* card2 holds the content of the footer */
+    .card2 {
+        padding-left: 0;
+    }
+
+    /* footer related */
+    p.letstalk {
+        text-align: center;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .partners-title {
+        margin-bottom: 100px;
+    }
+
+    .DonaldsonAndGD {
+        flex-wrap: wrap;
+    }
+
+    .page1Donaldson-container,
+    .page2GardnerDenver-container {
+        width: 100%;
+    }
+
+    .page1Donaldson,
+    .page2GardnerDenver {
+        width: 60%;
+    }
+}
