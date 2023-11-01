@@ -87,7 +87,7 @@ function App() {
                             <NotFound />
                         </Route>
                         <Redirect to="/404" />
-                        <Route path='*' component={NotFound} />
+                        {/* <Route path='*' component={NotFound} /> */}
                     </Switch>
                 </main>
             </Router>
